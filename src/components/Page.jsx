@@ -18,7 +18,7 @@ const Page = ({ text, head1, text2, img1, img2, img3 }) => {
               For Better
             </span>
             <br />
-            <span className="text-6xl md:text-8xl font-[600] bg-gradient-to-r from-[#91c08e] to-[#009add] bg-clip-text text-transparent ">
+            <span className="text-[6vh] md:text-8xl font-[600] bg-gradient-to-r from-[#91c08e] to-[#009add] bg-clip-text text-transparent ">
               {text}
             </span>
           </span>

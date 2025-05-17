@@ -85,7 +85,7 @@ export default function FinincialPage() {
   const [view, setView] = React.useState("finincial"); // NEW state
 
   return (
-    <div className="px-4 overflow-hidden md:px-10 py-6 w-screen ">
+    <div className="px-4 overflow-hidden mt-20 md:px-10 py-6 w-screen ">
       {/* Toggle Buttons */}
       <div className="flex justify-center   max-w-[100%] gap-4 mb-6">
         <button

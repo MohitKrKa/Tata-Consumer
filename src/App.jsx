@@ -13,6 +13,7 @@ function App() {
         <Navbar />
       </div>
       <Routes>
+        <Route path="/" />
         <Route path="/BusinessMomentum" element={<FinancialPage />} />
         <Route path="/sustainability" element={<Sustaunability />} />
       </Routes>

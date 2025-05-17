@@ -59,8 +59,7 @@ const imageCommonVariants = {
     scale: 1,
     transition: { duration: 0.6, ease: "easeOut" },
   },
-}
-
+};
 
 const itemVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -182,7 +181,14 @@ const ForBetterCommunities = () => {
               </p>
             </div>
             <div className="flex flex-col gap-4">
-              <img src={FBC8} alt="" />
+              <motion.img
+                src={FBC8}
+                alt=""
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={imageCommonVariants}
+              />
               <p className="">
                 # DJSI requirement: Breakdown of the new employee hires and/or
                 internal hires data based on the following categories: Age
@@ -310,10 +316,14 @@ const ForBetterCommunities = () => {
             </div>
 
             <div className="w-full lg:w-1/3">
-              <img
+              <motion.img
                 src={FBC9}
                 alt=""
                 className="w-full h-[60vh] max-h-[55vh] object-cover"
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={imageCommonVariants}
               />
             </div>
           </div>
@@ -535,10 +545,14 @@ const ForBetterCommunities = () => {
                 ))}
               </ul>
             </div>
-            <img
+            <motion.img
               src={FBC13}
               alt=""
               className="w-full lg:w-[50%] h-auto object-contain"
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={imageCommonVariants}
             />
           </div>
 
@@ -561,10 +575,14 @@ const ForBetterCommunities = () => {
 
           {/* Second Image & List Block */}
           <div className="flex flex-col items-center lg:flex-row text-base sm:text-lg lg:text-xl gap-6">
-            <img
+            <motion.img
               src={FBC14}
               alt=""
               className="w-full lg:w-[50%] h-auto object-contain"
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={imageCommonVariants}
             />
             <div className="flex-1">
               <h2 className="font-bold">Key Objectives:</h2>
@@ -688,10 +706,14 @@ const ForBetterCommunities = () => {
                 </ul>
               </div>
               <div className="flex-1">
-                <img
+                <motion.img
                   src={FBC15}
                   alt=""
                   className="w-full max-w-[80vh] h-auto mx-auto lg:mx-0"
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, amount: 0.5 }}
+                  variants={imageCommonVariants}
                 />
               </div>
             </div>
@@ -836,134 +858,131 @@ const ForBetterCommunities = () => {
 
         {/* Page 8 */}
         <div className="mt-10 bg-[#e1f3fd] p-4">
-          <h2>Heading</h2>
-          <br />
-          <h1 className="text-black text-4xl">
-            Program Objective/ Business Benefit
-          </h1>
-          <br />
-          <div className="flex gap-4">
-            <div className="w-1/3">
-              <h2 className="text-[#49c0ce] border-b-2 inline-block text-lg font-semibold">
-                Facilitate Transformative Learning
-              </h2>
-              <p>
-                Enable managers to discover and implement critical learning
-                experiences based on insights from high performers and
-                successful program graduates.
-              </p>
-              <br />
-              <h2 className="text-[#49c0ce] border-b-2 inline-block text-lg font-semibold">
-                Drive Self-Discovery and Growth
-              </h2>
-              <p>
-                Promote self-awareness among participants through structured
-                assessments and feedback mechanisms, helping them identify
-                strengths and critical gaps in their leadership capabilities.
-              </p>
-            </div>
-            <div className="w-1/3">
-              <h2 className="text-[#49c0ce] border-b-2 inline-block text-lg font-semibold">
-                Engage in Meaningful Collaboration
-              </h2>
-              <p>
-                Foster a collaborative environment where managers can engage in
-                discussions and share insights during focus group discussions
-                and mentorship sessions.
-              </p>
-              <br />
-              <h2 className="text-[#49c0ce] border-b-2 inline-block text-lg font-semibold">
-                Implement Actionable Strategies
-              </h2>
-              <p>
-                Equip managers with practical tools and strategies to drive
-                behavioral change, ensuring they can apply learning effectively
-                in their roles.
-              </p>
-            </div>
-            <div className="w-1/3">
-              <h2 className="text-[#49c0ce] border-b-2 inline-block text-lg font-semibold">
-                Align with Organizational Goals
-              </h2>
-              <p>
-                Ensure that the development journey aligns with Tata Consumer
-                Products strategic objectives, reinforcing a cohesive approach
-                to management excellence.
-              </p>
-            </div>
-          </div>
-          <br />
-          <h1 className="text-black text-4xl">Impact of business benefits</h1>
-          <br />
-          <div className="flex gap-4">
-            <div>
-              <h2 className="text-[#53c67e] border-b-2 inline-block text-lg font-semibold">
-                Heightened Engagement Levels
-              </h2>
-              <p>
-                The program cultivates an atmosphere of openness, driving higher
-                engagement levels among managers and their teams.
-              </p>
-              <br />
-              <h2 className="text-[#53c67e] border-b-2 inline-block text-lg font-semibold">
-                Stronger Interpersonal Networks
-              </h2>
-              <p>
-                Participants build a robust network of peer connections and
-                mentorship relationships that extend beyond the program,
-                enhancing collaboration across the organization.
-              </p>
-              <br />
-              <h2 className="text-[#53c67e] border-b-2 inline-block text-lg font-semibold">
-                Culture of Continuous Improvement
-              </h2>
-              <p>
-                The emphasis on behavioral change and self-direction will foster
-                a culture of continuous learning and improvement within TCPL.
-              </p>
-            </div>
-            <div>
-              <h2 className="text-[#53c67e] border-b-2 inline-block text-lg font-semibold">
-                Practical Application of Insights
-              </h2>
-              <p>
-                Managers will gain real-world insights and practical experience
-                that enhances their ability to lead effectively. making informed
-                decisions that positively impact business outcomes.
-              </p>
-              <br />
-              <h2 className="text-[#53c67e] border-b-2 inline-block text-lg font-semibold">
-                Sustainable Behavioral Transformation
-              </h2>
-              <p>
-                The structured approach to mentoring and feedback will ensure
-                that the behavioral changes initiated during the program are
-                sustained over time.
-              </p>
-            </div>
-            <div>
-              <h2 className="text-[#53c67e] border-b-2 inline-block text-lg font-semibold">
-                Increased Organizational Insight
-              </h2>
-              <p>
-                Participants will develop a deeper understanding of the business
-                landscape, enabling them to contribute meaningfully to strategic
-                discussions and initiatives.
-              </p>
-              <br />
-              <h2 className="text-[#53c67e] border-b-2 inline-block text-lg font-semibold">
-                Enhanced Confidence and Self-Efficacy
-              </h2>
-              <p>
-                The program will empower managers with the confidence to lead
-                initiatives and influence their teams, enhancing their overall
-                leadership effectiveness.
-              </p>
-            </div>
-          </div>
-          <br />
-          <img src={FBC18} alt="" className="w-[80vw] " />
-        </div>
+  <h2>Heading</h2>
+  <br />
+  <h1 className="text-black text-2xl md:text-4xl">
+    Program Objective/ Business Benefit
+  </h1>
+  <br />
+
+  {/* First Flex Section */}
+  <div className="flex flex-col md:flex-row gap-4">
+    <div className="w-full md:w-1/3">
+      <h2 className="text-[#49c0ce] border-b-2 inline-block text-lg font-semibold">
+        Facilitate Transformative Learning
+      </h2>
+      <p>
+        Enable managers to discover and implement critical learning experiences...
+      </p>
+      <br />
+      <h2 className="text-[#49c0ce] border-b-2 inline-block text-lg font-semibold">
+        Drive Self-Discovery and Growth
+      </h2>
+      <p>
+        Promote self-awareness among participants through structured assessments...
+      </p>
+    </div>
+
+    <div className="w-full md:w-1/3">
+      <h2 className="text-[#49c0ce] border-b-2 inline-block text-lg font-semibold">
+        Engage in Meaningful Collaboration
+      </h2>
+      <p>
+        Foster a collaborative environment where managers can engage...
+      </p>
+      <br />
+      <h2 className="text-[#49c0ce] border-b-2 inline-block text-lg font-semibold">
+        Implement Actionable Strategies
+      </h2>
+      <p>
+        Equip managers with practical tools and strategies to drive behavioral change...
+      </p>
+    </div>
+
+    <div className="w-full md:w-1/3">
+      <h2 className="text-[#49c0ce] border-b-2 inline-block text-lg font-semibold">
+        Align with Organizational Goals
+      </h2>
+      <p>
+        Ensure that the development journey aligns with Tata Consumer Products...
+      </p>
+    </div>
+  </div>
+
+  <br />
+  <h1 className="text-black text-2xl md:text-4xl">Impact of business benefits</h1>
+  <br />
+
+  {/* Second Flex Section */}
+  <div className="flex flex-col md:flex-row gap-4">
+    <div className="w-full md:w-1/3">
+      <h2 className="text-[#53c67e] border-b-2 inline-block text-lg font-semibold">
+        Heightened Engagement Levels
+      </h2>
+      <p>
+        The program cultivates an atmosphere of openness...
+      </p>
+      <br />
+      <h2 className="text-[#53c67e] border-b-2 inline-block text-lg font-semibold">
+        Stronger Interpersonal Networks
+      </h2>
+      <p>
+        Participants build a robust network of peer connections...
+      </p>
+      <br />
+      <h2 className="text-[#53c67e] border-b-2 inline-block text-lg font-semibold">
+        Culture of Continuous Improvement
+      </h2>
+      <p>
+        The emphasis on behavioral change and self-direction...
+      </p>
+    </div>
+
+    <div className="w-full md:w-1/3">
+      <h2 className="text-[#53c67e] border-b-2 inline-block text-lg font-semibold">
+        Practical Application of Insights
+      </h2>
+      <p>
+        Managers will gain real-world insights and practical experience...
+      </p>
+      <br />
+      <h2 className="text-[#53c67e] border-b-2 inline-block text-lg font-semibold">
+        Sustainable Behavioral Transformation
+      </h2>
+      <p>
+        The structured approach to mentoring and feedback...
+      </p>
+    </div>
+
+    <div className="w-full md:w-1/3">
+      <h2 className="text-[#53c67e] border-b-2 inline-block text-lg font-semibold">
+        Increased Organizational Insight
+      </h2>
+      <p>
+        Participants will develop a deeper understanding...
+      </p>
+      <br />
+      <h2 className="text-[#53c67e] border-b-2 inline-block text-lg font-semibold">
+        Enhanced Confidence and Self-Efficacy
+      </h2>
+      <p>
+        The program will empower managers with the confidence...
+      </p>
+    </div>
+  </div>
+
+  <br />
+  <motion.img
+    src={FBC18}
+    alt=""
+    className="w-full md:w-[80vw]"
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: true, amount: 0.5 }}
+    variants={imageCommonVariants}
+  />
+</div>
+
 
         {/* Page 9 */}
         <div className="mt-10 p-4">
@@ -1050,10 +1069,14 @@ const ForBetterCommunities = () => {
             </div>
 
             <div className="w-full md:w-1/2">
-              <img
+              <motion.img
                 src={FBC16}
                 alt="Employee Wellbeing"
                 className="w-full h-auto rounded-lg"
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={imageCommonVariants}
               />
             </div>
           </div>
@@ -1183,515 +1206,451 @@ const ForBetterCommunities = () => {
               </div>
             </div>
             <div>
-              <img src={FBC21} alt="" />
+              <motion.img
+                src={FBC21}
+                alt=""
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={imageCommonVariants}
+              />
             </div>
           </div>
         </div>
 
         {/* Page 12 */}
         <div className="mt-10 p-4 bg-[#f9f7f5] space-y-8">
+          {/* Top Section: Text and Image */}
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="space-y-4 md:w-2/3">
+              <h2 className="text-[#16b1ef] text-xl sm:text-2xl md:text-3xl font-semibold">
+                CULTIVATING A STRONG CULTURE OF SAFETY
+              </h2>
 
-  {/* Top Section: Text and Image */}
-  <div className="flex flex-col md:flex-row gap-6">
-    <div className="space-y-4 md:w-2/3">
-      <h2 className="text-[#16b1ef] text-xl sm:text-2xl md:text-3xl font-semibold">
-        CULTIVATING A STRONG CULTURE OF SAFETY
-      </h2>
+              <p>
+                Our unwavering dedication to cultivating a strong culture of
+                safety is encapsulated in our Safety, Health and Wellbeing
+                Policy. This policy is the cornerstone of our strategy to
+                implement robust safety protocols that safeguard our assets and
+                the health of our employees. We have implemented structured
+                programs and interventions to establish TCPL's H&S Policy and
+                program at Capital Foods and Organic India. We have established
+                a thorough Occupational Health and Safety Management System that
+                includes detailed risk assessments, customized action plans, and
+                emergency response procedures. The Health & Safety and
+                Environment Management System process has been renewed to
+                conform to ISO 45001 & ISO 14001 standards, with actions taken
+                towards self-reliance in implementing systems and compliance
+                in-house.
+              </p>
+              <p>
+                Our commitment to upholding stringent OHS standards is evidenced
+                by milestones such as achieving ISO 45001 certification for xx%
+                of our facilities worldwide (plantations excluded), conducting
+                extensive safety training initiatives, and maintaining an
+                exemplary safety track record. In FY 2024-25, our corporate team
+                conducted xx distinct safety training programs, engaging around
+                xxx employees for a total of xxx hours of safety training.
+              </p>
+              <p>
+                Governance Councils have been established with the Product
+                Supply Organization (PSO) to drive Operational Safety
+                Excellence. These councils facilitate a seamless communication
+                channel both from the top-down and bottom-up.
+              </p>
+              <p>
+                Our progress towards reducing or preventing health risks is
+                constantly evaluated against set targets, with internal
+                inspections conducted periodically. Our incident reporting and
+                investigation process has been revamped to include minor
+                incidents, as well. We have established protocols for
+                investigating all work-related injuries, illnesses, and
+                incidents. We take a proactive approach to Occupational Health
+                and Safety (OHS) by conducting comprehensive risk and hazard
+                assessments to identify potential workplace hazards. To mitigate
+                these risks, we implement targeted action plans with clear,
+                measurable objectives while also ensuring robust emergency
+                preparedness and response measures. Several safety improvement
+                actions have been initiated to minimize safety risks, including
+                assessing and strengthening the structural stability of the
+                plant and eliminating manual handling of chemicals through
+                process improvements. Operator engagement has been improved
+                through training and behavioral interventions. Safety during
+                intervention activities such as cleaning, setup changes, and
+                maintenance has also been enhanced. Additionally, we run Health
+                & Safety campaigns focused on specific hazards such as
+                electrical safety, hand injuries, and working at heights,
+                reinforcing proper control measures to prevent accidents. A
+                recent example of this commitment is the Machine Safety Risk
+                Assessment (MSRA), conducted to identify hazards related to hand
+                injuries and implement corrective and preventive measures.
+              </p>
+              <p>
+                Our ongoing training efforts and improved safety protocols have
+                strengthened our safety culture, resulting in zero fatalities
+                among employees and contractors and a low Lost Time Injury
+                Frequency Rate (LTIFR) of xxx for employees and xxx for
+                contractors. Additionally, OHS considerations are integrated
+                into our procurement and contractual processes.
+              </p>
+              <p>
+                To set the right expectations and promote a positive safety
+                culture, we have introduced a reward and recognition program for
+                safe behaviors and a consequence management system to address
+                unsafe behaviors. Looking ahead, we are dedicated to maintaining
+                this proactive stance, utilizing data to evaluate performance
+                and drive ongoing enhancements, and nurturing a culture where
+                safety is an integral part of our daily operations.
+              </p>
+            </div>
 
-      <p>Our unwavering dedication to
-cultivating a strong culture of safety
-is encapsulated in our Safety, Health
-and Wellbeing Policy. This policy is
-the cornerstone of our strategy to
-implement robust safety protocols
-that safeguard our assets and the
-health of our employees. We have
-implemented structured programs
-and interventions to establish TCPL’s
-H&S Policy and program at Capital
-Foods and Organic India. We have
-established a thorough Occupational
-Health and Safety Management
-System that includes detailed risk
-assessments, customized action
-plans, and emergency response
-procedures. The Health & Safety
-and Environment Management
-System process has been renewed
-to conform to ISO 45001 & ISO
-14001 standards, with actions
-taken towards self-reliance
-in implementing systems and
-compliance in-house.</p>
-      <p>Our commitment to upholding
-stringent OHS standards is
-evidenced by milestones such as
-achieving ISO 45001 certification
-for xx% of our facilities worldwide
-(plantations excluded), conducting
-extensive safety training initiatives,
-and maintaining an exemplary
-safety track record. In FY 2024-25,
-our corporate team conducted xx
-distinct safety training programs,
-engaging around xxx employees
-for a total of xxx hours of safety
-training.</p>
-      <p>Governance Councils have been
-established with the Product
-Supply Organization (PSO) to drive
-Operational Safety Excellence.
-These councils facilitate a seamless
-communication channel both from the
-top-down and bottom-up.</p>
-      <p>Our progress towards reducing or
-preventing health risks is constantly
-evaluated against set targets, with
-internal inspections conducted
-periodically. Our incident reporting
-and investigation process has been
-revamped to include minor incidents,
-as well. We have established
-protocols for investigating all
-work-related injuries, illnesses,
-and incidents. We take a proactive
-approach to Occupational Health
-and Safety (OHS) by conducting
-comprehensive risk and hazard
-assessments to identify potential
-workplace hazards. To mitigate
-these risks, we implement targeted
-action plans with clear, measurable
-objectives while also ensuring
-robust emergency preparedness and
-response measures. Several safety
-improvement actions have been
-initiated to minimize safety risks,
-including assessing and strengthening
-the structural stability of the plant
-and eliminating manual handling
-of chemicals through process
-improvements. Operator engagement
-has been improved through training
-and behavioral interventions. Safety
-during intervention activities such
-as cleaning, setup changes, and maintenance has also been enhanced.
-Additionally, we run Health & Safety
-campaigns focused on specific
-hazards such as electrical safety,
-hand injuries, and working at heights,
-reinforcing proper control measures to
-prevent accidents. A recent example
-of this commitment is the Machine
-Safety Risk Assessment (MSRA),
-conducted to identify hazards related
-to hand injuries and implement
-corrective and preventive measures.</p>
-      <p>Our ongoing training efforts and
-improved safety protocols have
-strengthened our safety culture,
-resulting in zero fatalities among
-employees and contractors and a
-low Lost Time Injury Frequency Rate
-(LTIFR) of xxx for employees and xxx
-for contractors. Additionally, OHS
-considerations are integrated into
-our procurement and contractual
-processes.</p>
-      <p>To set the right expectations and
-promote a positive safety culture,
-we have introduced a reward
-and recognition program for safe
-behaviors and a consequence
-management system to address
-unsafe behaviors. Looking ahead,
-we are dedicated to maintaining
-this proactive stance, utilizing data
-to evaluate performance and drive
-ongoing enhancements, and nurturing
-a culture where safety is an integral
-part of our daily operations.</p>
-    </div>
+            <div className="md:w-1/3">
+              <img
+                src={FBC22}
+                alt="Safety culture visual"
+                className="w-full h-auto object-cover rounded-md"
+              />
+            </div>
+          </div>
 
-    <div className="md:w-1/3">
-      <img src={FBC22} alt="Safety culture visual" className="w-full h-auto object-cover rounded-md" />
-    </div>
-  </div>
+          {/* Bottom Section: Highlights Grid */}
+          <div className="bg-[#f9f7f5] border border-[#5b95c9] p-4 md:p-6 rounded-md grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-4">
+              <p>
+                Proactive safety reporting of unsafe situations has increased by
+                <span className="bg-gradient-to-r text-2xl from-[#faeb29] to-[#009bdb] bg-clip-text text-transparent">
+                  {" "}
+                  1.7 times
+                </span>{" "}
+                compared to FY24.
+              </p>
+              <p>
+                H&S training manhours have started at 94,000, a
+                <span className="bg-gradient-to-r text-2xl from-[#faeb29] to-[#009bdb] bg-clip-text text-transparent">
+                  {" "}
+                  30% increase{" "}
+                </span>
+                from FY24.
+              </p>
+              <p>
+                All CFAs, Stand-Alone Warehouses, and Raw Tea Warehouses are set
+                to be
+                <span className="bg-gradient-to-r text-2xl from-[#faeb29] to-[#009bdb] bg-clip-text text-transparent">
+                  {" "}
+                  certified to ISO 45001
+                </span>{" "}
+                during this financial year.
+              </p>
+            </div>
 
-  {/* Bottom Section: Highlights Grid */}
-  <div className="bg-[#f9f7f5] border border-[#5b95c9] p-4 md:p-6 rounded-md grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div className="space-y-4">
-      <p>
-        Proactive safety reporting of unsafe situations has increased by 
-        <span className="bg-gradient-to-r text-2xl from-[#faeb29] to-[#009bdb] bg-clip-text text-transparent"> 1.7 times</span> compared to FY24.
-      </p>
-      <p>
-        H&S training manhours have started at 94,000, a
-        <span className="bg-gradient-to-r text-2xl from-[#faeb29] to-[#009bdb] bg-clip-text text-transparent"> 30% increase </span>from FY24.
-      </p>
-      <p>
-        All CFAs, Stand-Alone Warehouses, and Raw Tea Warehouses are set to be
-        <span className="bg-gradient-to-r text-2xl from-[#faeb29] to-[#009bdb] bg-clip-text text-transparent"> certified to ISO 45001</span> during this financial year.
-      </p>
-    </div>
-
-    <div className="space-y-4">
-      <p>
-        <span className="bg-gradient-to-r text-2xl from-[#faeb29] to-[#009bdb] bg-clip-text text-transparent">Six safety promotional campaigns</span> have been organized this
-        financial year ...
-      </p>
-      <p>
-        Organic India, Barabanki Plant EHS Management system is
-        <span className="bg-gradient-to-r text-2xl from-[#faeb29] to-[#009bdb] bg-clip-text text-transparent"> certified to ISO 45001:2018 and ISO 14001:2015</span> during this
-        financial year 2025.
-      </p>
-    </div>
-  </div>
-</div>
-
-
+            <div className="space-y-4">
+              <p>
+                <span className="bg-gradient-to-r text-2xl from-[#faeb29] to-[#009bdb] bg-clip-text text-transparent">
+                  Six safety promotional campaigns
+                </span>{" "}
+                have been organized this financial year ...
+              </p>
+              <p>
+                Organic India, Barabanki Plant EHS Management system is
+                <span className="bg-gradient-to-r text-2xl from-[#faeb29] to-[#009bdb] bg-clip-text text-transparent">
+                  {" "}
+                  certified to ISO 45001:2018 and ISO 14001:2015
+                </span>{" "}
+                during this financial year 2025.
+              </p>
+            </div>
+          </div>
+        </div>
 
         {/* Page 13 */}
         <div className="mt-10 bg-[#f8f6f4] p-4 sm:p-6 md:p-10 space-y-4">
-  <img src={FBC23} alt="DO-EHS dashboard" className="w-full h-auto object-contain" />
+          <img
+            src={FBC23}
+            alt="DO-EHS dashboard"
+            className="w-full h-auto object-contain"
+          />
 
-  <h2 className="text-[#16b1ef] text-xl sm:text-2xl md:text-3xl font-semibold">
-    DO- EHS: A DIGITAL PLATFORM FOR EHS MANAGEMENT
-  </h2>
+          <h2 className="text-[#16b1ef] text-xl sm:text-2xl md:text-3xl font-semibold">
+            DO- EHS: A DIGITAL PLATFORM FOR EHS MANAGEMENT
+          </h2>
 
-  <p className="text-sm sm:text-base leading-relaxed">
-    We developed the Digitally Operational (DO) – EHS tool to digitize all key operational EHS tasks, including Safety
-    Observation Reporting, Project Safety and Work Permits, Inspections & Monitoring, Audit and Incident Management, and
-    H&S Performance Measurement. Available on both web and mobile (with offline access), the tool ensures seamless task
-    execution by associate company employees in line with TCPL’s digital policy. It features real-time dashboards for leadership
-    and built-in performance evaluation and analytics for continuous improvement.
-  </p>
+          <p className="text-sm sm:text-base leading-relaxed">
+            We developed the Digitally Operational (DO) – EHS tool to digitize
+            all key operational EHS tasks, including Safety Observation
+            Reporting, Project Safety and Work Permits, Inspections &
+            Monitoring, Audit and Incident Management, and H&S Performance
+            Measurement. Available on both web and mobile (with offline access),
+            the tool ensures seamless task execution by associate company
+            employees in line with TCPL's digital policy. It features real-time
+            dashboards for leadership and built-in performance evaluation and
+            analytics for continuous improvement.
+          </p>
 
-  <img src={FBC24} alt="DO-EHS mobile interface" className="w-full h-auto object-contain" />
-</div>
-
+          <img
+            src={FBC24}
+            alt="DO-EHS mobile interface"
+            className="w-full h-auto object-contain"
+          />
+        </div>
 
         {/* Page 14 */}
         <div className="mt-10 p-4 space-y-6 bg-[#f9f7f5]">
-  <div className="flex flex-col md:flex-row gap-6">
-    <div className="space-y-4 flex-1">
-      <h2 className="text-[#1d6db5] text-2xl sm:text-3xl font-semibold">
-        PROMOTING EQUITABLE LABOR PRACTICES AND WORKPLACE ETHICS
-      </h2>
-      <h2 className="text-[#16b1ef] text-xl sm:text-2xl md:text-3xl font-semibold">
-        UPHOLDING HUMAN RIGHTS
-      </h2>
-      <p>
-      We are dedicated to safeguarding
-human rights across all aspects of
-our operations and value chain. In
-alignment with this commitment
-and the Tata Group’s human rights
-vision, we have established a
-Business and Human Rights Policy.
-This policy explicitly condemns all
-forms of harassment—whether
-mental, physical, sexual, or
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="space-y-4 flex-1">
+              <h2 className="text-[#1d6db5] text-2xl sm:text-3xl font-semibold">
+                PROMOTING EQUITABLE LABOR PRACTICES AND WORKPLACE ETHICS
+              </h2>
+              <h2 className="text-[#16b1ef] text-xl sm:text-2xl md:text-3xl font-semibold">
+                UPHOLDING HUMAN RIGHTS
+              </h2>
+              <p>
+                We are dedicated to safeguarding human rights across all aspects
+                of our operations and value chain. In alignment with this
+                commitment and the Tata Group's human rights vision, we have
+                established a Business and Human Rights Policy. This policy
+                explicitly condemns all forms of harassment—whether mental,
+                physical, sexual, or otherwise—and maintains a zero- tolerance
+                stance toward any form of discrimination. It mandates that any
+                discriminatory behavior or harassment will result in appropriate
+                corrective or disciplinary action.
+              </p>
+              <p>
+                The policy also outlines our proactive efforts to prevent
+                incidents of discrimination and harassment in the workplace,
+                supported by targeted training programs. Oversight of this
+                framework is provided by an Apex Committee, while a dedicated
+                Working Committee for Human Rights ensures its implementation at
+                the operational level.
+              </p>
+              <p>
+                Our commitment to human rights is further embedded in the Tata
+                Code of Conduct and the Supplier Code of Conduct, which include
+                provisions for human rights and establish mechanisms for
+                grievance reporting and resolution. These frameworks apply to
+                both our employees and partners across the value chain.
+              </p>
+              <p>
+                Additionally, we actively participate in industry initiatives
+                such as trustea (where we are a founding member) and the
+                Rainforest Alliance, which facilitate periodic assessments of
+                human rights impacts. All our Tata Coffee plantations are SA
+                8000 certified, reflecting our dedication to upholding human
+                rights in the workplace. Furthermore, three of our manufacturing
+                facilities have also achieved SA 8000 certification.
+              </p>
 
-otherwise—and maintains a zero-
-tolerance stance toward any form
+              <p className="border-2 p-4 border-[#9fc2e1]">
+                The trustea initiative in India, which has verified sales of
+                over
+                <span className="text-[#1267b3] text-3xl font-[400]">
+                  {" "}
+                  979 million kg of tea
+                </span>{" "}
+                by March 2024, has made a significant positive impact on human
+                rights within tea estates. The program has reached small-scale
+                tea producers and plantation workers, guaranteeing enhanced work
+                environments. This includes providing maternity benefits and
+                childcare options for female workers. Moreover, the program has
+                put in place systematic grievance resolution mechanisms, ensured
+                the provision of adequate housing and access to clean drinking
+                water, and standardized the wage payment process for those
+                employed in the tea industry.
+              </p>
 
-of discrimination. It mandates that
-any discriminatory behavior or
-harassment will result in appropriate
-corrective or disciplinary action.
-      </p>
-      <p>
-      The policy also outlines our proactive
-efforts to prevent incidents of
-discrimination and harassment in the
-workplace, supported by targeted
-training programs. Oversight of
-this framework is provided by an
-Apex Committee, while a dedicated
-Working Committee for Human
-Rights ensures its implementation at
-the operational level.
-      </p>
-      <p>
-      Our commitment to human rights is
-further embedded in the Tata Code
-of Conduct and the Supplier Code of
-Conduct, which include provisions
-for human rights and establish
-mechanisms for grievance reporting
-and resolution. These frameworks
-apply to both our employees and
-partners across the value chain.
-      </p>
-      <p>
-      Additionally, we actively participate
-in industry initiatives such as trustea
-(where we are a founding member)
-and the Rainforest Alliance, which
+              <h2 className="text-[#16b1ef] text-xl sm:text-2xl md:text-3xl font-semibold">
+                COLLECTIVE BARGAINING AND WORKER RIGHTS
+              </h2>
+              <p>
+                TCPL recognizes the importance of trade unions in safeguarding
+                workers' rights. Approximately 96% of our workforce is
+                represented by independent trade unions or collective bargaining
+                agreements. We maintain a strong foundation of trust with all
+                employee and worker groups, engaging in transparent and fair
+                negotiations to ensure best-in-class working conditions,
+                benefits, and wages.
+              </p>
+              <p>
+                Our commitment to equity extends to equal pay for all genders
+                and job roles. We also ensure that all employees, including
+                those from contractors, suppliers, and franchisees, receive
+                wages that comply with legal standards and meet basic living
+                needs.
+              </p>
+            </div>
 
-facilitate periodic assessments of
-human rights impacts. All our Tata
-Coffee plantations are SA 8000
-certified, reflecting our dedication
-to upholding human rights in the
-workplace. Furthermore, three
-of our manufacturing facilities
-have also achieved SA 8000
-certification.
-      </p>
-
-      <p className="border-2 p-4 border-[#9fc2e1]">
-      The trustea initiative in India,
-which has verified sales
-of over
-        <span className="text-[#1267b3] text-3xl font-[400]"> 979 million kg of tea</span> by March
-2024, has made a significant
-positive impact on human
-rights within tea estates.
-The program has reached
-small-scale tea producers
-and plantation workers,
-guaranteeing enhanced work
-environments. This includes
-providing maternity benefits
-and childcare options for
-female workers. Moreover,
-the program has put in
-place systematic grievance
-resolution mechanisms,
-ensured the provision of
-adequate housing and access
-to clean drinking water,
-and standardized the wage
-payment process for those
-employed in the tea industry.
-      </p>
-
-      <h2 className="text-[#16b1ef] text-xl sm:text-2xl md:text-3xl font-semibold">
-        COLLECTIVE BARGAINING AND WORKER RIGHTS
-      </h2>
-      <p>
-      TCPL recognizes the importance
-of trade unions in safeguarding
-workers’ rights. Approximately 96%
-of our workforce is represented by
-independent trade unions or collective
-bargaining agreements. We maintain
-a strong foundation of trust with all
-employee and worker groups, engaging
-in transparent and fair negotiations
-to ensure best-in-class working
-conditions, benefits, and wages.
-      </p>
-      <p>
-      Our commitment to equity extends
-to equal pay for all genders and
-job roles. We also ensure that all
-employees, including those from
-contractors, suppliers, and franchisees,
-receive wages that comply with legal
-standards and meet basic living needs.
-      </p>
-    </div>
-
-    <div className="flex justify-center md:justify-end md:w-[40%]">
-    <motion.img 
-  src={FBC25} 
-  alt="" 
-  className="w-full max-w-[80vh] h-auto object-contain" 
-  initial="hidden"
-  whileInView="show"
-  viewport={{ once: true, amount: 0.5 }} 
-  variants={imageCommonVariants} 
-/>
-
-    </div>
-  </div>
-</div>
-
+            <div className="flex justify-center md:justify-end md:w-[40%]">
+              <motion.img
+                src={FBC25}
+                alt=""
+                className="w-full max-w-[80vh] h-auto object-contain"
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={imageCommonVariants}
+              />
+            </div>
+          </div>
+        </div>
 
         {/* Page 15 */}
         <div className="mt-10 p-4 bg-[#f8f6f4] space-y-6">
-  <h2 className="text-[#1d6db5] text-2xl sm:text-3xl font-semibold">
-    EMPOWERING OUR COMMUNITIES
-  </h2>
+          <h2 className="text-[#1d6db5] text-2xl sm:text-3xl font-semibold">
+            EMPOWERING OUR COMMUNITIES
+          </h2>
 
-  <p>
-  We are committed to upholding the
-Tata Group’s legacy of exceptional
-corporate social responsibility (CSR)
-and contributing meaningfully to
-the nation’s progress. Community is
-pivotal to the Tata mission and is at
-the heart of everything we do, how
-we think and who we are. Through
-strategic partnerships, impactful
-projects, and dedicated efforts, we aim
-to uplift and support the communities
-where we operate.
-  </p>
+          <p>
+            We are committed to upholding the Tata Group's legacy of exceptional
+            corporate social responsibility (CSR) and contributing meaningfully
+            to the nation's progress. Community is pivotal to the Tata mission
+            and is at the heart of everything we do, how we think and who we
+            are. Through strategic partnerships, impactful projects, and
+            dedicated efforts, we aim to uplift and support the communities
+            where we operate.
+          </p>
 
-  <div className="flex flex-col md:flex-row gap-6">
-    <div className="space-y-4 flex-1">
-      <h2 className="text-[#16b1ef] text-xl sm:text-2xl md:text-3xl font-semibold">
-        CSR VISION
-      </h2>
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="space-y-4 flex-1">
+              <h2 className="text-[#16b1ef] text-xl sm:text-2xl md:text-3xl font-semibold">
+                CSR VISION
+              </h2>
 
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-[600] bg-gradient-to-r from-[#22b456] to-[#04ade3] bg-clip-text text-transparent">
-      Tata Consumer Products (TCP)
-aspires to be the world’s most
-admired natural food and beverages
-company, creating a meaningful
-and lasting impact through its
-commitment to Sustainability and
-Corporate Social Responsibility.
-      </h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-[600] bg-gradient-to-r from-[#22b456] to-[#04ade3] bg-clip-text text-transparent">
+                Tata Consumer Products (TCP) aspires to be the world's most
+                admired natural food and beverages company, creating a
+                meaningful and lasting impact through its commitment to
+                Sustainability and Corporate Social Responsibility.
+              </h2>
 
-      <p>
-      Guided by the theme of Fostering
-Sustainable Livelihoods, our
-CSR initiatives focus on enabling
-socio-economic progress within
-communities. TCPL supports access
-to education, vocational training,
-affordable healthcare, water and
-sanitation, and rural development
-programs. These efforts are designed
-to create sustainable opportunities
-and improve the quality of life for the
-communities we serve.
-      </p>
-    </div>
+              <p>
+                Guided by the theme of Fostering Sustainable Livelihoods, our
+                CSR initiatives focus on enabling socio-economic progress within
+                communities. TCPL supports access to education, vocational
+                training, affordable healthcare, water and sanitation, and rural
+                development programs. These efforts are designed to create
+                sustainable opportunities and improve the quality of life for
+                the communities we serve.
+              </p>
+            </div>
 
-    <div className="flex justify-center md:justify-end md:w-[40%]">
-      <img src={FBC26} alt="" className="w-full max-w-[80vh] h-auto object-contain" />
-    </div>
-  </div>
+            <div className="flex justify-center md:justify-end md:w-[40%]">
+              <motion.img
+                src={FBC26}
+                alt=""
+                className="w-full max-w-[80vh] h-auto object-contain"
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={imageCommonVariants}
+              />
+            </div>
+          </div>
 
-  <img src={FBC27} alt="" className="w-full max-w-full h-auto object-contain" />
+          <img
+            src={FBC27}
+            alt=""
+            className="w-full max-w-full h-auto object-contain"
+          />
 
-  <p>
-  TCPL is committed to creating a lasting impact, with a goal to reach 2 million community members by FY 2030. As of
-FY25, we have already benefited xxx individuals, supported by xxx employee volunteering hours, reflecting our ongoing
-dedication to social responsibility.
-  </p>
-</div>
-
-
+          <p>
+            TCPL is committed to creating a lasting impact, with a goal to reach
+            2 million community members by FY 2030. As of FY25, we have already
+            benefited xxx individuals, supported by xxx employee volunteering
+            hours, reflecting our ongoing dedication to social responsibility.
+          </p>
+        </div>
 
         {/* Page 16 */}
         <div className="mt-10 p-4  space-y-4">
-        <img src={FBC28} alt="" />
-        <p>Our Corporate Social Responsibility
-(CSR) initiatives are designed with a
-commitment to making a meaningful
-impact, prioritizing the needs of
-disadvantaged communities, including
-those below the poverty line (BPL),
-individuals with disabilities, women,
-and children. We strive to implement
-these programs through collaborative
-partnerships with governments,
-non-governmental organizations
-(NGOs), and other key stakeholders
-to ensure sustainable and inclusive
-development.</p>
-<p>TCPL is committed to creating a
-lasting impact, with a goal to reach
-2 million community members by FY
-2030. As of FY25, we have already
-benefited xxx individuals, supported
-by xxx employee volunteering hours,
-reflecting our ongoing dedication to
-social responsibility.</p>
-        
+          <motion.img
+            src={FBC28}
+            alt=""
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={imageCommonVariants}
+          />
+          <p>
+            Our Corporate Social Responsibility (CSR) initiatives are designed
+            with a commitment to making a meaningful impact, prioritizing the
+            needs of disadvantaged communities, including those below the
+            poverty line (BPL), individuals with disabilities, women, and
+            children. We strive to implement these programs through
+            collaborative partnerships with governments, non-governmental
+            organizations (NGOs), and other key stakeholders to ensure
+            sustainable and inclusive development.
+          </p>
+          <p>
+            TCPL is committed to creating a lasting impact, with a goal to reach
+            2 million community members by FY 2030. As of FY25, we have already
+            benefited xxx individuals, supported by xxx employee volunteering
+            hours, reflecting our ongoing dedication to social responsibility.
+          </p>
         </div>
 
+        {/* Page 17 */}
+        <div className="mt-10 p-4 flex flex-col md:flex-row gap-6">
+          <motion.img
+            src={FBC29}
+            alt=""
+            className="w-full max-w-[80vh] "
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={imageCommonVariants}
+          />
 
-          {/* Page 17 */}
-          <div className="mt-10 p-4 flex flex-col md:flex-row gap-6">
+          <div className="space-y-4">
+            <h2 className="text-[#16b1ef] text-xl sm:text-2xl md:text-3xl font-semibold">
+              CSR GOVERNANCE
+            </h2>
 
-    <img src={FBC29} alt="" className="w-full max-w-[80vh] " />
+            <p>
+              We have established a robust governance framework to oversee the
+              implementation of our CSR initiatives. This structure is led by
+              the Corporate Social Responsibility & Sustainability Committee
+              (CSR&S Committee) of the Board, which delegates authority to a
+              working committee to act on its behalf. The formation of this
+              committee complies with the requirements of Section 135 of the
+              Companies Act, 2013. The CSR&S Committee is responsible for
+              formulating and recommending the CSR policy, identifying CSR
+              activities, approving expenditures, and monitoring the execution
+              of CSR projects.
+            </p>
 
+            <p>
+              Volunteering plays a crucial role in fostering strong connections
+              between our employees and the communities we serve. It not only
+              enhances our employees' sense of purpose and engagement but also
+              significantly contributes to the well-being of the community.
+            </p>
 
-  <div className="space-y-4">
-    <h2 className="text-[#16b1ef] text-xl sm:text-2xl md:text-3xl font-semibold">
-      CSR GOVERNANCE
-    </h2>
+            <p>
+              This year, we are proud to report a record-breaking 63,183
+              volunteering hours by our dedicated employees. This translates to
+              an impressive average of 6.34 volunteering hours per employee, a
+              substantial increase from last year. These efforts underscore our
+              commitment to making a positive impact and highlight the integral
+              role our employees play in driving our community-focused
+              initiatives. We will continue to be guided by the Tata values and
+              principles in all our endeavours with the community.
+            </p>
 
-    <p>
-    We have established a robust
-governance framework to oversee the
-implementation of our CSR initiatives.
-This structure is led by the Corporate Social Responsibility & Sustainability
-Committee (CSR&S Committee) of the
-Board, which delegates authority to a
-working committee to act on its behalf.
-The formation of this committee
-complies with the requirements
-of Section 135 of the Companies
-Act, 2013. The CSR&S Committee
-is responsible for formulating and
-recommending the CSR policy,
-identifying CSR activities, approving
-expenditures, and monitoring the
-execution of CSR projects.
-    </p>
+            <p>
+              We engage with foundations such as APPL, TGBL, Coorg, TCSRD, and
+              Trust RIHP, enhancing our outreach and efficacy.
+            </p>
 
-    <p>
-    Volunteering plays a crucial role in
-fostering strong connections between
-our employees and the communities
-we serve. It not only enhances our
-employees’ sense of purpose and
-engagement but also significantly
-contributes to the well-being of the
-community.
-    </p>
-
-    <p>
-    This year, we are proud to report a
-record-breaking 63,183 volunteering
-hours by our dedicated employees.
-This translates to an impressive
-average of 6.34 volunteering hours per employee, a substantial increase from
-last year. These efforts underscore
-our commitment to making a positive
-impact and highlight the integral
-role our employees play in driving
-our community-focused initiatives.
-We will continue to be guided by the
-Tata values and principles in all our
-endeavours with the community.
-    </p>
-
-    <p>
-    We engage with foundations such as
-APPL, TGBL, Coorg, TCSRD, and Trust
-RIHP, enhancing our outreach and
-efficacy.
-    </p>
-
-    <p>
-    Throughout FY25, Tata Consumer
-has rolled out an extensive array
-of CSR initiatives, reflecting our
-deep commitment to social and
-environmental betterment. From this
-comprehensive CSR portfolio, we have
-curated a selection of initiatives to
-provide a glimpse into the impactful
-work we are doing. These examples,
-drawn from a broader array of
-projects, highlight our commitment
-to driving positive change within the
-communities we serve.
-    </p>
-  </div>
-</div>
-
-
+            <p>
+              Throughout FY25, Tata Consumer has rolled out an extensive array
+              of CSR initiatives, reflecting our deep commitment to social and
+              environmental betterment. From this comprehensive CSR portfolio,
+              we have curated a selection of initiatives to provide a glimpse
+              into the impactful work we are doing. These examples, drawn from a
+              broader array of projects, highlight our commitment to driving
+              positive change within the communities we serve.
+            </p>
+          </div>
+        </div>
 
         {/* Page 18 */}
         <div className="mt-10 p-4  space-y-4">
@@ -1701,22 +1660,47 @@ communities we serve.
 
         {/* Page 19 */}
 
-        <motion.div className="flex mt-10 p-4"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }} // 60% in view triggers
-        variants={parentVariants}
+        <motion.div
+          className="flex mt-10 p-4"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }} // 60% in view triggers
+          variants={parentVariants}
         >
-          <motion.img src={FBC35} alt=""  className="w-1/3" variants={imageVariants}/>
-          <motion.img src={FBC34} alt="" className="w-1/3" variants={imageVariants}/>
-          <motion.img src={FBC33} alt="" className="w-1/3" variants={imageVariants}/>
+          <motion.img
+            src={FBC35}
+            alt=""
+            className="w-1/3"
+            variants={imageVariants}
+          />
+          <motion.img
+            src={FBC34}
+            alt=""
+            className="w-1/3"
+            variants={imageVariants}
+          />
+          <motion.img
+            src={FBC33}
+            alt=""
+            className="w-1/3"
+            variants={imageVariants}
+          />
         </motion.div>
 
-        <div className="p-4 mt-10">
-        <img src={FBC32} alt="" />
+        <div className="p-4 space-y-4 mt-10">
+          <h2 className="text-[#16b1ef] text-xl sm:text-2xl md:text-3xl font-semibold">INTERPLAY OF CAPITALS</h2>
+          <div className="flex justify-center ">
+          <motion.img
+            src={FBC32}
+            alt=""
+            className="h-[50vh] object-contain"
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={imageCommonVariants}
+          />
+          </div>
         </div>
-
-
       </div>
     </>
   );

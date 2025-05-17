@@ -46,6 +46,15 @@ const sectionVariants = {
   },
 };
 
+const imageCommonVariants = {
+  hidden: { opacity: 0, scale: 0.8 },
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
+
 const sectionchildVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: {
@@ -104,7 +113,7 @@ const ForBetterNutrition = () => {
     <>
       <div className="mx-10">
         <div className="flex flex-col gap-10">
-          {/* Page 1 */}
+
           <div>
             <Page
               text="Nutrition"
@@ -115,85 +124,85 @@ const ForBetterNutrition = () => {
               img3={img3}
             />
           </div>
-
+        </div>
+        {/* Page 1 */}
+        <motion.div
+          className="mt-10 flex   flex-col sm:flex-row gap-10"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }} // 60% in view triggers
+          variants={parentVariants}
+        >
+          {/* Images Section */}
           <motion.div
-            className="mt-10 flex sm:mr-20  flex-col sm:flex-row gap-10"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }} // 60% in view triggers
+            className="mt-10  flex flex-col sm:flex-row gap-10"
             variants={parentVariants}
           >
-            {/* Images Section */}
-            <motion.div
-              className="mt-10  flex flex-col sm:flex-row gap-10"
-              variants={parentVariants}
-            >
-              <motion.img
-                src={FBN4}
-                alt=""
-                className="w-[70vh] sm:w-[70vh]"
-                variants={imageVariants}
-              />
-              <motion.img
-                src={FBN5}
-                alt=""
-                className="w-[70vh] sm:w-[50vh]"
-                variants={imageVariants}
-              />
-              <motion.div className=" sm:w-1/4 " variants={textVariants}>
-                <h1 className=" text-[#176ab4] text-2xl sm:text-3xl font-[500]">
-                  VISION
+            <motion.img
+              src={FBN4}
+              alt=""
+              className="w-[70vh] sm:w-[70vh]"
+              variants={imageVariants}
+            />
+            <motion.img
+              src={FBN5}
+              alt=""
+              className="w-[70vh] sm:w-[50vh]"
+              variants={imageVariants}
+            />
+            <motion.div className=" sm:w-1/4 " variants={textVariants}>
+              <h1 className=" text-[#176ab4] text-2xl sm:text-3xl font-[500]">
+                VISION
+              </h1>
+              <p className="bg-gradient-to-r from-[#0db14e] to-[#10b0ef] bg-clip-text text-transparent font-[400] mt-7 text-xl sm:text-3xl">
+                Our vision is to improve access to healthy, natural, and safe
+                food for our consumers through our portfolio of great-tasting
+                products designed to enhance health and well-being.
+              </p>
+              <div className="flex flex-col gap-4">
+                <h1 className="mt-10 text-[#176ab4] text-2xl sm:text-3xl font-[500]">
+                  PERFORMANCE HIGHLIGHTS
                 </h1>
-                <p className="bg-gradient-to-r from-[#0db14e] to-[#10b0ef] bg-clip-text text-transparent font-[400] mt-7 text-xl sm:text-3xl">
-                  Our vision is to improve access to healthy, natural, and safe
-                  food for our consumers through our portfolio of great-tasting
-                  products designed to enhance health and well-being.
-                </p>
-                <div className="flex flex-col gap-4">
-                  <h1 className="mt-10 text-[#176ab4] text-2xl sm:text-3xl font-[500]">
-                    PERFORMANCE HIGHLIGHTS
-                  </h1>
-                  <div>
-                    <span className="text-[#aeafb0] font-[400] text-lg sm:text-xl">
-                      In FY'25 health and wellness-focused new product launches
-                      made up
-                    </span>
-                    <span className="text-[#2bb75f] font-[500] text-xl sm:text-2xl">
-                      29%
-                    </span>
-                    <span className="text-[#aeafb0] font-[400] text-lg sm:text-xl">
-                      (12 of 41) of our total offerings.
-                    </span>
-                  </div>
-                  <div className="border-b-2 border-[#aeafb0] my-4"></div>
-                  <div>
-                    <span className="text-[#aeafb0] font-[400] text-lg sm:text-xl">
-                      Instituted a
-                    </span>
-                    <span className="text-[#2bb75f] font-[500] text-xl sm:text-2xl">
-                      'For Better'
-                    </span>
-                    <span className="text-[#aeafb0] font-[400] text-lg sm:text-xl">
-                      Nutrition Policy, that is anchored in nutrition science,
-                      global recommendations (such as UN's SDG goals), local
-                      regulations and government recommendations.
-                    </span>
-                  </div>
+                <div>
+                  <span className="text-[#959493] font-[400] text-lg sm:text-xl">
+                    In FY'25 health and wellness-focused new product launches
+                    made up
+                  </span>
+                  <span className="text-[#2bb75f] font-[500] text-xl sm:text-2xl">
+                    29%
+                  </span>
+                  <span className="text-[#959493] font-[400] text-lg sm:text-xl">
+                    (12 of 41) of our total offerings.
+                  </span>
                 </div>
-              </motion.div>
+                <div className="border-b-2 border-[#aeafb0] my-4"></div>
+                <div>
+                  <span className="text-[#959493] font-[400] text-lg sm:text-xl">
+                    Instituted a
+                  </span>
+                  <span className="text-[#2bb75f] font-[500] text-xl sm:text-2xl">
+                    'For Better'
+                  </span>
+                  <span className="text-[#959493] font-[400] text-lg sm:text-xl">
+                    Nutrition Policy, that is anchored in nutrition science,
+                    global recommendations (such as UN's SDG goals), local
+                    regulations and government recommendations.
+                  </span>
+                </div>
+              </div>
             </motion.div>
-
-            {/* Text Section */}
           </motion.div>
-        </div>
+
+          {/* Text Section */}
+        </motion.div>
 
         {/* Page 2 */}
         <motion.div
-          className="gap-10 opacity-100 sm:opacity-0" // This ensures opacity changes for smaller screens
+  
           variants={sectionVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }} // 60% trigger
+          viewport={{ once: true, amount: 0.2 }} // 60% trigger
         >
           <div className="flex flex-col gap-7 mt-10 bg-[#f1eee9] p-6 sm:p-10 text-base text-[#959493]">
             <h2 className="text-[#1d6db5] text-2xl sm:text-3xl font-[600]">
@@ -246,10 +255,14 @@ const ForBetterNutrition = () => {
 
         {/* Page 3 */}
         <div className="mt-10 flex flex-col lg:flex-row gap-6 lg:gap-10 text-[#969798]">
-          <img
+          <motion.img
             src={FBN8}
             alt=""
             className="h-[auto] sm:h-[50vh] lg:h-[70vh] w-full lg:w-1/2 object-cover"
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={imageCommonVariants}
           />
           <div className="w-full lg:w-1/2 flex flex-col gap-6 lg:gap-10">
             <img src={FBN7} alt="" className="w-full" />
@@ -271,10 +284,14 @@ const ForBetterNutrition = () => {
 
         {/* Page 4 */}
         <div className="flex mt-10 gap-6 lg:gap-10 flex-col lg:flex-row">
-          <img
+          <motion.img
             src={FBN9}
             alt=""
             className="h-[auto] sm:h-[50vh] lg:h-[70vh] w-full lg:w-1/2 object-cover"
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={imageCommonVariants}
           />
           <div className="w-full lg:w-1/2">
             <p className="text-[#969798] text-lg">
@@ -415,10 +432,14 @@ const ForBetterNutrition = () => {
             />
           </div>
           <div className="w-full lg:w-1/2">
-            <img
+            <motion.img
               src={FBN15}
               alt=""
               className="w-full h-[auto] sm:h-[70vh] object-contain"
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={imageCommonVariants}
             />
           </div>
         </div>
@@ -426,10 +447,14 @@ const ForBetterNutrition = () => {
         {/* Page 8 */}
         <div className="mt-10 items-center justify-center flex flex-col lg:flex-row gap-6 lg:gap-10">
           <div className="w-full lg:w-1/2">
-            <img
+            <motion.img
               src={FBN17}
               alt=""
               className="w-full h-[auto] lg:h-[60vh] object-cover"
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={imageCommonVariants}
             />
           </div>
           <div className="flex w-full lg:w-1/2 flex-col gap-4 lg:gap-6">
@@ -502,7 +527,7 @@ const ForBetterNutrition = () => {
               evolving consumer needs and industry standards.
             </p>
             <motion.div
-              className="flex gap-4"
+              className="hidden md:flex gap-4"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.6 }}
@@ -541,14 +566,16 @@ const ForBetterNutrition = () => {
               />
             </motion.div>
           </div>
-          <img
+          <motion.img
             src={FBN18}
             alt=""
             className="w-full lg:w-1/2 h-[auto] lg:h-[60vh] object-cover mt-6 lg:mt-0"
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={imageCommonVariants}
           />
         </div>
-
-        {/* Page 10 */}
 
         {/* Page 10 */}
         <div className="bg-[#f1eee9] flex flex-col gap-10 mt-10 p-4 lg:p-10">
@@ -655,10 +682,14 @@ const ForBetterNutrition = () => {
             </p>
           </div>
           <div className="w-full lg:w-1/2 flex justify-center mt-4 lg:mt-0">
-            <img
+            <motion.img
               src={FBN27}
               alt=""
               className="w-full max-w-[70vh] object-contain"
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={imageCommonVariants}
             />
           </div>
         </div>
