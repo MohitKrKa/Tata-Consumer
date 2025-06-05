@@ -1,8 +1,8 @@
 import React from "react";
-import FinincialChart from "./Chart/FinincialChart";
+import FinancialChart from "./Chart/FinincialChart";
 import SegmentalChart from "./Chart/SegmentalChart";
-
-const Finincial_data = [
+import Heading from '../Heading'
+const Financial_data = [
   { title: "Revenue from Operations", key: "RFO" },
   { title: "EDITBA", key: "EB" },
   { title: "Profile Before Tax and Exceptional Items", key: "PBT" },
@@ -14,92 +14,95 @@ const Finincial_data = [
   { title: "Non-branded Business", key: "NBA" },
 ];
 
-const Finincial = {
+const Financial = {
   RFO: [
     { year: "FY 20-21", value: 11602 },
     { year: "FY 21-22", value: 12425 },
     { year: "FY 22-23", value: 13783 },
     { year: "FY 23-24", value: 15206 },
-    { year: "FY 24-25", value: 15206 },
+    { year: "FY 24-25", value: 17618 },
   ],
   EB: [
     { year: "FY 20-21", value: 1569 },
     { year: "FY 21-22", value: 1749 },
     { year: "FY 22-23", value: 1874 },
     { year: "FY 23-24", value: 2323 },
-    { year: "FY 24-25", value: 2323 },
+    { year: "FY 24-25", value: 2502 },
   ],
   PBT: [
     { year: "FY 20-21", value: 1342 },
     { year: "FY 21-22", value: 1508 },
     { year: "FY 22-23", value: 1634 },
     { year: "FY 23-24", value: 2023 },
-    { year: "FY 24-25", value: 2023 },
+    { year: "FY 24-25", value: 1782 },
   ],
   GNT: [
     { year: "FY 20-21", value: 945 },
     { year: "FY 21-22", value: 1056 },
     { year: "FY 22-23", value: 1174 },
     { year: "FY 23-24", value: 1516 },
-    { year: "FY 24-25", value: 1516 },
+    { year: "FY 24-25", value: 1252 },
   ],
   ROCE: [
     { year: "FY 20-21", value: 34.7 },
     { year: "FY 21-22", value: 32.8 },
     { year: "FY 22-23", value: 34.3 },
     { year: "FY 23-24", value: 43.3 },
-    { year: "FY 24-25", value: 43.3 },
+    { year: "FY 24-25", value: 37.5 },
   ],
   DIVIDEND: [
     { year: "FY 20-21", value: 405 },
     { year: "FY 21-22", value: 605 },
     { year: "FY 22-23", value: 845 },
     { year: "FY 23-24", value: 775 },
-    { year: "FY 24-25", value: 775 },
+    { year: "FY 24-25", value: 825 },
   ],
   IndiaB: [
     { year: "FY 20-21", value: 7003 },
     { year: "FY 21-22", value: 7003 },
     { year: "FY 22-23", value: 8717 },
     { year: "FY 23-24", value: 9736 },
-    { year: "FY 24-25", value: 9736 },
+    { year: "FY 24-25", value: 11241 },
   ],
   IB: [
     { year: "FY 20-21", value: 3508 },
     { year: "FY 21-22", value: 3336 },
     { year: "FY 22-23", value: 3589 },
     { year: "FY 23-24", value: 3925 },
-    { year: "FY 24-25", value: 3925 },
+    { year: "FY 24-25", value: 4549 },
   ],
   NBA: [
     { year: "FY 20-21", value: 1122 },
     { year: "FY 21-22", value: 1214 },
     { year: "FY 22-23", value: 1500 },
     { year: "FY 23-24", value: 1577 },
-    { year: "FY 24-25", value: 1577 },
+    { year: "FY 24-25", value: 1910 },
   ],
 };
 
-export default function FinincialPage() {
+export default function FinancialPage() {
   const [selectedKey, setSelectedKey] = React.useState("RFO");
-  const [view, setView] = React.useState("finincial"); // NEW state
+  const [view, setView] = React.useState("Financial"); // NEW state
 
   return (
-    <div className="px-4 overflow-hidden mt-20 md:px-10 py-6 w-screen ">
+    <div className="px-4 overflow-hidden pt-10 md:px-10  w-screen ">
+       <div className='pb-10'>
+      <Heading color="black" title="Financial and Operational Highlights" linecolor="#0072CE" />
+      </div>
       {/* Toggle Buttons */}
       <div className="flex justify-center   max-w-[100%] gap-4 mb-6">
         <button
-          onClick={() => setView("finincial")}
-          className={`px-6 cursor-pointer w-full py-4 rounded-lg text-sm md:text-base transition ${
-            view === "finincial" ? "bg-[#0363c6] text-white" : "bg-[#2c8bdf] text-white"
+          onClick={() => setView("Financial")}
+          className={`px-6 cursor-pointer w-full py-4 rounded-lg text-sm md:text-base transition font-semibold ${
+            view === "Financial" ? "bg-[#2c8bdf] text-white" : "border-2 border-[#2c8bdf] text-[#2c8bdf]"
           }`}
         >
-          Finincial
+          Financial
         </button>
         <button
           onClick={() => setView("segmental")}
-          className={`px-6 py-2 cursor-pointer w-full rounded-lg text-sm md:text-base transition ${
-            view === "segmental" ? "bg-[#0363c6] text-white" : "bg-[#2c8bdf] text-white"
+          className={`px-6 py-2 cursor-pointer w-full rounded-lg text-sm md:text-base transition font-semibold ${
+            view === "segmental" ? "bg-[#2c8bdf] text-white" : "border-2 border-[#2c8bdf] text-[#2c8bdf]"
           }`}
         >
           Segmental
@@ -107,24 +110,24 @@ export default function FinincialPage() {
       </div>
 
       {/* Conditional Views */}
-      {view === "finincial" ? (
+      {view === "Financial" ? (
         <div className="flex  flex-col items-center">
           <div className="flex flex-wrap  justify-center gap-4 md:gap-6 mb-6">
-            {Finincial_data.map((item) => (
+            {Financial_data.map((item) => (
               <button
                 key={item.key}
                 onClick={() => setSelectedKey(item.key)}
-                className={`text-sm md:text-base  px-4 py-2 rounded-lg cursor-pointer transition ${
+                className={`text-sm md:text-base  px-4 py-2 rounded-lg cursor-pointer transition font-semibold ${
                   selectedKey === item.key
-                    ? "bg-[#0363c6] text-white"
-                    : "bg-[#2c8bdf] text-white"
+                    ? "bg-[#2c8bdf] text-white"
+                    : "border-2 border-[#2c8bdf] text-[#2c8bdf]"
                 }`}
               >
                 {item.title}
               </button>
             ))}
           </div>
-          <FinincialChart data={Finincial[selectedKey]} />
+          <FinancialChart data={Financial[selectedKey]} />
         </div>
       ) : (
 

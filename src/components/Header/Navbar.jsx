@@ -7,46 +7,50 @@ import logo1 from "/logo1.webp";
 const navItems = [
   { label: "Home", path: "/" },
   {
-    label: "Business Momentum",path:"/BusinessMomentum",
+    label: "Business Momentum",
+    path: "/BusinessMomentum",
     submenu: [
-      "Chairman's Message",
-      "MD & CEO's Message",
-      "Business Landscape",
-      "Financial and Operational Highlights",
-      "Year in Review",
-      "Spotlight on Recognitions",
+      { label: "Chairman's Message", path: "/business-momentum/chairman-message" },
+      { label: "MD & CEO's Message", path: "/business-momentum/ceo-message" },
+      { label: "Business Landscape", path: "/business-momentum/landscape" },
+      { label: "Financial and Operational Highlights", path: "/business-momentum/highlights" },
+      { label: "Year in Review", path: "/business-momentum/year-review" },
+      { label: "Spotlight on Recognitions", path: "/business-momentum/recognitions" },
     ],
   },
   {
     label: "Delivering on Strategy",
+    path: "/strategy",
     submenu: [
-      "Recalibrated Strategy",
-      "Strengthen Core & Accelerate Growth Businesses",
-      "Build on New Opportunities",
-      "Drive Execution Excellence Everyday",
-      "Create a Future-ready Organisation",
-      "Drive Digital & Innovation",
-      "Embed Sustainability",
+      // { label: "Recalibrated Strategy", path: "/strategy/recalibrated" },
+      { label: "Strengthen Core & Accelerate Growth Businesses", path: "/strategy/core-growth" },
+      { label: "Build on New Opportunities", path: "/strategy/opportunities" },
+      { label: "Drive Execution Excellence Everyday", path: "/strategy/execution" },
+      { label: "Create a Future-ready Organisation", path: "/strategy/future-ready" },
+      { label: "Drive Digital & Innovation", path: "/strategy/digital" },
+      { label: "Embed Sustainability", path: "/strategy/sustainability" },
     ],
   },
   {
-    label: "Sustainability",path:"/sustainability",
+    label: "Sustainability",
+    path: "/sustainability",
     submenu: [
-      "ESG Highlights",
-      "ESG Governance",
-      "Better Nutrition",
-      "Better Sourcing",
-      "Better Planet",
-      "Better Communities",
+      { label: "ESG Highlights", path: "/sustainability/esg-highlights" },
+      { label: "ESG Governance", path: "/sustainability/esg-governance" },
+      { label: "Better Nutrition", path: "/sustainability/nutrition" },
+      { label: "Better Sourcing", path: "/sustainability/sourcing" },
+      { label: "Better Planet", path: "/sustainability/planet" },
+      { label: "Better Communities", path: "/sustainability/communities" },
     ],
   },
   {
     label: "Sustaining Value",
+    path: "/value",
     submenu: [
-      "Stakeholder Value Creation",
-      "Materiality",
-      "Risk Management",
-      "Governance",
+      { label: "Stakeholder Value Creation", path: "/value/stakeholder" },
+      { label: "Materiality", path: "/value/materiality" },
+      { label: "Risk Management", path: "/value/risk" },
+      { label: "Governance", path: "/value/governance" },
     ],
   },
 ];
@@ -65,7 +69,7 @@ export default function Navbar() {
   const handleMouseLeave = () => {
     timeoutRef.current = setTimeout(() => {
       setOpenSubmenuDesktop(null);
-    }, 150); // Adjust this delay (in milliseconds) as needed
+    }, 150);
   };
 
   const handleSubmenuMouseEnter = () => {
@@ -77,8 +81,8 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-[#ffffff] fixed w-screen  text-[#848484]">
-      <div className="ml-11 mr-11 py-3 flex justify-center gap-20 items-center">
+    <nav className="bg-[#ffffff] sticky top-0 z-50 w-screen text-[#848484]">
+      <div className="py-3 flex justify-center gap-4 items-center">
         <img src={logo} alt="" />
         <div className="md:hidden">
           <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -87,7 +91,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-6 justify-center items-center">
+        <ul className="hidden md:flex gap-5 justify-center items-center">
           {navItems.map((item, idx) => (
             <li
               key={idx}
@@ -97,14 +101,14 @@ export default function Navbar() {
             >
               <a
                 href={item.path || "#"}
-                className="flex items-center gap-1 p-4 hover:bg-[#236ab4] hover:text-white rounded-2xl transition"
+                className="flex items-center gap-1 p-2 hover:bg-[#236ab4] hover:text-white rounded-2xl transition"
               >
                 {item.label}
                 {item.submenu && <ChevronDown size={20} />}
               </a>
               {item.submenu && (
                 <ul
-                  className={`absolute left-0 mt-2 bg-white text-black shadow-md rounded-md py-2 w-90 transform transition duration-300 z-10 ${
+                  className={`absolute left-0 mt-2 bg-white text-black shadow-md rounded-md py-2 transform transition duration-300 z-10 ${
                     openSubmenuDesktop === idx
                       ? "opacity-100 translate-y-1 pointer-events-auto"
                       : "opacity-0 translate-y-4 pointer-events-none"
@@ -125,7 +129,7 @@ export default function Navbar() {
                       }}
                     >
                       <motion.div
-                        className="absolute inset-0 h-8 bg-[#90c5fe] z-0 rounded-md"
+                        className="absolute inset-0 bg-[#90c5fe] z-0 rounded-md"
                         variants={{
                           rest: { opacity: 0 },
                           hover: { opacity: 1 },
@@ -133,10 +137,10 @@ export default function Navbar() {
                         transition={{ duration: 0.3 }}
                       />
                       <motion.a
-                        href="#"
+                        href={sub.path}
                         className="block relative z-10 text-sm"
                       >
-                        {sub}
+                        {sub.label}
                       </motion.a>
 
                       {/* Underline */}
@@ -188,8 +192,8 @@ export default function Navbar() {
                   <ul className="mt-2 space-y-2 pl-4 text-gray-300">
                     {item.submenu.map((sub, i) => (
                       <li key={i}>
-                        <a href="#" className="block hover:text-[#236ab4]">
-                          {sub}
+                        <a href={sub.path} className="block hover:text-[#236ab4]">
+                          {sub.label}
                         </a>
                       </li>
                     ))}

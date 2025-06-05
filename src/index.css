@@ -1,4 +1,61 @@
 @import "tailwindcss";
 
+/* .clip-left-triangle {
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.clip-right-triangle {
+  clip-path: polygon(100% 0, 100% 100%, 0 0);
+} */
+
+.skew-top2 {
+  clip-path: polygon(0 40px, 100% 0, 100% 100%, 0 100%);
+}
+
+.skew-top {
+  clip-path: polygon(0 60px, 100% 0, 100% 100%, 0 100%);
+}
+
+.skew-bottom {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 30px));
+}
 
 
+.skew-top-bottom {
+  clip-path: polygon(0 60px, 100% 0, 100% calc(100% - 15px), 0 100%);
+}
+
+.skew-left {
+  clip-path: polygon(60px 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.skew-right {
+  clip-path: polygon(0 0, 100% 0, calc(100% - 110px) 100%, 0 100%);
+}
+.triangle-bottom-right {
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.triangle-top-left {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+
+
+
+
+
+/* src/styles/fonts.css */
+
+@font-face {
+  font-family: 'Muli';
+  src: url('/muli/MULI-REGULAR.TTF') format('truetype');
+  font-style: normal;
+}
+
+
+
+
+body {
+  font-family: 'Muli', sans-serif;
+}

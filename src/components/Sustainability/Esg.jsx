@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import Target1 from "/Sustainability/Target1.png";
-import Target2 from "/Sustainability/Target2.png";
-import highlight1 from "/Sustainability/highlight1.png";
-import highlight2 from "/Sustainability/highlight2.png";
-import highlight3 from "/Sustainability/highlight3.png";
+import Target1 from "/Sustainability/Target1.webp";
+import Target2 from "/Sustainability/Target2.webp";
+import highlight1 from "/Sustainability/highlight1.webp";
+import highlight2 from "/Sustainability/highlight2.webp";
+import highlight3 from "/Sustainability/highlight3.webp";
 
 // Animation settings
 const parentVariants = {
@@ -33,7 +33,7 @@ const childVariants = {
 
 const Esg = () => {
   return (
-    <div className="m-6 md:m-10 lg:m-20 flex flex-col lg:flex-row gap-6 lg:gap-10">
+    <div className="m-6 md:m-10 lg:m-20 flex flex-col lg:flex-row gap-6 lg:gap-10 pt-10">
       {/* Left content */}
       <motion.div
         className="w-full lg:w-1/2 flex flex-col gap-6 lg:gap-8"

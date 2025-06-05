@@ -19,8 +19,8 @@ const SegmentalChart = () => {
       },
       {
         year2: "FY 24-25",
-        value1: 67,
-        value2: 33,
+        value1: 71,
+        value2: 29,
         compare1: "India",
         compare2: "International",
       },
@@ -35,8 +35,8 @@ const SegmentalChart = () => {
       },
       {
         year: "FY 24-25",
-        value1: 67,
-        value2: 33,
+        value1: 51,
+        value2: 49,
         compare1: "Beverages",
         compare2: "Food",
       },
@@ -51,8 +51,8 @@ const SegmentalChart = () => {
       },
       {
         year: "FY 24-25",
-        value1: 67,
-        value2: 33,
+        value1: 72,
+        value2: 28,
         compare1: "Core",
         compare2: "Growth",
       },
@@ -103,7 +103,7 @@ const SegmentalChart = () => {
               cy={size / 2}
               r={radius}
               fill="transparent"
-              stroke="#008ffb"
+              stroke="#1368b4"
               strokeWidth={stroke}
               strokeDasharray={circumference}
               strokeDashoffset={circumference}
@@ -117,7 +117,7 @@ const SegmentalChart = () => {
               cy={size / 2}
               r={radius}
               fill="transparent"
-              stroke="#00e396"
+              stroke="#02adbd"
               strokeWidth={stroke}
               strokeDasharray={circumference}
               strokeDashoffset={circumference}
@@ -136,12 +136,12 @@ const SegmentalChart = () => {
         <div className="flex items-center gap-4 text-xs text-gray-500">
           {/* Segment 2 (Left side) */}
           <div className="flex items-center gap-1">
-            <span className="w-3 h-3 rounded-full bg-[#00e396] inline-block" />
+            <span className="w-3 h-3 rounded-full bg-[#02adbd] inline-block" />
             {compare2}: {value2}%
           </div>
           {/* Segment 1 (Right side) */}
           <div className="flex items-center gap-1">
-            <span className="w-3 h-3 rounded-full bg-[#008ffb] inline-block" />
+            <span className="w-3 h-3 rounded-full bg-[#1368b4] inline-block" />
             {compare1}: {value1}%
           </div>
         </div>
@@ -158,8 +158,8 @@ const SegmentalChart = () => {
             onClick={() => setSelectedKey(item.key)}
             className={`text-sm md:text-base px-4 py-2 rounded-lg cursor-pointer transition ${
               selectedKey === item.key
-                ? "bg-[#0363c6] text-white"
-                : "bg-[#2c8bdf] text-white"
+                ? "bg-[#2c8bdf] text-white"
+                    : "border-2 border-[#2c8bdf] text-[#2c8bdf]"
             }`}
           >
             {item.title}

@@ -1,15 +1,15 @@
 import React from "react";
-import esgG1 from "/Sustainability/esgG1.png";
-import esgG2 from "/Sustainability/esgG2.png";
-import esgG3 from "/Sustainability/esgG3.png";
-import esgG4 from "/Sustainability/esgG4.png";
-import esgG5 from "/Sustainability/esgG5.png";
-import esgG6 from "/Sustainability/esgG6.png";
-import esgG7 from "/Sustainability/esgG7.png";
-import esgG8 from "/Sustainability/esgG8.png";
-import esgG9 from "/Sustainability/esgG9.png";
-import esgG10 from "/Sustainability/esgG10.png";
-import esgG11 from "/Sustainability/esgG11.png";
+import esgG1 from "/Sustainability/esgG1.webp";
+import esgG2 from "/Sustainability/esgG2.webp";
+import esgG3 from "/Sustainability/esgG3.webp";
+import esgG4 from "/Sustainability/esgG4.webp";
+import esgG5 from "/Sustainability/esgG5.webp";
+import esgG6 from "/Sustainability/esgG6.webp";
+import esgG7 from "/Sustainability/esgG7.webp";
+import esgG8 from "/Sustainability/esgG8.webp";
+import esgG9 from "/Sustainability/esgG9.webp";
+import esgG10 from "/Sustainability/esgG10.webp";
+import esgG11 from "/Sustainability/esgG11.webp";
 import { motion } from "framer-motion";
 
 const parentVariants = {
@@ -46,7 +46,7 @@ const childVariants = {
 const EsgGovernance = () => {
   return (
     <>
-      <div className="m-5 md:m-10 mt-20  flex flex-col md:flex-row gap-10">
+      <div className="m-5 md:m-10 mt-20  flex flex-col md:flex-row gap-10 pt-10">
         {/* Left */}
         <div className="relative w-full md:w-1/2 bg-[#00acbc] text-white text-5xl md:text-7xl flex items-center justify-center">
           <img src={esgG1} alt="" className="h-[80vh] object-cover" />
@@ -74,7 +74,7 @@ const EsgGovernance = () => {
           <motion.img
             src={esgG2}
             alt=""
-            className="h-[40vh] md:h-[60vh] object-contain"
+            className=""
             initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.5 }}
@@ -121,25 +121,30 @@ const EsgGovernance = () => {
         </motion.div>
       </div>
 
-      <div className="m-5 md:m-10 mt-20 flex flex-col md:flex-row gap-6">
-        <motion.img src={esgG6} alt="" className="w-full md:w-[75%] object-cover"
+      <div className="m-5 md:m-10 mt-20 flex flex-col  gap-6">
+        <motion.img src={esgG6} alt="" className=""
         initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.5 }}
               variants={imageCommonVariants}
         />
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-row gap-6">
+          <div className="w-[50%]">
           <p className="text-[#959493] font-[400] text-base md:text-xl">
             Our targeted ESG endeavours have contributed to enhanced operational
             efficiency and risk management and have been appreciated by a
             multitude of stakeholders.
           </p>
-          <img src={esgG7} alt="" className="w-full object-contain" />
+         
           <p className="text-[#959493] font-[400] text-base md:text-xl">
             Building on a robust ESG governance structure, we have established
             well-defined ESG targets to further scale our sustainability
             efforts.
           </p>
+          </div>
+          <div className="w-[50%]">
+          <img src={esgG7} alt="" className="" />
+          </div>
         </div>
       </div>
 

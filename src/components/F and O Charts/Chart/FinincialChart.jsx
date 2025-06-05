@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
-const FinincialChart = ({ data }) => {
+const FinancialChart = ({ data }) => {
   const chartRef = useRef(null);
   const [maxBarHeight, setMaxBarHeight] = useState(0);
 
@@ -108,4 +108,4 @@ const FinincialChart = ({ data }) => {
   );
 };
 
-export default FinincialChart;
+export default FinancialChart;

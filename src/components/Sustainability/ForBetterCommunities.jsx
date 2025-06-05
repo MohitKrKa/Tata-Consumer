@@ -1,45 +1,45 @@
 import React from "react";
 import Page from "../Page";
-import FBC4 from "/Sustainability/FBC/FBC4.png";
-import FBC5 from "/Sustainability/FBC/FBC5.png";
-import FBC6 from "/Sustainability/FBC/FBC6.png";
-import FBC7 from "/Sustainability/FBC/FBC7.png";
-import FBC8 from "/Sustainability/FBC/FBC8.png";
-import FBC9 from "/Sustainability/FBC/FBC9.png";
-import FBC10 from "/Sustainability/FBC/FBC10.png";
-import FBC11 from "/Sustainability/FBC/FBC11.png";
-import FBC12 from "/Sustainability/FBC/FBC12.png";
-import FBC13 from "/Sustainability/FBC/FBC13.png";
-import FBC14 from "/Sustainability/FBC/FBC14.png";
-import FBC15 from "/Sustainability/FBC/FBC15.png";
-import FBC16 from "/Sustainability/FBC/FBC16.png";
-import FBC17 from "/Sustainability/FBC/FBC17.png";
-import FBC18 from "/Sustainability/FBC/FBC18.png";
-import FBC19 from "/Sustainability/FBC/FBC19.png";
-import FBC20 from "/Sustainability/FBC/FBC20.png";
-import FBC21 from "/Sustainability/FBC/FBC21.png";
-import FBC22 from "/Sustainability/FBC/FBC22.png";
-import FBC23 from "/Sustainability/FBC/FBC23.png";
-import FBC24 from "/Sustainability/FBC/FBC24.png";
-import FBC25 from "/Sustainability/FBC/FBC25.png";
-import FBC26 from "/Sustainability/FBC/FBC26.png";
-import FBC27 from "/Sustainability/FBC/FBC27.png";
-import FBC28 from "/Sustainability/FBC/FBC28.png";
-import FBC29 from "/Sustainability/FBC/FBC29.png";
-import FBC30 from "/Sustainability/FBC/FBC30.png";
-import FBC31 from "/Sustainability/FBC/FBC31.png";
-import FBC32 from "/Sustainability/FBC/FBC32.png";
-import FBC33 from "/Sustainability/FBC/FBC33.png";
-import FBC34 from "/Sustainability/FBC/FBC34.png";
-import FBC35 from "/Sustainability/FBC/FBC35.png";
+import FBC4 from "/Sustainability/FBC/FBC4.webp";
+import FBC5 from "/Sustainability/FBC/FBC5.webp";
+import FBC6 from "/Sustainability/FBC/FBC6.webp";
+import FBC7 from "/Sustainability/FBC/FBC7.webp";
+import FBC8 from "/Sustainability/FBC/FBC8.webp";
+import FBC9 from "/Sustainability/FBC/FBC9.webp";
+import FBC10 from "/Sustainability/FBC/FBC10.webp";
+import FBC11 from "/Sustainability/FBC/FBC11.webp";
+import FBC12 from "/Sustainability/FBC/FBC12.webp";
+import FBC13 from "/Sustainability/FBC/FBC13.webp";
+import FBC14 from "/Sustainability/FBC/FBC14.webp";
+import FBC15 from "/Sustainability/FBC/FBC15.webp";
+import FBC16 from "/Sustainability/FBC/FBC16.webp";
+import FBC17 from "/Sustainability/FBC/FBC17.webp";
+import FBC18 from "/Sustainability/FBC/FBC18.webp";
+import FBC19 from "/Sustainability/FBC/FBC19.webp";
+import FBC20 from "/Sustainability/FBC/FBC20.webp";
+import FBC21 from "/Sustainability/FBC/FBC21.webp";
+import FBC22 from "/Sustainability/FBC/FBC22.webp";
+import FBC23 from "/Sustainability/FBC/FBC23.webp";
+import FBC24 from "/Sustainability/FBC/FBC24.webp";
+import FBC25 from "/Sustainability/FBC/FBC25.webp";
+import FBC26 from "/Sustainability/FBC/FBC26.webp";
+import FBC27 from "/Sustainability/FBC/FBC27.webp";
+import FBC28 from "/Sustainability/FBC/FBC28.webp";
+import FBC29 from "/Sustainability/FBC/FBC29.webp";
+import FBC30 from "/Sustainability/FBC/FBC30.webp";
+import FBC31 from "/Sustainability/FBC/FBC31.webp";
+import FBC32 from "/Sustainability/FBC/FBC32.webp";
+import FBC33 from "/Sustainability/FBC/FBC33.webp";
+import FBC34 from "/Sustainability/FBC/FBC34.webp";
+import FBC35 from "/Sustainability/FBC/FBC35.webp";
 import { motion } from "framer-motion";
 
 const para =
   "The 'For Better Communities' pillarhighlights our unwavering commitment to prioritizing our people and communities as key stakeholders in all our initiatives. We strive to implement innovative, systemic solutions that enhance the quality of human life. This pillar also emphasizes our dedication to fostering diversity, equity, and inclusion within the workplace.";
 
-const img1 = "/Sustainability/FBC/FBC1.png";
-const img2 = "/Sustainability/FBC/FBC2.png";
-const img3 = "/Sustainability/FBC/FBC3.png";
+const img1 = "/Sustainability/FBC/FBC1.webp";
+const img2 = "/Sustainability/FBC/FBC2.webp";
+const img3 = "/Sustainability/FBC/FBC3.webp";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -97,6 +97,7 @@ const ForBetterCommunities = () => {
   return (
     <>
       <div className="mt-10 ml-10 mr-10 text-[#969798] text-base">
+        <div className='flex flex-col gap-10'>
         <Page
           text="Communities"
           head1="Thriving Together"
@@ -105,7 +106,7 @@ const ForBetterCommunities = () => {
           img2={img2}
           img3={img3}
         />
-
+</div>
         {/* Page 1 */}
 
         <motion.div
@@ -123,7 +124,7 @@ const ForBetterCommunities = () => {
             <motion.img
               src={FBC4}
               alt=""
-              className="w-[70vh] sm:w-[60vh]"
+              className=""
               variants={imageVariants}
             />
             <motion.div
@@ -141,12 +142,12 @@ const ForBetterCommunities = () => {
                 </p>
               </div>
 
-              <img src={FBC6} alt="" className="w-[70vh] sm:w-[50vh]" />
+              <img src={FBC6} alt="" className="" />
             </motion.div>
             <motion.img
               src={FBC5}
               alt=""
-              className="w-[70vh] sm:w-[50vh]"
+              className=""
               variants={imageVariants}
             />
           </motion.div>
@@ -160,7 +161,7 @@ const ForBetterCommunities = () => {
             <img
               src={FBC7}
               alt="Fostering Workforce"
-              className="w-full h-auto"
+              className=""
             />
           </div>
           <div className="flex flex-col w-full lg:w-2/3 gap-6">
@@ -319,7 +320,7 @@ const ForBetterCommunities = () => {
               <motion.img
                 src={FBC9}
                 alt=""
-                className="w-full h-[60vh] max-h-[55vh] object-cover"
+                className=""
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.5 }}
@@ -343,7 +344,7 @@ const ForBetterCommunities = () => {
               innovation-driven ethos. We have also received recognition in the
               Unstop Talent Meet 2025 in the following categories -
             </p>
-            <img src="jhv" alt="Image will be here" className="w-full h-auto" />
+            <img src="jhv" alt="Image will be here" className="w" />
           </div>
         </div>
 

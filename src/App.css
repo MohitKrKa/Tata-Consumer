@@ -1,0 +1,13 @@
+.marginal{
+    width: 86%;
+    max-width: 1500px;
+    margin-left:  auto;
+    margin-right:  auto;
+}
+.clip-left-triangle {
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+  }
+  
+  .clip-right-triangle {
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  }

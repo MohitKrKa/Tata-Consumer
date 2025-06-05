@@ -1,36 +1,36 @@
 import React from "react";
 import Page from "../Page";
-import FBN4 from "/Sustainability/FBN4.png";
-import FBN5 from "/Sustainability/FBN5.png";
-import FBN6 from "/Sustainability/FBN6.png";
-import FBN7 from "/Sustainability/FBN7.png";
-import FBN8 from "/Sustainability/FBN8.png";
-import FBN9 from "/Sustainability/FBN9.png";
-import FBN11 from "/Sustainability/FBN11.png";
-import FBN12 from "/Sustainability/FBN12.png";
-import FBN14 from "/Sustainability/FBN14.png";
-import FBN15 from "/Sustainability/FBN15.png";
-import FBN16 from "/Sustainability/FBN16.png";
-import FBN17 from "/Sustainability/FBN17.png";
-import FBN18 from "/Sustainability/FBN18.png";
-import FBN19 from "/Sustainability/FBN19.png";
-import FBN20 from "/Sustainability/FBN20.png";
-import FBN21 from "/Sustainability/FBN21.png";
-import FBN22 from "/Sustainability/FBN22.png";
-import FBN23 from "/Sustainability/FBN23.png";
-import FBN24 from "/Sustainability/FBN24.png";
-import FBN25 from "/Sustainability/FBN25.png";
-import FBN26 from "/Sustainability/FBN26.png";
-import FBN27 from "/Sustainability/FBN27.png";
+import FBN4 from "/Sustainability/FBN4.webp";
+import FBN5 from "/Sustainability/FBN5.webp";
+import FBN6 from "/Sustainability/FBN6.webp";
+import FBN7 from "/Sustainability/FBN7.webp";
+import FBN8 from "/Sustainability/FBN8.webp";
+import FBN9 from "/Sustainability/FBN9.webp";
+import FBN11 from "/Sustainability/FBN11.webp";
+import FBN12 from "/Sustainability/FBN12.webp";
+import FBN14 from "/Sustainability/FBN14.webp";
+import FBN15 from "/Sustainability/FBN15.webp";
+import FBN16 from "/Sustainability/FBN16.webp";
+import FBN17 from "/Sustainability/FBN17.webp";
+import FBN18 from "/Sustainability/FBN18.webp";
+import FBN19 from "/Sustainability/FBN19.webp";
+import FBN20 from "/Sustainability/FBN20.webp";
+import FBN21 from "/Sustainability/FBN21.webp";
+import FBN22 from "/Sustainability/FBN22.webp";
+import FBN23 from "/Sustainability/FBN23.webp";
+import FBN24 from "/Sustainability/FBN24.webp";
+import FBN25 from "/Sustainability/FBN25.webp";
+import FBN26 from "/Sustainability/FBN26.webp";
+import FBN27 from "/Sustainability/FBN27.webp";
 
 import { motion } from "framer-motion";
 
 const parag =
   "At Tata Consumer Products, we nourish millions daily, seamlessly blending our food and beverage expertise with the growing appetite for better nutrition and wellness. Our adept understanding of consumer health trends shapes the plethora of products that we offer, helping us strengthen brand loyalty and market leadership.";
 
-const img1 = "/Sustainability/FBN1.png";
-const img2 = "/Sustainability/FBN2.png";
-const img3 = "/Sustainability/FBN3.png";
+const img1 = "/Sustainability/FBN1.webp";
+const img2 = "/Sustainability/FBN2.webp";
+const img3 = "/Sustainability/FBN3.webp";
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 100 },
@@ -126,41 +126,19 @@ const ForBetterNutrition = () => {
           </div>
         </div>
         {/* Page 1 */}
-        <motion.div
-          className="mt-10 flex   flex-col sm:flex-row gap-10"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }} // 60% in view triggers
-          variants={parentVariants}
+        <div
+          className="mt-5 flex   flex-col sm:flex-row gap-5"
         >
           {/* Images Section */}
-          <motion.div
-            className="mt-10  flex flex-col sm:flex-row gap-10"
-            variants={parentVariants}
-          >
-            <motion.img
+         
+            <div className="w-[60%]">
+            <img
               src={FBN4}
               alt=""
-              className="w-[70vh] sm:w-[70vh]"
-              variants={imageVariants}
+              className="w-[80%]"
             />
-            <motion.img
-              src={FBN5}
-              alt=""
-              className="w-[70vh] sm:w-[50vh]"
-              variants={imageVariants}
-            />
-            <motion.div className=" sm:w-1/4 " variants={textVariants}>
-              <h1 className=" text-[#176ab4] text-2xl sm:text-3xl font-[500]">
-                VISION
-              </h1>
-              <p className="bg-gradient-to-r from-[#0db14e] to-[#10b0ef] bg-clip-text text-transparent font-[400] mt-7 text-xl sm:text-3xl">
-                Our vision is to improve access to healthy, natural, and safe
-                food for our consumers through our portfolio of great-tasting
-                products designed to enhance health and well-being.
-              </p>
-              <div className="flex flex-col gap-4">
-                <h1 className="mt-10 text-[#176ab4] text-2xl sm:text-3xl font-[500]">
+             <div className="flex flex-col gap-4">
+                <h1 className="mt-5 text-[#176ab4] text-2xl sm:text-3xl font-[500]">
                   PERFORMANCE HIGHLIGHTS
                 </h1>
                 <div>
@@ -169,7 +147,7 @@ const ForBetterNutrition = () => {
                     made up
                   </span>
                   <span className="text-[#2bb75f] font-[500] text-xl sm:text-2xl">
-                    29%
+                     29% 
                   </span>
                   <span className="text-[#959493] font-[400] text-lg sm:text-xl">
                     (12 of 41) of our total offerings.
@@ -190,11 +168,28 @@ const ForBetterNutrition = () => {
                   </span>
                 </div>
               </div>
-            </motion.div>
-          </motion.div>
-
+            </div>
+           
+            <div className="w-[40%]" >
+              <h1 className=" text-[#176ab4] text-2xl sm:text-3xl font-[500]">
+                VISION
+              </h1>
+              <p className="bg-gradient-to-r from-[#0db14e] to-[#10b0ef] bg-clip-text text-transparent font-[400] mt-2 text-xl sm:text-3xl">
+                Our vision is to improve access to healthy, natural, and safe
+                food for our consumers through our portfolio of great-tasting
+                products designed to enhance health and well-being.
+              </p>
+              <div className="">
+            <img
+              src={FBN5}
+              alt=""
+              className=""
+            />
+            </div>
+            </div>
+          
           {/* Text Section */}
-        </motion.div>
+        </div>
 
         {/* Page 2 */}
         <motion.div
@@ -225,8 +220,10 @@ const ForBetterNutrition = () => {
               </p>
             </div>
 
-            <div className="flex flex-col lg:flex-row gap-4 lg:gap-6">
-              <img src={FBN6} alt="" className="w-full lg:w-[60vh]" />
+            <div className="flex flex-col lg:flex-ro gap-4 lg:gap-6">
+              <div>
+              <img src={FBN6} alt="" className="" />
+              </div>
               <p className="text-base sm:text-lg mt-4 lg:mt-0">
                 Our 'For Better Nutrition' pillar focuses on expanding access to
                 nutrition by offering affordable, nutrient-enriched products,
@@ -254,19 +251,23 @@ const ForBetterNutrition = () => {
         </motion.div>
 
         {/* Page 3 */}
-        <div className="mt-10 flex flex-col lg:flex-row gap-6 lg:gap-10 text-[#969798]">
+        <div className="mt-5 flex flex-col  gap-6  text-[#969798]">
+          <div>
           <motion.img
-            src={FBN8}
+            src={FBN7}
             alt=""
-            className="h-[auto] sm:h-[50vh] lg:h-[70vh] w-full lg:w-1/2 object-cover"
+            className=""
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.5 }}
             variants={imageCommonVariants}
           />
-          <div className="w-full lg:w-1/2 flex flex-col gap-6 lg:gap-10">
-            <img src={FBN7} alt="" className="w-full" />
-            <p className="text-lg">
+          </div>
+          <div className=" flex flex-col md:flex-row gap-6 lg:gap-10">
+            <div className="w-[50%]">
+            <img src={FBN8} alt="" className="" />
+            </div>
+            <div className="text-lg w-[50%]">
               TCPL's Advisory Committee for Nutrition Policy is chaired by our
               Global Head of R&D and Chief Human Resource and Sustainability
               Officer. The Committee comprised of all Executive Committee
@@ -278,16 +279,16 @@ const ForBetterNutrition = () => {
               drives innovation, continuously enhancing the nutritional value of
               our products, while ensuring clear and transparent communication
               of their benefits.
-            </p>
+            </div>
           </div>
         </div>
 
         {/* Page 4 */}
-        <div className="flex mt-10 gap-6 lg:gap-10 flex-col lg:flex-row">
+        <div className="flex mt-5 gap-6  flex-col lg:flex-row">
           <motion.img
             src={FBN9}
             alt=""
-            className="h-[auto] sm:h-[50vh] lg:h-[70vh] w-full lg:w-1/2 object-cover"
+            className="h-[auto] sm:h-[50vh] lg:h-[70vh] w-full lg:w-1/2 object-cover "
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.5 }}
@@ -304,19 +305,16 @@ const ForBetterNutrition = () => {
 
         {/* Page 5 */}
         <motion.div
-          className="p-6 mt-10  gap-6 hidden md:flex lg:gap-10 justify-center items-center bg-[#eff9fd] flex-col lg:flex-row"
-          variants={parentVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.6 }}
+          className="p-6 mt-5  gap-6  md:flex  justify-center items-start   bg-[#eff9fd] flex-col lg:flex-row"
+          
         >
           <motion.div
-            className="flex flex-col gap-6 text-[1.4vh] text-[#969798]"
-            variants={parentVariants}
+            className="flex flex-col gap-6 text-[1.4vh] text-[#969798] relative"
+            // variants={parentVariants}
           >
             <motion.div
-              className="flex flex-col gap-6 lg:gap-10"
-              variants={childVariants}
+              className="flex flex-col gap-6 lg:gap-10 "
+              // variants={childVariants}
             >
               <h2 className="text-[#1d6db5] text-2xl sm:text-[2.5vh] font-[600]">
                 ENRICHING THE NUTRIENT PROFILE
@@ -375,7 +373,7 @@ const ForBetterNutrition = () => {
             src={FBN11}
             alt=""
             variants={childVariants}
-            className="w-full lg:w-[80vh] h-[auto] sm:h-[40vh] object-contain mt-6 lg:mt-0"
+            className=" sticky top-0 w-full lg:w-[80vh]   object-contain mt-10 lg:mt-0"
           />
         </motion.div>
 
