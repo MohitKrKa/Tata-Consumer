@@ -2,7 +2,7 @@ import React from 'react'
 
 const Planet22th_page = () => {
   return (
-    <div className='w-[90%] mx-[5%] px-3 mb-5' >
+    <div className='marginal text-lg' >
 <div className='mb-2'>
   <img src="/104.webp" alt="" />
 </div>

@@ -39,6 +39,10 @@ import Materiality from "./components/SustainingValuesComponents/Materiality";
 import RiskMgt from "./components/SustainingValuesComponents/RiskMgt";
 import StakeholderValueCreation from "./components/SustainingValuesComponents/StakeholderValueCreation";
 import SDG from "./components/SustainingValuesComponents/SDG";
+import Gratitude_detail1 from "./components/comp/Gratitude_detail1";
+import Gratitude_detail2 from "./components/comp/Gratitude_detail2";
+import EsgDummy from "./components/Sustainability/Esg.dummy";
+import YearInReview from "./pages/YearInReview";
 
 function MainContent() {
   const location = useLocation();
@@ -54,7 +58,7 @@ function MainContent() {
         <Route path="/business-momentum/ceo-message" element={<CEO/>}/>
         { <Route path="/business-momentum/landscape" element={<Business/>}/> }
         <Route path="/business-momentum/highlights" element={<FinancialPage />} />
-        <Route path="/business-momentum/year-review" element={<Financial />} />
+        <Route path="/business-momentum/year-review" element={<YearInReview />} />
         <Route path="/sustainability" element={<Sustaunability />} />
         <Route path="/business-momentum/recognitions" element={<Award/>} />
         <Route path="/strategy" element={<Strategy/>} />
@@ -83,7 +87,9 @@ function MainContent() {
         <Route path="/sustaining-value/Governance" element={<Governance/>}/>
         <Route path="/sustaining-value/Corporate_information" element={<CorporateInfo/>}/>
         <Route path="/sustaining-value/Ten_year_financial_highlights" element={<FinancialHighlights/>}/>
-      </Routes>
+        <Route path="/gratitude/founder" element={<Gratitude_detail1/>}/>
+        <Route path="/gratitude/Tata" element={<Gratitude_detail2/>}/>
+        </Routes>
       {/* <ChatbotWidget /> */}
       <Footer />
     </main>

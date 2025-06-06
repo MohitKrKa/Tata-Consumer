@@ -189,7 +189,7 @@ const Award = () => {
   };
 
   return (
-    <div className="w-[90%] mx-auto px-10 mb-[30px]">
+    <div className="marginal text-lg mb-[30px]">
       <div className="py-10">
         <Heading
           color="black"

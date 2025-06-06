@@ -111,7 +111,7 @@ const childVariants = {
 const ForBetterNutrition = () => {
   return (
     <>
-      <div className="mx-10">
+      <div className="">
         <div className="flex flex-col gap-10">
 
           <div>
@@ -126,6 +126,7 @@ const ForBetterNutrition = () => {
           </div>
         </div>
         {/* Page 1 */}
+        <div className="marginal text-lg">
         <div
           className="mt-5 flex   flex-col sm:flex-row gap-5"
         >
@@ -245,6 +246,11 @@ const ForBetterNutrition = () => {
                 nutrients and nutritional claims. This policy is built on five
                 core principles that guide our strategic actions and
                 initiatives.
+                <br />
+                This has been the guiding principle in our innovation and has ensured continuous enhancement of our products’ nutrition
+profile. The ‘For Better’ Nutrition Policy not only steers current initiatives but also adapts to changing consumer needs, creating
+a healthier, sustainable and better nourished India.
+The recent acquisition of Capital Foods and Organic India has further boosted our product portfolio.
               </p>
             </div>
           </div>
@@ -300,10 +306,42 @@ const ForBetterNutrition = () => {
               that enhance our commitment to nutrition and consumer well-being.
               These include -
             </p>
+            <div className="text-[#969798] text-lg">
+              <ul className="list-disc ml-6 mb-2">
+<li className="mb-2">Developing affordable,
+nutrient-rich products that
+cater to diverse dietary needs</li>
+<li className="mb-2">Leveraging digital platforms to
+educate and engage consumers
+about healthier choices </li>
+<li className="mb-2">Collaborating with key
+opinion leaders and
+nutritionists to ensure our
+offerings are backed by the
+latest scientific thinking</li>
+<li className="mb-2">Collaborating with key
+opinion leaders and
+nutritionists to ensure our
+offerings are backed by the
+latest scientific thinking</li>
+              </ul>
+              <div>
+              TCP actively participates in multi-stakeholder initiatives that improve
+public health through nutrition-related activities. One such initiative
+is with the Federation of Indian Chambers of Commerce and Industry
+(FICCI). By joining forces with FICCI, TCP collaborates with industry
+consortia to promote scientific studies and advocate for policies that
+support improved nutrition standards and guidelines. This partnership
+aims to generate data-driven policies that benefit the wider community.
+</div>
+            </div>
           </div>
         </div>
 
         {/* Page 5 */}
+        <div>
+          
+        </div>
         <motion.div
           className="p-6 mt-5  gap-6  md:flex  justify-center items-start   bg-[#eff9fd] flex-col lg:flex-row"
           
@@ -693,6 +731,7 @@ const ForBetterNutrition = () => {
         </div>
 
         {/* Page 13 */}
+        </div>
       </div>
     </>
   );

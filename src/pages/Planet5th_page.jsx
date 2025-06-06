@@ -3,7 +3,7 @@ import React from 'react'
 const Planet5th_page = () => {
   return (
     <div>
-        <div className='w-[90%] h-auto mx-[5%] px-3 mb-5'>
+        <div className='marginal text-lg'>
             <h1 className='text-2xl font-semibold  text-[#1368b4] mb-3'>Driving Net Zero</h1>
             <div className='mb-2'>While our Environment Policy serves as
 a compass, guiding our eco-conscious

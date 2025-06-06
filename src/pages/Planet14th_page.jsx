@@ -3,7 +3,7 @@ import React from 'react'
 const Planet14th_page = () => {
   return (
     <>
-    <div className='w-[90%] h-auto mx-[5%] px-3 mb-5 '>
+    <div className='marginal text-lg'>
 <div className='text-xl text-[#06aeef] mb-2 font-semibold'>
     Location Screening
 </div>

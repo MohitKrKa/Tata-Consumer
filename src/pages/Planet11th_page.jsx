@@ -3,7 +3,7 @@ import React from 'react'
 const Planet11th_page = () => {
   return (
    
-        <div className='w-[90%] h-auto mx-[5%] px-3  bg-[#eef7ed] p-3 mb-5'>
+        <div className='marginal text-lg  bg-[#eef7ed] p-3 mb-5'>
             {/* <div className='mb-5'>
                 <img src="public/82.webp" alt="" />
 
