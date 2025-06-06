@@ -39,7 +39,7 @@ const Strategy7th_page = () => {
   ];
 
   return (
-    <div className="w-full">
+    <div className="marginal ">
       {slides.map((slide, idx) => (
         <motion.section
           key={idx}
@@ -47,7 +47,7 @@ const Strategy7th_page = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className=" w-[90%] mx-[5%] px-3 flex flex-col mb-5 "
+          className="flex flex-col mb-5 "
         >
           <motion.h2
             variants={sectionVariants}

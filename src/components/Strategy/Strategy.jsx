@@ -1,10 +1,10 @@
 import React from 'react'
-import Strategy1st_page from '../../pages/Strategy1st_page'
+// import Strategy1st_page from '../../pages/Strategy1st_page'
 import Strategy2nd_page from '../../pages/Strategy2nd_page'
 import Strategy3rd_page from '../../pages/Strategy3rd_page'
 import Strategy4th_page from '../../pages/Strategy4th_page'
 import Strategy5th_page from '../../pages/Strategy5th_page'
-import Strategy6th_page from '../../pages/Strategy6th_page'
+// import Strategy6th_page from '../../pages/Strategy6th_page'
 import Strategy7th_page from '../../pages/Strategy7th_page'
 import Strategy8th_page from '../../pages/Strategy8th_page'
 import Strategy9th_page from '../../pages/Strategy9th_page'
@@ -27,7 +27,7 @@ import Strategy25th_page from '../../pages/Strategy25th_page'
 import Strategy26th_page from '../../pages/Strategy26th_page'
 import Strategy27th_page from '../../pages/Strategy27th_page'
 import Strategy28th_page from '../../pages/Strategy28th_page'
-import Strategy29th_page from '../../pages/Strategy29th_page'
+// import Strategy29th_page from '../../pages/Strategy29th_page'
 import Strategy30th_page from '../../pages/Strategy30th_page'   
 import Strategy31st_page from '../../pages/Strategy31st_page'
 import Strategy32nd_page from '../../pages/Strategy32nd_page'
@@ -102,7 +102,7 @@ const Strategy = () => {
         {/* <Strategy1st_page/> */}
        <ConsumerCover {...Strategy_obj}/>
         <Strategy2nd_page/>
-        <Strategy6th_page/>
+        {/* <Strategy6th_page/> */}
         <Strategy3rd_page/>
         <Strategy4th_page/>
         <Strategy5th_page/>
@@ -129,7 +129,7 @@ const Strategy = () => {
         <Strategy26th_page/>
         <Strategy27th_page/>
         <Strategy28th_page/>
-        <Strategy29th_page/>
+        {/* <Strategy29th_page/> */}
         <Strategy30th_page/>
         <Strategy31st_page/>
         <Strategy32nd_page/>

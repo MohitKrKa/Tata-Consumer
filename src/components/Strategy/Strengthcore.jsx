@@ -1,5 +1,5 @@
 import React from 'react'
-import Strategy6th_page from '../../pages/Strategy6th_page'
+// import Strategy6th_page from '../../pages/Strategy6th_page'
 import Strategy3rd_page from '../../pages/Strategy3rd_page'
 import Strategy4th_page from '../../pages/Strategy4th_page'
 import Strategy5th_page from '../../pages/Strategy5th_page'
@@ -28,7 +28,7 @@ import Strategy28th_page from '../../pages/Strategy28th_page'
 const Strengthcore = () => {
   return (
     <>
-<Strategy6th_page/>
+{/* <Strategy6th_page/> */}
 <Strategy3rd_page/>
 <Strategy4th_page/>
 <Strategy5th_page/>

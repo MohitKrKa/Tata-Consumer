@@ -23,7 +23,8 @@ const items = [
 const Strategy30th_page = () => {
   return (
     <>
-        <div className="bg-[#f9f7f4] px-4 md:px-16 py-8">
+      <div className="bg-[#f9f7f4]">
+        <div className='marginal'>
           <div className="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gray-300">
             {items.map((item, index) => (
               <div
@@ -31,58 +32,59 @@ const Strategy30th_page = () => {
                 className="flex flex-col items-center text-center px-4 py-6 md:py-0"
               >
                 <div className='w-12 h-16 flex items-center  mb-4'>
-                <img src={item.icon} alt={`icon-${index}`} />
+                  <img src={item.icon} alt={`icon-${index}`} />
                 </div>
-                <p className="text-sm text-gray-800">{item.text}</p>
+                <p className="text-lg text-gray-800">{item.text}</p>
               </div>
             ))}
           </div>
         </div>
-        <div className='w-[90%] mx-[5%] px-3 flex flex-row justify-center gap-5 mt-5 mb-5'>
-          <div className='w-[50%]'>
-<div className='text-2xl font-semibold text-[#1368b4] mb-3'>CAPITAL FOODS - KEY INITIATIVES</div>
-<div className='mb-2'>
-Capital Foods continues to build growth momentum, with targeted innovation,
-market expansion and strategic brand collaborations
-</div>
-<ul className='list-disc ml-4 mb-3'>
-  <li className='mb-2  '>Expansion into white spaces to
-grow the addressable market and
-strengthen market reach.
-  </li>
-  <li className='mb-2'>
-  Over 200 Distributor Sales
-Representatives have been trained
-in key markets to improve retail
-execution and strengthen onground presence.
-  </li>
-  <li className='mb-2'>Development of the Food
-Services channel will contribute
-to a stronger run rate and deeper
-engagement with commercial
-kitchens and institutional buyers.</li>
-</ul>
-<div className="flex flex-col mt-2 w-[200px]">
+      </div>
+      <div className='marginal text-lg flex flex-row justify-center gap-5 mt-5 mb-5'>
+        <div className='md:w-[50%]'>
+          <div className='text-2xl font-semibold text-[#1368b4] mb-3'>CAPITAL FOODS - KEY INITIATIVES</div>
+          <div className='mb-2'>
+            Capital Foods continues to build growth momentum, with targeted innovation,
+            market expansion and strategic brand collaborations
+          </div>
+          <ul className='list-disc ml-4 mb-3'>
+            <li className='mb-2  '>Expansion into white spaces to
+              grow the addressable market and
+              strengthen market reach.
+            </li>
+            <li className='mb-2'>
+              Over 200 Distributor Sales
+              Representatives have been trained
+              in key markets to improve retail
+              execution and strengthen onground presence.
+            </li>
+            <li className='mb-2'>Development of the Food
+              Services channel will contribute
+              to a stronger run rate and deeper
+              engagement with commercial
+              kitchens and institutional buyers.</li>
+          </ul>
+          <div className="flex flex-col mt-2 w-[200px]">
             <h1 className="text-3xl text-[#4084c1] leading-none">INR 799 Crores</h1>
 
-            <div class="flex items-center my-1">
+            <div class="flex items-center my-4">
               <div class="w-4 h-2 bg-blue-500 rounded-full"></div>
               <div class="h-0.5 w-full bg-blue-500"></div>
             </div>
-            <div className=" text-sm leading-tight">
-            Capital Foods Revenue
+            <div className="text-base leading-tight">
+              Capital Foods Revenue
             </div>
           </div>
-          </div>
-          <div className='w-[50%]'>
-            <img src="/212.webp" alt="" />
-          </div>
         </div>
-        </>
-      );
-    };
-  
-    {/* <motion.div className='w-[90%] h-auto m-[5%] flex md:flex-row flex-col justify-center md:gap-15 gap-5' variants={parentVariants} initial="hidden"
+        <div className='md:w-[50%]'>
+          <img src="/212.webp" className='md:w-2/3' alt="" />
+        </div>
+      </div>
+    </>
+  );
+};
+
+{/* <motion.div className='w-[90%] h-auto m-[5%] flex md:flex-row flex-col justify-center md:gap-15 gap-5' variants={parentVariants} initial="hidden"
     whileInView="visible"
     viewport={{ once: true, amount: 0.2 }}>
         <motion.div className='md:w-[50%] h-auto ' variants={parentVariants}>
