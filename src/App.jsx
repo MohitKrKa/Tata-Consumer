@@ -41,6 +41,8 @@ import StakeholderValueCreation from "./components/SustainingValuesComponents/St
 import SDG from "./components/SustainingValuesComponents/SDG";
 import Gratitude_detail1 from "./components/comp/Gratitude_detail1";
 import Gratitude_detail2 from "./components/comp/Gratitude_detail2";
+import EsgDummy from "./components/Sustainability/Esg.dummy";
+import YearInReview from "./pages/YearInReview";
 
 function MainContent() {
   const location = useLocation();
@@ -56,7 +58,7 @@ function MainContent() {
         <Route path="/business-momentum/ceo-message" element={<CEO/>}/>
         { <Route path="/business-momentum/landscape" element={<Business/>}/> }
         <Route path="/business-momentum/highlights" element={<FinancialPage />} />
-        <Route path="/business-momentum/year-review" element={<Financial />} />
+        <Route path="/business-momentum/year-review" element={<YearInReview />} />
         <Route path="/sustainability" element={<Sustaunability />} />
         <Route path="/business-momentum/recognitions" element={<Award/>} />
         <Route path="/strategy" element={<Strategy/>} />
