@@ -3,16 +3,21 @@ import React from "react";
 const Sourcing7th_page = () => {
   return (
     <>
-      <div className="w-[90%] mx-[5%] px-3 mb-5">
+      <div className="marginal text-lg">
         <div className="flex flex-row justify-center gap-5 mb-4">
           <div className="w-[80%]">
-            <div className="text-xl font-semibold text-[#06aeef] ">
-              Synergy:
+             <div className='flex flex-row gap-2'>
+                 <div className='w-[5%]'>
+                     <img src="/sourcing/Screening.webp" alt="" />
+                   </div>
+                   <div>
+            <div className='text-xl font-semibold text-[#06aeef] '>
+            Synergy:
             </div>
-            <div className="mb-2">
-              <span className=" text-xl inline text-black font-light ">
-                Capacity Building and Collaboration
-              </span>
+            <span className=' text-xl inline text-black font-light '>
+            Capacity Building and Collaboration
+            </span>
+            </div>
             </div>
             The superior quality of our products and the trust instilled in our
             brands have been pivotal in securing and maintaining our leadership

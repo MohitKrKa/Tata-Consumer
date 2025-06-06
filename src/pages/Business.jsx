@@ -85,7 +85,7 @@ p3:"Unlocking synergies in acquired businesses to drive growth and improve finan
         }
 ]
   return (
-    <div className='w-[90%] h-auto m-[5%]'>
+    <div className='marginal text-lg'>
        <div className='pb-10'>
       <Heading color="black" title="Business Landscape" linecolor="#0072CE" />
       </div>

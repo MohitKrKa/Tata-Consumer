@@ -54,14 +54,14 @@ const containerVariants = {
  };
 const Planet3rd_page = () => {
   return (
-       <motion.div className='w-[90%] h-auto mx-[5%] px-3 mb-5 variants={parentVariants} initial="hidden" whileInView="visible" viewport={{once:true,amount:0.2}}'>
+       <motion.div className='marginal text-lg variants={parentVariants} initial="hidden" whileInView="visible" viewport={{once:true,amount:0.2}}'>
 <div className='mb-5'>
     <img src="/74.webp" alt="" />
 </div>
 <div className='flex flex-row justify-center gap-5'>
   <div className='w-[50%]'>
 <div className='text-2xl font-semibold text-[#1368b4] mb-2'>FOR BETTER PLANET</div>
-<div className='mb-2'>
+<div className='mb-2 '>
 A meticulously designed framework, guided
 by comprehensive policies, is crucial for
 steering impactful and sustainable actions

@@ -3,7 +3,7 @@ import React from 'react'
 const Sourcing8th_page = () => {
   return (
   <>
-  <div className='w-[90%] mx-[5%] px-3 mb-5'>
+  <div className='marginal text-lg'>
   <div className='text-white text-2xl bg-gradient-to-r from-green-500 to-blue-500  p-2 mb-3'>Empowering Growers: Comprehensive Training for Tea Safety</div>
    <div className='mb-2'>The initiative aims to enhance tea safety and sustainability by educating Small Tea Growers (STGs) on key areas such
 as safe pesticide use, pre-harvest intervals, pest control, chemical traceability, soil treatment and awareness and

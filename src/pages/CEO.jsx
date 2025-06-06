@@ -14,7 +14,7 @@ const slides =
 }
 const CEO = () => {
   return (
-    <div className='w-[90%] h-auto mx-[5%] px-3'>
+    <div className='marginal text-lg'>
       <div className='py-10'>
       <Heading color="black" title="MD & CEO's Message" linecolor="#0072CE" />
       </div>

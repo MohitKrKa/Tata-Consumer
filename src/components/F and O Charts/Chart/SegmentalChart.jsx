@@ -94,7 +94,7 @@ const SegmentalChart = () => {
           <motion.g
             initial={{ rotate: 0 }}
             animate={{ rotate: 270 }}
-            transition={{ duration: 3, ease: "easeInOut" }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
             transform={`rotate(0 ${size / 2} ${size / 2})`}
           >
             {/* Segment 1 */}
@@ -108,7 +108,7 @@ const SegmentalChart = () => {
               strokeDasharray={circumference}
               strokeDashoffset={circumference}
               animate={{ strokeDashoffset: offset1 }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 0.5 }}
               strokeLinecap="round"
             />
             {/* Segment 2 */}
@@ -122,7 +122,7 @@ const SegmentalChart = () => {
               strokeDasharray={circumference}
               strokeDashoffset={circumference}
               animate={{ strokeDashoffset: offset2 }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 0.5 }}
               strokeLinecap="round"
               transform={`rotate(${totalRotation} ${size / 2} ${size / 2})`}
             />

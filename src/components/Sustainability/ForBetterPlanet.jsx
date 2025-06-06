@@ -103,7 +103,7 @@ const ForBetterPlanet = () => {
   {/* Page 1 */}
 
   <div
-    className="mt-5 flex flex-col sm:flex-row gap-5">
+    className=" marginal mt-5 flex flex-col sm:flex-row gap-5">
     {/* Images Section */}
 <div className='w-[50%]'>
       <div>

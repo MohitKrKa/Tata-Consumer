@@ -110,7 +110,7 @@ const ForBetterCommunities = () => {
         {/* Page 1 */}
 
         <div
-          className="mt-10 flex   flex-col sm:flex-row gap-10"   >
+          className="mt-5 marginal flex   flex-col sm:flex-row gap-10"   >
           {/* Images Section */}
           <div
             className=""
@@ -125,6 +125,7 @@ const ForBetterCommunities = () => {
             />
             </div>
             <div>
+            <div className="text-2xl font-semibold text-[#1368b4] mb-3 mt-2">PERFORMANCE HIGHLIGHTS</div>
              <img
               src={FBC6}
               alt=""
@@ -144,7 +145,7 @@ const ForBetterCommunities = () => {
                   and safe culture for our employees.
                 </p>
                 </div>
-                <div>
+                <div className="mt-2 w-[60%]">
                 <img src={FBC4} alt="" className="" />
                 </div>
               </div>
@@ -157,20 +158,21 @@ const ForBetterCommunities = () => {
         </div>
 
         {/* Page 2 */}
-        <div className="flex flex-col lg:flex-row mt-10 bg-[#e8f7fd] p-4 gap-6">
-          <div className="w-full lg:w-1/3">
+        <div className="flex flex-col  mt-10 bg-[#e8f7fd] p-4 gap-6">
+         
+          <div className="flex flex-row justify-center gap-5">
+          <div className="w-[30%]" >
             <img
               src={FBC7}
               alt="Fostering Workforce"
               className=""
             />
           </div>
-          <div className="flex flex-col w-full lg:w-2/3 gap-6">
-            <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 w-[70%]">
               <h2 className="text-[#1d6db5] text-2xl sm:text-3xl font-semibold">
                 FOSTERING A DYNAMIC WORKFORCE
               </h2>
-              <p className="">
+              <div className="">
                 At Tata Group, our success is driven by the dedication,
                 commitment, and talent of our people. We are committed to
                 fostering an environment where every individual can thrive, grow
@@ -180,9 +182,13 @@ const ForBetterCommunities = () => {
                 diverse talent, reducing workforce turnover, and fostering an
                 inclusive environment, we drive innovation and maintain a
                 competitive edge.
-              </p>
+              </div>
             </div>
+          </div>
+
+            
             <div className="flex flex-col gap-4">
+            
               <img
                 src={FBC8}
                 alt=""
@@ -194,7 +200,6 @@ const ForBetterCommunities = () => {
                 group, Gender, and Management level, gender diversity target
                 across each level, breakdown based on nationalities
               </p>
-            </div>
           </div>
         </div>
 
@@ -315,14 +320,10 @@ const ForBetterCommunities = () => {
             </div>
 
             <div className="w-full lg:w-1/3">
-              <motion.img
+              <img
                 src={FBC9}
                 alt=""
                 className=""
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.5 }}
-                variants={imageCommonVariants}
               />
             </div>
           </div>
@@ -371,21 +372,20 @@ const ForBetterCommunities = () => {
               associates and Talent Acquisition team with essential skills.
             </p>
 
-            <motion.div
+            <div
               className="flex flex-col lg:flex-row gap-6 mt-6 items-center"
               variants={containerVariants}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.6 }} // 60% in view trigger
             >
-              <motion.img
+              <img
                 src={FBC10}
                 alt=""
                 className="w-full lg:w-1/2 h-auto object-cover rounded"
-                variants={itemVariants}
               />
 
-              <motion.h2
+              <h2
                 className="bg-gradient-to-r from-[#16b252] to-[#04adc9] bg-clip-text text-transparent text-2xl font-semibold"
                 variants={itemVariants}
               >
@@ -394,8 +394,8 @@ const ForBetterCommunities = () => {
                 Dignity, and Speak Up Culture, through our annual employee
                 engagement survey - InterActions. In FY 2024-25, our DEIB score
                 was at 78%.
-              </motion.h2>
-            </motion.div>
+              </h2>
+            </div>
           </div>
         </div>
 
@@ -421,45 +421,39 @@ const ForBetterCommunities = () => {
               the below mentioned focus areas:
             </p>
 
-            <motion.div
-              className="flex flex-col items-center justify-center mt-6 gap-4"
-              variants={containerVariants}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.6 }} // ← Triggers when 60% in view
+            <div
+              className="flex flex-col items-center justify-center mt-6 gap-4" // ← Triggers when 60% in view
             >
-              <motion.img
+              <img
                 src={FBC11}
                 alt=""
                 className="w-full max-w-4xl h-auto object-contain"
-                variants={itemVariants}
+              
               />
 
-              <motion.div className="w-full" variants={itemVariants}>
-                <motion.h2
+              <div className="w-full" variants={itemVariants}>
+                <h2
                   className="text-[#26b7ef] text-2xl sm:text-3xl font-semibold"
-                  variants={itemVariants}
                 >
                   Investing in Capability Building
-                </motion.h2>
+                </h2>
 
-                <motion.p className="mt-2" variants={itemVariants}>
+                <p className="mt-2" >
                   Our investment in training and development yields significant
                   business benefits, including:
-                </motion.p>
+                </p>
 
-                <motion.div
+                <div
                   className="flex justify-center mt-4"
-                  variants={itemVariants}
                 >
                   <img
                     src={FBC12}
                     alt=""
                     className="w-full max-w-4xl h-auto object-contain"
                   />
-                </motion.div>
-              </motion.div>
-            </motion.div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -544,14 +538,10 @@ const ForBetterCommunities = () => {
                 ))}
               </ul>
             </div>
-            <motion.img
+            <img
               src={FBC13}
               alt=""
               className="w-full lg:w-[50%] h-auto object-contain"
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.5 }}
-              variants={imageCommonVariants}
             />
           </div>
 
@@ -574,14 +564,11 @@ const ForBetterCommunities = () => {
 
           {/* Second Image & List Block */}
           <div className="flex flex-col items-center lg:flex-row text-base sm:text-lg lg:text-xl gap-6">
-            <motion.img
+            <img
               src={FBC14}
               alt=""
               className="w-full lg:w-[50%] h-auto object-contain"
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.5 }}
-              variants={imageCommonVariants}
+             
             />
             <div className="flex-1">
               <h2 className="font-bold">Key Objectives:</h2>
@@ -705,14 +692,10 @@ const ForBetterCommunities = () => {
                 </ul>
               </div>
               <div className="flex-1">
-                <motion.img
+                <img
                   src={FBC15}
                   alt=""
                   className="w-full max-w-[80vh] h-auto mx-auto lg:mx-0"
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true, amount: 0.5 }}
-                  variants={imageCommonVariants}
                 />
               </div>
             </div>
@@ -971,14 +954,10 @@ const ForBetterCommunities = () => {
   </div>
 
   <br />
-  <motion.img
+  <img
     src={FBC18}
     alt=""
     className="w-full md:w-[80vw]"
-    initial="hidden"
-    whileInView="show"
-    viewport={{ once: true, amount: 0.5 }}
-    variants={imageCommonVariants}
   />
 </div>
 
@@ -1068,14 +1047,10 @@ const ForBetterCommunities = () => {
             </div>
 
             <div className="w-full md:w-1/2">
-              <motion.img
+              <img
                 src={FBC16}
                 alt="Employee Wellbeing"
                 className="w-full h-auto rounded-lg"
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.5 }}
-                variants={imageCommonVariants}
               />
             </div>
           </div>
@@ -1205,13 +1180,10 @@ const ForBetterCommunities = () => {
               </div>
             </div>
             <div>
-              <motion.img
+              <img
                 src={FBC21}
                 alt=""
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.5 }}
-                variants={imageCommonVariants}
+                
               />
             </div>
           </div>
@@ -1478,14 +1450,11 @@ const ForBetterCommunities = () => {
             </div>
 
             <div className="flex justify-center md:justify-end md:w-[40%]">
-              <motion.img
+              <img
                 src={FBC25}
                 alt=""
                 className="w-full max-w-[80vh] h-auto object-contain"
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.5 }}
-                variants={imageCommonVariants}
+              
               />
             </div>
           </div>
@@ -1532,14 +1501,11 @@ const ForBetterCommunities = () => {
             </div>
 
             <div className="flex justify-center md:justify-end md:w-[40%]">
-              <motion.img
+              <img
                 src={FBC26}
                 alt=""
                 className="w-full max-w-[80vh] h-auto object-contain"
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.5 }}
-                variants={imageCommonVariants}
+  
               />
             </div>
           </div>
@@ -1560,13 +1526,9 @@ const ForBetterCommunities = () => {
 
         {/* Page 16 */}
         <div className="mt-10 p-4  space-y-4">
-          <motion.img
+          <img
             src={FBC28}
             alt=""
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.5 }}
-            variants={imageCommonVariants}
           />
           <p>
             Our Corporate Social Responsibility (CSR) initiatives are designed
@@ -1588,14 +1550,11 @@ const ForBetterCommunities = () => {
 
         {/* Page 17 */}
         <div className="mt-10 p-4 flex flex-col md:flex-row gap-6">
-          <motion.img
+          <img
             src={FBC29}
             alt=""
             className="w-full max-w-[80vh] "
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.5 }}
-            variants={imageCommonVariants}
+            
           />
 
           <div className="space-y-4">
@@ -1659,44 +1618,38 @@ const ForBetterCommunities = () => {
 
         {/* Page 19 */}
 
-        <motion.div
+        <div
           className="flex mt-10 p-4"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }} // 60% in view triggers
-          variants={parentVariants}
+          
         >
-          <motion.img
+          <img
             src={FBC35}
             alt=""
             className="w-1/3"
-            variants={imageVariants}
+           
           />
-          <motion.img
+          <img
             src={FBC34}
             alt=""
             className="w-1/3"
-            variants={imageVariants}
+            
           />
-          <motion.img
+          <img
             src={FBC33}
             alt=""
             className="w-1/3"
-            variants={imageVariants}
+            
           />
-        </motion.div>
+        </div>
 
         <div className="p-4 space-y-4 mt-10">
           <h2 className="text-[#16b1ef] text-xl sm:text-2xl md:text-3xl font-semibold">INTERPLAY OF CAPITALS</h2>
           <div className="flex justify-center ">
-          <motion.img
+          <img
             src={FBC32}
             alt=""
             className="h-[50vh] object-contain"
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.5 }}
-            variants={imageCommonVariants}
+           
           />
           </div>
         </div>

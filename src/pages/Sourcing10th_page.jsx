@@ -3,7 +3,7 @@ import React from 'react'
 const Sourcing10th_page = () => {
   return (
     <>
-    <div className='w-[90%] mx-[5%] px-3 mb-5'>
+    <div className='marginal text-lg'>
       <div className='text-xl font-semibold text-[#06aeef] mb-3 '>
       Organic India - Crop verification audits:
       </div>

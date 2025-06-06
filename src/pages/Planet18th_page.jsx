@@ -3,7 +3,7 @@ import React from 'react'
 const Planet18th_page = () => {
   return (
     <div>
-        <div className='w-[90%] h-auto mx-[5%] px-3 mb-5'>
+        <div className='marginal text-lg'>
                 <div className='text-white text-2xl bg-gradient-to-r from-green-500 to-blue-500  p-2 mb-3'>Harmonising Pathways: Tata Coffee's Innovative Model for Human-Elephant Coexistence</div>
                 
                 <div className='mb-2'>In the lush landscapes of India's coffee-growing region, a narrative of sustainable coexistence unfolds, where our

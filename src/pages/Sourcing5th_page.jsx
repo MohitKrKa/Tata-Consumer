@@ -56,7 +56,12 @@ const containerVariants = {
 const Sourcing5th_page = () => {
   return (
     <>
-    <div className='w-[90%] px-3 mx-[5%] mb-5 '>
+    <div className='marginal text-lg'>
+      <div className='flex flex-row gap-2'>
+     <div className='w-[5%]'>
+         <img src="/sourcing/Screening.webp" alt="" />
+       </div>
+       <div>
 <div className='text-xl font-semibold text-[#06aeef] '>
 Screening:
 </div>
@@ -64,6 +69,8 @@ Screening:
 Supplier Classification
 and Assessment
 </span>
+</div>
+</div>
 <div className='flex flex-row justify-center gap-5 mb-5'>
 <div className='w-[50%]'>
 <div className='mb-2 mt-2'>

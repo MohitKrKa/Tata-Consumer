@@ -97,7 +97,7 @@ const ForBetterSourcing = () => {
   {/* Page 1 */}
 
   <div
-    className="mt-10 flex   flex-col sm:flex-row gap-10"
+    className="marginal mt-5 flex   flex-col sm:flex-row gap-10"
   >
     {/* Images Section */}
     <div

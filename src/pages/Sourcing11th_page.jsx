@@ -3,17 +3,23 @@ import React from 'react'
 const Sourcing11th_page = () => {
   return (
    <>
-   <div className='w-[90%] mx-[5%] px-3 mb-5 bg-[#eff1f9] py-3'>
-   <div className="text-xl font-semibold text-[#06aeef] ">
+   <div className='marginal text-lg bg-[#eff1f9] py-3'>
+    <div className='flex flex-row gap-2 mb-2'>
+        <div className='w-[5%]'>
+            <img src="/sourcing/Screening.webp" alt="" />
+          </div>
+          <div>
+   <div className='text-xl font-semibold text-[#06aeef] '>
    Systematic Monitoring:
-            </div>
-            <div className="mb-2">
-              <span className=" text-xl inline text-black font-light ">
-              Transparency and
-              Accountability
-              </span>
-            </div>
-            <div className='font-bold text-black '>
+   </div>
+   <span className=' text-xl inline text-black font-light  '>
+   Transparency and
+   Accountability
+   </span>
+   </div>
+   </div>
+
+            <div className='font-bold text-black mb-2 '>
             Traceability
             </div>
             <div className='mb-3'>

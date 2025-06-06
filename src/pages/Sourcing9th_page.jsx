@@ -3,7 +3,7 @@ import React from 'react'
 const Sourcing9th_page = () => {
   return (
    <>
-   <div className='w-[90%] mx-[5%] px-3 mb-5 '>
+   <div className='marginal text-lg '>
     <div className='p-3 bg-gray-100 mb-3  '>
       <img src="/64.webp" alt="" />
     </div>

@@ -56,7 +56,7 @@ const Sourcing3rd_page = () => {
   return (
 <>
 (
-  <div className='w-[90%] mx-[5%] px-3 mb-5'>
+  <div className='marginal text-lg'>
 <div className='text-2xl font-semibold text-[#1368b4] mb-4'>VALUE CHAIN
 MANAGEMENT </div>
 <div className='flex flex-row justify-center gap-5 mb-3'>
@@ -105,7 +105,13 @@ our long-term sustainability goals.
   </div>
 </div>
 </div>
+
 <div className='mb-4'>
+  <div className='flex flex-row  gap-2'>
+  <div className='w-[5%]'>
+    <img src="/sourcing/Strategy.webp" alt="" />
+  </div>
+  <div>
 <div className='text-xl font-semibold text-[#06aeef] '>
 Strategy:
 </div>
@@ -113,7 +119,8 @@ Strategy:
 Supply Chain
 Governance
 </span>
-
+</div>
+</div>
 <div className='mb-2 mt-2'>
 Our dedication to sustainability is reflected
 in our strategic efforts to develop a

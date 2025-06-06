@@ -2,7 +2,7 @@ import React from 'react'
 
 const Sourcing16th_page = () => {
   return (
-    <div className='w-[90%] h-auto mx-[5%] px-3'>
+    <div className='marginal text-lg '>
        <div className='mb-2'>
        By following these steps, we ensure effective grievance management and uphold our commitment to ethical practices
        and transparency in our supply chain.</div> 

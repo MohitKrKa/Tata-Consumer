@@ -55,7 +55,7 @@ const parentVariants = {
 const Sourcing6th_page = () => {
   return (
     <>
-   <div className='w-[90%] mx-[5%] px-3 mb-5'>
+   <div className='marginal text-lg'>
     <div className='flex flex-row justify-center gap-5'>
 <div className='mb-2 w-[40%]'>
 Supplier desk assessments are
