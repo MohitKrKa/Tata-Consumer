@@ -9,7 +9,8 @@ const Strategy45th_page = (
         heading2 = "",
         highlight2 = "",
         subheading = "",
-        footerText = "",}
+        footerText = "",
+      }
 ) => {
   return (
     <>
