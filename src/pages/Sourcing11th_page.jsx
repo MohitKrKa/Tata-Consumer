@@ -2,106 +2,78 @@ import React from 'react'
 
 const Sourcing11th_page = () => {
   return (
-    <div className='w-[90%] h-auto m-[5%] flex  flex-col gap-5 justify-center items-center'>
-<div>
-    <img className="w-[100%] " src="/61.webp" alt="" />
-    </div>
-<div className=' bg-[#f8f1e7] p-5 mb-5'>
-Our recent acquisition, Organic India, procures 30
-different kinds of crops cultivated over 9000 acres of
-land, with Tulsi being the biggest produce purchased.
-To support our farming community, we distribute
-Tulsi seeds free of cost to farmers. These farmers
-are selected based on their crops, ensuring that they
-can maintain healthy crops through proper irrigation,
-effective weed management and by avoiding mixed
-cultivation. This initiative not only promotes sustainable
-agricultural practices but also strengthens our
-commitment to empowering local farmers. Farmers
-are also educated on a host of initiatives such as
-crop rotation, which extends beyond the crops we
-purchase. These efforts are aimed at promoting the
-overall wellbeing of the farming community. The Tulsi
-cultivated by farmers is procured by Organic India at
-competitive rates, which are at par with, or slightly
-above the prevailing market prices for quality produce.
-Although the tulsi seeds are distributed by us, farmers
-are free to sell their produce either Organic India or in
-the open market.
-</div>
-
-<div className=" h-auto bg-[#e9f7f7] p-5 ">
-    <div className=''>
-    <div className='bg-[#e9f7f7]  p-2'>
-    <div className='  bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent bg-[#eaf8fc]'>
-Trustea code
-is designed to
-evaluate the
-social, economic,
-agronomic and
-environmental
-performance of the
-Indian tea estates,
-small holders
-and Bought Leaf
-Factories. This
-code has been
-confirmed to
-be ISEAL Code
-Compliant.
-</div>
-</div>
-<div className='text-[#58595c]'>
-For our international operations,
-empower our tea buying, blending and
-supply chain management staff with
-knowledge and skills to identify and
-combat slavery and human trafficking.
-Our focused training programme
-includes:
-<div className='bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent bg-[#eaf8fc] flex flex-col gap-2 mt-2 mb-2'>
-<p>
-Educating on the extent of human
-trafficking and slavery issues
+   <>
+   <div className='w-[90%] mx-[5%] px-3 mb-5 bg-[#eff1f9] py-3'>
+   <div className="text-xl font-semibold text-[#06aeef] ">
+   Systematic Monitoring:
+            </div>
+            <div className="mb-2">
+              <span className=" text-xl inline text-black font-light ">
+              Transparency and
+              Accountability
+              </span>
+            </div>
+            <div className='font-bold text-black '>
+            Traceability
+            </div>
+            <div className='mb-3'>
+            <p className='mb-2'>Our objective is to secure full
+transparency for every product we
+offer, extending all the way to the
+last mile of the supply chain. This
+aims to give us more control and
+enhanced visibility over our operations.
+As a result, we are in a better
+position to substantially improve our
+environmental footprint and enhance our social impact. Moreover, this
+approach also helps us maintain a
+robust, uninterrupted supply chain.
 </p>
-<p>
-Training to detect signs of slavery
-within the supply chain
+<p className='mb-2'>
+At Organic India, we prioritise
+sustainability across our operations,
+ensuring full traceability of each
+kilogram of material right down to
+the farmer level. Our meticulous
+record-keeping goes all the way up to
+manually maintained farmer diaries to
+monitor our supply chain. All farmers
+working with Organic India are
+systematically registered as vendors
+in our SAP system, streamlining
+our supply chain management.Furthermore, we uphold the integrity
+of our organic offerings through
+stringent adherence to valid organic
+certifications.
 </p>
-<p>
-Offering examples of potential red
-flags
+<p className='mb-2'>
+End-to-end traceability in the
+agricultural commodity industry
+involves tracking the journey of a
+product from its raw form on the
+farm to the packaged item sold to
+consumers. This includes every stage
+of its lifecycle such as harvesting,
+processing, packaging, transporting,
+and ultimately, sale.
 </p>
-<p>
-Highlighting our established internal
-reporting processes </p>
+            </div>
+            <div className='mb-3  p-3 bg-white'>
+<div className='text-2xl text-[#1368b4] mb-3'>Digital Intervention for Enhancing Tea Traceability</div>
+<div className='mb-2 bg-gradient-to-r from-[#0ab14b] to-[#06aee0] bg-clip-text text-transparent text-xl'>
+We have introduced digital solutions like the Tracetea system, available as an
+app and web portal, enabling comprehensive tea traceability. The Tracetea MAP
+application provides detailed data analysis on supply chains and programme
+impacts. The Trustea Code Management System ensures robust digital governance
+and certification adherence. These innovations support tracking from farm to
+invoice, impact assessment, digital certification and online training.
 </div>
-Our comprehensive training module, covers all the key
-
-
-stakeholders involved in our tea industry's operations-
-We have implemented specialised training
-
-programmes for Small Tea Growers (STGs), focusing
-on advanced plant protection protocols, integrated
-pest management, soil management and traceability
-systems. These comprehensive training sessions
-are part of our strategic initiative in North Bengal
-and Assam to disseminate exemplary agricultural
-practices.
-Suppliers have the opportunity to utilise resources
-like Trustea and Rainforest Alliance (RA) for
-valuable guidance and standards in sustainability
-best practices. This enables them to learn from the
-ESG practices of peers, industry leaders and global
-standards.
-</div>
-</div>
-<div className=''>
-    {/* <img className='h-[20vh] mt-2 w-[60vh] ' src="/62.webp" alt="" /> */}
-</div>
-</div>
-    </div>
+            </div>
+            <div>
+              <img src="/70.webp" alt="" />
+            </div>
+   </div>
+   </>
   )
 }
 

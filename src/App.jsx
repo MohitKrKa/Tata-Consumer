@@ -39,6 +39,8 @@ import Materiality from "./components/SustainingValuesComponents/Materiality";
 import RiskMgt from "./components/SustainingValuesComponents/RiskMgt";
 import StakeholderValueCreation from "./components/SustainingValuesComponents/StakeholderValueCreation";
 import SDG from "./components/SustainingValuesComponents/SDG";
+import Gratitude_detail1 from "./components/comp/Gratitude_detail1";
+import Gratitude_detail2 from "./components/comp/Gratitude_detail2";
 
 function MainContent() {
   const location = useLocation();
@@ -83,7 +85,9 @@ function MainContent() {
         <Route path="/sustaining-value/Governance" element={<Governance/>}/>
         <Route path="/sustaining-value/Corporate_information" element={<CorporateInfo/>}/>
         <Route path="/sustaining-value/Ten_year_financial_highlights" element={<FinancialHighlights/>}/>
-      </Routes>
+        <Route path="/gratitude/founder" element={<Gratitude_detail1/>}/>
+        <Route path="/gratitude/Tata" element={<Gratitude_detail2/>}/>
+        </Routes>
       {/* <ChatbotWidget /> */}
       <Footer />
     </main>

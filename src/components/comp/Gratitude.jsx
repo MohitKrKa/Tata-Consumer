@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Heading2 from '../Heading2';
-
+import KnowMore from './KnowMore';
 // import ratan from '../assets/founders/ratan.webp';
 // import jamsetji from '../assets/founders/jamsetji.webp';
 
@@ -17,6 +17,7 @@ const founders = [
     date: '03.03.1839 to 19.05.1904',
     message: 'In a free enterprise, the community is not just another stakeholder in business, but is in fact the very purpose of its existence.',
     image: "/Tata2.webp",
+    link:"/gratitude/founder"
   },
   {
     id: 1,
@@ -25,6 +26,7 @@ const founders = [
     date: '28.12.1937 to 09.10.2024',
     message: 'His legacy will continue to inspire us as we strive to uphold the principles he so passionately championed.',
     image: "/Tata1.webp",
+    link:"/gratitude/Tata"
   },
 ];
 
@@ -135,24 +137,30 @@ export default function Gratitude() {
         </div>    
       {/* Content Box */}
       <div className="relative z-20 max-w-7xl mx-auto h-full flex items-center justify-end px-6 md:px-20">
-        <div className='bg-[#0DB14B] pt-1 skew-top absolute right-0 top-1/2 transform -translate-y-1/2 w-full max-w-xl'>
+        <div className='bg-[#0DB14B] pt-1 skew-top absolute right-0 top-1/2 transform -translate-y-1/2 w-full max-w-[80vh]'>
           <div
             ref={contentRef}
-            className="bg-[#08549A] text-white p-8 md:py-30 w-full shadow-2xl skew-top-bottom"
+            className="bg-[#08549A] text-white p-8 md:pb-14 md:pt-20 w-full shadow-2xl skew-top-bottom"
           >
             <div>
               <h3 className="text-2xl md:text-3xl font-bold mb-2">{current.name}</h3>
               <p className="text-[#0DB14B] font-semibold">{current.date}</p>
               <p className="text-sm md:text-base mt-4 text-slate-100">{current.message}</p>
               {/* <button className="mt-6 inline-flex items-center px-4 py-2 border border-[#0DB14B] text-[#0DB14B] rounded-full hover:bg-[#0DB14B] hover:text-blue-900 transition-all">
-                Know more →
+              KnowMore
               </button> */}
+               <div className="mt-5 flex md:flex-row flex-col md:items-center gap-8">
+              <KnowMore
+                link={current.link}
+                isGradient={true}
+              />
+              </div>
             </div>
           </div>
         </div>
 
         {/* Pagination Dots */}
-        <div className="absolute bottom-30 right-8 flex gap-4">
+        <div className="absolute bottom-[13vh] right-8 flex gap-4">
           {founders.map((_, i) => (
             <button
               key={i}

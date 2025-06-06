@@ -4,14 +4,14 @@ import SegmentalChart from "./Chart/SegmentalChart";
 import Heading from '../Heading'
 const Financial_data = [
   { title: "Revenue from Operations", key: "RFO" },
-  { title: "EDITBA", key: "EB" },
+  { title: "EBITDA", key: "EB" },
   { title: "Profile Before Tax and Exceptional Items", key: "PBT" },
   { title: "Group Net Profit", key: "GNT" },
   { title: "Return on Capital Employed (RoCE)", key: "ROCE" },
   { title: "Dividend", key: "DIVIDEND" },
   { title: "India Business", key: "IndiaB" },
   { title: "International Business", key: "IB" },
-  { title: "Non-branded Business", key: "NBA" },
+  { title: "Non-branded Business", key: "NBA" },  
 ];
 
 const Financial = {

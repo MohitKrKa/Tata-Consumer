@@ -2,58 +2,132 @@ import React from 'react'
 
 const Sourcing9th_page = () => {
   return (
-    <div>
-       <div className='w-[90%] h-auto m-[5%] flex md:flex-row flex-col justify-center items-center md:gap-10 gap-5 bg-[#eaf7f7] p-5'>
-        <div className='md:w-[60%] h-auto  md:p-8 '>
-            <div>
-               <div className='text-xl text-[#3fc0cc] mb-5'>Synergy:</div>
-               <div className='text-xl text-blue-500 mb-5'>Capacity Building and
-               Collaboration</div>
-            </div>
-            <div className='mb-5'>
-            The superior quality of our products
-and the trust instilled in our brands
-have been pivotal in securing and
-maintaining our leadership status
-across portfolio categories. All our
-products are produced and packaged
-in cutting-edge facilities that not only
-adhere to but also surpass global
-food safety norms and regulations.
-We undertake ongoing quality
-enhancement initiatives, beginning
-with sourcing, to uphold quality
-standard that resonate with and is
-valued by our consumers.
-TCP's Quality department meticulously
-conducts supplier audits, both to affirm
-compliance with our standards and
-to identify areas for enhancement.
-When audits reveal areas for
-improvement, TCP teams engage
-suppliers with concrete corrective
-action plans. This includes providing
-suppliers with detailed information
-and training on TCP's ESG programme,
-processes and requirements to
-ensure they understand and meet our
-expectations. Suppliers also receive
-support , whether remote or on-site, to
-assist in the implementation of these
-corrective and improvement actions.
-While suppliers currently do not have
-access to ESG benchmarks against
-peers, resources such as the Trustea
-and Rainforest Alliance (RA) offer
-valuable guidance and standards for
-best practices in sustainability.
-            </div>
-        </div>
-        <div className='md:w-[30%] h-auto'>
-            <img src="/55.webp" alt="" />
-        </div>
-        </div> 
+   <>
+   <div className='w-[90%] mx-[5%] px-3 mb-5 '>
+    <div className='p-3 bg-gray-100 mb-3  '>
+      <img src="/64.webp" alt="" />
     </div>
+    <div>
+      <div className='text-xl text-[#06aeef] font-semibold mb-2'>SUSTAINABLE AGRICULTURAL ASSOCIATIONS</div>
+      <div className='mb-3'>Our efforts to preserve natural resources and promote biodiversity play a key role in encouraging sustainable
+agricultural practices. This delivers higher yields to the growers/ farmers and better-quality raw materials to us.
+Through our partnerships with organisations like Trustea and Rainforest Alliance, we promote soil health, ensure that
+our growers minimise the use of chemicals in their agricultural practices and respect the interplay between people
+and the natural environment in their surroundings.</div>
+    </div>
+    <div className='flex flex-row justify-center gap-5 p-4 bg-[#f8f1e7]'>
+<div>
+  <div className="w-[40%] mb-2">
+    <img className='w-[100%]' src="/sourcing_logos/0.webp" alt="" />
+  </div>
+  <div className='text-xl font-semibold text-[#06aeef] mb-2'>ETHICAL TEA
+  PARTNERSHIP (ETP)</div>
+  <div>The Ethical Tea Partnership
+(ETP) is a membership
+organisation comprising
+tea marketing companies,
+development organisations
+and governments to
+enhance the well-being of
+tea workers, farmers and
+their surroundings. Its goal
+is to drive systemic change
+in the tea industry through
+economic resilience, social
+equity and environmental
+sustainability, while
+supporting communities
+across Africa and Asia. As
+a founding member, TCP
+has maintained strong
+partnerships with many of
+the member organisations.</div>
+</div>
+<div>
+  <div className='w-[40%] mb-2'>
+    <img className='w-[50%]' src="/sourcing_logos/1.webp" alt="" />
+  </div>
+  <div className='text-xl font-semibold text-[#06aeef] mb-2'>TRUSTEA</div>
+  <div>Tata Consumer is one of
+the founding members of
+Trustea and champions
+sustainable agriculture.
+The Trustea Code
+immensely benefits both
+the environment and tea
+farmers. Recognised as the
+world’s largest sustainable
+agriculture certification
+initiative, Trustea is
+playing a significant role in
+transforming the Indian tea
+industry.
+TCP actively procures
+trustea certified tea in India,
+with 60% of their tea in
+FY 2024-25 being trustea
+certified. Trustea verified
+approximately 979 million
+kg of tea, covering ~76% of
+the Indian market.</div>
+</div>
+<div>
+  <div className='w-[40%] mb-2'>
+    <img className='' src="/sourcing_logos/2.webp" alt="" />
+  </div>
+  <div className='text-xl font-semibold text-[#06aeef] mb-2'>RAINFOREST
+  ALLIANCE  </div>
+  <div>We have collaborated with
+the Rainforest Alliance, a
+non-profit entity committed
+to the conservation of
+biodiversity and the
+promotion of sustainable
+livelihoods. This partnership
+also allows us to address
+specific issues relating to
+sustainability in tea and
+coffee plantations. We are
+proud to state that 100% of
+Tetley tea and Good Earth in
+our international markets is
+Rainforest Alliance certified. </div>
+</div>
+<div>
+  <div className='w-[40%] mb-2'>
+    <img className='w-[55%]' src="/sourcing_logos/3.webp" alt="" />
+  </div>
+  <div className='text-xl font-semibold text-[#06aeef] mb-2'>COFFEE AND FARMER
+EQUITY (C.A.F.E.)
+PRACTICES </div>
+  <div>Our ethical sourcing
+approach is anchored by
+Coffee and Farmer Equity
+(C.A.F.E.) Practices, the
+coffee industry’s first set of
+ethical sourcing standards.
+This certification was
+developed by Starbucks,
+in collaboration with
+Conservation International
+in 2004. This programme
+measures farms against
+economic, social and
+environmental criteria to
+promote sustainable coffee
+cultivation and protect
+the well-being of farmers
+and their communities,
+ensuring a long-term supply
+of high-quality coffee.
+Starbucks along with SCS
+Global Services have spent
+over two years revising
+the C.A.F.E. Practices
+programme.</div>
+</div>
+    </div>
+    </div></>
   )
 }
 

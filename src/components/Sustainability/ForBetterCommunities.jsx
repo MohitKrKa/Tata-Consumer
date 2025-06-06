@@ -109,51 +109,52 @@ const ForBetterCommunities = () => {
 </div>
         {/* Page 1 */}
 
-        <motion.div
-          className="mt-10 flex   flex-col sm:flex-row gap-10"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }} // 60% in view triggers
-          variants={parentVariants}
-        >
+        <div
+          className="mt-10 flex   flex-col sm:flex-row gap-10"   >
           {/* Images Section */}
-          <motion.div
-            className="mt-10  flex flex-col sm:flex-row gap-10"
-            variants={parentVariants}
+          <div
+            className=""
+        
           >
-            <motion.img
+            <div>
+            <img
               src={FBC4}
               alt=""
               className=""
-              variants={imageVariants}
+              
             />
-            <motion.div
-              className="flex flex-col gap-10 sm:w-1/3 "
-              variants={textVariants}
-            >
+            </div>
+            <div>
+             <img
+              src={FBC6}
+              alt=""
+              className=""
+            />
+            </div>
+            </div>
+            
               <div>
+                <div>
                 <h1 className=" text-[#176ab4] text-2xl sm:text-3xl font-[500]">
                   VISION
                 </h1>
-                <p className="bg-gradient-to-r from-[#0db14e] to-[#10b0ef] bg-clip-text text-transparent font-[400] mt-7 text-xl sm:text-3xl">
+                <p className="bg-gradient-to-r from-[#0db14e] to-[#10b0ef] bg-clip-text text-transparent font-[400] mt-2 text-xl sm:text-3xl">
                   Our vision is to enhance the quality of life, creating shared
                   value for our communities and foster an equitable, inclusive,
                   and safe culture for our employees.
                 </p>
+                </div>
+                <div>
+                <img src={FBC4} alt="" className="" />
+                </div>
               </div>
 
-              <img src={FBC6} alt="" className="" />
-            </motion.div>
-            <motion.img
-              src={FBC5}
-              alt=""
-              className=""
-              variants={imageVariants}
-            />
-          </motion.div>
+             
+           
+           
 
           {/* Text Section */}
-        </motion.div>
+        </div>
 
         {/* Page 2 */}
         <div className="flex flex-col lg:flex-row mt-10 bg-[#e8f7fd] p-4 gap-6">
@@ -182,13 +183,10 @@ const ForBetterCommunities = () => {
               </p>
             </div>
             <div className="flex flex-col gap-4">
-              <motion.img
+              <img
                 src={FBC8}
                 alt=""
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.5 }}
-                variants={imageCommonVariants}
+      
               />
               <p className="">
                 # DJSI requirement: Breakdown of the new employee hires and/or
