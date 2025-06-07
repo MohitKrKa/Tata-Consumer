@@ -46,7 +46,8 @@ const childVariants = {
 const EsgGovernance = () => {
   return (
     <>
-      <div className="m-5 md:m-10 mt-20  flex flex-col md:flex-row gap-10 pt-10">
+    <div className="marginal">
+      <div className="text-lg   flex flex-col md:flex-row gap-10 ">
         {/* Left */}
         <div className="relative w-full md:w-1/2 bg-[#00acbc] text-white text-5xl md:text-7xl flex items-center justify-center">
           <img src={esgG1} alt="" className="h-[80vh] object-cover" />
@@ -128,8 +129,8 @@ const EsgGovernance = () => {
               viewport={{ once: true, amount: 0.5 }}
               variants={imageCommonVariants}
         />
-        <div className="flex flex-row gap-6">
-          <div className="w-[50%]">
+        <div className="flex flex-col gap-6">
+          <div className="">
           <p className="text-[#959493] font-[400] text-base md:text-xl">
             Our targeted ESG endeavours have contributed to enhanced operational
             efficiency and risk management and have been appreciated by a
@@ -142,24 +143,26 @@ const EsgGovernance = () => {
             efforts.
           </p>
           </div>
-          <div className="w-[50%]">
+          <div className="w-[40%]">
           <img src={esgG7} alt="" className="" />
           </div>
         </div>
       </div>
 
       <motion.div
-        className="m-10 hidden md:flex max-w-[68vh] mt-20 h-[96vh] "
+        className=""
         variants={parentVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.6 }}
       >
-        <motion.img src={esgG8} alt="" variants={childVariants} />
-        <motion.img src={esgG9} alt="" variants={childVariants} />
-        <motion.img src={esgG10} alt="" variants={childVariants} />
-        <motion.img src={esgG11} alt="" variants={childVariants}  />
+        <motion.img src="/governance_table/0.png" alt="" variants={childVariants} />
+        <motion.img src="/governance_table/1.webp" alt="" variants={childVariants} />
+        <motion.img src="/governance_table/2.webp" alt="" variants={childVariants} />
+        <motion.img src="/governance_table/3.webp" alt="" variants={childVariants}  />
+        <motion.img className="" src="/governance_table/4.webp" alt="" variants={childVariants}  />
       </motion.div>
+      </div>
     </>
   );
 };

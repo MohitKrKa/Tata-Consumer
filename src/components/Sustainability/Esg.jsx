@@ -42,10 +42,10 @@ const fadeVariants = {
 };
 
 const Esg = () => {
-  const [activeTab, setActiveTab] = useState("target"); // "target" or "highlight"
+  const [activeTab, setActiveTab] = useState("target");
 
   return (
-    <div className=" m-auto pt-10 max-w-[1300px] min-h-[100vh]">
+    <div className="marginal text-lg pt-10 max-w-[1300px] min-h-[100vh] mx-auto">
       {/* Tabs */}
       <div className="flex gap-4 mb-10">
         <button
@@ -57,105 +57,94 @@ const Esg = () => {
           }`}
         >
           <div className="text-xl md:text-2xl lg:text-4xl">
-                <span className="bg-gradient-to-r font-semibold from-[#20b588] to-[#30b9f1] bg-clip-text text-transparent">
-                  TARGET{" "}
-                </span>
-                <span className="bg-gradient-to-r from-[#20b588] to-[#30b9f1] text-white px-2 py-1 rounded-full text-sm md:text-base">
-                  FY 2025-26
-                </span>
-              </div>
+            <span className="bg-gradient-to-r font-semibold from-[#20b588] to-[#30b9f1] bg-clip-text text-transparent">
+              TARGET{" "}
+            </span>
+            <span className="bg-gradient-to-r from-[#20b588] to-[#30b9f1] text-white px-2 py-1 rounded-full text-sm md:text-base">
+              FY 2025-26
+            </span>
+          </div>
         </button>
         <button
           onClick={() => setActiveTab("highlight")}
-          className={`px-5 py-2 rounded-full font-medium cursor-pointer border-2  ${
+          className={`px-5 py-2 rounded-full font-medium cursor-pointer border-2 ${
             activeTab === "highlight"
-                 ? " border-blue-500 text-white"
+              ? " border-blue-500 text-white"
               : "border-blue-100 text-gray-700"
           }`}
         >
-          <div className="text-xl mb-6 md:text-2xl lg:text-4xl">
-              <span className="bg-gradient-to-r font-semibold from-[#20b588] to-[#30b9f1] bg-clip-text text-transparent">
-                HIGHLIGHT{" "}
-              </span>
-              <span className="bg-gradient-to-r from-[#20b588] to-[#30b9f1] text-white px-2 py-1 rounded-full text-sm md:text-base">
-                FY 2024-25
-              </span>
-            </div>
+          <div className="text-xl  md:text-2xl lg:text-4xl">
+            <span className="bg-gradient-to-r font-semibold from-[#20b588] to-[#30b9f1] bg-clip-text text-transparent">
+              HIGHLIGHT{" "}
+            </span>
+            <span className="bg-gradient-to-r from-[#20b588] to-[#30b9f1] text-white px-2 py-1 rounded-full text-sm md:text-base">
+              FY 2024-25
+            </span>
+          </div>
         </button>
       </div>
 
       {/* Animated Section */}
       <AnimatePresence mode="wait">
-        {activeTab === "target" && (
-          <motion.div
-            key="target"
-            initial="hidden"
-            animate="visible"
-            exit="exit"
-            variants={fadeVariants}
-            className="flex flex-col lg:flex-row gap-6 lg:gap-10"
-          >
-            <motion.div
-              className="w-full lg:w-1/2 flex flex-col gap-6 lg:gap-8"
-              variants={parentVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.6 }}
-            >
-             
-             <div className="flex gap-10">
-             <motion.img
-                src={Target1}
-                alt="Target 1"
-                className="w-auto h-auto rounded-md"
-                variants={childVariants}
-              />
-              <motion.img
-                src={Target2}
-                alt="Target 2"
-                className="w-auto h-auto  rounded-md"
-                variants={childVariants}
-              />
-             </div>
-              
-            </motion.div>
-          </motion.div>
-        )}
+      {activeTab === "target" && (
+  <motion.div
+    key="target"
+    initial="hidden"
+    animate="visible"
+    exit="exit"
+    variants={fadeVariants}
+    className="flex flex-col lg:flex-row items-stretch justify-center gap-6"
+  >
+    {[Target1, Target2].map((img, idx) => (
+      <motion.div
+        key={idx}
+        className="w-full max-w-[500px] aspect-[4/3] flex items-center justify-center bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden"
+        variants={childVariants}
+      >
+        <img
+          src={img}
+          alt={`Target ${idx + 1}`}
+          className="object-contain w-full h-full"
+        />
+      </motion.div>
+    ))}
+  </motion.div>
+)}
 
-        {activeTab === "highlight" && (
-          <motion.div
-            key="highlight"
-            initial="hidden"
-            animate="visible"
-            exit="exit"
-            variants={fadeVariants}
-            className="w-full"
-          >
-           
 
-            <div className="flex gap-4 ">
-              <motion.img
-                src={highlight1}
-                alt="Highlight 1"
-                className="w-1/3   rounded-md"
-                variants={childVariants}
-              />
-              <motion.img
-                src={highlight2}
-                alt="Highlight 2"
-                className="w-1/3   rounded-md"
-                variants={childVariants}
-              />
-              <motion.img
-                src={highlight3}
-                alt="Highlight 3"
-                className="w-1/3   rounded-md"
-                variants={childVariants}
-              />
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+
+{activeTab === "highlight" && (
+  <motion.div
+    key="highlight"
+    initial="hidden"
+    animate="visible"
+    exit="exit"
+    variants={fadeVariants}
+    className="flex flex-row justify-center items-center gap-6 overflow-x-auto"
+  >
+    <motion.img
+      src={highlight1}
+      alt="Highlight 1"
+      className="w-full max-w-[300px] h-auto rounded-md"
+      variants={childVariants}
+    />
+    <motion.img
+      src={highlight2}
+      alt="Highlight 2"
+      className="w-full max-w-[300px] h-auto rounded-md"
+      variants={childVariants}
+    />
+    <motion.img
+      src={highlight3}
+      alt="Highlight 3"
+      className="w-full max-w-[300px] h-auto rounded-md"
+      variants={childVariants}
+    />
+  </motion.div>
+)}
+
+</AnimatePresence>
+
     </div>
   );
 };
