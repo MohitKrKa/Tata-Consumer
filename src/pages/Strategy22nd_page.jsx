@@ -51,7 +51,7 @@ const Strategy22nd_page = () => {
         </div>
 
       </div>
-      <div className='bg-gray-100'>
+      <div className='bg-gradient-to-t from-gray-50 to-transparent'>
       <div className='marginal'>
         <div className='font-semibold text-[#02adbd] text-2xl mb-2'>Portfolio catering to various Consumer Cohorts</div>
         <div className='w-[70%]'>

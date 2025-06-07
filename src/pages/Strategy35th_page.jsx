@@ -8,11 +8,12 @@ const Strategy35th_page = () => {
         <div className='mb-2'>India’s organic food market is growing due to rising consumer
           preference for natural and chemical-free products, creating a
           significant growth opportunity for Organic India.</div>
-        <div className='text-[#02adbd] mb-3'>
-          How is Organic India capitalising on opportunities?
-        </div>
-        <div className='flex flex-row gap-5 justify-center mb-5'>
+
+        <div className='flex flex-row gap-5 justify-center items-center bg-gray-50 p-4 mb-5'>
           <div className='w-[50%]'>
+            <div className='text-[#02adbd] mb-3 text-xl'>
+              How is Organic India capitalising on opportunities?
+            </div>
             With a diverse portfolio including
             ghee, chyavanprash, jaggery,
             quinoa, apple cider vinegar,
@@ -27,7 +28,7 @@ const Strategy35th_page = () => {
             opportunities.
           </div>
           <div className='w-[50%] '>
-            <img src="/221.webp" className='w-2/3' alt="" />
+            <img src="/221.webp" className='w-1/2' alt="" />
           </div>
         </div>
         <div className='mb-5'>
@@ -36,8 +37,13 @@ const Strategy35th_page = () => {
           </div>
           <div className='flex flex-row justify-center gap-5'>
             <div className='w-[50%]'>
+              <div className='bg-gray-50 p-6'>
+                <img src="/222.webp" className='w' alt="" />
+              </div>
+            </div>
+            <div className='w-[50%]'>
               <ul className='list-disc ml-6'>
-                <li className='mb-2'>To sustain long-term growth, a structured innovation
+                <li className='mb-3'>To sustain long-term growth, a structured innovation
                   funnel was established, focused on strengthening the
                   current core and expanding the portfolio of organic
                   solutions. This is aimed at unlocking key growth
@@ -46,43 +52,32 @@ const Strategy35th_page = () => {
                   Khandsari Sugar and Gokshura were launched in
                   India while the US market saw the launch of two
                   new formats, Gummies and Lattes, as experiential
-                  alternatives to capsules.
-
-                  <ul className='list-disc ml-6 mt-1'>
-                    <li className='mb-1'>Khandsari Sugar is an unrefined sugar made
-                      from certified organic sugarcane, offering a
-                      natural alternative to processed sweeteners.</li>
-                    <li className='mb-1'>Gokshura Capsules are formulated from certified
-                      organic 100% whole herbs, catering to men’s
-                      wellness through natural supplementation.</li>
-                  </ul>
-                </li>
+                  alternatives to capsules.</li>
+                <ul className='list-disc ml-6 mt-1'>
+                  <li className='mb-3'>Khandsari Sugar is an unrefined sugar made
+                    from certified organic sugarcane, offering a
+                    natural alternative to processed sweeteners.</li>
+                  <li className='mb-3'>Gokshura Capsules are formulated from certified
+                    organic 100% whole herbs, catering to men’s
+                    wellness through natural supplementation.</li>
+                  <li className='mb-3'>Multiple R&D initiatives are underway to advance
+                    expertise in organic and herbal product categories.</li>
+                  <li className=''>An MoU was signed with the University of TransDisciplinary Health Sciences and Technology (TDU)
+                    in Bengaluru, focused on research in traditional
+                    health sciences and technology</li>
+                </ul>
               </ul>
-            </div>
-            <div className='w-[50%]'>
-              <ul className='list-disc ml-6'>
-                <li className='mb-2'>Multiple R&D initiatives are underway to advance
-                  expertise in organic and herbal product categories.</li>
-                <li className='mb-2'>An MoU was signed with the University of TransDisciplinary Health Sciences and Technology (TDU)
-                  in Bengaluru, focused on research in traditional
-                  health sciences and technology</li>
-              </ul>
-              <div>
-                <img src="/222.webp" alt="" />
-              </div>
             </div>
           </div>
         </div>
-
-        <div className='text-xl font-semibold text-[#06aeef] mb-3'>
-          STRENGTHENING BRAND EQUITY AND CONSUMER CONNECT
-        </div>
-        <div>
+        <div className='mt-16'>
           <div className='flex flex-row justify-center gap-5'>
             <div className='w-[50%]'>
+              <h3 className='text-xl font-semibold text-[#06aeef] mb-3'>
+                STRENGTHENING BRAND EQUITY AND CONSUMER CONNECT
+              </h3>
               <div className='mb-2'>Organic India has invested in brand equity-building
                 campaigns across digital and on-ground platforms.</div>
-
               <ul className='list-disc ml-6'>
                 <li className='mb-2'>Seasonal campaigns were executed to address
                   category-specific consumer needs, such as winter
@@ -104,9 +99,7 @@ const Strategy35th_page = () => {
                 leading publications.
               </div>
             </div>
-
-
-            <div className='w-[50%]'>
+            <div className='w-[50%] bg-gray-50 p-6'>
               <img src="/223.webp" alt="" />
             </div>
           </div>

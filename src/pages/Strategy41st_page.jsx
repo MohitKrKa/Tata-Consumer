@@ -17,16 +17,7 @@ const items = [
     text: "Step up cost savings and efficiency improvement across the value chain"
   },
 ];
-   const Strategy41th_page = ({
-     bgColor = "#0066b3",
-     image = "/strategy/2.webp",
-     heading1 = "Drive",
-     highlight1 = "execution",
-     heading2 = "excellence",
-     highlight2 = "everyday",
-     subheading = "",
-     footerText = "— Integrated Annual Report 2024–25",
-   }) => {
+   const Strategy41th_page = () => {
      return (
       <>
        <div
