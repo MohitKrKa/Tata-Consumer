@@ -7,13 +7,13 @@ const Planet6th_page = () => {
             <div className=''>
                 <img src="/76.webp" alt="" />
             </div>
-            <div className='flex md:flex-row flex-col justify-center items-center gap-5'>
+            <div className='flex  flex-col justify-center items-center gap-5'>
 <div className='md: h-auto '>
-    <div className=''>
+    <div className='w-[60%]'>
         <img src="/77.webp" alt="" />
     </div>
     </div>
-    <div className='md:w-[50%] h-auto flex flex-col gap-2'>With a forward-looking vision, we are set to increase our reliance on renewable energy to 35% by FY 2025-26. Additionally, we
+    <div className=' h-auto flex flex-col gap-2'>With a forward-looking vision, we are set to increase our reliance on renewable energy to 35% by FY 2025-26. Additionally, we
 are on a determined path to achieve carbon neutrality for our direct emissions and the energy we purchase (Scope 1 and Scope
 2 emissions) across all regions by FY 2025-26, marking a significant stride towards a more sustainable future. We aim to reach
 Net Zero emissions by the year 2040 and we are actively reducing our carbon footprint across our value chain (i.e., including

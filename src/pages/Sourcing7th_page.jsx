@@ -4,10 +4,10 @@ const Sourcing7th_page = () => {
   return (
     <>
       <div className="marginal text-lg">
-        <div className="flex flex-row justify-center gap-5 mb-4">
-          <div className="w-[80%]">
+        <div className="">
+          <div className="">
              <div className='flex flex-row gap-2'>
-                 <div className='w-[5%]'>
+                 <div className='md:w-[5%] w-[15%]'>
                      <img src="/sourcing/Screening.webp" alt="" />
                    </div>
                    <div>
@@ -40,7 +40,12 @@ const Sourcing7th_page = () => {
             valuable guidance and standards for best practices in
             sustainability.
           </div>
-          <div className="w-[20%]">
+          
+        </div>
+        <div className="flex md:flex-row flex-col justify-center gap-5">
+          <div className="md:w-[50%] ">
+            <img className="mb-3" src="/58.webp" alt="" />
+            <div className="mb-3 p-3 bg-gray-100">
             <div className="text-3xl bg-gradient-to-r from-[#0ab14b] to-[#06aee0] bg-clip-text text-transparent mb-3">
               Local Sourcing
             </div>
@@ -55,10 +60,6 @@ const Sourcing7th_page = () => {
               minimise our supply chain’s carbon footprint.
             </div>
           </div>
-        </div>
-        <div className="flex flex-row justify-center gap-5">
-          <div className="w-[50%] ">
-            <img className="mb-3" src="/58.webp" alt="" />
             <div className="p-3 bg-[#f8f1e7] mb-3">
               <div className="text-3xl bg-gradient-to-r from-[#0ab14b] to-[#06aee0] bg-clip-text text-transparent mb-3">
                 Sustainable packaging
@@ -69,10 +70,7 @@ const Sourcing7th_page = () => {
                 of our primary packaging budget to local Indian sources
               </div>
             </div>
-            <div className="mb-2 p-2 bg-gray-100">
-              <img src="/59.webp" alt="" />
-            </div>
-            <div className="p-2 bg-[#e9f7f7]">
+            <div className="p-2 bg-[#e9f7f7] mb-3">
             <div className="text-3xl bg-gradient-to-r from-[#0ab14b] to-[#06aee0] bg-clip-text text-transparent ">
             Trustea code
 is designed to
@@ -91,8 +89,12 @@ be ISEAL Code
 Compliant. 
 </div>
             </div>
+            <div className="mb-2 p-4 bg-gray-100">
+              <img src="/59.webp" alt="" />
+            </div>
+            
           </div>
-          <div className="w-[50%]">
+          <div className="md:w-[50%]">
             <p className="mb-2">
               The Executive Management, comprising senior management
               representatives, regularly oversees the implementation of our
@@ -142,7 +144,7 @@ Compliant.
           
           </div>
         </div>
-        <div className="flex flex-row gap-5 justify-center mt-4">
+        <div className="flex  flex-col gap-5 justify-center mt-4">
         <div className="">
 <p className="mb-2">For our international operations,
 we are empowering our tea
@@ -151,7 +153,7 @@ management staff with knowledge
 and skills to identify and combat
 slavery and human trafficking. Our
 focused training programme includes:</p>
-<div className="mb-2">
+<div className="md:mb-2">
 Educating on the extent of human
 trafficking and slavery issues
 </div>
@@ -221,8 +223,8 @@ Although the tulsi seeds are distributed by us, farmers
 are free to sell their produce either to Organic India or
 in the open market.
         </div>
-        <div className="w-[65%] mt-2 p-3">
-          <img src="/61.webp" alt="" />
+        <div className="w-full mt-2  mx-auto p-4 bg-gray-100">
+          <img className="md:w-[65%] mx-auto" src="/61.webp" alt="" />
         </div>
         </div>
         </div>

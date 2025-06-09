@@ -9,8 +9,8 @@ const Planet11th_page = () => {
 
             </div> */}
             <div className=''>
-                <div className='flex md:flex-row flex-col  gap-5'>
-<div className='md:w-[30%] h-auto '>
+                <div className='flex  flex-col  gap-5 p-5'>
+<div className=' h-auto '>
 <div className='text-2xl text-[#1267b3] mb-2 font-semibold'>PRESERVING NATURE
 AND BIODIVERSITY</div>
 <div className='mb-2'>At TCP, we are dedicated to preserving
@@ -32,8 +32,8 @@ stewardship, our plantations are
 models of sustainability, recognised
 with global certifications.</div>
 </div>
-<div className='md:w-[70%] h-auto flex md:flex-row flex-col justify-center items-center gap-5 '>
-    <div className='md:w-[50%] h-auto mb-5'>
+<div className=' h-auto flex  flex-col justify-center items-center gap-5 '>
+    <div className=' h-auto mb-5'>
     <div className='text-xl text-[#06aeef] font-semibold mb-2'>SOME OF TATA COFFEE’S
 BIODIVERSITY CONSERVATION
 PROJECTS INCLUDE:</div>
@@ -61,7 +61,7 @@ and social standards.</li>
     </ul>
 </div>
 </div>
-<div className='md:w-[50%] h-auto '>
+<div className=' h-auto '>
 We observed a remarkable uptick
 in our bio-indicators, notably bees,
 which has led to enhanced pollination

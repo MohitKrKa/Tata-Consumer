@@ -3,9 +3,10 @@ import React from 'react'
 const Sourcing11th_page = () => {
   return (
    <>
-   <div className='marginal text-lg bg-[#eff1f9] py-3'>
+   <div className='marginal text-lg bg-[#eff1f9] '>
+    <div className='p-3'>
     <div className='flex flex-row gap-2 mb-2'>
-        <div className='w-[5%]'>
+        <div className='md:w-[5%] w-[15%]'>
             <img src="/sourcing/Screening.webp" alt="" />
           </div>
           <div>
@@ -64,7 +65,7 @@ processing, packaging, transporting,
 and ultimately, sale.
 </p>
             </div>
-            <div className='mb-3  p-3 bg-white'>
+            <div className='mb-3  p-3 bg-gray-100'>
 <div className='text-2xl text-[#1368b4] mb-3'>Digital Intervention for Enhancing Tea Traceability</div>
 <div className='mb-2 bg-gradient-to-r from-[#0ab14b] to-[#06aee0] bg-clip-text text-transparent text-xl'>
 We have introduced digital solutions like the Tracetea system, available as an
@@ -78,6 +79,7 @@ invoice, impact assessment, digital certification and online training.
             <div>
               <img src="/70.webp" alt="" />
             </div>
+   </div>
    </div>
    </>
   )

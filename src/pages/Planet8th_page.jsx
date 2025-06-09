@@ -7,7 +7,7 @@ const Planet8th_page = () => {
 <div className='w-[5%]'>
         <img src="/planetwaste.webp" alt="" />
       </div>
-    <div className='text-xl text-white p-3 bg-gradient-to-r from-blue-500 to-green-400 mb-2 rounded-r-4xl w-max'>ZERO WASTE TO LANDFILL</div>
+    <div className='text-xl text-white p-3 bg-gradient-to-r from-[#01b051] to-[#04adee] mb-2 rounded-r-4xl w-max'>ZERO WASTE TO LANDFILL</div>
     <div className='mb-2'>At TCP, we are dedicated to the responsible use of
 resources and minimisingw waste in our manufacturing
 processes, with a firm commitment to safe and scientific

@@ -18,49 +18,52 @@ const CEO = () => {
       <div className='py-10'>
       <Heading color="black" title="MD & CEO's Message" linecolor="#0072CE" />
       </div>
-      <div className="flex flex-col md:flex-row items-stretch bg-white overflow-hidden mb-5 ">
-        {/* Image Section */}
-        <div className="md:w-1/2 w-full relative overflow-hidden">
-          <AnimatePresence mode="wait">
-            <motion.img
-              key={slides.image}
-              src={slides.image}
-              alt={slides.title}
-              className="object-cover w-full h-full"
-              initial={{ opacity: 0, scale: 1.02 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.98 }}
-              transition={{ duration: 0.6, ease: "easeInOut" }}
-            />
-          </AnimatePresence>
-        </div>
-
-        {/* Text Section */}
-        <div className="md:w-1/2 w-full p-6 flex flex-col justify-center">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={slides.title}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-              layout
-            >
-              {/* <img src="./quote_icon.webp" className="w-16 h-16 mb-4" alt="Quote" /> */}
-              <img src="/Quotation.webp" className="w-8" alt="Quote" />
-              <div className="relative py-2">
-              <p className="text-gray-600 text-lg mb-4">{slides.description}</p>
-              <img src="/Quotation.webp" className="absolute right-4 bottom-2 w-6 rotate-180" alt="Quote" />
+       <div className="relative mb-5">
+              {/* <div className="absolute triangle-bottom-right w-10 h-30 bg-gradient-to-br from-[#00aeef] to-[#0db14b]"></div> */}
+              <div className="absolute bottom-0 right-0 triangle-top-left w-20 h-70 bg-gradient-to-br from-[#00aeef] to-[#0db14b]"></div>
+      
+            <div className="flex flex-col  md:flex-row bg-gradient-to-tr from-[#f1f6fa] to-[#f0faf5] items-stretch overflow-hidde ">
+              {/* Image Section */}
+              <div className="md:w-1/2 w-full relative overflow-hidden">
+                <AnimatePresence mode="wait">
+                  <motion.img
+                      key={slides.image}
+                      src={slides.image}
+                      alt={slides.title}
+                    className="object-cover w-full h-full"
+                    initial={{ opacity: 0, scale: 1.02 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.98 }}
+                    transition={{ duration: 0.6, ease: "easeInOut" }}
+                  />
+                </AnimatePresence>
               </div>
-              {/* <p className="text-gray-600 text-lg mb-4">{slides.description}</p> */}
-              <h2 className="text-lg font-bold text-[#38b9c7]">{slides.title}</h2>
-              <p className="text-gray-500 font-semibold text-sm">{slides.desg}</p>
-              <p className="text-gray-500 font-semibold text-sm">Tata Consumer Products</p>
-
-            </motion.div>
-          </AnimatePresence>
-        </div>
-      </div>
+      
+              {/* Text Section */}
+              <div className="md:w-1/2 w-full p-6 flex flex-col justify-center">
+                <AnimatePresence mode="wait">
+                  <motion.div
+                    key={slides.title}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -20 }}
+                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    layout
+                  >
+                    <img src="/Quotation.webp" className="w-8" alt="Quote" />
+                    <div className="relative py-2">
+                      <p className="text-gray-600 text-lg mb-4">{slides.description}</p>
+                      <img src="/Quotation.webp" className="absolute right-4 bottom-2 w-6 rotate-180" alt="Quote" />
+                    </div>
+      
+                    <h2 className="text-lg font-bold text-[#38b9c7]">{slides.title}</h2>
+                    <p className="text-gray-500 font-semibold text-sm">{slides.desg}</p>
+                    <p className="text-gray-500 font-semibold text-sm">Tata Consumer Products</p>
+                  </motion.div>
+                </AnimatePresence>
+              </div>
+            </div>
+            </div>
       <div className='text-2xl text-[#06aeef] mb-3 font-semibold'>
         Delivering consistent results
         and strong progress in our
@@ -150,31 +153,31 @@ const CEO = () => {
             <div className='flex justify-evenly items-center'>
               
             <div className="flex flex-col mt-2 w-[200px] mb-5">
-              <h1 className="text-3xl text-[#4084c1] leading-none">29
-                %</h1>
+  <h1 className="text-3xl text-[#4084c1] leading-none">29%</h1>
 
-              <div class="flex items-center my-1">
-                <div class="w-4 h-2 bg-blue-500 rounded-full"></div>
-                <div class="h-0.5 w-full bg-blue-500"></div>
-              </div>
-              <div className=" text-sm leading-tight">
-                India Foods
-                business growth
-                2
-              </div>
-            </div>
+  <div className="flex items-center my-1">
+    <div className="w-4 h-2 bg-blue-500 rounded-full"></div>
+    <div className="h-0.5 w-full bg-blue-500"></div>
+  </div>
+
+  <div className="text-sm leading-tight">
+    India Foods<br />
+    business growth<sup>2</sup>
+  </div>
+</div>
+
             <div className="flex flex-col mt-2 w-[200px] mb-5">
               <h1 className="text-3xl text-[#4084c1] leading-none">10
                 %</h1>
 
-              <div class="flex items-center my-1">
+              <div class="flex md:flex-row flex-col items-center my-1">
                 <div class="w-4 h-2 bg-blue-500 rounded-full"></div>
                 <div class="h-0.5 w-full bg-blue-500"></div>
               </div>
               <div className=" text-sm leading-tight">
                 India Beverages
                 business growth
-                1
+                <sup>1</sup>
               </div>
             </div>
           </div>
@@ -184,7 +187,6 @@ const CEO = () => {
             <p className='mb-5 text-xs'>
               2. India Foods Includes Salt, Tata Sampann, Tata Soulfull and Capital
               Foods revenues (including overseas revenue).
-              36 Integrated Annual Report 2024-25 T
             </p>
         </div>
       </div>
@@ -290,8 +292,8 @@ const CEO = () => {
             Tata Starbucks is now the largest café
             operator in India
           </p>
-          <div className=' flex flex-row justify-center gap-5'>
-          <div className='w-[60%]'> 
+          <div className=' flex md:flex-row flex-col justify-center gap-5'>
+          <div className='md:w-[60%]'> 
         
           
           <p className='mb-2'>
@@ -310,7 +312,7 @@ const CEO = () => {
             health & wellness space.
           </p>
           </div>
-          <div className='w-[40%]'>
+          <div className='md:w-[40%]'>
           <img src="/CEO2.webp" alt="" />
         </div>
         </div>
@@ -318,12 +320,13 @@ const CEO = () => {
        
 
       </div>
-      <div className=''>
+      <div className='mb-3'>
         <div className='mb-3 text-2xl font-semibold  text-[#1368b4] '>
           REINFORCING OUR DISTRIBUTION STRENGTH
         </div>
-        <div className='mb-2 flex flex-row justify-center gap-5'>
-          <div className='w-[50%]'>
+        <div className=' flex md:flex-row flex-col justify-center gap-5'>
+          <div className='md:w-[50%]'>
+            <p className='mb-2'>
           In India, we reach over 275 million
           households and distribute to 4.4 million
           retail outlets. To enable our growth
@@ -337,6 +340,8 @@ const CEO = () => {
           population of over half a million to
           ensure effective assortment selling
           across our product range.
+          </p>
+          <p className='mb-2'>
           Consumers engage with Tata Consumer
           products in various categories across
           millions of outlets in General Trade, and
@@ -346,7 +351,15 @@ const CEO = () => {
           are being incubated to fuel growth,
           pilots have been completed and rollouts
           are in process.
-          Our assortments are tailored to meet
+          </p>
+          
+          </div>
+          <div className='  md:w-[50%]'>
+          <img className='' src="/CEO3.webp" alt="" />
+        </div>
+        </div>
+        <div>
+        Our assortments are tailored to meet
           the changing consumer needs and
           shopping behaviours in each retail
           channel, helping us establish leadership
@@ -369,26 +382,23 @@ const CEO = () => {
           an auto-replenishment system for
           our distributors to further streamline
           operations.
-          </div>
-          <div className='mb-2  w-[50%]'>
-          <img className='mb-3' src="/CEO3.webp" alt="" />
-          <p className='text-[#1368b4]'>We reach over
-          <span className='text-2xl '> 275 million </span>
-          households and
-          distribute to
-          <span className='text-2xl'> 4.4 million </span>
-          retail outlets.</p>
         </div>
+        <div className='mt-2 text-[#1368b4]'>
+        We reach over
+<span className='text-2xl'> 275 million </span>
+households and
+distribute to
+<span className='text-2xl'> 4.4 million </span>
+retail outlets.
         </div>
-        
-        
       </div>
-      <div className='flex flex-row justify-center gap-5 '>
+      
+      <div className='flex md:flex-row flex-col justify-center gap-5 '>
         <div>
      <div className='text-2xl font-semibold text-[#1368b4] mb-2'>
      ACCELERATING INNOVATION
      </div>
-     <div className='mb-2'>
+     <div className='mb-2 '>
      As consumer aspirations rise, New
 Product Development will need to
 deliver products that offer relevant
@@ -404,13 +414,20 @@ innovation agenda and is built
 around three key pillars — Superior
 Experiences (experiential food
 and beverage products offering
-an indulgence/treat), Nutritionally
+an indulgence/treat),Nutritionally
 Enhanced Offerings (educating
 consumers about nutrition and
 enabling healthier choices) and
 Sustenance (products for regular
 consumption known for their
-holistic goodness). We have further
+holistic goodness).
+     </div>
+     </div>
+     <div className=''>
+      <img src="/CEO4.webp" alt="" />
+     </div>
+     </div>
+     <div> We have further
 strengthened our R&D capability
 through science-backed disruptive
 innovation, resulting in differentiated
@@ -422,20 +439,15 @@ with millets.
 In addition, we have fostered
 strong partnerships with academic
 institutions to further enhance our
-research capabilities.
-     </div>
-     </div>
-     <div>
-      <img src="/CEO4.webp" alt="" />
-     </div>
-     </div>
-     <div className='flex flex-row justify-center gap-5 '>
-        <div className='w-[70%]'>
+research capabilities.</div>
+     <div className='flex md:flex-row flex-col justify-center gap-5 '>
+        <div className='md:w-[60%]'>
      <div className='text-2xl font-semibold text-[#1368b4] mb-2'>
      UNLOCKING VALUE FROM OUR
 RECENT ACQUISITIONS
      </div> 
      <div className='mb-2'>
+      <p>
      The integration of both our acquisitions
 — Capital Foods and Organic India
 was completed in record time, within
@@ -449,16 +461,26 @@ it further as we move forward. In
 addition, we are starting to derive
 significant synergy benefits in both
 businesses.
-We have expanded Capital Foods’
+</p>
+<p>We have expanded Capital Foods’
 product portfolio by foraying into
 adjacencies such as Schezwan
 ketchup, Sriracha sauce and Momo
 chutney, catering to the growing
-demand for bold, spicy flavours.
-The Food Services/ HoReCa channel
+demand for bold, spicy flavours. 
+    </p>
+
+     </div>
+     </div>
+     <div className='md:w-[40%]'>
+      <img src="/CEO5.webp" alt="" />
+     </div>
+     </div>
+     <div className='mb-4'>
+     The Food Services/ HoReCa channel
 is another area of opportunity for the
 Capital Foods portfolio that will fuel
-growth as we scale that channel going
+growth  as we scale that channel going
 forward.
 Organic India has gone through
 a brand refresh and the Tata
@@ -480,11 +502,6 @@ We have also accelerated the growth
 of Organic India in international
 markets with stronger e-commerce
 execution in USA.
-     </div>
-     </div>
-     <div className='w-[35%]'>
-      <img src="/CEO5.webp" alt="" />
-     </div>
      </div>
      <div className='flex flex-row justify-center gap-5 mb-5 '>
         <div className='w-[70%]'>
@@ -534,7 +551,7 @@ long-term growth.
       <img src="/CEO6.webp" alt="" />
      </div>
      </div>
-     <div className='flex flex-row justify-center gap-5 mb-5'>
+     <div className='flex flex-row justify-center gap-5 '>
         <div className='w-[50%]'>
      <div className='text-2xl font-semibold text-[#1368b4] mb-2'>
      EMBEDDING SUSTAINABILITY
@@ -559,7 +576,15 @@ targets. Our inclusion in the S&P
 Global Sustainability Yearbook 2025
 is a testimony to our commitment
 to embedding sustainability across
-various facets of the organisation. This
+various facets of the organisation. 
+     </div>
+     </div>
+     <div className='w-[50%]'>
+      <img src="/CEO7.webp" alt="" />
+     </div>
+     </div>
+     <div className='mb-2'>
+     This
 focus on strengthening ESG practices
 has resulted in over 15% improvement
 in Tata Consumer’s Sustainalytics
@@ -570,11 +595,6 @@ Company (India)’ and No.2 in the
 ‘Top 50 Most Sustainable Companies
 across sectors (India)’ in Business
 World’s IMSC rankings, 2024.
-     </div>
-     </div>
-     <div className='w-[50%]'>
-      <img src="/CEO7.webp" alt="" />
-     </div>
      </div>
      <div className='mb-2 text-2xl font-semibold text-[#1368b4] '>
      NURTURING TALENT

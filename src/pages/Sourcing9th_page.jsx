@@ -3,7 +3,7 @@ import React from 'react'
 const Sourcing9th_page = () => {
   return (
    <>
-   <div className='marginal text-lg '>
+   <div className='marginal text-lg  '>
     <div className='p-3 bg-gray-100 mb-3  '>
       <img src="/64.webp" alt="" />
     </div>
@@ -15,10 +15,10 @@ Through our partnerships with organisations like Trustea and Rainforest Alliance
 our growers minimise the use of chemicals in their agricultural practices and respect the interplay between people
 and the natural environment in their surroundings.</div>
     </div>
-    <div className='flex flex-row justify-center gap-5 p-4 bg-[#f8f1e7]'>
+    <div className='flex  flex-col justify-center gap-5 p-4 bg-[#f8f1e7]'>
 <div>
   <div className="w-[40%] mb-2">
-    <img className='w-[100%]' src="/sourcing_logos/0.webp" alt="" />
+    <img className='w-[40%]' src="/sourcing_logos/0.webp" alt="" />
   </div>
   <div className='text-xl font-semibold text-[#06aeef] mb-2'>ETHICAL TEA
   PARTNERSHIP (ETP)</div>
@@ -45,7 +45,7 @@ the member organisations.</div>
 </div>
 <div>
   <div className='w-[40%] mb-2'>
-    <img className='w-[50%]' src="/sourcing_logos/1.webp" alt="" />
+    <img className='w-[30%]' src="/sourcing_logos/1.webp" alt="" />
   </div>
   <div className='text-xl font-semibold text-[#06aeef] mb-2'>TRUSTEA</div>
   <div>Tata Consumer is one of
@@ -73,7 +73,7 @@ the Indian market.</div>
 </div>
 <div>
   <div className='w-[40%] mb-2'>
-    <img className='' src="/sourcing_logos/2.webp" alt="" />
+    <img className='w-[40%]' src="/sourcing_logos/2.webp" alt="" />
   </div>
   <div className='text-xl font-semibold text-[#06aeef] mb-2'>RAINFOREST
   ALLIANCE  </div>
@@ -95,7 +95,7 @@ Rainforest Alliance certified. </div>
 </div>
 <div>
   <div className='w-[40%] mb-2'>
-    <img className='w-[55%]' src="/sourcing_logos/3.webp" alt="" />
+    <img className='w-[35%]' src="/sourcing_logos/3.webp" alt="" />
   </div>
   <div className='text-xl font-semibold text-[#06aeef] mb-2'>COFFEE AND FARMER
 EQUITY (C.A.F.E.)

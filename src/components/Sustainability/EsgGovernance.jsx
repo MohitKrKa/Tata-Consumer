@@ -11,7 +11,8 @@ import esgG9 from "/Sustainability/esgG9.webp";
 import esgG10 from "/Sustainability/esgG10.webp";
 import esgG11 from "/Sustainability/esgG11.webp";
 import { motion } from "framer-motion";
-
+import CommitteeDropdown from "./CommitteeDropdown";
+import Governance_table from "./Governance_table"
 const parentVariants = {
   hidden: {},
   visible: {
@@ -104,7 +105,7 @@ const EsgGovernance = () => {
         </p>
 
         <motion.div
-          className="flex flex-wrap justify-center  gap-6 md:gap-6"
+          className="md:flex  justify-center  gap-6 md:gap-6"
           variants={parentVariants}
           initial="hidden"
           whileInView="visible"
@@ -115,20 +116,20 @@ const EsgGovernance = () => {
               key={idx}
               src={img}
               alt=""
-              className="h-[30vh] md:h-[38vh] object-contain"
+              className="w-[33%] object-contain"
               variants={childVariants}
             />
           ))}
         </motion.div>
       </div>
-
-      <div className="m-5 md:m-10 mt-20 flex flex-col  gap-6">
-        <motion.img src={esgG6} alt="" className=""
+<CommitteeDropdown/>
+      <div className="">
+        {/* <motion.img src={esgG6} alt="" className=""
         initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.5 }}
               variants={imageCommonVariants}
-        />
+        /> */}
         <div className="flex flex-col gap-6">
           <div className="">
           <p className="text-[#959493] font-[400] text-base md:text-xl">
@@ -143,25 +144,41 @@ const EsgGovernance = () => {
             efforts.
           </p>
           </div>
-          <div className="w-[40%]">
-          <img src={esgG7} alt="" className="" />
-          </div>
-        </div>
+          <div className="flex flex-row justify-center gap-6 text-[#959493] font-[400] text-base md:text-xl">
+  {[0, 1, 2, 3].map((i, idx) => (
+    <div key={idx} className="flex flex-col text-left items-start w-1/4  bg-gray-50 p-6">
+      {/* Fixed-size image container for consistent layout */}
+      <div className="w-[120px] h-[60px] mb-3">
+        <img
+          src={`/governance_logo/${i}.webp`}
+          alt=""
+          className="w-full h-full object-contain"
+        />
       </div>
 
-      <motion.div
-        className=""
-        variants={parentVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.6 }}
-      >
-        <motion.img src="/governance_table/0.png" alt="" variants={childVariants} />
-        <motion.img src="/governance_table/1.webp" alt="" variants={childVariants} />
-        <motion.img src="/governance_table/2.webp" alt="" variants={childVariants} />
-        <motion.img src="/governance_table/3.webp" alt="" variants={childVariants}  />
-        <motion.img className="" src="/governance_table/4.webp" alt="" variants={childVariants}  />
-      </motion.div>
+      {/* Text below image starts at same position for all */}
+      <div>
+        {i === 0 && (
+          <>TCP was included in the Sustainability Yearbook 2024 by S&P Global Sustainable 1, marking our place among the leaders in sustainability</>
+        )}
+        {i === 1 && (
+          <>TCP’s ESG Risk Rating from Morningstar Sustainalytics has improved, transitioning to ‘Medium’ risk status</>
+        )}
+        {i === 2 && (
+          <>MSCI rating for TCP remains unchanged at ‘A’, indicating continued strong performance</>
+        )}
+        {i === 3 && (
+          <>CDP Climate Change Rating ‘B’; CDP Water Rating ‘B’ (recognises that the Company is making significant efforts to manage environmental challenges)</>
+        )}
+      </div>
+    </div>
+  ))}
+</div>
+
+
+        </div>
+      </div>
+<Governance_table/>
       </div>
     </>
   );

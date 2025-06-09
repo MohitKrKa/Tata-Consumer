@@ -45,39 +45,39 @@ const Esg = () => {
   const [activeTab, setActiveTab] = useState("target");
 
   return (
-    <div className="marginal text-lg pt-10 max-w-[1300px] min-h-[100vh] mx-auto">
+    <div className="marginal text-lg  ">
       {/* Tabs */}
       <div className="flex gap-4 mb-10">
         <button
           onClick={() => setActiveTab("target")}
-          className={`px-5 py-2 rounded-full font-medium cursor-pointer border-2 ${
+          className={`px-5 py-1 rounded-full font-medium cursor-pointer border-2 w-fit ${
             activeTab === "target"
               ? " border-blue-500 text-white"
               : "border-blue-100 text-gray-700"
           }`}
         >
-          <div className="text-xl md:text-2xl lg:text-4xl">
+          <div className="text-xl md:text-2xl ">
             <span className="bg-gradient-to-r font-semibold from-[#20b588] to-[#30b9f1] bg-clip-text text-transparent">
               TARGET{" "}
             </span>
-            <span className="bg-gradient-to-r from-[#20b588] to-[#30b9f1] text-white px-2 py-1 rounded-full text-sm md:text-base">
+            <span className="bg-gradient-to-r from-[#20b588] to-[#30b9f1] text-white px-2 py-1 rounded-full text-xs ">
               FY 2025-26
             </span>
           </div>
         </button>
         <button
           onClick={() => setActiveTab("highlight")}
-          className={`px-5 py-2 rounded-full font-medium cursor-pointer border-2 ${
+          className={`px-5 py-1 rounded-full font-medium cursor-pointer border-2 w-fit ${
             activeTab === "highlight"
               ? " border-blue-500 text-white"
               : "border-blue-100 text-gray-700"
           }`}
         >
-          <div className="text-xl  md:text-2xl lg:text-4xl">
+          <div className="text-xl  md:text-2xl ">
             <span className="bg-gradient-to-r font-semibold from-[#20b588] to-[#30b9f1] bg-clip-text text-transparent">
               HIGHLIGHT{" "}
             </span>
-            <span className="bg-gradient-to-r from-[#20b588] to-[#30b9f1] text-white px-2 py-1 rounded-full text-sm md:text-base">
+            <span className="bg-gradient-to-r from-[#20b588] to-[#30b9f1] text-white px-2 py-1 rounded-full text-xs">
               FY 2024-25
             </span>
           </div>
@@ -93,12 +93,12 @@ const Esg = () => {
     animate="visible"
     exit="exit"
     variants={fadeVariants}
-    className="flex flex-col lg:flex-row items-stretch justify-center gap-6"
+    className=" p-4 border rounded-2xl border-gray-200"
   >
     {[Target1, Target2].map((img, idx) => (
       <motion.div
         key={idx}
-        className="w-full max-w-[500px] aspect-[4/3] flex items-center justify-center bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden"
+        className="md:w-[80%] mx-auto overflow-hidden"
         variants={childVariants}
       >
         <img
@@ -120,7 +120,7 @@ const Esg = () => {
     animate="visible"
     exit="exit"
     variants={fadeVariants}
-    className="flex flex-row justify-center items-center gap-6 overflow-x-auto"
+    className="flex flex-row justify-center items-center gap-6 overflow-x-auto p-4 border rounded-2xl border-gray-200"
   >
     <motion.img
       src={highlight1}

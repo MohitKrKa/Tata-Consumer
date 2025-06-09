@@ -16,14 +16,18 @@ const Md = () => {
       <div className='py-10'>
       <Heading color="black" title="Chairman's Message" linecolor="#0072CE" />
       </div>
-<div className="flex flex-col md:flex-row items-stretch bg-white overflow-hidden mb-5 ">
+      <div className="relative mb-5">
+        {/* <div className="absolute triangle-bottom-right w-10 h-30 bg-gradient-to-br from-[#00aeef] to-[#0db14b]"></div> */}
+        <div className="absolute bottom-0 right-0 triangle-top-left w-20 h-70 bg-gradient-to-br from-[#00aeef] to-[#0db14b]"></div>
+
+      <div className="flex flex-col  md:flex-row bg-gradient-to-tr from-[#f1f6fa] to-[#f0faf5] items-stretch overflow-hidde ">
         {/* Image Section */}
         <div className="md:w-1/2 w-full relative overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.img
-              key={slides.image}
-              src={slides.image}
-              alt={slides.title}
+                key={slides.image}
+                src={slides.image}
+                alt={slides.title}
               className="object-cover w-full h-full"
               initial={{ opacity: 0, scale: 1.02 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -44,21 +48,22 @@ const Md = () => {
               transition={{ duration: 0.6, ease: "easeOut" }}
               layout
             >
-              {/* <img src="./quote_icon.webp" className="w-16 h-16 mb-4" alt="Quote" /> */}
               <img src="/Quotation.webp" className="w-8" alt="Quote" />
               <div className="relative py-2">
-              <p className="text-gray-600 text-lg mb-4">{slides.description}</p>
-              <img src="/Quotation.webp" className="absolute right-4 bottom-2 w-6 rotate-180" alt="Quote" />
+                <p className="text-gray-600 text-lg mb-4">{slides.description}</p>
+                <img src="/Quotation.webp" className="absolute right-4 bottom-2 w-6 rotate-180" alt="Quote" />
               </div>
-              
+
               <h2 className="text-lg font-bold text-[#38b9c7]">{slides.title}</h2>
               <p className="text-gray-500 font-semibold text-sm">{slides.desg}</p>
               <p className="text-gray-500 font-semibold text-sm">Tata Consumer Products</p>
-            
             </motion.div>
           </AnimatePresence>
         </div>
       </div>
+      </div>
+
+
       <div className='text-xl font-semibold text-[#06aeef] mb-2'>
       Dear Shareholders,
       </div>

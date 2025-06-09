@@ -3,8 +3,8 @@ import React from 'react'
 const Planet12th_page = () => {
   return (
     <div>
-        <div className='marginal text-lg  bg-[#f4f2ec] py-3 mb-5'>
-            
+        <div className='marginal text-lg   mb-5'>
+            <div className='bg-[#f4f2ec] p-3'>
                 <div className='text-xl text-[#06aeef]  font-semibold  mb-1'>TATA COFFEE'S BIODIVERSITY CONSERVATION PROJECTS</div>
                 <div className="w-15 h-[2px] bg-gradient-to-r from-[#f9ec12] to-[#009bdf] rounded-full mb-1"></div>
 
@@ -34,6 +34,7 @@ plantations </li>
 Conservation Foundation (NCF)
 and supporting indigenous tribes</li>
           </ul>
+        </div>
         </div>
         </div>
     </div>

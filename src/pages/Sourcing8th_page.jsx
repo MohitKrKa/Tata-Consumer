@@ -4,12 +4,12 @@ const Sourcing8th_page = () => {
   return (
   <>
   <div className='marginal text-lg'>
-  <div className='text-white text-2xl bg-gradient-to-r from-green-500 to-blue-500  p-2 mb-3'>Empowering Growers: Comprehensive Training for Tea Safety</div>
+  <div className='text-white text-2xl bg-gradient-to-r from-[#01b051] to-[#04adee]  p-2 mb-3'>Empowering Growers: Comprehensive Training for Tea Safety</div>
    <div className='mb-2'>The initiative aims to enhance tea safety and sustainability by educating Small Tea Growers (STGs) on key areas such
 as safe pesticide use, pre-harvest intervals, pest control, chemical traceability, soil treatment and awareness and
 avoidance of banned chemicals.</div>
-<div className='flex flex-row gap-5 justify-center mb-2'>
-  <div className='w-1/3'>
+<div className='flex flex-col gap-5 justify-center mb-5'>
+  <div className=''>
     <div className='font-bold text-xl mb-2 '>
     Challenges:
     </div>
@@ -35,7 +35,7 @@ sessions in Assam, Jorhat, Kolkata,
       </div>
     </div>
   </div>
-  <div className='w-1/3'>
+  <div className=''>
   North Bank, Terai and Duar. These
 sessions focused on food safety
 awareness, corrective measures and
@@ -55,9 +55,9 @@ sessions specifically designed for food
 safety officials, ensuring they are wellinformed about the latest standards
 and best practices.
   </div>
-  <div className='w-1/3'>
+  <div className=''>
   <div className='font-bold text-xl mb-2 '>
-    Challenges:
+    Outcome:
     </div>
     <div>
     The initiative reached over 3,000
@@ -81,7 +81,7 @@ environmental sustainability
 <div className='mb-2'>
   <img src="/57.webp" alt="" />
 </div>
-<div className='mb-2'>
+<div className=''>
 Thus, our supplier development process provides essential information and training on our ESG programme, granting
 access to the best ESG practices across sectors. This offers remote and on-site support for implementing corrective actions
 and delivering in-depth technical programmes to build capacity and enhance ESG performance. These efforts ensure our

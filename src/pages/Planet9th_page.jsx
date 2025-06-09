@@ -4,13 +4,13 @@ const Planet9th_page = () => {
   return (
     <div className='marginal text-lg flex md:flex-row flex-col justify-center items-center  gap-5 mb-5'>
       <div className='md:w-[40%]  '>
-       <img src="/79.webp" alt="" />
+       <img src="/80.webp" alt="" />
         </div>
     <div className='md:w-[60%] h-auto '>
     <div className='w-[5%]'>
         <img src="/planet_product.webp" alt="" />
       </div>
-        <div className='text-xl text-white p-3 bg-gradient-to-r from-blue-500 to-green-400 mb-2 rounded-r-4xl w-max'>PRODUCT STEWARDSHIP</div>
+        <div className='text-xl text-white p-3 bg-gradient-to-r from-[#01b051] to-[#04adee] mb-2 rounded-r-4xl w-max'>PRODUCT STEWARDSHIP</div>
         <div className='mb-2'>Embracing our sustainability journey, we conducted a
 comprehensive Life Cycle Assessment (LCA) for tea,
 the single biggest contributor to our revenue stream.

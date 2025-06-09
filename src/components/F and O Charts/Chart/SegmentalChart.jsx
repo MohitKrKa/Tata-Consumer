@@ -3,20 +3,14 @@ import { motion } from "framer-motion";
 
 const SegmentalChart = () => {
   const Segmental_data = [
-    { title: "Branded Business", key: "BB" },
-    { title: "India Business", key: "INDB" },
-    { title: "Contribution to India Business", key: "INTB" },
+    { title: "Segment Revenue**", key: "BB" },
+    { title: "Segment Results**", key: "INDB" },
+   
   ];
 
   const Segmental = {
     BB: [
-      {
-        year1: "FY 20-21",
-        value1: 67,
-        value2: 33,
-        compare1: "India",
-        compare2: "International",
-      },
+     
       {
         year2: "FY 24-25",
         value1: 71,
@@ -26,19 +20,13 @@ const SegmentalChart = () => {
       },
     ],
     INDB: [
-      {
-        year: "FY 20-21",
-        value1: 65,
-        value2: 35,
-        compare1: "Beverages",
-        compare2: "Food",
-      },
+      
       {
         year: "FY 24-25",
-        value1: 51,
-        value2: 49,
-        compare1: "Beverages",
-        compare2: "Food",
+        value1: 60,
+        value2: 40,
+        compare1: "India",
+        compare2: "International",
       },
     ],
     INTB: [
@@ -117,7 +105,7 @@ const SegmentalChart = () => {
               cy={size / 2}
               r={radius}
               fill="transparent"
-              stroke="#02adbd"
+              stroke="#11b14b"
               strokeWidth={stroke}
               strokeDasharray={circumference}
               strokeDashoffset={circumference}
@@ -133,10 +121,13 @@ const SegmentalChart = () => {
         <div className="text-sm font-medium text-gray-700 mb-1">
           {labelYear}
         </div>
-        <div className="flex items-center gap-4 text-xs text-gray-500">
+        <div className="text-sm font-medium text-gray-700 mb-1 border-b-1 p-1">
+          Business
+        </div>
+        <div className="flex items-center gap-4 text-xs text-gray-500 mt-1">
           {/* Segment 2 (Left side) */}
           <div className="flex items-center gap-1">
-            <span className="w-3 h-3 rounded-full bg-[#02adbd] inline-block" />
+            <span className="w-3 h-3 rounded-full bg-[#11b14b] inline-block" />
             {compare2}: {value2}%
           </div>
           {/* Segment 1 (Right side) */}
@@ -145,6 +136,9 @@ const SegmentalChart = () => {
             {compare1}: {value1}%
           </div>
         </div>
+        <div className="text-xs text-gray-500 mt-7 ">
+      **Branded Business
+      </div>
       </div>
     );
   };
@@ -170,6 +164,7 @@ const SegmentalChart = () => {
       <div className="flex flex-wrap gap-8 justify-center">
         {Segmental[selectedKey].map((entry, i) => PieChart(entry, i))}
       </div>
+     
     </div>
   );
 };

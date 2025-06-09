@@ -60,16 +60,16 @@ corporate level and site level aligning
 with TNFD’s recommendations.
 </div>
 </div>
-<div className='w-[90%] mx-[5%] px-3 mb-5'>
-<div className='font-semibold mb-2'>A. Nature-related dependencies and impacts </div>
+<div className='marginal mb-5'>
+<div className='font-bold mb-2'>A. Nature-related dependencies and impacts </div>
 <div className='mb-3'>
 Dependencies represent how our business activities rely on ecosystem services and natural assets for operational success.
 Higher ratings indicate greater business dependency on that ecosystem service.
 </div>
-<div className='font-semibold text-[#1368b4] mb-2'>
+<div className='font-semibold text-[#1368b4] text-xl mb-2'>
 Dependencies on ecosystem services
 </div>
-<div className='flex flex-col justify-center  mb-2'>
+<div className='flex flex-col justify-center  mb-2 w-[90%]'>
     <div>
         <img src="/planet_ecosystem/5.webp" alt="" />
     </div>
@@ -105,8 +105,8 @@ more significant effects on natural systems.
 </div>
 </div>
 <div className='mb-5'>
-<div className='font-semibold mb-2 text-[#1368b4]'>Impacts on nature </div>
-<div className='flex flex-col justify-center  mb-2'>
+<div className='font-semibold mb-2 text-[#1368b4] text-xl'>Impacts on nature </div>
+<div className='flex flex-col justify-center  mb-2 w-[90%]'>
     <div>
         <img src="/nature/0.webp" alt="" />
     </div>
@@ -134,10 +134,13 @@ understanding of business and nature interactions.
 <div className='font-semibold mb-2 '>B. Nature-related risks and opportunities  </div>
 <div className='mb-2'>Physical risks arise from physical changes to nature that may affect our business operations, including both acute events
 and chronic changes to environmental conditions.</div>
-<div className='font-semibold mb-2 text-[#1368b4]'>
+<div className='font-semibold mb-2 text-[#1368b4] text-xl'>
 Physical risks
 </div>
-<div className='flex flex-col justify-center  mb-4'>
+<div className='flex flex-col justify-center  mb-4 w-[90%]'>
+    <div>
+        <img src="/physical/4.webp" alt="" />
+    </div>
     <div>
         <img src="/physical/0.webp" alt="" />
     </div>
@@ -150,9 +153,6 @@ Physical risks
     <div>
         <img src="/physical/3.webp" alt="" />
     </div>
-    <div>
-        <img src="/physical/4.webp" alt="" />
-    </div>
 </div>
 <div className='mb-2'>
 Transition risks emerge from human responses to nature-related challenges, including changes in policy, market dynamics,
@@ -160,8 +160,8 @@ technology and stakeholder perceptions.
 </div>
 </div>
 <div>
-   <div className='font-semibold mb-2 text-[#1368b4]'>Transition risks</div> 
-   <div className='flex flex-col justify-center  mb-2'>
+   <div className='font-semibold mb-2 text-[#1368b4] text-xl'>Transition risks</div> 
+   <div className='flex flex-col justify-center  mb-2 w-[90%]'>
     <div>
         <img src="/transition/0.webp" alt="" />
     </div>

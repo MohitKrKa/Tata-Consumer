@@ -12,12 +12,13 @@ const YearInReview = () => {
   const [selectedPage, setSelectedPage] = useState(1);
 
   return (
-    <div className="px-4 overflow-hidden pt-10 md:px-10 w-screen min-h-[100vh]">
+    // <div className="px-4 overflow-hidden pt-10 md:px-10 w-screen min-h-[100vh]">
+    <div className="px-4  pt-10 md:px-10 marginal">
       <div className="mb-3">
         <Heading color="black" title="Year in review" linecolor="#0072CE" />
       </div>
 
-      <div className="md:w-[500px] w-full text-blue-400 text-4xl font-semibold">
+      <div className="md:w-fit w-full text-blue-400 text-4xl font-semibold">
         Accelerating growth with <br /> shared value creation
       </div>
 
@@ -37,7 +38,7 @@ const YearInReview = () => {
         ))}
       </div>
 
-      <div className="mt-10 mb-5 min-h-[300px]">
+      <div className="mt-10 mb-5">
         <AnimatePresence mode="wait">
           {selectedPage === 1 && (
             <>
@@ -48,11 +49,11 @@ const YearInReview = () => {
               initial="initial"
               animate="animate"
               exit="exit"
-              className="flex flex-col md:flex-row gap-6 items-center"
+              className="flex flex-col md:flex-row w-full fl gap-6 justify-between items-center"
             >
-              <img src="/yearInReview/1.png" alt="5 year evolution" className="object-contain" />
-              <img src="/yearInReview/2.png" alt="5 year evolution" className="object-contain" />
-              <img src="/yearInReview/3.png" alt="5 year evolution" className="object-contain" />
+              <img src="/yearInReview/1.png" alt="5 year evolution" className="md:w-[30%] object-contain" />
+              <img src="/yearInReview/2.png" alt="5 year evolution" className="md:w-[30%] object-contain" />
+              <img src="/yearInReview/3.png" alt="5 year evolution" className="md:w-[30%] object-contain" />
             </motion.div>
             <p className='mt-4 text-sm'>*Growth businesses include Tata Sampann, Ready-to-Drink, Tata Soulfull, and Tata SmartFoodz (RTE/RTC Business), Capital Foods and Organic India</p>
 

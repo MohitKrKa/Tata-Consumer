@@ -7,8 +7,8 @@ const Sourcing10th_page = () => {
       <div className='text-xl font-semibold text-[#06aeef] mb-3 '>
       Organic India - Crop verification audits:
       </div>
-      <div className='flex flex-row  justify-center gap-5 mb-3  '>
-        <div className='flex flex-col justify-center gap-2 items-center '>
+      <div className='flex md:flex-row flex-col  justify-center gap-8 mb-3  '>
+        <div className='flex flex-col justify-center gap-4 items-center '>
           <div className=''>
             <img src="/sourcing_logos/4.webp" alt="" />
           </div>

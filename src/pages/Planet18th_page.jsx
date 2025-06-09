@@ -10,7 +10,7 @@ const Planet18th_page = () => {
 creative initiatives have cultivated a peaceful cohabitation between the local communities and the indigenous elephant
 population. This dedication to nurturing the environment and enhancing community welfare reflects our alignment to
 the United Nations Sustainable Development Goals, embodying a global vision for a greener, more equitable future.</div>
-            <div className='flex md:flex-row flex-col justify-center items-center gap-5 mb-2' >
+            <div className='flex  flex-col justify-center items-center gap-3 mb-2' >
                 <div className=''>
                     <p className='font-semibold mb-2 '>The Challenge</p>
                     <div className='mb-5' >Over <span className='text-2xl text-[#1368b4]'> 6,000 </span>elephants,

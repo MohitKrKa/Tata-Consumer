@@ -97,13 +97,13 @@ const ForBetterSourcing = () => {
   {/* Page 1 */}
 
   <div
-    className="marginal mt-5 flex   flex-col sm:flex-row gap-10"
+    className="marginal  flex   flex-col sm:flex-row gap-10"
   >
     {/* Images Section */}
     <div
-      className="mt-5  flex flex-col sm:flex-row gap-15"
+      className="mt-5  flex flex-col sm:flex-row gap-10"
     >
-      <div className='flex flex-col gap-3 w-[50%]'>
+      <div className='flex flex-col gap-3 md:w-[50%]'>
       <div className=''>
       <img
         src={FBC4}
@@ -113,12 +113,12 @@ const ForBetterSourcing = () => {
       <h1 className=" text-[#176ab4] text-2xl sm:text-3xl font-[500] mt-5">
           PERFORMANCE HIGHLIGHTS
           </h1>
-       <div className='w-[50%] mt-2'>  
+       <div className='md:w-[50%] mt-2'>  
         <img src={FBC6} alt="" className="" />
        </div>
        </div>
       <div
-        className="flex flex-col gap-5 w-[50%] "
+        className="flex flex-col gap-5 md:w-[50%] "
       >
         <div>
           <h1 className=" text-[#176ab4] text-2xl sm:text-3xl font-[500]">
@@ -130,7 +130,7 @@ chains from farm
 to shelf.
           </p>
         </div>
-<div className='w-[70%]'>
+<div className='md:w-[70%]'>
         <img
         src={FBC5}
         alt=""
