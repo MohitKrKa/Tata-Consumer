@@ -134,11 +134,11 @@ const Strategy38th_page = () => {
           successfully reducing freshwater
           consumption by 31%.
         </div>
-        <div className='flex flex-row justify-center gap-5'>
-          <div className='w-[25%]'>
+        <div className='flex md:flex-row flex-col justify-center gap-5'>
+          <div className='md:w-[25%]'>
             <img src="/237.webp" alt="" />
           </div>
-          <div className='w-[30%]'>
+          <div className='md:w-[30%]'>
             <div className='text-2xl font-semibold text-[#1368b4] mb-3'>EXPANDING THE ‘THIRD
               PLACE’ EXPERIENCE
               WITH STARBUCKS</div>
@@ -158,7 +158,7 @@ const Strategy38th_page = () => {
               socialise, work or take a break.
             </div>
           </div>
-          <div className='w-[45%] '>
+          <div className='md:w-[45%] '>
             <div className='text-xl font-semibold text-[#06aeef] mb-3'>BRINGING STARBUCKS
               TO MORE CITIES</div>
             <div className='mb-2'>
@@ -173,7 +173,7 @@ const Strategy38th_page = () => {
             </div>
           </div>
         </div>
-        <div className='bg-[#f3efeb]/50 p-4'>
+        <div className='bg-[#f3efeb]/50 md:p-4'>
           <img src="/238.webp" className='w-[80%] mx-auto' alt="" />
         </div>
       </div>

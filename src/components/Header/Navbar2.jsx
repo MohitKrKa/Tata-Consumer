@@ -325,7 +325,7 @@ export default function Navbar() {
                         </div>
                         {/* Right: Newsroom, Contact, Search */}
                         <div className="hidden md:flex items-center gap-6">
-                            <a href="https://www.tataconsumer.com/sites/g/files/gfwrlq316/files/2025-05/Tata_Consumer_AR%202024-25_" target="_blank" className="text-[#0072CE] text-[14px] font-semibold">Download Full Report</a>
+                            <a href="/docs/Tata_Consumer-2024-25.pdf" target="_blank" className="text-[#0072CE] text-[14px] font-semibold">Download Full Report</a>
                         </div>
                         {/* Hamburger (mobile) */}
                         <button

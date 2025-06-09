@@ -213,7 +213,7 @@ const Strategy44th_page = () => {
             </div>
           </div>
         </div>
-        <div className='flex bg-gray-100 pt-6 pl-6 flex-row justify-center gap-5 mb-2'>
+        <div className='flex bg-gray-100 pt-6 pl-6 md:flex-row flex-col justify-center gap-5 mb-2'>
           <div className=''>
             <div className='text-xl font-semibold text-[#06aeef] mb-2'>ADVANCING HEALTH AND
               WELLNESS THROUGH OUR
@@ -256,8 +256,8 @@ const Strategy44th_page = () => {
             <img src="/313.webp" alt="" />
           </div>
         </div>
-        <div className='flex flex-row justify-center gap-5'>
-          <div className='w-[50%]'>
+        <div className='flex md:flex-row flex-col justify-center gap-5'>
+          <div className='md:w-[50%]'>
             <div className='text-xl font-semibold text-[#06aeef] mb-2'>
               SCIENCE-BACKED INNOVATION FOR
               DIFFERENTIATED PRODUCTS
@@ -277,14 +277,14 @@ const Strategy44th_page = () => {
               with trust.
             </div>
           </div>
-          <div className='w-[50%]'>
+          <div className='md:w-[50%]'>
             <img src="/314.webp" alt="" />
           </div>
         </div>
       </div>
       <div className='marginal text-lg' >
-        <div className='flex flex-row justify-center gap-5 mb-5'>
-          <div className='w-[45%]'>
+        <div className='flex md:flex-row flex-col justify-center gap-5 mb-5'>
+          <div className='md:w-[45%]'>
             <div className='font-semibold mb-2'>Tata LYFE + Alkaline water</div>
             <div className='mb-2'>
               Distinctive and innovative packaging developed in
@@ -296,7 +296,7 @@ const Strategy44th_page = () => {
               <img src="/315.webp" alt="" />
             </div>
           </div>
-          <div className='w-[55%]'>
+          <div className='md:w-[55%]'>
             <div className='font-semibold mb-2'>Tata Copper+ value engineering</div>
             <div className='mb-2'>
               Embracing the latest global technological advancements, the

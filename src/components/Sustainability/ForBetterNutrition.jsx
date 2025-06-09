@@ -939,8 +939,8 @@ const ForBetterNutrition = () => {
 
           {/* Page 11 */}
           {/* TODO */}
-          <div className="flex flex-row justify-center gap-5 mt-8">
-            <div className=" w-[50%] p-4 bg-gray-100 ">
+          <div className="flex md:flex-row flex-col justify-center gap-5 mt-8">
+            <div className=" md:w-[50%] p-4 bg-gray-100 ">
               We have dedicated our R&D resources to enhance the sustainability
               of our products and packaging. A crucial element of this strategy
               involves the development of sustainable products, which are
@@ -957,7 +957,7 @@ const ForBetterNutrition = () => {
                 Sourcing section.
               </p>
             </div>
-            <div className="w-[50%]">
+            <div className="md:w-[50%]">
               <img src="/sourcing_page156.png" alt="" />
             </div>
           </div>

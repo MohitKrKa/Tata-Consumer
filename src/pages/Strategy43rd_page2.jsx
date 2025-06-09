@@ -66,7 +66,7 @@ const Strategy43rd_page2 = () => {
        
       </div>
       <div className='md:flex flex-row justify-center gap-5 mb-5'>
-        <div className='w-[50%] bg-gray-50 p-4'>
+        <div className='md:w-[50%] bg-gray-50 p-4'>
           <div className='text-2xl font-semibold text-[#1368b4] mb-2'>BECOMING AN
             EMPLOYER OF CHOICE </div>
           <div className='mb-3'>
@@ -97,13 +97,13 @@ const Strategy43rd_page2 = () => {
             <img src="/294.webp" alt="" />
           </div>
         </div>
-        <div className='w-[50%] bg-gray-50 p-4'>
+        <div className='md:w-[50%] bg-gray-50 p-4'>
           <img src="/295.webp" alt="" />
         </div>
       </div>
 
-      <div className='flex flex-row my-6 bg-gray-50 p-4 justify-center items-center gap-5 '>
-        <div className='w-[70%]'>
+      <div className='flex md:flex-row flex-col my-6 bg-gray-50 p-4 justify-center items-center gap-5 '>
+        <div className='md:w-[70%]'>
       <div className='text-xl font-semibold text-[#06aeef] mb-4'>CONNECTING WITH BRIGHT MINDS</div>
           <p>
           The fourth edition of our <b> Business
@@ -120,10 +120,10 @@ const Strategy43rd_page2 = () => {
         </div>
       </div>
       <div className='mb-5 bg-gray-50 p-4'>
-        <img src="/296.webp" className='w-[50%] mx-auto' alt="" />
+        <img src="/296.webp" className='md:w-[50%] mx-auto' alt="" />
       </div>
       <div className='flex flex-row  justify-center gap-5 mb-5'>
-        <div className='w-[58%]'>
+        <div className='md:w-[58%]'>
           <div className='text-xl font-semibold text-[#06aeef] mb-2'>TATA GLOBAL INTERNSHIPS</div>
           <div className='mb-3'>In partnership with international institutions and the Tata
             Group HR team, we engage interns in key international
@@ -144,7 +144,7 @@ const Strategy43rd_page2 = () => {
             organisation continues to evolve, strengthening our
             leadership pipeline and driving long-term growth.
           </div>
-          <div className="flex flex-col w-[200px] my-6">
+          <div className="flex flex-col md:w-[200px] my-6">
             <h1 className="text-3xl text-[#4084c1] leading-none">36%+</h1>
 
             <div class="flex items-center my-2">
@@ -162,7 +162,7 @@ const Strategy43rd_page2 = () => {
             <img src="/298.webp" className='' alt="" />
           </div>
         </div>
-        <div className='w-[42%] bg-gray-50 p-4'>
+        <div className='md:w-[42%] bg-gray-50 p-4'>
           <div className='text-xl font-semibold text-[#06aeef] mb-3'>TRAILBLAZERS' TRACKS</div>
           <img className='p-2' src="/299.webp" alt="" />
         </div>

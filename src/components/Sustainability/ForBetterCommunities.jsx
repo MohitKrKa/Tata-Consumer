@@ -1249,38 +1249,38 @@ const ForBetterCommunities = () => {
                   {" "}
                   Five Health & Safety workshops{" "}
                 </span>{" "}
-                (1 day) were conducted at various factory locations covering 9
-                factories.
+                (1 day) were conducted at various factory locations <span className="muli-bold text-black "> covering 9
+                factories. </span>
               </div>
               <div className="mb-2">
                 <span className="text-[#1368b4]"> Established </span> E a
                 Proactive Safety Scorecard system throughout our operations to
-                regularly assess safety performance against critical safety
-                metrics on a monthly basis.
+                regularly assess safety performance against <span className="muli-bold text-black "> critical safety
+                metrics </span> on a monthly basis.
               </div>
               <div className="mb-2 font-bold">
                 <span className="text-[#1368b4]">
                   Four Health & Safety conferences
                 </span>{" "}
-                were organised, covering panIndia CFA owners and their teams,
+                were organised, covering <span className="muli-bold text-black "> panIndia CFA owners </span>  and their teams,
                 raising <b className="muli-bold"> safety </b>
                 awareness
               </div>
               <div className="mb-2">
                 <span className="text-[#1368b4]">E-learning modules</span> on
-                Health & Safety have been administered for awareness.
+                <span className="muli-bold text-black "> Health & Safety </span> have been administered for awareness.
               </div>
               <div className="mb-2">
                 <span className="text-[#1368b4]"> Six H&S officers </span> have
-                been qualified as CII SR Award assessors, allowing crosslearning
-                of best practices in other FMCG companies.
+                been qualified as <span className="muli-bold text-black "> CII SR Award assessors </span> , allowing crosslearning
+                of best practices in other <span className="muli-bold text-black "> FMCG companies. </span>
               </div>
               <div className="mb-2">
                 <span className="text-[#1368b4]">
                   Two internal auditor training programs{" "}
                 </span>{" "}
-                (3 days) conforming to ISO 45001 & 14001 were conducted,
-                resulting in 56 TCP employees qualifying as internal EHS
+                (3 days) conforming to <span className="muli-bold text-black "> ISO 45001 & 14001 </span>  were conducted,
+                resulting in <span className="muli-bold text-black "> 56 TCP employees </span>  qualifying as internal EHS
                 auditors.
               </div>
             </div>

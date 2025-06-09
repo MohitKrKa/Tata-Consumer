@@ -9,8 +9,8 @@ const Strategy35th_page = () => {
           preference for natural and chemical-free products, creating a
           significant growth opportunity for Organic India.</div>
 
-        <div className='flex flex-row gap-5 justify-center items-center bg-gray-50 p-4 mb-5'>
-          <div className='w-[50%]'>
+        <div className='flex md:flex-row flex-col gap-5 justify-center items-center bg-gray-50 p-4 mb-5'>
+          <div className='md:w-[50%]'>
             <div className='text-[#02adbd] mb-3 text-xl'>
               How is Organic India capitalising on opportunities?
             </div>
@@ -35,13 +35,13 @@ const Strategy35th_page = () => {
           <div className='text-xl font-semibold text-[#06aeef] mb-3'>
             RESEARCH-DRIVEN WELLNESS PORTFOLIO EXPANSION
           </div>
-          <div className='flex flex-row justify-center gap-5'>
-            <div className='w-[50%]'>
+          <div className='flex md:flex-row flex-col justify-center gap-5'>
+            <div className='md:w-[50%]'>
               <div className='bg-gray-50 p-6'>
                 <img src="/222.webp" className='m' alt="" />
               </div>
             </div>
-            <div className='w-[50%]'>
+            <div className='md:w-[50%]'>
               <ul className='list-disc ml-6'>
                 <li className='mb-3'>To sustain long-term growth, a structured innovation
                   funnel was established, focused on strengthening the
@@ -70,9 +70,9 @@ const Strategy35th_page = () => {
             </div>
           </div>
         </div>
-        <div className='mt-16'>
-          <div className='flex flex-row justify-center gap-5'>
-            <div className='w-[50%]'>
+        <div className='md:mt-16 mt-6'>
+          <div className='flex md:flex-row flex-col justify-center gap-5'>
+            <div className='md:w-[50%]'>
               <h3 className='text-xl font-semibold text-[#06aeef] mb-3'>
                 STRENGTHENING BRAND EQUITY AND CONSUMER CONNECT
               </h3>
@@ -99,7 +99,7 @@ const Strategy35th_page = () => {
                 leading publications.
               </div>
             </div>
-            <div className='w-[50%] bg-gray-50 p-6'>
+            <div className='md:w-[50%] bg-gray-50 p-6'>
               <img src="/223.webp" alt="" />
             </div>
           </div>

@@ -12,8 +12,8 @@ const Strategy20th_page = () => {
         <div className='mb-3'>
           <img src="/182.webp" alt="" />
         </div>
-        <div className='flex flex-row justify-center gap-5'>
-          <div className='w-[30%]' >
+        <div className='flex md:flex-row flex-col justify-center gap-5'>
+          <div className='md:w-[30%]' >
             <div className='text-xl font-semibold text-[#06aeef] mb-3'>
               MAKING MILLETS
               MAINSTREAM
@@ -37,7 +37,7 @@ const Strategy20th_page = () => {
               </div>
             </div>
           </div>
-          <div className='w-[70%]'>
+          <div className='md:w-[70%]'>
             <img src="/185.webp" alt="" />
           </div>
         </div>

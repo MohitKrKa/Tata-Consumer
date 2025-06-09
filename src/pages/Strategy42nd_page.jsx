@@ -144,7 +144,7 @@ const Strategy42nd_page = () => {
       </div>
       <div className='marginal text-lg'>
         <div className='md:flex flex-row items-end justify-between gap-5 mb-3 '>
-          <div className='w-[40%] bg-gray-100 p-4'>
+          <div className='md:w-[40%] bg-gray-100 p-4'>
             <div className='text-xl font-semibold text-[#06aeef] mb-3'>RURAL NETWORK EXPANSION</div>
             <p className=''>We augmented the rural sales
               organisation to deepen coverage in
@@ -162,10 +162,10 @@ const Strategy42nd_page = () => {
               consistent product availability and
               driving volume.
             </p></div>
-          <div className='w-[30%] flex flex-col bg-gradient-to-t from-gray-200 to-transparent justify-end'>
+          <div className='md:w-[30%] flex flex-col bg-gradient-to-t from-gray-200 to-transparent justify-end mb-2'>
             <img src="/updated/104-IMG-2.webp" className='' alt="" />
           </div>
-          <div className='w-[30%]'>
+          <div className='md:w-[30%]'>
             <img src="/updated/104-IMG.webp" className='' alt="" />
           </div>
         </div>
@@ -181,7 +181,7 @@ const Strategy42nd_page = () => {
         </div>
       </div>
       <div className='marginal text-lg md:flex bg-gray-100 !p-4 flex-row justify-center gap-6'>
-        <div className='w-[80%]'>
+        <div className='md:w-[80%]'>
           <div className='text-2xl font-semibold text-[#1368b4] mb-3'>
             ENHANCED EMPHASIS ON CHANNELS OF THE FUTURE
           </div>
@@ -190,7 +190,7 @@ const Strategy42nd_page = () => {
             trade, while harnessing e-commerce and quick commerce to enhance our reach
             across consumer cohorts.
           </div>
-          <div className='flex flex-row justify-center gap-5'>
+          <div className='flex md:flex-row flex-col justify-center gap-5'>
             <div>
               <div className='text-xl font-semibold text-[#06aeef] mb-3'>MODERN TRADE</div>
               <div className='mb-2'>
@@ -248,8 +248,8 @@ const Strategy42nd_page = () => {
             </div>
           </div>
         </div>
-        <div className='w-[30%]'>
-          <img src="/254.webp" className='w-[70%]' alt="" />
+        <div className='md:w-[30%]'>
+          <img src="/254.webp" className='md:w-[70%]' alt="" />
         </div>
       </div>
       <div className='marginal text-lg md:flex flex-row justify-center gap-5'>
@@ -317,8 +317,8 @@ const Strategy42nd_page = () => {
           INTELLIGENCE (AI) FOR
           SMARTER SOURCING
         </div>
-        <div className='flex flex-row justify-center gap-5'>
-          <div className='w-[60%]'>
+        <div className='flex md:flex-row flex-col justify-center gap-5'>
+          <div className='md:w-[60%]'>
             <div className='mb-2 text-[#02adbd]'>
               End-to-end digital
               sourcing solution
@@ -358,7 +358,7 @@ const Strategy42nd_page = () => {
               and adaptability in blends.
             </div>
           </div>
-          <div className='w-[40%] '>
+          <div className='md:w-[40%] '>
             <img src="/266.webp" alt="" />
           </div>
         </div>
@@ -376,11 +376,11 @@ const Strategy42nd_page = () => {
           operational efficiency, ensuring cost optimisation and improved service levels.
         </div>
 
-        <div className='md:flex  flex-row justify-center gap-5'>
-          <div className='w-[30%] bg-gray-100 p-4'>
+        <div className='md:flex  md:flex-row flex-col justify-center gap-5'>
+          <div className='md:w-[30%] bg-gray-100 p-4'>
             <img src="/265.webp" className='w-[80%] mx-auto' alt="" />
           </div>
-          <div className='w-[70%]'>
+          <div className='md:w-[70%]'>
             <div className='flex flex-col justify-center gap-2 '>
               <div>
                 <div className='text-[#02adbd] mb-2'>Cost optimisation initiatives</div>
@@ -445,7 +445,7 @@ const Strategy42nd_page = () => {
         </div>
       </div>
       <div className='marginal text-lg md:flex flex-row justify-center gap-5'>
-        <div className='w-[65%]'>
+        <div className='md:w-[65%]'>
           <div className='text-xl font-semibold text-[#06aeef] mb-1'>ENHANCING MANUFACTURING EFFICIENCIES THROUGH
             INTERNET OF THINGS (IOT)</div>
           <div className='mb-2'>
@@ -473,7 +473,7 @@ const Strategy42nd_page = () => {
             <img src="/269.webp" alt="" />
           </div>
         </div>
-        <div className='w-[35%] bg-gray-100 p-4'>
+        <div className='md:w-[35%] bg-gray-100 p-4'>
           <div className='text-xl font-semibold text-[#06aeef] mb-1'>ENSURING
             WORKPLACE SAFETY</div>
           <div className='mb-2'>

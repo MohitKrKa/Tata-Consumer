@@ -10,11 +10,11 @@ const Strategy37th_page = () => {
           beverages at workplaces and leisure spaces through bean-to-cup and filter coffee machines. This vending business
           continues to scale swiftly, supported by the Company’s extensive expertise in tea and coffee.</div>
 
-        <div className='flex flex-row justify-center gap-5'>
-          <div className='w-[70%] bg-gray-50 p-4'>
+        <div className='flex md:flex-row flex-col justify-center gap-5'>
+          <div className='md:w-[70%] bg-gray-50 p-4'>
             <img src="/233.webp" className='md:w-[90%]' alt="" />
           </div>
-          <div className='w-[30%] bg-gray-50 p-4'>
+          <div className='md:w-[30%] bg-gray-50 p-4'>
             <div className='text-xl font-semibold text-[#06aeef] mb-1'>CONSUMER-FIRST THINKING</div>
             <div className='mb-8'>Building on bean-to-cup machines,
               the newly introduced Filter/Chai

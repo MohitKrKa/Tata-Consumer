@@ -122,7 +122,7 @@ const CEO = () => {
           </div>
           <div className=''>
           <div className='flex md:flex-row flex-col md:justify-evenly md:items-center gap-5'>
-            <div className="flex flex-col mt-2 w-[200px] mb-5">
+            <div className="flex flex-col mt-2 md:w-[200px] mb-5">
               <h1 className="text-3xl text-[#4084c1] leading-none">INR 17,618 Crores</h1>
 
               <div class="flex items-center my-1">
@@ -136,7 +136,7 @@ const CEO = () => {
               </div>
             </div>
             
-            <div className="flex flex-col mt-2 w-[200px] mb-5">
+            <div className="flex flex-col mt-2 md:w-[200px] mb-5">
               <h1 className="text-3xl text-[#4084c1] leading-none">14.2
                 %</h1>
 
@@ -150,9 +150,9 @@ const CEO = () => {
             </div>
             </div>
 
-            <div className='flex justify-evenly items-center'>
+            <div className='md:flex justify-evenly items-center'>
               
-            <div className="flex flex-col mt-2 w-[200px] mb-5">
+            <div className="flex flex-col mt-2 md:w-[200px] mb-5">
   <h1 className="text-3xl text-[#4084c1] leading-none">29%</h1>
 
   <div className="flex items-center my-1">
@@ -166,11 +166,11 @@ const CEO = () => {
   </div>
 </div>
 
-            <div className="flex flex-col mt-2 w-[200px] mb-5">
+            <div className="flex flex-col mt-2 md:w-[200px] mb-5">
               <h1 className="text-3xl text-[#4084c1] leading-none">10
                 %</h1>
 
-              <div class="flex md:flex-row flex-col items-center my-1">
+              <div class="flex items-center my-1">
                 <div class="w-4 h-2 bg-blue-500 rounded-full"></div>
                 <div class="h-0.5 w-full bg-blue-500"></div>
               </div>

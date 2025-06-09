@@ -43,8 +43,8 @@ const Strategy43rd_page = () => {
         <div className='mb-5'>
           <img src="/282.webp" alt="" />
         </div>
-        <div className='flex flex-row justify-center gap-5 mb-3'>
-          <div className='w-[70%]'>
+        <div className='flex md:flex-row flex-col justify-center gap-5 mb-3'>
+          <div className='md:w-[70%]'>
             <div className='text-2xl text-[#1368b4] mb-2 font-semibold '>THE TATA CONSUMER
               PRODUCTS’ NORTH STAR</div>
             <div className='mb-2'>
@@ -63,7 +63,7 @@ const Strategy43rd_page = () => {
               <img src="/284.webp" alt="" />
             </div>
           </div>
-          <div className='w-[30%]'>
+          <div className='md:w-[30%]'>
             <div className='text-3xl text-[#1368b4]'>Who are we?</div>
             <img src="/283.webp" alt="" />
           </div>
