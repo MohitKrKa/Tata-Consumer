@@ -57,50 +57,39 @@ const itemVariants = {
   show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
 
-
 const ForBetterCommunities = () => {
   return (
     <>
-      
-        <div className='flex flex-col gap-10'>
-          <Page
-            text="Communities"
-            head1="Thriving Together"
-            text2={para}
-            img1={img1}
-            img2={img2}
-            img3={img3}
-          />
-        </div>
-        {/* Page 1 */}
-        <div className="marginal text-[#969798] text-base">
-        <div
-          className="mt-5 marginal flex  flex-col sm:flex-row gap-10"   >
+      <div className="flex flex-col gap-10">
+        <Page
+          text="Communities"
+          head1="Thriving Together"
+          text2={para}
+          img1={img1}
+          img2={img2}
+          img3={img3}
+        />
+      </div>
+      {/* Page 1 */}
+      <div className=" text-[#969798] text-base">
+        <div className="mt-5 marginal flex  flex-col sm:flex-row gap-10">
           {/* Images Section */}
           <div className="">
             <div>
-              <img
-                src={FBC4}
-                alt=""
-                className=""
-              />
+              <img src={FBC4} alt="" className="" />
             </div>
 
             <div className="bg-gray-50 mt-4 rounded-2xl p-4">
-              <div className="text-2xl font-semibold text-[#1368b4] mb-3 mt-2">PERFORMANCE HIGHLIGHTS</div>
-              <img
-                src={FBC6}
-                alt=""
-                className=""
-              />
+              <div className="text-2xl font-semibold text-[#1368b4] mb-3 mt-2">
+                PERFORMANCE HIGHLIGHTS
+              </div>
+              <img src={FBC6} alt="" className="" />
             </div>
           </div>
 
           <div className="bg-gray-50 p-4 rounded-2xl">
             <div>
-              <h1 className=" text-[#176ab4] text-2xl font-[500]">
-                VISION
-              </h1>
+              <h1 className=" text-[#176ab4] text-2xl font-[500]">VISION</h1>
               <p className="bg-gradient-to-r from-[#0db14e] to-[#10b0ef] bg-clip-text text-transparent font-[400] mt-2 text-xl ">
                 Our vision is to enhance the quality of life, creating shared
                 value for our communities and foster an equitable, inclusive,
@@ -114,23 +103,14 @@ const ForBetterCommunities = () => {
         </div>
 
         {/* Page 2 */}
-        <div className="mt-10 bg-[#e8f7fd] p-4">
-          <div className="marginal text-lg">
-            <div className=" flex border-b mb-6 justify-center items-end" >
+        <div className="marginal mt-10  p-4">
+          <div className=" text-lg bg-[#e8f7fd]">
+            <div className=" flex border-b mb-6 justify-center items-end">
               <div className="md:1/2">
-                <img
-                  src={FBC7}
-                  alt="Fostering Workforce"
-                  className=""
-                />
+                <img src={FBC7} alt="Fostering Workforce" className="" />
               </div>
               <div className="md:1/2">
-
-                <img
-                  src={FBC8}
-                  alt=""
-                  className="w-full"
-                />
+                <img src={FBC8} alt="" className="w-full" />
               </div>
             </div>
             <div className="">
@@ -144,66 +124,65 @@ const ForBetterCommunities = () => {
                 and contribute to our collective success.
               </p>
               <p className="mb-2">
-                We recognize that the
-                foundation of our success lies in effective workforce
-                management. By focusing on hiring and retaining top quality,
-                diverse talent, reducing workforce turnover, and fostering an
-                inclusive environment, we drive innovation and maintain a
-                competitive edge.
+                We recognize that the foundation of our success lies in
+                effective workforce management. By focusing on hiring and
+                retaining top quality, diverse talent, reducing workforce
+                turnover, and fostering an inclusive environment, we drive
+                innovation and maintain a competitive edge.
               </p>
-
             </div>
             <div className="bg-[#e8f7fd] mt-4">
               <h2 className="text-[#26b7ef] mb-2 text-xl font-semibold">
                 RECRUITING TALENT
               </h2>
               <p className="mb-2">
-                Embracing the Tata Group's legacy of leadership and innovation, we
-                are dedicated to cultivating recruitment strategies that magnetize
-                top-tier talent. Our hiring practices ensure that every addition to
-                our team not only thrives in their professional pursuits but also
-                resonates with the core values of TCPL's ethos.
+                Embracing the Tata Group's legacy of leadership and innovation,
+                we are dedicated to cultivating recruitment strategies that
+                magnetize top-tier talent. Our hiring practices ensure that
+                every addition to our team not only thrives in their
+                professional pursuits but also resonates with the core values of
+                TCPL's ethos.
               </p>
               <p className="mb-2">
-                In FY 2024-25, we
-                welcomed 650+ new employees to the TCPL team, further strengthening
-                our diverse and skilled workforce. Our organization embraces the
-                natural progression of workforce dynamics, viewing changes not
-                merely as departures but as valuable openings for new talent and
-                opportunities for current employees' growth, ensuring the continual
-                evolution and dynamism of our organization. We place a significant
-                value on internal mobility, fostering a culture where employees are
-                encouraged to broaden their horizons through upskilling and
-                cross-departmental transitions. This approach has proven effective,
-                with 20% of vacant roles successfully filled through internal
-                transfers, reflecting the adaptability and preparedness of our
-                employees to embrace new challenges and opportunities. In FY
-                2024-25, voluntary attrition stood at 26%, with 26% women and 25%
-                men leaving the organization.
+                In FY 2024-25, we welcomed 650+ new employees to the TCPL team,
+                further strengthening our diverse and skilled workforce. Our
+                organization embraces the natural progression of workforce
+                dynamics, viewing changes not merely as departures but as
+                valuable openings for new talent and opportunities for current
+                employees' growth, ensuring the continual evolution and dynamism
+                of our organization. We place a significant value on internal
+                mobility, fostering a culture where employees are encouraged to
+                broaden their horizons through upskilling and cross-departmental
+                transitions. This approach has proven effective, with 20% of
+                vacant roles successfully filled through internal transfers,
+                reflecting the adaptability and preparedness of our employees to
+                embrace new challenges and opportunities. In FY 2024-25,
+                voluntary attrition stood at 26%, with 26% women and 25% men
+                leaving the organization.
               </p>
               <p className="mb-2">
-                Additionally, at TCPL, we ensure
-                business continuity, and we minimize impact of any necessary
-                reductions through our Leadership Pipeline Process for fortifying a
-                future ready organization. Vulnerability due to unforeseen events
-                such as sudden resignations, illnesses, or other emergencies that
-                could leave critical positions vacant are mitigated through
-                successor identification. It helps in minimizing disruption by
-                preparing for multitude of scenarios.
+                Additionally, at TCPL, we ensure business continuity, and we
+                minimize impact of any necessary reductions through our
+                Leadership Pipeline Process for fortifying a future ready
+                organization. Vulnerability due to unforeseen events such as
+                sudden resignations, illnesses, or other emergencies that could
+                leave critical positions vacant are mitigated through successor
+                identification. It helps in minimizing disruption by preparing
+                for multitude of scenarios.
               </p>
               <p className="mb-2">
-                This initiative showcases our
-                commitment to inclusion as well as leadership and culture. It
-                ensures a continuous flow of talent, ready to adapt to changes
-                within newly acquired legal entities and evolving team structures.
-                Also, our investment in young talent program is a mitigation
-                strategy for ensuring that we build leaders within to ensure
-                business continuity. Currently the % of Total Business Critical
-                positions with at least 1 candidate in the timelines of Ready Now or
-                Ready in 12-24 Months is 73%.{" "}
-                <span className="text-4xl text-[#33b76e] font-[600]">38%</span> 38%
-                of employees in our leadership pipeline have experienced internal
-                movements within the past year.
+                This initiative showcases our commitment to inclusion as well as
+                leadership and culture. It ensures a continuous flow of talent,
+                ready to adapt to changes within newly acquired legal entities
+                and evolving team structures. Also, our investment in young
+                talent program is a mitigation strategy for ensuring that we
+                build leaders within to ensure business continuity. Currently
+                the % of Total Business Critical positions with at least 1
+                candidate in the timelines of Ready Now or Ready in 12-24 Months
+                is 73%.{" "}
+                <span className="text-4xl text-[#33b76e] font-[600]">38%</span>{" "}
+                38% of employees in our leadership pipeline have experienced
+                internal movements within the past year.
               </p>
               <p className="text-base mt-10">
                 # DJSI requirement: Breakdown of the new employee hires and/or
@@ -252,15 +231,10 @@ const ForBetterCommunities = () => {
               </p>
 
               {/* Highlight Box */}
-
             </div>
 
             <div className="w-full lg:w-1/3">
-              <img
-                src={FBC9}
-                alt=""
-                className=""
-              />
+              <img src={FBC9} alt="" className="" />
             </div>
           </div>
 
@@ -288,28 +262,26 @@ const ForBetterCommunities = () => {
               </h2>
               <p>
                 We launched the 'Grow Beyond Better 4.0' case study challenge,
-                targeting first-year business school students. The challenge
-                was designed to be intellectually stimulating and reflective
-                of real-world business scenarios, providing a platform for
-                students to demonstrate their strategic thinking and
-                problem-solving skills. A comprehensive outreach campaign was
-                executed, leveraging social media, campus engagements, and
-                alumni networks to maximize participation and visibility
-                across prestigious institutions.
+                targeting first-year business school students. The challenge was
+                designed to be intellectually stimulating and reflective of
+                real-world business scenarios, providing a platform for students
+                to demonstrate their strategic thinking and problem-solving
+                skills. A comprehensive outreach campaign was executed,
+                leveraging social media, campus engagements, and alumni networks
+                to maximize participation and visibility across prestigious
+                institutions.
               </p>
-              <h2 className="text-[#26b7ef] text-2xl font-semibold">
-                OUTCOME
-              </h2>
+              <h2 className="text-[#26b7ef] text-2xl font-semibold">OUTCOME</h2>
               <p>
                 The initiative was a resounding success, with a record-breaking
                 13,400 registrations, marking a 335% increase from the previous
                 year. The challenge resonated across 472 campuses, significantly
-                enhancing TCPL's reputation as an employer of choice. The surge in
-                engagement not only positioned TCPL as a thought leader in the
-                FMCG sector but also created a robust pipeline of potential
+                enhancing TCPL's reputation as an employer of choice. The surge
+                in engagement not only positioned TCPL as a thought leader in
+                the FMCG sector but also created a robust pipeline of potential
                 candidates eager to contribute to the company's growth and
-                innovation-driven ethos. We have also received recognition in the
-                Unstop Talent Meet 2025 in the following categories -
+                innovation-driven ethos. We have also received recognition in
+                the Unstop Talent Meet 2025 in the following categories -
               </p>
               <div className="mt-6 flex md:flex-row flex-col gap-8">
                 <div className="w-[240px]">
@@ -317,18 +289,14 @@ const ForBetterCommunities = () => {
                   <div className="w-full h-[1px] bg-[#1d6db5] my-2 relative">
                     <div className="absolute px-2 py-1 rounded-2xl top-1/2 left-0 transfor -translate-y-1/2 bg-[#26b7ef]"></div>
                   </div>
-                  <p>
-                    Unstop Prestigious Campus Engagements
-                  </p>
+                  <p>Unstop Prestigious Campus Engagements</p>
                 </div>
                 <div className="w-[240px]">
                   <h1 className="md:text-4xl text-[#1d6db5]">Top 20</h1>
                   <div className="w-full h-[1px] bg-[#1d6db5] my-2 relative">
                     <div className="absolute px-2 py-1 rounded-2xl top-1/2 left-0 transfor -translate-y-1/2 bg-[#26b7ef]"></div>
                   </div>
-                  <p>
-                    Unstop FMCG Companies
-                  </p>
+                  <p>Unstop FMCG Companies</p>
                 </div>
               </div>
             </div>
@@ -412,27 +380,19 @@ const ForBetterCommunities = () => {
             </p>
 
             <div>
-              <img
-                src={FBC11}
-                alt=""
-                className="md:w-[80%]"
-              />
+              <img src={FBC11} alt="" className="md:w-[80%]" />
 
               <div className="w-full" variants={itemVariants}>
-                <h2
-                  className="text-[#26b7ef] text-2xl font-semibold"
-                >
+                <h2 className="text-[#26b7ef] text-2xl font-semibold">
                   Investing in Capability Building
                 </h2>
 
-                <p className="mt-2" >
+                <p className="mt-2">
                   Our investment in training and development yields significant
                   business benefits, including:
                 </p>
 
-                <div
-                  className="mt-4"
-                >
+                <div className="mt-4">
                   <img
                     src={FBC12}
                     alt=""
@@ -555,7 +515,6 @@ const ForBetterCommunities = () => {
               src={FBC14}
               alt=""
               className="w-full lg:w-[50%] h-auto object-contain"
-
             />
             <div className="flex-1">
               <h2 className="font-bold">Key Objectives:</h2>
@@ -827,7 +786,11 @@ const ForBetterCommunities = () => {
 
         {/* Page 8 */}
         <div className="!mt-10 marginal bg-[#e1f3fd] !p-4">
-          <img src="/Sustainability/FBC/prog-soar.webp" className="w-50" alt="" />
+          <img
+            src="/Sustainability/FBC/prog-soar.webp"
+            className="w-50"
+            alt=""
+          />
           <br />
           <h1 className="text-black text-2xl md:text-4xl">
             Program Objective/ Business Benefit
@@ -841,14 +804,16 @@ const ForBetterCommunities = () => {
                 Facilitate Transformative Learning
               </h2>
               <p>
-                Enable managers to discover and implement critical learning experiences...
+                Enable managers to discover and implement critical learning
+                experiences...
               </p>
               <br />
               <h2 className="text-[#49c0ce] border-b-2 inline-block text-lg font-semibold">
                 Drive Self-Discovery and Growth
               </h2>
               <p>
-                Promote self-awareness among participants through structured assessments...
+                Promote self-awareness among participants through structured
+                assessments...
               </p>
             </div>
 
@@ -864,7 +829,8 @@ const ForBetterCommunities = () => {
                 Implement Actionable Strategies
               </h2>
               <p>
-                Equip managers with practical tools and strategies to drive behavioral change...
+                Equip managers with practical tools and strategies to drive
+                behavioral change...
               </p>
             </div>
 
@@ -873,13 +839,16 @@ const ForBetterCommunities = () => {
                 Align with Organizational Goals
               </h2>
               <p>
-                Ensure that the development journey aligns with Tata Consumer Products...
+                Ensure that the development journey aligns with Tata Consumer
+                Products...
               </p>
             </div>
           </div>
 
           <br />
-          <h1 className="text-black text-2xl md:text-4xl">Impact of business benefits</h1>
+          <h1 className="text-black text-2xl md:text-4xl">
+            Impact of business benefits
+          </h1>
           <br />
 
           {/* Second Flex Section */}
@@ -888,23 +857,17 @@ const ForBetterCommunities = () => {
               <h2 className="text-[#53c67e] border-b-2 inline-block text-lg font-semibold">
                 Heightened Engagement Levels
               </h2>
-              <p>
-                The program cultivates an atmosphere of openness...
-              </p>
+              <p>The program cultivates an atmosphere of openness...</p>
               <br />
               <h2 className="text-[#53c67e] border-b-2 inline-block text-lg font-semibold">
                 Stronger Interpersonal Networks
               </h2>
-              <p>
-                Participants build a robust network of peer connections...
-              </p>
+              <p>Participants build a robust network of peer connections...</p>
               <br />
               <h2 className="text-[#53c67e] border-b-2 inline-block text-lg font-semibold">
                 Culture of Continuous Improvement
               </h2>
-              <p>
-                The emphasis on behavioral change and self-direction...
-              </p>
+              <p>The emphasis on behavioral change and self-direction...</p>
             </div>
 
             <div className="w-full md:w-1/3">
@@ -912,42 +875,32 @@ const ForBetterCommunities = () => {
                 Practical Application of Insights
               </h2>
               <p>
-                Managers will gain real-world insights and practical experience...
+                Managers will gain real-world insights and practical
+                experience...
               </p>
               <br />
               <h2 className="text-[#53c67e] border-b-2 inline-block text-lg font-semibold">
                 Sustainable Behavioral Transformation
               </h2>
-              <p>
-                The structured approach to mentoring and feedback...
-              </p>
+              <p>The structured approach to mentoring and feedback...</p>
             </div>
 
             <div className="w-full md:w-1/3">
               <h2 className="text-[#53c67e] border-b-2 inline-block text-lg font-semibold">
                 Increased Organizational Insight
               </h2>
-              <p>
-                Participants will develop a deeper understanding...
-              </p>
+              <p>Participants will develop a deeper understanding...</p>
               <br />
               <h2 className="text-[#53c67e] border-b-2 inline-block text-lg font-semibold">
                 Enhanced Confidence and Self-Efficacy
               </h2>
-              <p>
-                The program will empower managers with the confidence...
-              </p>
+              <p>The program will empower managers with the confidence...</p>
             </div>
           </div>
 
           <br />
-          <img
-            src={FBC18}
-            alt=""
-            className="w-full md:w-[80vw]"
-          />
+          <img src={FBC18} alt="" className="w-full md:w-[80vw]" />
         </div>
-
 
         {/* Page 9 */}
         <div className="marginal !mt-10">
@@ -969,30 +922,32 @@ const ForBetterCommunities = () => {
                 </div>
                 <div className="md:w-[60%]">
                   <p className="mb-3">
-                    At TCPL, we foster a progressive and inclusive work culture that
-                    prioritizes employee well-being through flexible work
+                    At TCPL, we foster a progressive and inclusive work culture
+                    that prioritizes employee well-being through flexible work
                     arrangements. Our policies are designed to support work-life
                     balance by offering flexible working hours and comprehensive
                     work-from-home options, ensuring adaptability to individual
                     needs.
                   </p>
                   <p className="mb-3">
-                    To support new mothers, we provide part-time work options for
-                    those returning from maternity leave, facilitating a smooth
-                    transition back into the workforce. Additionally, nursing
-                    mothers have access to breastfeeding/lactation facilities, with
-                    dedicated Mom's Rooms available in our Mumbai, Delhi, Bangalore,
-                    and Kolkata offices. We have introduced an industry-leading
-                    'Nanny' allowance for women employees across India, providing
-                    financial assistance for childcare and enabling them to balance
-                    their professional and personal responsibilities effectively.
+                    To support new mothers, we provide part-time work options
+                    for those returning from maternity leave, facilitating a
+                    smooth transition back into the workforce. Additionally,
+                    nursing mothers have access to breastfeeding/lactation
+                    facilities, with dedicated Mom's Rooms available in our
+                    Mumbai, Delhi, Bangalore, and Kolkata offices. We have
+                    introduced an industry-leading 'Nanny' allowance for women
+                    employees across India, providing financial assistance for
+                    childcare and enabling them to balance their professional
+                    and personal responsibilities effectively.
                   </p>
                   <p>
-                    Recognizing the importance of parental support, TCPL offers 26
-                    weeks of paid leave for primary caregivers, enabling quality
-                    child- rearing time, while non-primary caregivers receive two
-                    weeks of paid leave to support their families during the crucial
-                    early stages of their own or adopted child's life.
+                    Recognizing the importance of parental support, TCPL offers
+                    26 weeks of paid leave for primary caregivers, enabling
+                    quality child- rearing time, while non-primary caregivers
+                    receive two weeks of paid leave to support their families
+                    during the crucial early stages of their own or adopted
+                    child's life.
                   </p>
                 </div>
               </div>
@@ -1043,8 +998,6 @@ const ForBetterCommunities = () => {
                 professionally. Together, we are building a brighter future.
               </p>
             </div>
-
-
           </div>
         </div>
 
@@ -1088,7 +1041,6 @@ const ForBetterCommunities = () => {
           </h2>
           <br />
           <div className="flex flex-col items-center md:flex-row gap-4">
-
             <div className="w-full md:w-1/2">
               <img
                 src={FBC20}
@@ -1115,7 +1067,6 @@ const ForBetterCommunities = () => {
           <div className="bg-[#f9f7f5] p-4">
             {/* <img src="sd" alt="svg will be here" /> */}
             <div className="">
-
               <h2 className="text-[#3dbd6c] text-2xl mb-2 font-[600]">
                 Ethics Index:
               </h2>
@@ -1130,7 +1081,6 @@ const ForBetterCommunities = () => {
 
             <div className=" flex flex-col items-end md:flex-row gap-8">
               <div>
-
                 <div className="">
                   <br />
                   {/* <img src="sd" alt="svg will be here" /> */}
@@ -1146,14 +1096,15 @@ const ForBetterCommunities = () => {
                   </p>
                   <p>
                     These new indices provide a more comprehensive view of our
-                    organizational health and help us identify specific areas for
-                    improvement. By addressing these areas, we aim to foster a
-                    more ethical, inclusive, and collaborative work environment.
+                    organizational health and help us identify specific areas
+                    for improvement. By addressing these areas, we aim to foster
+                    a more ethical, inclusive, and collaborative work
+                    environment.
                   </p>
                   <p>
                     This streamlined and responsive approach to employee
-                    engagement has helped us foster a more connected and motivated
-                    workforce, driving our collective success forward.
+                    engagement has helped us foster a more connected and
+                    motivated workforce, driving our collective success forward.
                   </p>
                   <br />
                   <h2 className="text-[#16b1ef] text-xl sm:text-2xl mb-2 font-semibold">
@@ -1162,30 +1113,26 @@ const ForBetterCommunities = () => {
                   <p>
                     To ensure continuous feedback and development, we employ
                     various performance management assessments, including
-                    Management by Objectives and agile conversations. Performance
-                    reviews are conducted annually, supplemented by ongoing
-                    evaluations. We emphasize frequent and meaningful
+                    Management by Objectives and agile conversations.
+                    Performance reviews are conducted annually, supplemented by
+                    ongoing evaluations. We emphasize frequent and meaningful
                     conversations—both formal and informal—to foster a
                     high-performance culture.
                   </p>
                   <p>
-                    Through our Conversation Framework, which includes Performance
-                    Planning, Mid-Year Review, Year-End Review, and Communication
-                    discussions, employees and managers are encouraged to engage
-                    in clear and candid dialogues throughout the year. We also use
-                    statistical methods, such as the bell-curve methodology, to
-                    assess and differentiate performance, ensuring each employee's
-                    contributions align with their grade and role within the
-                    organization.
+                    Through our Conversation Framework, which includes
+                    Performance Planning, Mid-Year Review, Year-End Review, and
+                    Communication discussions, employees and managers are
+                    encouraged to engage in clear and candid dialogues
+                    throughout the year. We also use statistical methods, such
+                    as the bell-curve methodology, to assess and differentiate
+                    performance, ensuring each employee's contributions align
+                    with their grade and role within the organization.
                   </p>
                 </div>
               </div>
               <div>
-                <img
-                  src={FBC21}
-                  alt=""
-
-                />
+                <img src={FBC21} alt="" />
               </div>
             </div>
           </div>
@@ -1194,8 +1141,8 @@ const ForBetterCommunities = () => {
         {/* Page 12 */}
         <div className="marginal text-lg !p-4 bg-[#f9f7f5] space-y-8">
           {/* Top Section: Text and Image */}
-          <div className="flex flex-col md:flex-row gap-6">
-            <div className="space-y-4 md:w-2/3">
+          <div className="flex flex-col  gap-6">
+            <div className="space-y-4 ">
               <h2 className="text-[#16b1ef] text-xl sm:text-2xl md:text-3xl font-semibold">
                 CULTIVATING A STRONG CULTURE OF SAFETY
               </h2>
@@ -1276,15 +1223,69 @@ const ForBetterCommunities = () => {
                 safety is an integral part of our daily operations.
               </p>
             </div>
-
-            <div className="md:w-1/3">
-              <img
-                src={FBC22}
-                alt="Safety culture visual"
-                className="w-full h-auto object-cover rounded-md"
-              />
+            <div>
+              <div className="text-2xl bg-gradient-to-r from-[#4cc173] to-[#56c3f3] bg-clip-text text-transparent mb-2">
+                Health and Safety Initiatives at TCP
+              </div>
+              <div className="mb-2">
+                <span className="text-[#1368b4]"> Organised </span> Regional
+                Health & Safety Conferences for Delivery service providers to
+                elevate the <span className="muli-bold text-black ">safety</span> standards of warehouse activities.
+              </div>
+              <div className="mb-2">
+                <span className="text-[#1368b4]">
+                  {" "}
+                  Two safety leadership training{" "}
+                </span>{" "}
+                sessions (2 days) were conducted covering <span className="muli-bold text-black "> 54 employees. </span>
+              </div>
+              <div className="mb-2">
+                <span className="text-[#1368b4]"> Initiated </span> a Monthly
+                <span className="muli-bold text-black "> Health & Safety </span> Timeout program at every operational site,
+                focusing on theme-based safety enhancement measures.
+              </div>
+              <div className="mb-2">
+                <span className="text-[#1368b4]">
+                  {" "}
+                  Five Health & Safety workshops{" "}
+                </span>{" "}
+                (1 day) were conducted at various factory locations covering 9
+                factories.
+              </div>
+              <div className="mb-2">
+                <span className="text-[#1368b4]"> Established </span> E a
+                Proactive Safety Scorecard system throughout our operations to
+                regularly assess safety performance against critical safety
+                metrics on a monthly basis.
+              </div>
+              <div className="mb-2 font-bold">
+                <span className="text-[#1368b4]">
+                  Four Health & Safety conferences
+                </span>{" "}
+                were organised, covering panIndia CFA owners and their teams,
+                raising <b className="muli-bold"> safety </b>
+                awareness
+              </div>
+              <div className="mb-2">
+                <span className="text-[#1368b4]">E-learning modules</span> on
+                Health & Safety have been administered for awareness.
+              </div>
+              <div className="mb-2">
+                <span className="text-[#1368b4]"> Six H&S officers </span> have
+                been qualified as CII SR Award assessors, allowing crosslearning
+                of best practices in other FMCG companies.
+              </div>
+              <div className="mb-2">
+                <span className="text-[#1368b4]">
+                  Two internal auditor training programs{" "}
+                </span>{" "}
+                (3 days) conforming to ISO 45001 & 14001 were conducted,
+                resulting in 56 TCP employees qualifying as internal EHS
+                auditors.
+              </div>
             </div>
           </div>
+          <div></div>
 
           {/* Bottom Section: Highlights Grid */}
           <div className="bg-[#f9f7f5] border border-[#5b95c9] p-4 md:p-6 rounded-md grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -1412,7 +1413,18 @@ const ForBetterCommunities = () => {
                 facilities have also achieved SA 8000 certification.
               </p>
 
-              <p className="border-2 p-4 border-[#9fc2e1]">
+             
+            </div>
+
+            <div className="flex justify-center md:justify-end md:w-[40%]">
+              <img
+                src={FBC25}
+                alt=""
+                className=""
+              />
+            </div>
+          </div>
+          <p className="border-2 p-4 border-[#9fc2e1]">
                 The trustea initiative in India, which has verified sales of
                 over
                 <span className="text-[#1267b3] text-3xl font-[400]">
@@ -1449,17 +1461,6 @@ const ForBetterCommunities = () => {
                 wages that comply with legal standards and meet basic living
                 needs.
               </p>
-            </div>
-
-            <div className="flex justify-center md:justify-end md:w-[40%]">
-              <img
-                src={FBC25}
-                alt=""
-                className="w-full max-w-[80vh] h-auto object-contain"
-
-              />
-            </div>
-          </div>
         </div>
 
         {/* Page 15 */}
@@ -1507,7 +1508,6 @@ const ForBetterCommunities = () => {
                 src={FBC26}
                 alt=""
                 className="w-full max-w-[80vh] h-auto object-contain"
-
               />
             </div>
           </div>
@@ -1528,10 +1528,7 @@ const ForBetterCommunities = () => {
 
         {/* Page 16 */}
         <div className="!mt-10 marginal text-lg space-y-4">
-          <img
-            src={FBC28}
-            alt=""
-          />
+          <img src={FBC28} alt="" />
           <p>
             Our Corporate Social Responsibility (CSR) initiatives are designed
             with a commitment to making a meaningful impact, prioritizing the
@@ -1552,67 +1549,63 @@ const ForBetterCommunities = () => {
 
         {/* Page 17 */}
         <div className="marginal text-lg !mt-10">
-        <div className=" flex flex-col md:flex-row mb-4 gap-6">
-          <div className="md:w-[40%]">
-            <img
-              src={FBC29}
-              alt=""
-              className="w-full "
-            />
+          <div className=" flex flex-col md:flex-row mb-4 gap-6">
+            <div className="md:w-[40%]">
+              <img src={FBC29} alt="" className="w-full " />
+            </div>
+
+            <div className="space-y-4 md:w-[60%]">
+              <h2 className="text-[#16b1ef] text-xl sm:text-2xl md:text-3xl font-semibold">
+                CSR GOVERNANCE
+              </h2>
+
+              <p>
+                We have established a robust governance framework to oversee the
+                implementation of our CSR initiatives. This structure is led by
+                the Corporate Social Responsibility & Sustainability Committee
+                (CSR&S Committee) of the Board, which delegates authority to a
+                working committee to act on its behalf. The formation of this
+                committee complies with the requirements of Section 135 of the
+                Companies Act, 2013. The CSR&S Committee is responsible for
+                formulating and recommending the CSR policy, identifying CSR
+                activities, approving expenditures, and monitoring the execution
+                of CSR projects.
+              </p>
+
+              <p>
+                Volunteering plays a crucial role in fostering strong
+                connections between our employees and the communities we serve.
+                It not only enhances our employees' sense of purpose and
+                engagement but also significantly contributes to the well-being
+                of the community.
+              </p>
+            </div>
           </div>
+          <p className="mb-3">
+            This year, we are proud to report a record-breaking 63,183
+            volunteering hours by our dedicated employees. This translates to an
+            impressive average of 6.34 volunteering hours per employee, a
+            substantial increase from last year. These efforts underscore our
+            commitment to making a positive impact and highlight the integral
+            role our employees play in driving our community-focused
+            initiatives. We will continue to be guided by the Tata values and
+            principles in all our endeavours with the community.
+          </p>
 
+          <p className="mb-3">
+            We engage with foundations such as APPL, TGBL, Coorg, TCSRD, and
+            Trust RIHP, enhancing our outreach and efficacy.
+          </p>
 
-          <div className="space-y-4 md:w-[60%]">
-            <h2 className="text-[#16b1ef] text-xl sm:text-2xl md:text-3xl font-semibold">
-              CSR GOVERNANCE
-            </h2>
-
-            <p>
-              We have established a robust governance framework to oversee the
-              implementation of our CSR initiatives. This structure is led by
-              the Corporate Social Responsibility & Sustainability Committee
-              (CSR&S Committee) of the Board, which delegates authority to a
-              working committee to act on its behalf. The formation of this
-              committee complies with the requirements of Section 135 of the
-              Companies Act, 2013. The CSR&S Committee is responsible for
-              formulating and recommending the CSR policy, identifying CSR
-              activities, approving expenditures, and monitoring the execution
-              of CSR projects.
-            </p>
-
-            <p>
-              Volunteering plays a crucial role in fostering strong connections
-              between our employees and the communities we serve. It not only
-              enhances our employees' sense of purpose and engagement but also
-              significantly contributes to the well-being of the community.
-            </p>
-          </div>
-        </div>
-        <p className="mb-3">
-          This year, we are proud to report a record-breaking 63,183
-          volunteering hours by our dedicated employees. This translates to
-          an impressive average of 6.34 volunteering hours per employee, a
-          substantial increase from last year. These efforts underscore our
-          commitment to making a positive impact and highlight the integral
-          role our employees play in driving our community-focused
-          initiatives. We will continue to be guided by the Tata values and
-          principles in all our endeavours with the community.
-        </p>
-
-        <p className="mb-3">
-          We engage with foundations such as APPL, TGBL, Coorg, TCSRD, and
-          Trust RIHP, enhancing our outreach and efficacy.
-        </p>
-
-        <p>
-          Throughout FY25, Tata Consumer has rolled out an extensive array
-          of CSR initiatives, reflecting our deep commitment to social and
-          environmental betterment. From this comprehensive CSR portfolio,
-          we have curated a selection of initiatives to provide a glimpse
-          into the impactful work we are doing. These examples, drawn from a
-          broader array of projects, highlight our commitment to driving
-          positive change within the communities we serve.
-        </p>
+          <p>
+            Throughout FY25, Tata Consumer has rolled out an extensive array of
+            CSR initiatives, reflecting our deep commitment to social and
+            environmental betterment. From this comprehensive CSR portfolio, we
+            have curated a selection of initiatives to provide a glimpse into
+            the impactful work we are doing. These examples, drawn from a
+            broader array of projects, highlight our commitment to driving
+            positive change within the communities we serve.
+          </p>
         </div>
 
         {/* Page 18 */}
@@ -1623,39 +1616,18 @@ const ForBetterCommunities = () => {
 
         {/* Page 19 */}
 
-        <div
-          className="md:flex marginal"
-
-        >
-          <img
-            src={FBC35}
-            alt=""
-            className="md:w-1/3"
-
-          />
-          <img
-            src={FBC34}
-            alt=""
-            className="md:w-1/3"
-
-          />
-          <img
-            src={FBC33}
-            alt=""
-            className="md:w-1/3"
-
-          />
+        <div className="md:flex marginal">
+          <img src={FBC35} alt="" className="md:w-1/3" />
+          <img src={FBC34} alt="" className="md:w-1/3" />
+          <img src={FBC33} alt="" className="md:w-1/3" />
         </div>
 
         <div className="marginal space-y-4 mt-10">
-          <h2 className="text-[#16b1ef] text-xl sm:text-2xl md:text-3xl font-semibold">INTERPLAY OF CAPITALS</h2>
+          <h2 className="text-[#16b1ef] text-xl sm:text-2xl md:text-3xl font-semibold">
+            INTERPLAY OF CAPITALS
+          </h2>
           <div className="flex justify-center ">
-            <img
-              src={FBC32}
-              alt=""
-              className="object-contain"
-
-            />
+            <img src={FBC32} alt="" className="object-contain" />
           </div>
         </div>
       </div>
