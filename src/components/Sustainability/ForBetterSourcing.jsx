@@ -82,7 +82,7 @@ const containerVariants = {
 const ForBetterSourcing = () => {
   return (
     <>
-    <div className="mx-10">
+    <div className="">
         <div className='flex flex-col gap-10'>
     <Page
     text="Sourcing"

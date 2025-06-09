@@ -22,11 +22,11 @@ sustainability but also promotes responsible consumption and waste practices amo
 
 <div>
 <div className='text-2xl text-[#1368b4] font-semibold mb-3'>SUSTAINABILITY-PROJECT AALINGANA</div>
-<div className='flex flex-row justify-center gap-5'>
-<div className='mb-4 w-[50%]'>
+<div className='flex md:flex-row flex-col justify-center gap-5'>
+<div className='mb-4 md:w-[50%]'>
   <img src="/aalingana.webp" alt="" />
 </div>
-<div className='mb-2 w-[50%] p-4 bg-gray-100'>
+<div className='mb-2 md:w-[50%] p-4 bg-gray-100'>
 The Tata group’s sustainability
 strategy is guided by Project
 Aalingana, which is driven by

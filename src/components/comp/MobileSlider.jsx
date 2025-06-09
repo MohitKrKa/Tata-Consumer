@@ -7,13 +7,12 @@ const images = [
   "./WorldMap4.webp",
   "./WorldMap5.webp",
   "./WorldMap6.webp",
-  "./WorldMap7.webp"
+  "./WorldMap7.webp",
 ];
 
 const CustomNextArrow = ({ onClick }) => (
   <button
-  className="absolute bottom-0 right-0 z-10 bg-white rounded-full p-1 shadow-md hover:bg-gray-100"
-
+    className="absolute bottom-0 right-0 z-10 bg-white rounded-full p-1 shadow-md hover:bg-gray-100"
     onClick={onClick}
   >
     <svg
@@ -35,8 +34,7 @@ const CustomNextArrow = ({ onClick }) => (
 
 const CustomPrevArrow = ({ onClick }) => (
   <button
-  className="absolute bottom-0 left-0 z-10 bg-white rounded-full p-1 shadow-md hover:bg-gray-100"
-
+    className="absolute bottom-0 left-0 z-10 bg-white rounded-full p-1 shadow-md hover:bg-gray-100"
     onClick={onClick}
   >
     <svg
@@ -104,7 +102,7 @@ const MobileSlider = () => {
   if (!isMobile) return null;
 
   return (
-    <div className=" w-full sm:hidden bg-white p-3 ">
+    <div className=" w-full md:hidden overflow-hidden bg-white p-3 ">
       {/* Image Slider */}
       <div
         ref={sliderRef}
@@ -127,11 +125,10 @@ const MobileSlider = () => {
 
       {/* Custom Arrows Below Image */}
       {/* Custom Arrows Below Image */}
-<div className="relative mb-2 mt-2 h-0">
-  <CustomPrevArrow onClick={() => handleArrow("left")} />
-  <CustomNextArrow onClick={() => handleArrow("right")} />
-</div>
-
+      <div className="relative mb-2 mt-2 h-0">
+        <CustomPrevArrow onClick={() => handleArrow("left")} />
+        <CustomNextArrow onClick={() => handleArrow("right")} />
+      </div>
     </div>
   );
 };

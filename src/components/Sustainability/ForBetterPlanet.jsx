@@ -104,7 +104,7 @@ const ForBetterPlanet = () => {
 
           <div className=" marginal  flex flex-col sm:flex-row items-stretch gap-5">
             {/* Images Section */}
-            <div className="w-[50%]">
+            <div className="md:w-[50%]">
               <div>
                 <img src={FBC4} alt="" className="" />
               </div>
@@ -112,7 +112,7 @@ const ForBetterPlanet = () => {
             </div>
 
             <div className=" md:w-[50%]">
-              <div className="w-[80%]">
+              <div className="md:w-[80%]">
                 <img src="/Performance.png" alt="" className="" />
               </div>
             </div>

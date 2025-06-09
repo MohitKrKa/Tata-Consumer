@@ -45,8 +45,8 @@ const navItems = [
     },
     {
       label: "Sustainability",
-    //   path: "/sustainability",
-      path: "////",
+      path: "/sustainability",
+      // path: "////",
       submenu: [
         { label: "ESG Highlights", path: "/sustainability/esg-highlights" },
         // { label: "ESG Highlights", path: "/" },
@@ -64,11 +64,11 @@ const navItems = [
     },
     {
       label: "Sustaining Value",
-    //   path: "/value",
-      path: "/////",
+      path: "sustaining_value",
+      // path: "/////",
       submenu: [
         // { label: "Stakeholder Value Creation", path: "/value/stakeholder" },
-        { label: "Our stakeholders and topics of priority", path: "/sustaining-value/Materiality_assessment_and_stakeholder_discussions" },
+        { label: "Our stakeholders and topics of priority", path: "/sustaining-value/Our_stakeholders_and_topics_of_priority" },
         // { label: "Materiality", path: "/value/materiality" },
         { label: "Materiality assessment and stakeholder discussions", path: "/sustaining-value/Materiality_assessment_and_stakeholder_discussions" },
         // { label: "Risk Management", path: "/value/risk" },

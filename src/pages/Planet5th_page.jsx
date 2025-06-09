@@ -45,7 +45,7 @@ const Planet5th_page = () => {
           commitment to energy efficiency.
         </div>
 
-        <div className="w-[60%]">
+        <div className="md:w-[60%]">
           <img className="" src="/73.webp" alt="" />
         </div>
       </div>

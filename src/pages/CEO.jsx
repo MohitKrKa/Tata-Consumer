@@ -121,7 +121,7 @@ const CEO = () => {
             STEADY GROWTH
           </div>
           <div className=''>
-          <div className='flex justify-evenly items-center'>
+          <div className='flex md:flex-row flex-col md:justify-evenly md:items-center gap-5'>
             <div className="flex flex-col mt-2 w-[200px] mb-5">
               <h1 className="text-3xl text-[#4084c1] leading-none">INR 17,618 Crores</h1>
 
@@ -503,8 +503,8 @@ of Organic India in international
 markets with stronger e-commerce
 execution in USA.
      </div>
-     <div className='flex flex-row justify-center gap-5 mb-5 '>
-        <div className='w-[70%]'>
+     <div className='flex md:flex-row flex-col justify-center gap-5 mb-5 '>
+        <div className='md:w-[70%]'>
      <div className='text-2xl font-semibold text-[#1368b4] mb-2'>
      STRENGTHENING
 INTERNATIONAL BUSINESS
@@ -547,12 +547,12 @@ long-term growth.
         </div>
       </div>
      </div>
-     <div className='w-[30%]'>
+     <div className='md:w-[30%]'>
       <img src="/CEO6.webp" alt="" />
      </div>
      </div>
-     <div className='flex flex-row justify-center gap-5 '>
-        <div className='w-[50%]'>
+     <div className='flex md:flex-row flex-col justify-center gap-5 '>
+        <div className='md:w-[50%]'>
      <div className='text-2xl font-semibold text-[#1368b4] mb-2'>
      EMBEDDING SUSTAINABILITY
      ACROSS OUR BUSINESS
@@ -579,7 +579,7 @@ to embedding sustainability across
 various facets of the organisation. 
      </div>
      </div>
-     <div className='w-[50%]'>
+     <div className='md:w-[50%]'>
       <img src="/CEO7.webp" alt="" />
      </div>
      </div>

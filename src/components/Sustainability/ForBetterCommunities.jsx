@@ -61,7 +61,7 @@ const itemVariants = {
 const ForBetterCommunities = () => {
   return (
     <>
-      <div className="border text-[#969798] text-base">
+      
         <div className='flex flex-col gap-10'>
           <Page
             text="Communities"
@@ -73,7 +73,7 @@ const ForBetterCommunities = () => {
           />
         </div>
         {/* Page 1 */}
-
+        <div className="marginal text-[#969798] text-base">
         <div
           className="mt-5 marginal flex  flex-col sm:flex-row gap-10"   >
           {/* Images Section */}

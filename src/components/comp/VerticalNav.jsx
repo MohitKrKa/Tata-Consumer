@@ -266,7 +266,7 @@ const VerticalNav = () => {
               </button>
 
               {/* Current Slide Title */}
-              <div className="text-3xl font-bold text-gray-800 dark:text-white uppercase tracking-widest text-center">
+              <div className="text-3xl font-bold text-white uppercase tracking-widest text-center">
                 {contentData[activeState].carousel[currentSlide].text}
               </div>
 

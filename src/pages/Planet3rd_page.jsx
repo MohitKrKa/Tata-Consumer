@@ -75,8 +75,8 @@ const Planet3rd_page = () => {
         <img src="/planet_performance/3.png" alt="" />
       </div>
      </div>
-      <div className="flex flex-row justify-center gap-5 mt-10">
-        <div className="w-[50%]">
+      <div className="flex md:flex-row flex-col justify-center gap-5 mt-5">
+        <div className="md:w-[50%]">
           <div className="text-2xl font-semibold text-[#1368b4] mb-2">
             FOR BETTER PLANET
           </div>
@@ -95,7 +95,7 @@ const Planet3rd_page = () => {
             that honour and preserve our planet’s precious resources.
           </div>
         </div>
-        <div className="w-[50%]">
+        <div className="md:w-[50%]">
           <img src="/75.webp" alt="" />
         </div>
       </div>

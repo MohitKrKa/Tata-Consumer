@@ -105,7 +105,7 @@ const EsgGovernance = () => {
         </p>
 
         <motion.div
-          className="md:flex  justify-center  gap-6 md:gap-6"
+          className="md:flex mb-3 md:mb-0 justify-center  gap-6 md:gap-6"
           variants={parentVariants}
           initial="hidden"
           whileInView="visible"
@@ -116,7 +116,7 @@ const EsgGovernance = () => {
               key={idx}
               src={img}
               alt=""
-              className="w-[33%] object-contain"
+              className="md:w-[33%] object-contain"
               variants={childVariants}
             />
           ))}
@@ -144,11 +144,11 @@ const EsgGovernance = () => {
             efforts.
           </p>
           </div>
-          <div className="flex flex-row justify-center gap-6 text-[#959493] font-[400] text-base md:text-xl">
+          <div className="flex md:flex-row flex-col justify-center gap-6 text-[#959493] font-[400] text-base md:text-xl">
   {[0, 1, 2, 3].map((i, idx) => (
-    <div key={idx} className="flex flex-col text-left items-start w-1/4  bg-gray-50 p-6">
+    <div key={idx} className="flex flex-col text-left items-start md:w-1/4  bg-gray-50 p-6">
       {/* Fixed-size image container for consistent layout */}
-      <div className="w-[120px] h-[60px] mb-3">
+      <div className="md:w-[120px] md:h-[60px]  mb-3">
         <img
           src={`/governance_logo/${i}.webp`}
           alt=""

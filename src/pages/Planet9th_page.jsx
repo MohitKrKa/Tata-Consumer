@@ -7,7 +7,7 @@ const Planet9th_page = () => {
        <img src="/80.webp" alt="" />
         </div>
     <div className='md:w-[60%] h-auto '>
-    <div className='w-[5%]'>
+    <div className='md:w-[5%] w-[15%]'>
         <img src="/planet_product.webp" alt="" />
       </div>
         <div className='text-xl text-white p-3 bg-gradient-to-r from-[#01b051] to-[#04adee] mb-2 rounded-r-4xl w-max'>PRODUCT STEWARDSHIP</div>

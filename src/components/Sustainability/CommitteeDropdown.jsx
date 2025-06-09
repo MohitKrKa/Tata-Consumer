@@ -152,5 +152,6 @@ export default function CommitteeDropdownInHeader() {
         </div>
       </div>
     </div>
+    
   );
 }

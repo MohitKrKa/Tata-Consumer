@@ -10,7 +10,7 @@ const pointers = [
     label: "India",
     img: "./WorldMap3.webp",
     color: "rgb(6 174 239)",
-    num: "01"
+    num: "01",
   },
   {
     id: "pointer2",
@@ -19,7 +19,7 @@ const pointers = [
     label: "USA",
     img: "./WorldMap7.webp",
     color: "rgb(17 177 75)",
-    num: "02"
+    num: "02",
   },
   {
     id: "pointer3",
@@ -28,7 +28,7 @@ const pointers = [
     label: "UK AND EUROPE",
     img: "./WorldMap6.webp",
     color: "rgb(2 173 189)",
-    num: "03"
+    num: "03",
   },
   {
     id: "pointer4",
@@ -37,7 +37,7 @@ const pointers = [
     label: "CANADA",
     img: "./WorldMap2.webp",
     color: "rgb(19 104 180)",
-    num: "04"
+    num: "04",
   },
   {
     id: "pointer5",
@@ -46,7 +46,7 @@ const pointers = [
     label: "AUSTRALIA",
     img: "./WorldMap1.webp",
     color: "rgb(88 89 91)",
-    num: "05"
+    num: "05",
   },
   {
     id: "pointer6",
@@ -55,7 +55,7 @@ const pointers = [
     label: "UAE",
     img: "./WorldMap5.webp",
     color: "rgb(221 124 135)",
-    num: "06"
+    num: "06",
   },
   {
     id: "pointer7",
@@ -64,7 +64,7 @@ const pointers = [
     label: "SOUTH AFRICA",
     img: "./WorldMap4.webp",
     color: "rgb(176 143 112)",
-    num: "07"
+    num: "07",
   },
 ];
 
@@ -77,11 +77,7 @@ export default function MapWithCustomTooltip() {
         <Heading2 text={"Where we are"} />
       </div>
       <div className="md:block hidden  relative w-full h-screen  mx-auto mt-10 ">
-        <img
-          src="./WorldMap.webp"
-          alt="Map"
-          className="w-full h-full"
-        />
+        <img src="./WorldMap.webp" alt="Map" className="w-full h-full" />
 
         {pointers.map((pointer) => (
           <div
@@ -95,28 +91,35 @@ export default function MapWithCustomTooltip() {
             <div className="relative w-10 h-10 ">
               <span className="absolute inline-flex h-full w-full rounded-full bg-blue-400/50 opacity-85 animate-ping " />
               <div className="relative">
-                <svg viewBox="0 0 1024 1089.841" xmlns="http://www.w3.org/2000/svg"><path fill={pointer.color} d="M520.258 1056.92H503.76c0-134.61-50.306-252.21-150.918-352.824S134.628 553.178 0 553.178V536.68c134.628 0 252.23-50.306 352.842-151.145C453.454 284.677 503.76 167.075 503.76 32.938h16.498c0 134.61 50.306 252.21 150.918 352.824S889.39 536.68 1024 536.68v16.498c-134.61 0-252.21 50.306-352.824 150.918S520.258 922.31 520.258 1056.92z" /></svg>
-                <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-[10px] font-semibold">{pointer.num}</p>
+                <svg
+                  viewBox="0 0 1024 1089.841"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill={pointer.color}
+                    d="M520.258 1056.92H503.76c0-134.61-50.306-252.21-150.918-352.824S134.628 553.178 0 553.178V536.68c134.628 0 252.23-50.306 352.842-151.145C453.454 284.677 503.76 167.075 503.76 32.938h16.498c0 134.61 50.306 252.21 150.918 352.824S889.39 536.68 1024 536.68v16.498c-134.61 0-252.21 50.306-352.824 150.918S520.258 922.31 520.258 1056.92z"
+                  />
+                </svg>
+                <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-[10px] font-semibold">
+                  {pointer.num}
+                </p>
               </div>
             </div>
-
 
             {/* Tooltip */}
             {hoveredId === pointer.id && (
               <div
-                className={`absolute ${pointer.label !== "India" ? "w-52" : "w-[26rem]"
-                  } left-1/2 -translate-x-1/2 -top-14 p-2 bg-white border border-gray-300 rounded shadow-lg z-50 text-sm text-gray-800
+                className={`absolute ${
+                  pointer.label !== "India" ? "w-52" : "w-[26rem]"
+                } left-1/2 -translate-x-1/2 -top-14 p-2 bg-white border border-gray-300 rounded shadow-lg z-50 text-sm text-gray-800
     transition-all duration-300 ease-in-out opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100`}
               >
                 <img src={pointer.img} alt={pointer.label} className="w-full" />
                 <div className="absolute left-1/2 -bottom-1 w-2 h-2 bg-white border-l border-t border-gray-300 transform -translate-x-1/2 rotate-45" />
               </div>
             )}
-
-
           </div>
         ))}
-
       </div>
 
       <div className="block md:hidden ">
@@ -124,7 +127,7 @@ export default function MapWithCustomTooltip() {
           <Heading2 text={"Where we are"} />
         </div> */}
         <img className="" src="/MobileMap.webp" alt="Map Mobile" />
-        <MobileSlider/>
+        <MobileSlider />
       </div>
     </>
   );

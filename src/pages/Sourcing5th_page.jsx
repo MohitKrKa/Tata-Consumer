@@ -56,9 +56,9 @@ const parentVariants = {
 const Sourcing5th_page = () => {
   return (
     <>
-      <div className='marginal text-lg'>
+      <div className='marginal text-lg '>
         <div className='flex flex-row gap-2'>
-          <div className='w-[5%]'>
+          <div className='md:w-[5%] w-[15%]'>
             <img src="/sourcing/Screening.webp" alt="" />
           </div>
           <div>
@@ -71,8 +71,8 @@ const Sourcing5th_page = () => {
             </span>
           </div>
         </div>
-        <div className='flex flex-row justify-center gap-5 mb-5'>
-          <div className='w-[50%]'>
+        <div className='flex md:flex-row flex-col justify-center gap-5 '>
+          <div className='md:w-[50%]'>
             <div className='mb-2 mt-2'>
               We recognise the importance of
               thorough supplier screening, selection,
@@ -113,7 +113,13 @@ const Sourcing5th_page = () => {
                 selecting suppliers, including:
               </div>
             </div>
-            <div>
+           
+          </div>
+          <div className='md:w-[50%] p-2 border-grey-'>
+            <img src="/53.webp" alt="" />
+          </div>
+        </div>
+        <div>
               <ul className='list-disc ml-6'>
                 <li className='mb-2'>Relevant product-specific
                   manufacturing licenses (e.g.
@@ -133,11 +139,6 @@ const Sourcing5th_page = () => {
               meet all applicable statutory and
               regulatory requirements.
             </div>
-          </div>
-          <div className='w-[50%] p-2 border-grey-'>
-            <img src="/53.webp" alt="" />
-          </div>
-        </div>
         <div className='mb-2'>
           We ensure that our suppliers fulfil
           these criteria and when aggregators
@@ -171,7 +172,7 @@ const Sourcing5th_page = () => {
           each vendor at the conclusion of the
           assessment process.
         </div>
-        <div className='flex md:flex-row justify-between mb-2'>
+        <div className='flex md:flex-row flex-col gap-4 md:gap-0 justify-between mb-2'>
           <div className="flex flex-col w-[200px] mb-2">
             <h1 className="text-3xl text-[#4084c1] leading-none">Policy</h1>
 
@@ -267,7 +268,7 @@ const Sourcing5th_page = () => {
           are meeting predefined standards for
           responsible production.
         </div>
-        <div className='mb-2 p-5 bg-[#f3f1eb]'>
+        <div className='mb-4 p-5 bg-[#f3f1eb] '>
           As a Sedex member, our
           commitment to responsible
           sourcing and maintaining an
@@ -278,10 +279,8 @@ const Sourcing5th_page = () => {
           for congruency on principles of
           sustainable operations.
         </div>
-      </div>
-      <div className='w-[90%] mx-[5%] px-3 mb-5'>
-        <div className='flex flex-row justify-center'>
-          <div className='w-[35%] p-3 bg-[#eaf8fc]'>
+        <div className=''>
+          <div className=' p-3 bg-[#eaf8fc] mb-4'>
             <div className='text-3xl font-semibold mb-3 text-[#1368b4]'>
               #FY 2024-25
               progress against
@@ -299,7 +298,7 @@ const Sourcing5th_page = () => {
               by 2040.
             </div>
           </div>
-          <div className='w-[65%] p-3 bg-[#f3f1eb]'>
+          <div className=' p-4 bg-[#f3f1eb]'>
             <div className='text-xl font-semibold text-[#06aeef] mb-3'>SUPPLY CHAIN
               SUSTAINABILITY RISK
               ASSESSMENT</div>

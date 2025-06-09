@@ -59,10 +59,18 @@
   src: url('/muli/MULI-REGULAR.TTF') format('truetype');
   font-style: normal;
 }
+@font-face {
+  font-family: 'Muli-bold';
+  src: url('/muli/MULI-BOLD.TTF') format('truetype');
+  font-style: bold;
+}
 
 
-
+.muli-bold{
+  font-family: 'Muli-bold', sans-serif;
+}
 
 body {
   font-family: 'Muli', sans-serif;
+
 }
