@@ -2,7 +2,7 @@
 import { MdKeyboardArrowDown } from "react-icons/md";
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 // import Heading from "../Heading";
- import Heading2 from "../Heading2";
+import Heading2 from "../Heading2";
 import { debounce } from 'lodash';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -12,7 +12,7 @@ const preloadImage = (src) => {
   if (imageCache.has(src)) {
     return Promise.resolve();
   }
-  
+
   return new Promise((resolve, reject) => {
     const img = new Image();
     img.src = src;
@@ -121,7 +121,7 @@ const VerticalNav = () => {
   useEffect(() => {
     let isMounted = true;
     const currentImages = contentData[activeState]?.carousel[currentSlide];
-    
+
     if (!currentImages) return;
 
     const loadImages = async () => {
@@ -130,7 +130,7 @@ const VerticalNav = () => {
         // Load main image first
         await preloadImage(currentImages.image);
         if (!isMounted) return;
-        
+
         // Then load thumbnails in batches
         const batchSize = 3;
         for (let i = 0; i < currentImages.smallimage.length; i += batchSize) {
@@ -138,7 +138,7 @@ const VerticalNav = () => {
           await Promise.all(batch.map(img => preloadImage(img)));
           if (!isMounted) return;
         }
-        
+
         if (isMounted) {
           setIsLoading(false);
           // Add a small delay before removing transition state
@@ -184,18 +184,17 @@ const VerticalNav = () => {
   }, []);
 
   return (
-    <div className="transform-gpu will-change-transform">
-      <div className='w-fit mx-auto md:py-6 py-3 '>
-        <Heading2 text="Delighting consumers"/>
-      </div>   
-      <div 
-        className="py-4 gap-6 transform-gpu will-change-transform"
+    <div className="w-full max-w-full mx-auto">
+      <div className='w-fit mx-auto md:py-8 py-4'>
+        <Heading2 text="Delighting consumers" />
+      </div>
+      <div
+        className="py-6 gap-8"
         style={{
           backgroundColor: colour,
-          willChange: 'transform, background-color'
         }}
       >
-        <div className='marginal gap-6 pt-5 flex flex-col justify-center items-center'>
+        <div className='w-full margina mx-auto px-4 flex flex-col justify-center items-center'>
           {/* Mobile Dropdown Nav */}
           <div className="w-full md:hidden relative">
             <button
@@ -229,14 +228,14 @@ const VerticalNav = () => {
           </div>
 
           {/* Desktop Nav */}
-          <nav className="hidden w-fit md:flex justify-center gap-1 shadow-sm rounded-3xl p-1 mx-auto border border-gray-200 bg-white">
+          <nav className="hidden md:flex justify-center gap-2 shadow-sm rounded-3xl p-2 mx-auto border border-gray-200 bg-white">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 className={`
-                px-4 py-2 cursor-pointer text-[12px] font-medium rounded-2xl transition-all duration-200
+                px-6 py-2.5 cursor-pointer text-sm font-medium rounded-2xl transition-all duration-200 whitespace-nowrap
                 ${activeState === item.id
-                    ? 'bg-gradient-to-r  from-[#1168b3] to-[#00aabb] text-white shadow-sm'
+                    ? 'bg-gradient-to-r from-[#1168b3] to-[#00aabb] text-white shadow-sm'
                     : 'text-gray-800 hover:bg-gray-100 hover:text-[#2c8bdf]'
                   }
                 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-[#2c8bdf]
@@ -252,11 +251,9 @@ const VerticalNav = () => {
             ))}
           </nav>
 
-
-         
-          <div className="flex flex-col items-center justify-center w-full gap-6">
+          <div className="flex flex-col items-center justify-center w-full gap-8 mt-6">
             {/* Top Navigation: Arrows + Names */}
-            <div className="flex items-center justify-between w-full max-w-[85vw] px-4">
+            <div className="flex items-center justify-between w-full max-w-[1200px] px-4">
               {/* Left Button with Previous Slide Name */}
               <button
                 onClick={prevSlide}
@@ -285,10 +282,10 @@ const VerticalNav = () => {
               </button>
             </div>
             {/* Carousel */}
-            <div className={`${hasSubcategory ? 'w-[85vw]' : 'w-[85vw]'} rounded-xl group relative mx-auto transform-gpu will-change-transform`}>
+            <div className="w-full max-w-[1400px] rounded-xl group relative mx-auto">
               <AnimatePresence mode="wait">
                 {isLoading && (
-                  <motion.div 
+                  <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
@@ -299,48 +296,45 @@ const VerticalNav = () => {
                   </motion.div>
                 )}
               </AnimatePresence>
-              
-              <div className="p-4 rounded-3xl bg-white w-full flex md:flex-row flex-col gap-4 justify-center items-center">
-                <div className='md:w-[25%] rounded-3xl md:block hidden relative overflow-hidden aspect-[3/4]'>
+
+              <div className="p-6 rounded-3xl bg-white w-full flex md:flex-row flex-col gap-8 justify-center items-center">
+                <div className='md:w-[30%] rounded-3xl md:block hidden relative overflow-hidden aspect-[3/4]'>
                   <AnimatePresence mode="wait">
                     <motion.img
                       key={`${activeState}-${currentSlide}-main`}
                       src={contentData[activeState].carousel[currentSlide].image}
                       alt={contentData[activeState].carousel[currentSlide].text}
-                      className='w-full h-full rounded-3x object-cover'
+                      className='w-full h-full rounded-3xl object-cover'
                       loading="lazy"
                       initial={{ opacity: 0, scale: 0.95 }}
                       animate={{ opacity: 1, scale: 1 }}
                       exit={{ opacity: 0, scale: 1.05 }}
-                      transition={{ 
+                      transition={{
                         duration: 0.4,
                         ease: [0.4, 0, 0.2, 1]
                       }}
-                      style={{ willChange: 'transform, opacity' }}
                       onLoad={() => handleImageLoad(contentData[activeState].carousel[currentSlide].image)}
                     />
                   </AnimatePresence>
                 </div>
 
-                {/* <div className='md:w-[75%]  flex flex-wrap flex-row gap-4 md:justify-start justify-center items-center px-4 '>
+                <div className='md:w-[70%] flex flex-wrap gap-6 md:justify-start justify-center items-center'>
                   {contentData[activeState].carousel[currentSlide].smallimage?.map((img, idx) => (
-                    <motion.div 
+                    <motion.div
                       key={`${activeState}-${currentSlide}-${idx}`}
-                      className="md:w-[15%] md:h-[15vh] w-34 relative flex-shrink-0 aspect-square "
+                      className="w-[45%] md:w-[17%] relative aspect-square flex-shrink-0"
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
-                      transition={{ 
+                      transition={{
                         duration: 0.4,
                         delay: idx * 0.03,
                         ease: [0.4, 0, 0.2, 1]
                       }}
-                      style={{ willChange: 'transform, opacity' }}
                     >
-                      <div className="absolute inset-0"></div>
-                      <img 
-                        src={img} 
-                        alt={`image-${idx}`} 
-                        className="w-full h-full object-contain relative z-10"
+                      <img
+                        src={img}
+                        alt={`image-${idx}`}
+                        className="w-full h-full object-contain rounded-lg"
                         loading="lazy"
                         onLoad={(e) => {
                           handleImageLoad(img);
@@ -350,63 +344,38 @@ const VerticalNav = () => {
                       />
                     </motion.div>
                   ))}
-                </div> */}
-                <div className='md:w-[75%] flex flex-wrap gap-4 md:justify-start justify-center items-center px-4'>
-  {contentData[activeState].carousel[currentSlide].smallimage?.map((img, idx) => (
-    <motion.div 
-      key={`${activeState}-${currentSlide}-${idx}`}
-      className="w-[40%] md:w-[15%] md:h-[15vh] relative aspect-square flex-shrink-0"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ 
-        duration: 0.4,
-        delay: idx * 0.03,
-        ease: [0.4, 0, 0.2, 1]
-      }}
-      style={{ willChange: 'transform, opacity' }}
-    >
-      <div className="absolute inset-0"></div>
-      <img 
-        src={img} 
-        alt={`image-${idx}`} 
-        className="w-full h-full object-contain relative z-10"
-        loading="lazy"
-        onLoad={(e) => {
-          handleImageLoad(img);
-          e.target.style.opacity = '1';
-        }}
-        style={{ opacity: 0 }}
-      />
-    </motion.div>
-  ))}
-</div>
+                </div>
 
               </div>
             </div>
           </div>
-          <div className="w-[85vw] mx-auto px-4">
-            <div className="flex md:flex-row flex-col gap-4 items-stretch w-full justify-center" style={{
-              backgroundColor: colour
-            }}>
-              {activeNavItem.subcategory.map((sub, i) => (
-                <div key={i} className='md:w-[20%]'>
-                  <div className="flex flex-col justify-center space-y-2 p-4">
-                    <div className="text-3xl font-semibold text-white">
-                      {sub.head.split('^').map((part, index) =>
-                        index === 1 ? <sup key={index}>{part}</sup> : part
-                      )}
-                    </div>
 
-                    <div className="flex items-center md:w-36 w-full max-w-sm">
-                      <div className="w-2 h-2 bg-white rounded-full"></div>
-                      <div className="flex-grow h-px bg-white"></div>
+          {/* Subcategory Section */}
+          {hasSubcategory && (
+            <div className="w-full max-w-[1200px] mx-auto mt-8">
+              <div className="flex md:flex-row flex-col gap-6 items-stretch w-full justify-center" style={{
+                backgroundColor: colour
+              }}>
+                {activeNavItem.subcategory.map((sub, i) => (
+                  <div key={i} className='md:w-[20%]'>
+                    <div className="flex flex-col justify-center space-y-3 p-6">
+                      <div className="text-3xl font-semibold text-white">
+                        {sub.head.split('^').map((part, index) =>
+                          index === 1 ? <sup key={index}>{part}</sup> : part
+                        )}
+                      </div>
+
+                      <div className="flex items-center w-full">
+                        <div className="w-2 h-2 bg-white rounded-full"></div>
+                        <div className="flex-grow h-px bg-white"></div>
+                      </div>
+                      <div className="text-sm text-white">{sub.desc}</div>
                     </div>
-                    <div className="text-sm text-white whitespace-wrap">{sub.desc}</div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </div>

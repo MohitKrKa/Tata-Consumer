@@ -4,7 +4,7 @@ import Heading from '../Heading'
 
 const Materiality = () => {
     return (
-        <div className='w-[90%] mx-[5%] px-3 mb-5 max-w-7xl py-1'>
+        <div className='marginal'>
             <div className='w-full border-2 border-gray-100'>
                 <img src="/susvalues/sv1.webp" alt="" />
                 <img src="/susvalues/sv2.webp" alt="" />
@@ -30,7 +30,7 @@ const Materiality = () => {
                         are seamlessly integrated into our Enterprise Risk Management (ERM) framework. This holistic approach strengthens our future roadmap by aligning these issues with our business goals, sustainability strategies and the UN SDGs, all of which are depicted below in a materiality matrix.
                     </p>
                     <div className='my-2'>
-                        <img src="/susvalues/sv4.webp" alt="" />
+                        <img src="/susvalues/sv4.webp" className='w-[70%] mx-auto' alt="" />
                     </div>
                     <p >
                         The CSR & Sustainability Committee of the Board and TCP’s senior management have played an active role in the arriving at the materiality assessment outcomes. The Board is regularly appraised of the performance of the company on such material issues. Furthermore, to stay attuned to the changing business dynamics and maintaining relevance to stakeholder perspectives, the company plans to undertake detailed materiality assessments once every three years.

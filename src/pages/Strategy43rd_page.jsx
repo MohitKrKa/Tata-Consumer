@@ -1,286 +1,219 @@
 import React from 'react'
 const items = [
-    {
-      icon: "/278.webp",
-      text: "Align with the Tata Consumer Products North Star"
-    },
-    {
-      icon: "/279.webp",
-      text: "Invest in mission critical skills"
-    },
-    {
-      icon: "/280.webp",
-      text: "Be the Employer of Choice – build internal talent, attract and retain the best talent"
-    },
-    {
-      icon: "/281.webp",
-      text: "Embed growth mindset behaviours"
-    },
-  ];
-   const Strategy43rd_page = ({
-     bgColor = "#0066b3",
-     image = "/strategy/3.webp",
-     heading1 = "a",
-     highlight1 = "Create  ",
-     heading2 = "",
-     highlight2 = "future-ready",
-     subheading = "organisation",
-     footerText = "— Integrated Annual Report 2024–25",
-   }) => {
-     return (
-        <>
-      <div
-      className="relative w-full h-[90vh] text-white  p-10"
-      style={{ backgroundColor: bgColor }}
-    >
-      {/* Container for mobile and desktop layout */}
-      <div className="flex flex-col md:flex-row h-full gap-8">
-        {/* Image Section */}
-        <div className="md:w-[2/3]">
-          <img src={image} alt="Hero Visual" className="h-full mx-auto" />
-        </div>
-
-        {/* Text Content */}
-        <div className="w-full md:w-1/2 flex items-center justify-start md:py-0">
-          <div className="leading-none [&_h1]:m-0">
-          <div className="font-extrabold mb">
-              <h1 className="text-[3rem] md:text-[5.5rem] m-0">{highlight1}</h1>
-            </div>
-            <div className="text-[2rem] md:text-[3rem] font-medium">
-              <h1>{heading1}</h1>
-            </div>
-           
-            <div className="text-[2rem] md:text-[3rem] font-medium">
-              <h1>{heading2}</h1>
-            </div>
-            <div className="text-[3rem] md:text-[5.5rem] font-extrabold mb-3">
-              <h1 className="m-0">{highlight2}</h1>
-            </div>
-            <div className="text-[2rem] md:text-[3rem] font-medium">
-              <h1 className="m-0">{subheading}</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Diagonal Lines (always top-right) */}
-      <div className="absolute top-0 right-0 z-20 hidden md:block">
-        <svg width="300" height="150">
-          <line
-            x1="0"
-            y1="0"
-            x2="300"
-            y2="100"
-            stroke="#b6e34e"
-            strokeWidth="2"
-          />
-          <line
-            x1="0"
-            y1="20"
-            x2="300"
-            y2="120"
-            stroke="#b6e34e"
-            strokeWidth="2"
-          />
-        </svg>
-      </div>
-
-      {/* Footer */}
-    </div>
-       <div className="bg-[#f9f7f4] px-4 md:px-16 py-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gray-300">
-            {items.map((item, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-center text-center px-4 py-6 md:py-0"
-              >
-                <div className='w-12 h-16 flex items-center  mb-4'>
+  {
+    icon: "/278.webp",
+    text: "Align with the Tata Consumer Products North Star"
+  },
+  {
+    icon: "/279.webp",
+    text: "Invest in mission critical skills"
+  },
+  {
+    icon: "/280.webp",
+    text: "Be the Employer of Choice – build internal talent, attract and retain the best talent"
+  },
+  {
+    icon: "/281.webp",
+    text: "Embed growth mindset behaviours"
+  },
+];
+const Strategy43rd_page = () => {
+  return (
+    <>
+      <div className="bg-[#f9f7f4] marginal">
+        <div className="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gray-300">
+          {items.map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center text-center px-4 py-6 md:py-0"
+            >
+              <div className='w-12 h-16 flex items-center  mb-4'>
                 <img src={item.icon} alt={`icon-${index}`} />
-                </div>
-                <p className="text-sm text-gray-800">{item.text}</p>
               </div>
-            ))}
+              <p className="text-lg text-gray-800">{item.text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className='w-[90%] mx-[5%] px-3 mb-5 mt-5'>
+        <div className='mb-2'>A future-ready organisation is one that can balance scale with agility, transformation with continuity, and ambition
+          with execution. At Tata Consumer Products, we are shaping a workforce that is aligned with our long-term vision while
+          continuously evolving to stay ahead of industry shifts. The TCP North Star anchors this journey, supported by initiatives that
+          strengthen leadership, accelerate skill-building, and create a high-performance culture that drives meaningful impact.</div>
+        <div className='mb-5'>
+          <img src="/282.webp" alt="" />
+        </div>
+        <div className='flex flex-row justify-center gap-5 mb-3'>
+          <div className='w-[70%]'>
+            <div className='text-2xl text-[#1368b4] mb-2 font-semibold '>THE TATA CONSUMER
+              PRODUCTS’ NORTH STAR</div>
+            <div className='mb-2'>
+              Tata Consumer Products’ journey of growth and transformation
+              is anchored around the six Strategic Pillars, underpinned by
+              our ambition to be the premier global FMCG company from the
+              Tata Group, and our vision of building better lives and thriving
+              communities. With a view to align our people across India and the
+              international markets, around a unifying theme, we developed the
+              TCP North Star. This charts the direction we are headed in, the
+              pace at which we want to go, the breadth of our ambition, and the
+              Growth Mindset Behaviours (GMB) that everyone needs to display,
+              whilst living our core values and the Tata Code of Conduct.
+            </div>
+            <div className=''>
+              <img src="/284.webp" alt="" />
+            </div>
+          </div>
+          <div className='w-[30%]'>
+            <div className='text-3xl text-[#1368b4]'>Who are we?</div>
+            <img src="/283.webp" alt="" />
           </div>
         </div>
-        <div className='w-[90%] mx-[5%] px-3 mb-5 mt-5'>
-<div className='mb-2'>A future-ready organisation is one that can balance scale with agility, transformation with continuity, and ambition
-with execution. At Tata Consumer Products, we are shaping a workforce that is aligned with our long-term vision while
-continuously evolving to stay ahead of industry shifts. The TCP North Star anchors this journey, supported by initiatives that
-strengthen leadership, accelerate skill-building, and create a high-performance culture that drives meaningful impact.</div>
-<div className='mb-5'>
-<img src="/282.webp" alt="" />
-</div>
-<div className='flex flex-row justify-center gap-5 mb-3'>
-    <div className='w-[70%]'>
-        <div className='text-2xl text-[#1368b4] mb-2 font-semibold '>THE TATA CONSUMER
-        PRODUCTS’ NORTH STAR</div>
-        <div className='mb-2'>
-        Tata Consumer Products’ journey of growth and transformation
-is anchored around the six Strategic Pillars, underpinned by
-our ambition to be the premier global FMCG company from the
-Tata Group, and our vision of building better lives and thriving
-communities. With a view to align our people across India and the
-international markets, around a unifying theme, we developed the
-TCP North Star. This charts the direction we are headed in, the
-pace at which we want to go, the breadth of our ambition, and the
-Growth Mindset Behaviours (GMB) that everyone needs to display,
-whilst living our core values and the Tata Code of Conduct. 
+        <div>
+          <div className='text-3xl text-[#1368b4]  mt-5'>How will we win?</div>
+          <div className='flex flex-row justify-center gap-5'>
+            <div className=''>
+              <img src="/285.webp" alt="" />
+            </div>
+            <div className=''>
+              <img src="/286.webp" alt="" />
+            </div>
+          </div>
         </div>
-        <div className=''>
-            <img src="/284.webp" alt="" />
+        <div>
+          <div className='text-xl text-[#06aeef] mb-3 font-semibold '>CHARTING A PATHWAY FROM ‘GOOD TO GREAT’ </div>
+          <div className='md:flex flex-row justify-center gap-5 items-stretch'>
+            <div className='md:w-[35%] bg-gray-50 p-4'>
+              <div className='mb-4'>Our leaders play a key role in presenting a
+                compelling vision and inspiring people to work
+                towards a common goal. A key initiative in
+                this direction is the Senior Leadership Forum,
+                launched in May 2024. This platform brings
+                together the top 150+ senior leaders to
+                collectively shape Tata Consumer Products’
+                future direction and outline the path to becoming
+                a premier global FMCG company. The second
+                edition of this forum was held in January 2025,
+                bringing the leadership team together to assess
+                outcomes achieved, identify key improvement
+                areas and refine ways of working. A virtual
+                edition of the same brought together leaders from
+                across international markets and helped rally
+                around the theme of ‘Build Better Together’. </div>
+              <div>
+                <img src="/287.webp" alt="" />
+              </div>
+            </div>
+            <div className='md:w-[65%] bg-gray-50 p-4'>
+              <div className='font-bold mb-3'>Through open discussions and diverse
+                perspectives, the forum:</div>
+
+
+              <div className='flex flex-row  justify-between gap-2 mb-3 flex-'>
+                <div className="text-center px-4 mb-2">
+                  {/* Line + Capsule Layout */}
+                  <div className="relative flex items-center justify-center mb-1">
+                    {/* Left line (shorter) */}
+                    <div className="h-0.5 w-6 bg-gradient-to-r from-green-500 to-sky-500" />
+
+                    {/* Capsule with inner line */}
+                    <div className="relative">
+                      {/* Green capsule */}
+                      <div className="w-15 h-1 bg-green-500 rounded-full z-10" />
+
+                      {/* Line inside the capsule to connect it seamlessly */}
+                      <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-green-500 to-sky-500 -z-10 transform -translate-y-1/2" />
+                    </div>
+
+                    {/* Right line (longer) */}
+                    <div className="h-0.5 w-30 bg-gradient-to-r from-green-500 to-sky-500" />
+                  </div>
+
+                  {/* Gradient Heading */}
+                  <h2 className="text-2xl font-bold bg-gradient-to-r from-green-500 to-sky-500 text-transparent bg-clip-text text-left">
+                    Strengthened
+                  </h2>
+
+                  {/* Subheading */}
+                  <p className="text-left ">
+                    alignment on strategic priorities
+                  </p>
+                </div>
+                <div className="text-center px-4 mb-2">
+                  {/* Line + Capsule Layout */}
+                  <div className="relative flex items-center justify-center mb-1">
+                    {/* Left line (shorter) */}
+                    <div className="h-0.5 w-6 bg-gradient-to-r from-green-500 to-sky-500" />
+
+                    {/* Capsule with inner line */}
+                    <div className="relative">
+                      {/* Green capsule */}
+                      <div className="w-15 h-1 bg-green-500 rounded-full z-10" />
+
+                      {/* Line inside the capsule to connect it seamlessly */}
+                      <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-green-500 to-sky-500 -z-10 transform -translate-y-1/2" />
+                    </div>
+
+                    {/* Right line (longer) */}
+                    <div className="h-0.5 w-30 bg-gradient-to-r from-green-500 to-sky-500" />
+                  </div>
+
+                  {/* Gradient Heading */}
+                  <h2 className="text-2xl font-bold bg-gradient-to-r from-green-500 to-sky-500 text-transparent bg-clip-text text-left">
+                    Reinforced
+                  </h2>
+
+                  {/* Subheading */}
+                  <p className="  max-w-xl mx-auto  text-left">
+                    Collective commitment towards the TCP North Star and to cascading the same
+                    across the organisation
+                  </p>
+                </div>
+
+                <div className="text-center px-4 ">
+                  {/* Line + Capsule Layout */}
+                  <div className="relative flex items-center justify-center mb-1">
+                    {/* Left line (shorter) */}
+                    <div className="h-0.5 w-6 bg-gradient-to-r from-green-500 to-sky-500" />
+
+                    {/* Capsule with inner line */}
+                    <div className="relative">
+                      {/* Green capsule */}
+                      <div className="w-15 h-1 bg-green-500 rounded-full z-10" />
+
+                      {/* Line inside the capsule to connect it seamlessly */}
+                      <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-green-500 to-sky-500 -z-10 transform -translate-y-1/2" />
+                    </div>
+
+                    {/* Right line (longer) */}
+                    <div className="h-0.5 w-30 bg-gradient-to-r from-green-500 to-sky-500" />
+                  </div>
+
+                  {/* Gradient Heading */}
+                  <h2 className="text-2xl font-bold bg-gradient-to-r from-green-500 to-sky-500 text-transparent bg-clip-text text-left">
+                    Encouraged
+                  </h2>
+
+                  {/* Subheading */}
+                  <p className="text-left">
+                    cross-functional collaboration
+                  </p>
+                </div>
+              </div>
+              <div className=''>
+                <img src="/288.webp" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <div className='w-[30%]'>
-        <div className='text-3xl text-[#1368b4]'>Who are we?</div>
-        <img src="/283.webp" alt="" />
-    </div>
-</div>
-<div>
-<div className='text-3xl text-[#1368b4]  mt-5'>How will we win?</div>
-<div className='flex flex-row justify-center gap-5'>
-<div className=''>
-    <img src="/285.webp" alt="" />
-</div>
-<div className=''>
-    <img src="/286.webp" alt="" />
-</div>
-</div>
-</div>
-<div>
-    <div className='text-xl text-[#06aeef] mb-3 font-semibold '>CHARTING A PATHWAY FROM ‘GOOD TO GREAT’ </div>
-    <div className='flex flex-row justify-center gap-5 items-baseline'>
-        <div className='w-[35%]'>
-            <div className='mb-4'>Our leaders play a key role in presenting a
-compelling vision and inspiring people to work
-towards a common goal. A key initiative in
-this direction is the Senior Leadership Forum,
-launched in May 2024. This platform brings
-together the top 150+ senior leaders to
-collectively shape Tata Consumer Products’
-future direction and outline the path to becoming
-a premier global FMCG company. The second
-edition of this forum was held in January 2025,
-bringing the leadership team together to assess
-outcomes achieved, identify key improvement
-areas and refine ways of working. A virtual
-edition of the same brought together leaders from
-across international markets and helped rally
-around the theme of ‘Build Better Together’. </div>
-<div>
-    <img src="/287.webp" alt="" />
-</div>
-        </div>
-        <div className='w-[65%]'>
-            <div className='font-bold mb-3'>Through open discussions and diverse
-            perspectives, the forum:</div>
+      </div>
 
-        
-        <div className='flex flex-row  justify-between gap-2 mb-3 flex-'>
-        <div className="text-center px-4 mb-2">
-  {/* Line + Capsule Layout */}
-  <div className="relative flex items-center justify-center mb-1">
-    {/* Left line (shorter) */}
-    <div className="h-0.5 w-6 bg-gradient-to-r from-green-500 to-sky-500" />
+    </>
+  );
+};
+export default Strategy43rd_page;
 
-    {/* Capsule with inner line */}
-    <div className="relative">
-      {/* Green capsule */}
-      <div className="w-15 h-1 bg-green-500 rounded-full z-10" />
 
-      {/* Line inside the capsule to connect it seamlessly */}
-      <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-green-500 to-sky-500 -z-10 transform -translate-y-1/2" />
-    </div>
-
-    {/* Right line (longer) */}
-    <div className="h-0.5 w-30 bg-gradient-to-r from-green-500 to-sky-500" />
-  </div>
-
-  {/* Gradient Heading */}
-  <h2 className="text-2xl font-bold bg-gradient-to-r from-green-500 to-sky-500 text-transparent bg-clip-text text-left">
-    Strengthened
-  </h2>
-
-  {/* Subheading */}
-  <p className="text-left ">
-    alignment on strategic priorities
-  </p>
-</div>
-<div className="text-center px-4 mb-2">
-  {/* Line + Capsule Layout */}
-  <div className="relative flex items-center justify-center mb-1">
-    {/* Left line (shorter) */}
-    <div className="h-0.5 w-6 bg-gradient-to-r from-green-500 to-sky-500" />
-
-    {/* Capsule with inner line */}
-    <div className="relative">
-      {/* Green capsule */}
-      <div className="w-15 h-1 bg-green-500 rounded-full z-10" />
-
-      {/* Line inside the capsule to connect it seamlessly */}
-      <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-green-500 to-sky-500 -z-10 transform -translate-y-1/2" />
-    </div>
-
-    {/* Right line (longer) */}
-    <div className="h-0.5 w-30 bg-gradient-to-r from-green-500 to-sky-500" />
-  </div>
-
-  {/* Gradient Heading */}
-  <h2 className="text-2xl font-bold bg-gradient-to-r from-green-500 to-sky-500 text-transparent bg-clip-text text-left">
-    Reinforced
-  </h2>
-
-  {/* Subheading */}
-  <p className="  max-w-xl mx-auto  text-left">
-    Collective commitment towards the TCP North Star and to cascading the same
-    across the organisation
-  </p>
-</div>
-
-<div className="text-center px-4 ">
-  {/* Line + Capsule Layout */}
-  <div className="relative flex items-center justify-center mb-1">
-    {/* Left line (shorter) */}
-    <div className="h-0.5 w-6 bg-gradient-to-r from-green-500 to-sky-500" />
-
-    {/* Capsule with inner line */}
-    <div className="relative">
-      {/* Green capsule */}
-      <div className="w-15 h-1 bg-green-500 rounded-full z-10" />
-
-      {/* Line inside the capsule to connect it seamlessly */}
-      <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-green-500 to-sky-500 -z-10 transform -translate-y-1/2" />
-    </div>
-
-    {/* Right line (longer) */}
-    <div className="h-0.5 w-30 bg-gradient-to-r from-green-500 to-sky-500" />
-  </div>
-
-  {/* Gradient Heading */}
-  <h2 className="text-2xl font-bold bg-gradient-to-r from-green-500 to-sky-500 text-transparent bg-clip-text text-left">
-  Encouraged
-  </h2>
-
-  {/* Subheading */}
-  <p className="text-left">
-  cross-functional collaboration
-  </p>
-</div>
-</div>
-<div className=''>
-    <img src="/288.webp" alt="" />
-</div>
-        </div>
-    </div>
-</div>
-        </div>
-       
-       </>
-     );
-   };
-   export default Strategy43rd_page;
-
-   
-    {/* <div className='w-[90%] h-auto m-[5%] flex md:flex-row flex-col justify-center items-center md:gap-15 gap-5'>
+{/* <div className='w-[90%] h-auto m-[5%] flex md:flex-row flex-col justify-center items-center md:gap-15 gap-5'>
     <div className='md:w-[50%] h-auto '>
 <img className='' src="/277.webp" alt="" />
 </div>

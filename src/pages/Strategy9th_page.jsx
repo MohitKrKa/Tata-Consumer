@@ -36,7 +36,7 @@ const Strategy9th_page = () => {
           <img className='' src="/151.webp" alt="" />
         </div>
         <div className='flex flex-row justify-center'>
-          <div>
+          <div className='bg-gray-100 p-4'>
             <div className='text-xl font-semibold text-[#06aeef] mb-2'>BREWING IT RIGHT</div>
             <div className='mb-5'><span className='font-bold'> Tata Coffee Grand </span>
               partnered with Times of

@@ -11,7 +11,7 @@ import FinancialHighlights from '../../Components/SustainingValuesComponents/Fin
 
 const SustainingValues = () => {
   return (
-    <div>
+    <div className=''>
         <GlobalCover/>
         <StakeholderValueCreation/>
         <Materiality/>

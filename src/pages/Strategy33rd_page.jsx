@@ -21,17 +21,9 @@ const Strategy33rd_page = () => {
               <li className='mb-2'>Future-proofing the portfolio through
                 innovations.</li>
             </ul>
-            <div className="md:flex flex-col w-[200px] mt-8">
-              <h1 className="text-3xl text-[#4084c1] leading-none">INR 374 Crores</h1>
-              <div class="flex items-center my-3">
-                <div class="w-4 h-2 bg-blue-500 rounded-full"></div>
-                <div class="h-0.5 w-full bg-blue-500"></div>
-              </div>
-              <div className="text-base leading-tight">
-                Organic India Revenue
-              </div>
-            </div>
+           
           </div>
+          
           <div className='w-1/3'>
             <div className='text-xl font-semibold text-[#06aeef] mb-3'>GROWING THE PHARMA CHANNEL</div>
             <div>
@@ -59,6 +51,18 @@ const Strategy33rd_page = () => {
             <img src="/220.webp" alt="" />
           </div>
         </div>
+        <div className='bg-gray-50 p-4'>
+        <div className="md:flex flex-col w-[300px] mt-8">
+              <h1 className="text-3xl text-[#4084c1] leading-none">INR 374 Crores</h1>
+              <div class="flex items-center my-3">
+                <div class="w-4 h-2 bg-blue-500 rounded-full"></div>
+                <div class="h-0.5 w-full bg-blue-500"></div>
+              </div>
+              <div className="text-base leading-tight">
+                Organic India Revenue
+              </div>
+            </div>
+            </div>
       </div>
     </>
   )

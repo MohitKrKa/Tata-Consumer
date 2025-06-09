@@ -40,12 +40,12 @@ const Strategy4th_page = () => {
           {items.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-start text-center px-3 md:py-0"
+              className="flex flex-col items-center text-center px-3 md:py-0"
             >
               <div className='w-14 h-14 flex items-center  mb-4'>
                 <img src={item.icon} alt={`icon-${index}`} />
               </div>
-              <p className="text-lg text-gray-800 text-start">{item.text}</p>
+              <p className="text-lg text-gray-800 text-center">{item.text}</p>
             </div>
           ))}
         </div>

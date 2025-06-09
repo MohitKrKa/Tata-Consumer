@@ -1,26 +1,60 @@
 import React from 'react'
 
 const Strategy42nd_page = () => {
- 
+  const items = [
+    {
+      icon: "/270.webp",
+      text: "Build top quartile distribution network through consistent everyday execution"
+    },
+    {
+      icon: "/271.webp",
+      text: "Strengthen and accelerate channels of the future (Modern Trade, E-Commerce, Quick-Commerce)"
+    },
+    {
+      icon: "/272.webp",
+      text: "Embed best-in-class processes across the organisation"
+    },
+    {
+      icon: "/273.webp",
+      text: "Step up cost savings and efficiency improvement across the value chain"
+    },
+  ];
+
   return (
     <>
-      <div className='marginal text-lg flex  flex-row justify-center gap-5 mb-5'>
-        <div className='w-[30%] bg-gray-100 p-4'>
+      <div className="bg-[#f9f7f4]">
+        <div className="grid marginal text-lg grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gray-300">
+          {items.map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center text-center px-4 py-6 md:py-0"
+            >
+              <div className='w-12 h-16 flex items-center  mb-4'>
+                <img src={item.icon} alt={`icon-${index}`} />
+              </div>
+              <p className=" text-gray-800">{item.text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className='marginal text-lg   flex-row justify-center gap-5 mb-5'>
+        <div className='w-full bg-gray-100 p-4'>
           <div className='text-2xl font-semibold mb-3 text-[#1368b4]'>ADOPTING BEST-INCLASS DISTRIBUTOR
             MANAGEMENT
             SYSTEM (DMS)</div>
           <div className='mb-2'>
             Tata Consumer Products has
             strengthened its distributor
-            management with ‘MAVIC’- a
+            management with 'MAVIC'- a
             next gen Go-To-Market platform
             which provides real-time market
             intelligence and key insights into
             distributor sales and retail shelf
             activity. This collaboration is driving
             efficiency across Tata Consumer
-            Products’ extensive retail network.
-            The platform’s user-friendly
+            Products' extensive retail network.
+            The platform's user-friendly
             design enables distributors and
             sales representatives to adopt
             it with minimal training, offering
@@ -46,65 +80,71 @@ const Strategy42nd_page = () => {
             </div>
           </div>
         </div>
-        <div className='w-[70%]'>
-          <div className='text-2xl font-semibold mb-3 text-[#1368b4]'>DEEPENING AND WIDENING MARKET REACH</div>
-          <div className='flex flex-row justify-center gap-5'>
-            <div className='w-[40%] mb-2'>In our endeavour to strengthen
-              distribution reach and enhance market
-              penetration, we have significantly
-              expanded our sales infrastructure.
-              A robust sales framework supported
-              by improved coverage will enable
-              us to widen our rural network,
-              while also strengthening the
-              depth of assortments available in
-              urban centres. We now have more
-              distributors, super-stockists, subdistributors, and distributor sales
-              representatives creating a robust
-              network across both urban and
-              rural territories. This infrastructure
-              expansion also ensures consistent
-              product availability and improved
-              order fulfilment.</div>
-            <div className='w-[60%]'>
-              <div className="flex flex-col w-[200px] mb-6">
-                <h1 className="text-3xl text-[#4084c1] leading-none">1,200+</h1>
+        <div className='w-full'>
+          <div className='md:'>
 
-                <div class="flex items-center my-2">
-                  <div class="w-4 h-2 bg-blue-500 rounded-full"></div>
-                  <div class="h-0.5 w-full bg-blue-500"></div>
+            <div className='text-2xl font-semibold mb-2 mt-6 text-[#1368b4]'>DEEPENING AND WIDENING MARKET REACH</div>
+            <div className='fle flex-row justify-center gap-5'>
+              <div className='mb-2'>In our endeavour to strengthen
+                distribution reach and enhance market
+                penetration, we have significantly
+                expanded our sales infrastructure.
+                A robust sales framework supported
+                by improved coverage will enable
+                us to widen our rural network,
+                while also strengthening the
+                depth of assortments available in
+                urban centres. We now have more
+                distributors, super-stockists, subdistributors, and distributor sales
+                representatives creating a robust
+                network across both urban and
+                rural territories. This infrastructure
+                expansion also ensures consistent
+                product availability and improved
+                order fulfilment.</div>
+              <div className=''>
+                <div className='w-[60%] gap-8 md:flex items-center'>
+                  <div className="flex flex-col w-[200px] mb-6">
+                    <h1 className="text-3xl text-[#4084c1] leading-none">1,200+</h1>
+
+                    <div class="flex items-center my-2">
+                      <div class="w-4 h-2 bg-blue-500 rounded-full"></div>
+                      <div class="h-0.5 w-full bg-blue-500"></div>
+                    </div>
+                    <div className=" text-base leading-tight">
+                      New hires (feet on street)
+                    </div>
+                  </div>
+                  <div className="flex flex-col w-[200px] mb-6">
+                    <h1 className="text-3xl text-[#4084c1] leading-none">100</h1>
+                    <div class="flex items-center my-2">
+                      <div class="w-4 h-2 bg-blue-500 rounded-full"></div>
+                      <div class="h-0.5 w-full bg-blue-500"></div>
+                    </div>
+                    <div className=" text-base leading-tight">
+                      Additional super-stockists
+                    </div>
+                  </div>
+                  <div>
+                  </div>
                 </div>
-                <div className=" text-base leading-tight">
-                  New hires (feet on street)
-                </div>
-              </div>
-              <div className="flex flex-col w-[200px] mb-6">
-                <h1 className="text-3xl text-[#4084c1] leading-none">100</h1>
-                <div class="flex items-center my-2">
-                  <div class="w-4 h-2 bg-blue-500 rounded-full"></div>
-                  <div class="h-0.5 w-full bg-blue-500"></div>
-                </div>
-                <div className=" text-base leading-tight">
-                  Additional super-stockists
-                </div>
-              </div>
-              <div>
                 <div className='text-xs font-bold'>Increase in Direct Reach</div>
-                <div className=''>
-                  <img src="/dos/Page103.webp" className='' alt="" />
-                </div>
               </div>
             </div>
           </div>
-          <div className='bg-gray-100 p-4'>
-            <img src="/251.webp" className='w-[90%] mx-auto' alt="" />
+          <div className='flex md:flex-row flex-col mt-8 items-center gap-6'>
+            <div className=''>
+              <img src="/251.webp" className='w-full mx-auto' alt="" />
+            </div>
+            <div className=''>
+              <img src="/dos/Page103.webp" className='' alt="" />
+            </div>
           </div>
         </div>
-
       </div>
       <div className='marginal text-lg'>
-        <div className='text-xl font-semibold text-[#06aeef] mb-3'>RURAL NETWORK EXPANSION</div>
-        <div className='md:flex flex-row justify-between gap-5 mb-3 bg-gray-100 p-4'>
+        <div className='text-xl pt-20 font-semibold text-[#06aeef] mb-3'>RURAL NETWORK EXPANSION</div>
+        <div className='md:flex my-16 flex-row  justify-between gap-5 mb-3 bg-gray-100 p-4'>
           <div className='mb-2 w-[70%]'>We augmented the rural sales
             organisation to deepen coverage in
             focus geographies. This structural
@@ -112,6 +152,7 @@ const Strategy42nd_page = () => {
             tailored strategies for local markets
             and better defined career pathways
             for rural sales teams.
+            <br /><br />
             Simultaneously, our Wholesale
             Channel has been reorganised to align
             with this expansion. Strengthening
@@ -119,13 +160,13 @@ const Strategy42nd_page = () => {
             has proven vital to maintaining
             consistent product availability and
             driving volume.</div>
-          <div className='w-[30%]'>
-            <img src="/252.webp" className='' alt="" />
+          <div className='w-[30%] relative'>
+            <img src="/252.webp" className='absolute bottom-0' alt="" />
           </div>
         </div>
-        <div>
+        <div className='mt-16'>
           <div className='text-xl font-semibold text-[#06aeef] mb-3'>SHARPER URBAN FOCUS</div>
-          <div className='mb-2'>To enhance execution in large cities, we introduced split routes across metros and towns with a population of over half a
+          <div className='mb-4'>To enhance execution in large cities, we introduced split routes across metros and towns with a population of over half a
             million. This reconfiguration enhances sales coverage, allowing dedicated salesforce for beverages and packaged foods,
             and a distinct salesforce for some of our new age brands. This ensures high-frequency servicing, effective range-selling, and
             better retailer engagement across diverse demographic clusters.</div>
@@ -140,7 +181,7 @@ const Strategy42nd_page = () => {
             ENHANCED EMPHASIS ON CHANNELS OF THE FUTURE
           </div>
           <div className='mb-2'>
-            As India’s retail landscape evolves, we are amplifying our presence in modern
+            As India's retail landscape evolves, we are amplifying our presence in modern
             trade, while harnessing e-commerce and quick commerce to enhance our reach
             across consumer cohorts.
           </div>
@@ -177,7 +218,7 @@ const Strategy42nd_page = () => {
                 enabling us to extend our market leadership
                 while accelerating innovation. We have
                 maintained our leadership position in the
-                Tea category (MAT Mar’ 25), and with the
+                Tea category (MAT Mar' 25), and with the
                 Organic India portfolio, we now lead the
                 premium Green Tea and Herbal segment on
                 major e-commerce platforms. Additionally,

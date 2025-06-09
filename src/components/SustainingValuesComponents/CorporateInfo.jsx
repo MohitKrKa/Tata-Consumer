@@ -2,7 +2,7 @@ import React from 'react';
 
 const CorporateInfo = () => {
     return (
-        <div className="bg-white text-[#1d1d1f]  max-w-7xl p-1  w-[90%] mx-[5%] px-3 mb-5">
+        <div className="bg-white text-[#1d1d1f]  marginal">
             <h2 className="text-3xl md:text-4xl font-semibold mb-10 text-[#1d1d1f]">
                 Corporate information
             </h2>

@@ -1,5 +1,4 @@
 import React from 'react'
-import { motion } from "framer-motion"
 import Heading from '../components/Heading';
 import SoftCover from '../components/dos/SoftCover';
 
@@ -26,24 +25,24 @@ const Strategy2nd_page = () => {
         <div className='px-3 flex flex-col justify-center gap-5 mb-5'>
           <div className='md:flex flex-row justify-center gap-6'>
             <div className='md:w-1/3 w-full my-2'>
-              <img src="/138.webp" alt="" />
+              <img src="/138.webp" className='p-8 bg-gray-50' alt="" />
             </div>
             <div className='md:w-1/3 w-full my-2'>
-              <img src="/139.webp" alt="" />
+              <img src="/139.webp" className='p-8 bg-gray-50' alt="" />
             </div>
             <div className='md:w-1/3 w-full my-2'>
-              <img src="/140.webp" alt="" />
+              <img src="/140.webp" className='p-8 bg-gray-50' alt="" />
             </div>
           </div>
           <div className='md:flex flex-row justify-center gap-6 '>
             <div className='md:w-1/3 w-full my-2'>
-              <img src="/141.webp" alt="" />
+              <img src="/141.webp" className='p-8 bg-gray-50' alt="" />
             </div>
             <div className='md:w-1/3 w-full my-2'>
-              <img src="/142.webp" alt="" />
+              <img src="/142.webp" className='p-8 bg-gray-50' alt="" />
             </div>
             <div className='md:w-1/3 w-full my-2'>
-              <img src="/143.webp" alt="" />
+              <img src="/143.webp" className='p-8 bg-gray-50' alt="" />
             </div>
           </div>
         </div>

@@ -1,12 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Heading2 from '../Heading2';
 import KnowMore from './KnowMore';
 // import ratan from '../assets/founders/ratan.webp';
 // import jamsetji from '../assets/founders/jamsetji.webp';
-
-gsap.registerPlugin(ScrollTrigger);
 
 const founders = [
   
@@ -32,92 +29,63 @@ const founders = [
 
 export default function Gratitude() {
   const [index, setIndex] = useState(0);
+  const [isLoading, setIsLoading] = useState(false);
   const contentRef = useRef(null);
   const sectionRef = useRef(null);
   const imageRef = useRef(null);
   const overlayRef = useRef(null);
+  const titleRef = useRef(null);
+  const nextImageRef = useRef(null);
+  const contentBoxRef = useRef(null);
 
   const current = founders[index];
 
+  // Preload next image
   useEffect(() => {
-    // Initial animation
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: sectionRef.current,
-        start: 'top 80%',
-      }
+    const nextIndex = (index + 1) % founders.length;
+    const nextImage = new Image();
+    nextImage.src = founders[nextIndex].image;
+    nextImageRef.current = nextImage;
+  }, [index]);
+
+  useEffect(() => {
+    // Initial fade in
+    gsap.set([imageRef.current, overlayRef.current, titleRef.current, contentBoxRef.current], {
+      opacity: 0
     });
 
-    tl.fromTo(imageRef.current,
-      { scale: 1.1, opacity: 0 },
-      { scale: 1, opacity: 1, duration: 1.5, ease: 'power2.out' }
-    )
-      .fromTo(overlayRef.current,
-        { opacity: 0 },
-        { opacity: 1, duration: 1, ease: 'power2.out' },
-        '-=1'
-      )
-      .fromTo(contentRef.current,
-        {
-          y: 50,
-          opacity: 0,
-          // skewY: 5,
-          scale: 0.95
-        },
-        {
-          y: 0,
-          opacity: 1,
-          // skewY: 2,
-          scale: 1,
-          duration: 1.2,
-          ease: 'power3.out'
-        },
-        '-=0.5'
-      );
+    gsap.to([imageRef.current, overlayRef.current, titleRef.current, contentBoxRef.current], {
+      opacity: 1,
+      duration: 0.8,
+      stagger: 0.1
+    });
   }, []);
 
   const handleNext = () => {
-    const tl = gsap.timeline();
+    if (isLoading) return;
+    setIsLoading(true);
+
+    const tl = gsap.timeline({
+      onComplete: () => setIsLoading(false)
+    });
 
     // Fade out current content
-    tl.to(contentRef.current, {
-      y: 30,
+    tl.to([imageRef.current, contentBoxRef.current], {
       opacity: 0,
-      // skewY: 5,
-      scale: 0.95,
-      duration: 0.6,
-      ease: 'power2.in'
+      duration: 0.4
     })
-      // Fade out current image
-      .to(imageRef.current, {
-        scale: 1.1,
-        opacity: 0,
-        duration: 0.8,
-        ease: 'power2.in'
-      }, '-=0.4')
-      // Update state
-      .call(() => setIndex((prev) => (prev + 1) % founders.length))
-      // Fade in new image
-      .to(imageRef.current, {
-        scale: 1,
-        opacity: 1,
-        duration: 1,
-        ease: 'power2.out'
-      })
-      // Fade in new content
-      .to(contentRef.current, {
-        y: 0,
-        opacity: 1,
-        // skewY: 2,
-        scale: 1,
-        duration: 0.8,
-        ease: 'power3.out'
-      }, '-=0.4');
+    // Update state
+    .call(() => setIndex((prev) => (prev + 1) % founders.length))
+    // Fade in new content
+    .to([imageRef.current, contentBoxRef.current], {
+      opacity: 1,
+      duration: 0.4
+    });
   };
 
   return (
     <>
-    <section ref={sectionRef} className="hidden sm:block relative w-full h-screen overflow-hidden">
+    <section ref={sectionRef} className="hidden sm:block relative w-full h-[90vh] overflow-hidden">
       {/* Background Image */}
       <img
         ref={imageRef}
@@ -128,52 +96,52 @@ export default function Gratitude() {
 
       {/* Dark overlay */}
       <div
-
         ref={overlayRef}
         className="absolute inset-0 bg-black/30 z-10"
       />
-      <div className='absolute right-8 top-4'>
+      
+      {/* Title */}
+      <div ref={titleRef} className='absolute right-8 top-4 z-20'>
         <Heading2 text={current.title} color='white'/>
-        </div>    
+      </div>    
+
       {/* Content Box */}
-      <div className="relative z-20 max-w-7xl mx-auto h-full flex items-center justify-end px-6 md:px-20">
-        <div className='bg-[#0DB14B] pt-1 skew-top absolute right-0 top-1/2 transform -translate-y-1/2 w-full max-w-[80vh]'>
+      <div className="relative z-20 mx-auto h-full flex items-center justify-end px-6 md:px-20">
+        <div ref={contentBoxRef} className='bg-[#0DB14B] pt-1 skew-top absolute right-0 top-1/2 transform -translate-y-1/2 w-full max-w-[80vh]'>
           <div
             ref={contentRef}
-            className="bg-[#08549A] text-white p-8 md:pb-14 md:pt-20 w-full shadow-2xl skew-top-bottom"
+            className="bg-[#08549A] text-white p-8 py-30 w-full shadow-2xl skew-top-bottom"
           >
             <div>
               <h3 className="text-2xl md:text-3xl font-bold mb-2">{current.name}</h3>
               <p className="text-[#0DB14B] font-semibold">{current.date}</p>
               <p className="text-sm md:text-base mt-4 text-slate-100">{current.message}</p>
-              {/* <button className="mt-6 inline-flex items-center px-4 py-2 border border-[#0DB14B] text-[#0DB14B] rounded-full hover:bg-[#0DB14B] hover:text-blue-900 transition-all">
-              KnowMore
-              </button> */}
-               <div className="mt-5 flex md:flex-row flex-col md:items-center gap-8">
-              <KnowMore
-                link={current.link}
-                isGradient={true}
-              />
+              <div className="mt-5 flex md:flex-row flex-col md:items-center gap-8">
+                <KnowMore
+                  link={current.link}
+                  isGradient={true}
+                />
               </div>
             </div>
           </div>
         </div>
 
         {/* Pagination Dots */}
-        <div className="absolute bottom-[13vh] right-8 flex gap-4">
+        <div className="absolute bottom-[13vh] right-8 flex gap-4 z-20">
           {founders.map((_, i) => (
             <button
               key={i}
               onClick={() => {
-                if (i !== index) handleNext();
+                if (i !== index && !isLoading) handleNext();
               }}
-              className={`p-1 border border-white rounded-full transition-all duration-300 ${
+              className={`p-1 border border-white rounded-full transition-all duration-300 hover:scale-110 ${
                 i === index 
-                  ? ' shadow-lg shadow-[#0DB14B]/30' 
-                  : 'hover:bg-white/80 hover:scale-110'
+                  ? 'shadow-lg shadow-[#0DB14B]/30' 
+                  : 'hover:bg-white/80'
               }`}
+              disabled={isLoading}
             >
-              <div className={`w-2 h-2 rounded-full ${i === index ? 'bg-[#0DB14B]' : ''}`} />
+              <div className={`w-2 h-2 rounded-full transition-all duration-300 ${i === index ? 'bg-[#0DB14B] scale-125' : ''}`} />
             </button>
           ))}
         </div>
@@ -181,71 +149,51 @@ export default function Gratitude() {
     </section>
     {/* Mobile phone code below */}
     <section
-  ref={sectionRef}
-  className="sm:hidden block relative w-full  overflow-hidden "
->
-  {/* Background Image — visible only on sm+ screens */}
-  <img
-    ref={imageRef}
-    src={current.image}
-    alt=""
-    className="hidden sm:block sm:absolute inset-0 w-full h-full object-cover z-0"
-  />
+      ref={sectionRef}
+      className="sm:hidden block relative w-full overflow-hidden"
+    >
+      {/* Mobile Image */}
+      <img
+        src={current.image}
+        alt=""
+        className="block sm:hidden w-full md:h-full h-64 object-cover"
+      />
 
-  {/* Mobile Image on top */}
-  <img
-    src={current.image}
-    alt=""
-    className="block sm:hidden w-full md:h-full h-64 object-cover  "
-  />
+      {/* Content & Dots container */}
+      <div className="relative z-20 max-w-7xl mx-auto w-full flex flex-col sm:flex-row sm:items-center sm:justify-end md:px-20 flex-grow h-full">
+        {/* Content Box */}
+        <div className="w-full sm:absolute sm:right-0 sm:top-1/2 sm:transform sm:-translate-y-1/2 sm:max-w-xl sm:skew-top bg-[#0DB14B]">
+          <div
+            ref={contentRef}
+            className="bg-[#08549A] text-white p-6 sm:p-8 md:py-30 w-full shadow-2xl sm:skew-top-bottom"
+          >
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">{current.name}</h3>
+            <p className="text-[#0DB14B] font-semibold">{current.date}</p>
+            <p className="text-sm sm:text-base mt-4 text-slate-100">{current.message}</p>
+          </div>
+        </div>
 
-  {/* Dark overlay — hidden on mobile */}
-  {/* <div
-    ref={overlayRef}
-    className="hidden sm:block absolute inset-0 bg-black/30 z-10"
-  /> */}
-
-  {/* Title */}
-  {/* <div className=" ">
-    <Heading2 text={current.title} color="white" />
-  </div> */}
-
-  {/* Content & Dots container */}
-  <div className="relative z-20 max-w-7xl mx-auto w-full flex flex-col sm:flex-row sm:items-center sm:justify-end  md:px-20 flex-grow h-full">
-    
-    {/* Content Box */}
-    <div className="w-full sm:absolute sm:right-0 sm:top-1/2 sm:transform sm:-translate-y-1/2 sm:max-w-xl sm:skew-top bg-[#0DB14B] ">
-      <div
-        ref={contentRef}
-        className="bg-[#08549A] text-white p-6 sm:p-8 md:py-30 w-full shadow-2xl sm:skew-top-bottom"
-      >
-        <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">{current.name}</h3>
-        <p className="text-[#0DB14B] font-semibold">{current.date}</p>
-        <p className="text-sm sm:text-base mt-4 text-slate-100">{current.message}</p>
+        {/* Pagination Dots */}
+        <div className="flex justify-center sm:absolute sm:bottom-30 sm:right-8 gap-4 md:mt-6 mt-2 sm:mt-0">
+          {founders.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => {
+                if (i !== index && !isLoading) handleNext();
+              }}
+              className={`p-1 border md:border-white border-black rounded-full transition-all duration-300 ${
+                i === index 
+                  ? 'shadow-lg shadow-[#0DB14B]/30' 
+                  : 'hover:bg-white/80 hover:scale-110'
+              }`}
+              disabled={isLoading}
+            >
+              <div className={`w-2 h-2 rounded-full ${i === index ? 'md:bg-[#0DB14B] bg-[#000000]' : ''}`} />
+            </button>
+          ))}
+        </div>
       </div>
-    </div>
-    
-
-    {/* Pagination Dots */}
-    <div className="flex justify-center sm:absolute sm:bottom-30 sm:right-8 gap-4 md:mt-6 mt-2 sm:mt-0">
-      {founders.map((_, i) => (
-        <button
-          key={i}
-          onClick={() => {
-            if (i !== index) handleNext();
-          }}
-          className={`p-1 border md:border-white border-black rounded-full transition-all duration-300 ${
-            i === index 
-              ? 'shadow-lg shadow-[#0DB14B]/30' 
-              : 'hover:bg-white/80 hover:scale-110'
-          }`}
-        >
-          <div className={`w-2 h-2 rounded-full ${i === index ? 'md:bg-[#0DB14B] bg-[#000000]' : ''}`} />
-        </button>
-      ))}
-    </div>
-  </div>
-</section>
-</>
+    </section>
+    </>
   );
 }
