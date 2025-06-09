@@ -143,25 +143,30 @@ const Strategy42nd_page = () => {
         </div>
       </div>
       <div className='marginal text-lg'>
-        <div className='text-xl pt-20 font-semibold text-[#06aeef] mb-3'>RURAL NETWORK EXPANSION</div>
-        <div className='md:flex my-16 flex-row  justify-between gap-5 mb-3 bg-gray-100 p-4'>
-          <div className='mb-2 w-[70%]'>We augmented the rural sales
-            organisation to deepen coverage in
-            focus geographies. This structural
-            shift enables faster decision-making,
-            tailored strategies for local markets
-            and better defined career pathways
-            for rural sales teams.
-            <br /><br />
-            Simultaneously, our Wholesale
-            Channel has been reorganised to align
-            with this expansion. Strengthening
-            wholesale networks in rural pockets
-            has proven vital to maintaining
-            consistent product availability and
-            driving volume.</div>
-          <div className='w-[30%] relative'>
-            <img src="/252.webp" className='absolute bottom-0' alt="" />
+        <div className='md:flex flex-row items-end justify-between gap-5 mb-3 '>
+          <div className='w-[40%] bg-gray-100 p-4'>
+            <div className='text-xl font-semibold text-[#06aeef] mb-3'>RURAL NETWORK EXPANSION</div>
+            <p className=''>We augmented the rural sales
+              organisation to deepen coverage in
+              focus geographies. This structural
+              shift enables faster decision-making,
+              tailored strategies for local markets
+              and better defined career pathways
+              for rural sales teams.
+              <br /><br />
+              Simultaneously, our Wholesale
+              Channel has been reorganised to align
+              with this expansion. Strengthening
+              wholesale networks in rural pockets
+              has proven vital to maintaining
+              consistent product availability and
+              driving volume.
+            </p></div>
+          <div className='w-[30%] flex flex-col bg-gradient-to-t from-gray-200 to-transparent justify-end'>
+            <img src="/updated/104-IMG-2.webp" className='' alt="" />
+          </div>
+          <div className='w-[30%]'>
+            <img src="/updated/104-IMG.webp" className='' alt="" />
           </div>
         </div>
         <div className='mt-16'>

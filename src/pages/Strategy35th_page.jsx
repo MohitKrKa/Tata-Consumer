@@ -28,7 +28,7 @@ const Strategy35th_page = () => {
             opportunities.
           </div>
           <div className='w-[50%] '>
-            <img src="/221.webp" className='w-1/2' alt="" />
+            <img src="/221.webp" className='md:w-[50%] mx-auto' alt="" />
           </div>
         </div>
         <div className='mb-5'>
@@ -38,7 +38,7 @@ const Strategy35th_page = () => {
           <div className='flex flex-row justify-center gap-5'>
             <div className='w-[50%]'>
               <div className='bg-gray-50 p-6'>
-                <img src="/222.webp" className='w' alt="" />
+                <img src="/222.webp" className='m' alt="" />
               </div>
             </div>
             <div className='w-[50%]'>

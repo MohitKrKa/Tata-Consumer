@@ -23,52 +23,88 @@ const Strategy38th_page = () => {
         <div className='text-xl font-semibold text-[#06aeef] mb-2'>
           TAKING ADVANTAGE OF CONSUMPTION TRENDS
         </div>
-        <div className='mb-2 bg-[#f3efeb]/40 p-4'>
-          <img src="/235_tea.webp" className='w-[70%]' alt="" />
+        <div className='bg-[rgb(243,239,235)] p-4 mb-6'>
+          <h3 className='text-[#3593bd] text-4xl mb-2'>
+            Tea
+          </h3>
+          <h4 className='text-[#40b0bb] text-xl font-bold mb-1'>
+            Health and wellness
+          </h4>
+          <p className='text-lg mb-4'>
+            This year saw us co-create a number of recipes with our clients, capitalising on the growing trend of wellness associated with instant
+            tea. A case in point was decaffeinated instant teas.
+          </p>
+          <h4 className='text-[#40b0bb] text-xl font-bold mb-1'>
+            Differentiation
+          </h4>
+          <p className='text-lg mb-6'>
+            We introduced a range of premium products, like Oolong Instant tea, which allowed us to leverage our deep insights on tea and strong linkages with tea plantations.
+          </p>
+          <h3 className='text-[#3593bd] text-4xl mb-2'>
+            Coffee
+          </h3>
+          <h4 className='text-[#40b0bb] text-xl font-bold mb-1'>
+            Value for money blends
+          </h4>
+          <p className='text-lg mb-4'>
+            Given the significant rally in the coffee markets, we worked proactively with our customers to optimise recipes and thereby keep offerings affordable while still delivering on our promise of quality.
+          </p>
+          <h4 className='text-[#40b0bb] text-xl font-bold mb-1'>
+            Breaking new ground          </h4>
+          <p className='text-lg mb-4'>
+            We partnered with customers where our bespoke blends of instant coffee found applications in liquid coffee / RTD offerings. This is a promising growth sub-category in coffee.
+          </p>
+          <h4 className='text-[#40b0bb] text-xl font-bold mb-1'>
+            Growth markets         </h4>
+          <p className='text-lg '>
+            We continued our journey of expanding our footprint in markets where the headroom for growth for coffee is high, like Africa and the Middle East.
+          </p>
+
+          {/* <img src="/235_tea.webp" className='w-[70%]' alt="" /> */}
         </div>
-        <div className='text-xl font-semibold text-[#06aeef] mb-2'>
+        <div className='text-xl font-bold text-[#06aeef] mb-1'>
           UNLOCKING SYNERGIES
         </div>
-        <div className='mb-2'>
+        <div className='mb-4'>
           Effective integration of the Solubles business with the Tata Consumer Products
           ecosystem has created opportunities for enhanced market reach and better
           operational efficiencies.
         </div>
-        <div className='mb-1 text-[#02adbd]'>
+        <div className='mb-1 text-[#02adbd] font-bold'>
           Robust sales integration
         </div>
-        <div className='mb-2'>
+        <div className='mb-4'>
           A globally integrated sales force
           enables real-time customer
           engagement, driving market
           penetration and opportunities to cross
           sell tea and coffee solubles.
         </div>
-        <div className='mb-1 text-[#02adbd]'>
+        <div className='mb-1 text-[#02adbd] font-bold'>
           Strong expertise in
           tea and coffee
         </div>
-        <div className='mb-2'>
+        <div className='mb-4'>
           From plantation-level sourcing to final
           product development, our expertise
           and rich heritage in tea and coffee
           differentiates us in the Solubles business.
         </div>
-        <div className='text-xl font-semibold text-[#06aeef] mb-2'>
+        <div className='text-xl font-bold text-[#06aeef] mb-1'>
           STRENGTHENING
           SUSTAINABILITY IN THE
           SUPPLY CHAIN
         </div>
-        <div className='mb-2'>
+        <div className='mb-4'>
           Sustainability remains a key focus,
           with investments in renewable energy,
           circularity, and water conservation
           across key manufacturing units.
         </div>
-        <div className='mb-1 text-[#02adbd]'>
+        <div className='mb-1 font-bold text-[#02adbd]'>
           Advancing renewable energy
         </div>
-        <div className='mb-2'>
+        <div className='mb-4'>
           The Toopran unit installed a solar
           power system, supplying 20% of the
           plant’s daily energy requirements,
@@ -76,11 +112,11 @@ const Strategy38th_page = () => {
           renewable energy to 80% due to solar
           and wind energy sources.
         </div>
-        <div className='mb-1 text-[#02adbd]'>
+        <div className='mb-1 font-bold text-[#02adbd]'>
           Optimising circularity in
           operations
         </div>
-        <div className='mb-2'>
+        <div className='mb-4'>
           The Munnar and Vietnam units
           deployed state-of-the-art biomass
           boilers, ensuring full utilisation of

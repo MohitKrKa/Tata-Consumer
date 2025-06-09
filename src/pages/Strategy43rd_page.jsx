@@ -20,8 +20,8 @@ const items = [
 const Strategy43rd_page = () => {
   return (
     <>
-      <div className="bg-[#f9f7f4] marginal">
-        <div className="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gray-300">
+      <div className="bg-[#f9f7f4] ">
+        <div className="grid grid-cols-1 marginal md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gray-300">
           {items.map((item, index) => (
             <div
               key={index}
@@ -35,7 +35,7 @@ const Strategy43rd_page = () => {
           ))}
         </div>
       </div>
-      <div className='w-[90%] mx-[5%] px-3 mb-5 mt-5'>
+      <div className='marginal text-lg'>
         <div className='mb-2'>A future-ready organisation is one that can balance scale with agility, transformation with continuity, and ambition
           with execution. At Tata Consumer Products, we are shaping a workforce that is aligned with our long-term vision while
           continuously evolving to stay ahead of industry shifts. The TCP North Star anchors this journey, supported by initiatives that

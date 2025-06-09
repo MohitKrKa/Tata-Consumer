@@ -3,7 +3,7 @@ import React from "react";
 
 const Page = ({ text, head1, text2, img1, img2, img3 }) => {
   return (
-    <div className="bg-[#f4f2ee] min-h-[80vh] flex flex-col md:flex-row p-4 gap-8 items-center justify-center">
+    <div className="bg-[#f4f2ee] min-h-[80vh] border flex flex-col md:flex-row p-4 gap-8 items-center justify-center">
       {/* Left Section */}
       <div className="md:w-1/2 w-full flex flex-col items-center md:items-start space-y-3">
         {img1 && (

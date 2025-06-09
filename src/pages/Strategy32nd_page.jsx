@@ -8,8 +8,9 @@ const Strategy32nd_page = () => {
           SMITH & JONES – INNOVATING TO BRING INTERNATIONAL FLAVOURS TO INDIAN CONSUMERS
           IN A CONVENIENT FORMAT
         </div>
-        <div className='flex flex-row justify-center gap-5'>
-          <div className='w-[30%]'>Smith & Jones continues to expand its
+        <div className='flex flex-row items-center justify-center gap-5'>
+          <div className='md:w-[60%]'>
+          <div className='mb-4'>Smith & Jones continues to expand its
             footprint, bringing convenience and
             global flavours to Indian households.
             With a commitment to innovation,
@@ -22,8 +23,7 @@ const Strategy32nd_page = () => {
             flavours more accessible, helping
             consumers explore a world of flavours
             from the comfort of their kitchens</div>
-          <div className='w-[30%]'>
-            <div className='font-bold text-[#02adbd] mb-2'>Expanding Brand PortfolioLaunch of Pizza and Pasta sauce</div>
+            <div className='font-bold text-[#02adbd] mb-1'>Expanding Brand PortfolioLaunch of Pizza and Pasta sauce</div>
             <div>
               A tangy, aromatic, ready-to-use
               sauce for effortless home preparation
@@ -32,9 +32,9 @@ const Strategy32nd_page = () => {
               and chilli flakes, it adds rich flavour to
               everyday meals.
             </div>
-          </div>
-          <div className='w-[40%] '>
-            <img src="/219.webp" alt="" />
+            </div>
+          <div className='w-[40%]'>
+            <img src="/219.webp" className='md:w-[60%] m-auto' alt="" />
           </div>
         </div>
       </div>

@@ -11,8 +11,8 @@ const Strategy36th_page = () => {
           according to rigorous standards that prioritise soil health, animal welfare, and social fairness—continues to grow,
           supporting sustainable sourcing.
         </div>
-        <div className='mb-3 bg-gray-50 p-4'>
-          <img src="/226.webp" className='w-[80%] mx-auto' alt="" />
+        <div className='mb-3 border border-[#06aeef]/50 p-4 rounded-2xl'>
+          <img src="/226.webp" className='w-[80%] ' alt="" />
         </div>
         <div className='text-2xl font-semibold text-[#1368b4] mb-2'>
           INCUBATING CHANNELS OF THE FUTURE
