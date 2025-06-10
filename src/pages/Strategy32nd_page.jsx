@@ -8,7 +8,7 @@ const Strategy32nd_page = () => {
           SMITH & JONES – INNOVATING TO BRING INTERNATIONAL FLAVOURS TO INDIAN CONSUMERS
           IN A CONVENIENT FORMAT
         </div>
-        <div className='flex flex-row items-center justify-center gap-5'>
+        <div className='flex md:flex-row flex-col items-center justify-center gap-5'>
           <div className='md:w-[60%]'>
           <div className='mb-4'>Smith & Jones continues to expand its
             footprint, bringing convenience and

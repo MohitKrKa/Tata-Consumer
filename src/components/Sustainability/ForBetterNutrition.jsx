@@ -326,15 +326,16 @@ const ForBetterNutrition = () => {
                   activities. One such initiative is with the Federation of
                   Indian Chambers of Commerce and Industry (FICCI). By joining
                   forces with FICCI, TCP collaborates with industry consortia to
-                  promote scientific  
+                  promote scientific
                 </div>
               </div>
             </div>
           </div>
-<div className="text-[#969798] text-lg">studies and advocate for policies that
-support improved nutrition standards and guidelines.This
-                  partnership aims to generate data-driven policies that benefit
-                  the wider community.</div>
+          <div className="text-[#969798] text-lg">
+            studies and advocate for policies that support improved nutrition
+            standards and guidelines.This partnership aims to generate
+            data-driven policies that benefit the wider community.
+          </div>
           {/* Page 5 */}
           <div></div>
           <motion.div className="p-6 mt-5  gap-6    bg-[#eff9fd] flex-col lg:flex-row">
@@ -415,98 +416,129 @@ support improved nutrition standards and guidelines.This
               For Better' 2024 Nutrient Guardrails
             </h1>
             <div className="">
-            <div className="w-full flex flex-col md:flex-row gap-15 p-4 bg-[#eff9fc] mb-3">
-  {/* Left Section */}
-  <div className="w-full md:w-1/2 mb-4">
-    <div className="text-[#969798] text-lg">
-      <div className="font-semibold text-black mb-2">
-        Nutrients of Concern
-      </div>
-      <div className="flex md:flex-row flex-col md:flex-wrap gap-5">
-        {[
-          { title: "Added Sugars", value: "<25%", suffix: "DV/serve" },
-          { title: "Trans Fat (fromindustrialsources)", value: "<1", suffix: "en%" },
-          { title: "Total Fat", value: "<15%", suffix: "DV/serve" },
-          { title: "Sodium", value: "<25%", suffix: "DV/serve" },
-          { title: "SAFA", value: "<15%", suffix: "DV/serve" },
-        ].map((item, index) => (
-          <div key={index} className="flex flex-col basis-[45%] md:basis-[48%] lg:basis-[30%] grow mb-4">
-            <h1 className="h-[50px]">{item.title}</h1>
-            <div className="flex items-center my-1">
-              <div className="w-4 h-2 bg-blue-500 rounded-full"></div>
-              <div className="h-0.5 w-full bg-blue-500"></div>
-            </div>
-            <div className="text-sm leading-tight">
-              <span className="text-3xl text-[#4084c1] leading-none">
-                {item.value}
-              </span>{" "}
-              {item.suffix}
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </div>
+              <div className="w-full flex flex-col md:flex-row gap-15 p-4 bg-[#eff9fc] mb-3">
+                {/* Left Section */}
+                <div className="w-full md:w-1/2 mb-4">
+                  <div className="text-[#969798] text-lg">
+                    <div className="font-semibold text-black mb-2">
+                      Nutrients of Concern
+                    </div>
+                    <div className="flex md:flex-row flex-col md:flex-wrap gap-5">
+                      {[
+                        {
+                          title: "Added Sugars",
+                          value: "<25%",
+                          suffix: "DV/serve",
+                        },
+                        {
+                          title: "Trans Fat (fromindustrialsources)",
+                          value: "<1",
+                          suffix: "en%",
+                        },
+                        {
+                          title: "Total Fat",
+                          value: "<15%",
+                          suffix: "DV/serve",
+                        },
+                        { title: "Sodium", value: "<25%", suffix: "DV/serve" },
+                        { title: "SAFA", value: "<15%", suffix: "DV/serve" },
+                      ].map((item, index) => (
+                        <div
+                          key={index}
+                          className="flex flex-col basis-[45%] md:basis-[48%] lg:basis-[30%] grow mb-4"
+                        >
+                          <h1 className="h-[50px]">{item.title}</h1>
+                          <div className="flex items-center my-1">
+                            <div className="w-4 h-2 bg-blue-500 rounded-full"></div>
+                            <div className="h-0.5 w-full bg-blue-500"></div>
+                          </div>
+                          <div className="text-sm leading-tight">
+                            <span className="text-3xl text-[#4084c1] leading-none">
+                              {item.value}
+                            </span>{" "}
+                            {item.suffix}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
 
-  {/* Right Section */}
-  <div className="w-full md:w-1/2 mb-4">
-    <div className="text-[#969798] text-lg">
-      <div className="font-semibold text-black mb-2">
-        Positive Nutrients
-      </div>
-      <div className="flex flex-col gap-6">
-        {/* First Row */}
-        <div className="flex flex-wrap gap-5">
-          {[
-            { title: "Protein", value: ">5%", prefix: "Good to have", suffix: "DV/serve" },
-            { title: "Fiber", value: ">5%", prefix: "Good to have", suffix: "DV/serve" },
-          ].map((item, index) => (
-            <div key={index} className="flex flex-col basis-[45%] grow mb-4">
-              <h1 className="h-[50px]">{item.title}</h1>
-              <div className="flex items-center my-1">
-                <div className="w-4 h-2 bg-blue-500 rounded-full"></div>
-                <div className="h-0.5 w-full bg-blue-500"></div>
+                {/* Right Section */}
+                <div className="w-full md:w-1/2 mb-4">
+                  <div className="text-[#969798] text-lg">
+                    <div className="font-semibold text-black mb-2">
+                      Positive Nutrients
+                    </div>
+                    <div className="flex flex-col gap-6">
+                      {/* First Row */}
+                      <div className="flex flex-wrap gap-5">
+                        {[
+                          {
+                            title: "Protein",
+                            value: ">5%",
+                            prefix: "Good to have",
+                            suffix: "DV/serve",
+                          },
+                          {
+                            title: "Fiber",
+                            value: ">5%",
+                            prefix: "Good to have",
+                            suffix: "DV/serve",
+                          },
+                        ].map((item, index) => (
+                          <div
+                            key={index}
+                            className="flex flex-col basis-[45%] grow mb-4"
+                          >
+                            <h1 className="h-[50px]">{item.title}</h1>
+                            <div className="flex items-center my-1">
+                              <div className="w-4 h-2 bg-blue-500 rounded-full"></div>
+                              <div className="h-0.5 w-full bg-blue-500"></div>
+                            </div>
+                            <div className="text-sm leading-tight">
+                              {item.prefix && (
+                                <div className=" ">{item.prefix}</div>
+                              )}
+                              <span className="text-3xl text-[#4084c1] leading-none">
+                                {item.value}
+                              </span>{" "}
+                              {item.suffix}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+
+                      {/* Second Row */}
+                      <div className="flex flex-wrap gap-5">
+                        {[
+                          { title: "Fortified with Micronutrients" },
+                          { title: "Enriched with Botanicals" },
+                          { title: "Enriched with pre/probiotic" },
+                        ].map((item, index) => (
+                          <div
+                            key={index}
+                            className="flex flex-col basis-[30%] grow "
+                          >
+                            <h1 className="h-[50px]">{item.title}</h1>
+                            <div className="flex items-center my-1">
+                              <div className="w-4 h-2 bg-blue-500 rounded-full"></div>
+                              <div className="h-0.5 w-full bg-blue-500"></div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+
+                      {/* Highlight Line */}
+                      <div className="text-center text-sm font-semibold">
+                        To be highlighted if it meets internal and FSSAI claims
+                        criteria
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="text-sm leading-tight">
-                {item.prefix && (
-                  <div className=" ">{item.prefix}</div>
-                )}
-                <span className="text-3xl text-[#4084c1] leading-none">
-                  {item.value}
-                </span>{" "}
-                {item.suffix}
-              </div>
-            </div>
-          ))}
-        </div>
 
-        {/* Second Row */}
-        <div className="flex flex-wrap gap-5">
-          {[
-            { title: "Fortified with Micronutrients" },
-            { title: "Enriched with Botanicals" },
-            { title: "Enriched with pre/probiotic" },
-          ].map((item, index) => (
-            <div key={index} className="flex flex-col basis-[30%] grow ">
-              <h1 className="h-[50px]">{item.title}</h1>
-              <div className="flex items-center my-1">
-                <div className="w-4 h-2 bg-blue-500 rounded-full"></div>
-                <div className="h-0.5 w-full bg-blue-500"></div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Highlight Line */}
-        <div className="text-center text-sm font-semibold">
-          To be highlighted if it meets internal and FSSAI claims criteria
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-        
               <div className="w-full ">
                 <p className="text-[#969798] text-base sm:text-lg">
                   Recognising the prevalent nutritional gaps in the average
@@ -515,96 +547,90 @@ support improved nutrition standards and guidelines.This
                   Through our diverse portfolio, which includes everyday
                   essentials like salt, tea, coffee and pulses, we go beyond
                   offering just food—we provide accessible nutrition in daily
-                  consumables.Our nutrient enrichment practice is not
-just additive but tailored to regional
-dietary needs, ensuring relevance and
-effectiveness.
-                 
+                  consumables.Our nutrient enrichment practice is not just
+                  additive but tailored to regional dietary needs, ensuring
+                  relevance and effectiveness.
                 </p>
-                <p className="text-[#969798] text-base sm:text-lg">We understand the complex relationship
-between food and health and are
-committed to enabling consumer
-awareness and informed choices  through transparent labelling. We
-remain fully aligned with established
-food fortification guidelines, adhering to
-Food Safety and Standards Authority of
-India (FSSAI) norms and Recommended
-Dietary Intake (RDI) standards.
-Complete nutritional information,
-including major and minor nutrients
-delivered per 100g, the serving size
-suggested and its contribution to the
-suggested nutrient intake levels per
-day (%RDA) is provided on the back of
-the pack. Our packaging prominently highlights products enriched with
-positive nutrients such as protein and
-dietary fiber. Additionally, we emphasise
-the presence of positive ingredients like
-millet in our muesli and rusks and dal in
-our oats, ensuring consumers are wellinformed about the nutrient value of our
-offerings.
-This commitment ensures that our
-fortification and enrichment processes
-meet both national and international
-safety and nutrition benchmarks,
-delivering safe, high quality and
-nutritionally beneficial food products to
-our consumers.
- </p>
+                <p className="text-[#969798] text-base sm:text-lg">
+                  We understand the complex relationship between food and health
+                  and are committed to enabling consumer awareness and informed
+                  choices through transparent labelling. We remain fully aligned
+                  with established food fortification guidelines, adhering to
+                  Food Safety and Standards Authority of India (FSSAI) norms and
+                  Recommended Dietary Intake (RDI) standards. Complete
+                  nutritional information, including major and minor nutrients
+                  delivered per 100g, the serving size suggested and its
+                  contribution to the suggested nutrient intake levels per day
+                  (%RDA) is provided on the back of the pack. Our packaging
+                  prominently highlights products enriched with positive
+                  nutrients such as protein and dietary fiber. Additionally, we
+                  emphasise the presence of positive ingredients like millet in
+                  our muesli and rusks and dal in our oats, ensuring consumers
+                  are wellinformed about the nutrient value of our offerings.
+                  This commitment ensures that our fortification and enrichment
+                  processes meet both national and international safety and
+                  nutrition benchmarks, delivering safe, high quality and
+                  nutritionally beneficial food products to our consumers.
+                </p>
               </div>
             </div>
-           <div>
-           <motion.div
-              className="flex flex-col lg:flex-row gap-4 lg:gap-8 mt-6 p-4 lg:p-10  bg-[#f7f5f1]"
-              variants={sectionVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.6 }}
-            >
-              <motion.div className="w-full lg:w-1/2 " variants={childVariants}>
-                <h2 className="bg-gradient-to-r from-[#8ebf91] to-[#389bdb] text-white px-4 py-1 rounded-3xl text-lg mb-4 inline-block">
-                  Aspect
-                </h2>
-                <p className="text-[#969798] text-base">
-                We are committed to integrating positive
-nutrition into every bite by emphasising
-health-promoting ingredients such as
-whole grains, millets, pulses, dairy, fruits,
-vegetables and meat. Our approach focuses
-on delivering products that not only taste
-great but also support overall well-being,
-reinforcing our dedication to promoting a
-healthier, balanced lifestyle for consumers.
-                </p>
-                <div class="h-1 w-1/2 bg-gradient-to-r from-yellow-400 to-green-500 mt-5"></div>
-                
-              </motion.div>
-
+            <div>
               <motion.div
-                className="w-full lg:w-1/2"
-                variants={sectionchildVariants}
+                className="flex flex-col lg:flex-row gap-4 lg:gap-8 mt-6 p-4 lg:p-10  bg-[#f7f5f1]"
+                variants={sectionVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.6 }}
               >
-                <h2 className="bg-gradient-to-r from-[#8ebf91] to-[#389bdb] text-white px-4 py-1 rounded-3xl text-lg mb-4 inline-block">
-                  Impact
-                </h2>
-                <p className="text-[#969798] text-base">
-                Broadly, 1/5th of the products in our portfolio are rich in protein.
-With gut health being one of our focus area, we are also delivering
-high-fibre content through our products. Around 15-18% of our
-products are rich in fibre. Of the products launched in this financial
-year, Tetley Kombucha, Tata Soulfull Masala Muesli and Tata Soulfull
-Corn flakes+ are products that are enriched with dietary fibre
-and the same is mentioned on the front of the pack. Additionally,
-products like Tata Soulfull Millet Muesli are rich in protein. 
-                </p>
-                <div class="h-1 w-1/2 bg-gradient-to-r from-yellow-400 to-green-500 mt-5"></div>
-               
+                <motion.div
+                  className="w-full lg:w-1/2 "
+                  variants={childVariants}
+                >
+                  <h2 className="bg-gradient-to-r from-[#8ebf91] to-[#389bdb] text-white px-4 py-1 rounded-3xl text-lg mb-4 inline-block">
+                    Aspect
+                  </h2>
+                  <p className="text-[#969798] text-base">
+                    We are committed to integrating positive nutrition into
+                    every bite by emphasising health-promoting ingredients such
+                    as whole grains, millets, pulses, dairy, fruits, vegetables
+                    and meat. Our approach focuses on delivering products that
+                    not only taste great but also support overall well-being,
+                    reinforcing our dedication to promoting a healthier,
+                    balanced lifestyle for consumers.
+                  </p>
+                  <div class="h-1 w-1/2 bg-gradient-to-r from-yellow-400 to-green-500 mt-5"></div>
+                </motion.div>
+
+                <motion.div
+                  className="w-full lg:w-1/2"
+                  variants={sectionchildVariants}
+                >
+                  <h2 className="bg-gradient-to-r from-[#8ebf91] to-[#389bdb] text-white px-4 py-1 rounded-3xl text-lg mb-4 inline-block">
+                    Impact
+                  </h2>
+                  <p className="text-[#969798] text-base">
+                    Broadly, 1/5th of the products in our portfolio are rich in
+                    protein. With gut health being one of our focus area, we are
+                    also delivering high-fibre content through our products.
+                    Around 15-18% of our products are rich in fibre. Of the
+                    products launched in this financial year, Tetley Kombucha,
+                    Tata Soulfull Masala Muesli and Tata Soulfull Corn flakes+
+                    are products that are enriched with dietary fibre and the
+                    same is mentioned on the front of the pack. Additionally,
+                    products like Tata Soulfull Millet Muesli are rich in
+                    protein.
+                  </p>
+                  <div class="h-1 w-1/2 bg-gradient-to-r from-yellow-400 to-green-500 mt-5"></div>
+                </motion.div>
               </motion.div>
-            </motion.div>
-<div>
-  <img src="/sourcing_page151.webp" alt="" />
-</div>
-           </div>
+              <div className="p-4 bg-gray-100 mt-3 mb-3">
+                <img
+                  className="w-[50%] mx-auto"
+                  src="/sourcing_page151.png"
+                  alt=""
+                />
+              </div>
+            </div>
           </div>
 
           {/* Page 7 */}
@@ -620,10 +646,11 @@ products like Tata Soulfull Millet Muesli are rich in protein.
                 economic strata, ensuring everyone has access to quality
                 nutrition. We continuously strive to keep our prices competitive
                 without compromising on quality, so every consumer can enjoy the
-                benefits of a nutritious diet.By integrating nutrition enrichment into everyday essentials at minimal added cost, we continue to drive our mission of
-                making high-quality nutrition accessible and affordable for all
+                benefits of a nutritious diet.By integrating nutrition
+                enrichment into everyday essentials at minimal added cost, we
+                continue to drive our mission of making high-quality nutrition
+                accessible and affordable for all
               </p>
-      
             </div>
             <div className="w-full lg:w-1/2">
               <motion.img
@@ -638,60 +665,57 @@ products like Tata Soulfull Millet Muesli are rich in protein.
             </div>
           </div>
           <motion.div
-              className="flex flex-col lg:flex-row gap-4 lg:gap-8 mt-6 p-4 lg:p-10  bg-[#f7f5f1]"
-              variants={sectionVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.6 }}
-            >
-              <motion.div className="w-full lg:w-1/2 " variants={childVariants}>
-                <h2 className="bg-gradient-to-r from-[#8ebf91] to-[#389bdb] text-white px-4 py-1 rounded-3xl text-lg mb-4 inline-block">
-                  Aspect
-                </h2>
-                <p className="text-[#969798] text-base">
-                As a frontrunner in the green tea category,
-we have introduced fortified tea varieties with
-Tetley Green Tea Immune being the only product
-enriched with Vitamin C.
-                </p>
-                <div class="h-1 w-1/2 bg-gradient-to-r from-yellow-400 to-green-500 mt-5"></div>
-                <p className="text-[#969798] text-base mt-4">
-                Our commitment to affordability extends to
-essential staples like salt, which we fortify with
-zinc and iodine to support immunity and overall
-well-being. Additionally, we offer double-fortified
-salt (Tata Salt Iron Health), which is fortified
-with both iron and iodine to combat anaemia.
-This fortification ensures that our products meet
-the nutritional needs of our consumers while
-maintaining high standards of quality
-                </p>
-              </motion.div>
-
-              <motion.div
-                className="w-full lg:w-1/2"
-                variants={sectionchildVariants}
-              >
-                <h2 className="bg-gradient-to-r from-[#8ebf91] to-[#389bdb] text-white px-4 py-1 rounded-3xl text-lg mb-4 inline-block">
-                  Impact
-                </h2>
-                <p className="text-[#969798] text-base">
-                This innovation ensures that enhanced nutrition is accessible
-to more consumers. Additionally, we have maintained
-low or unchanged prices to make this enhanced nutrition
-affordable for everyone.
-                </p>
-                <div class="h-1 w-1/2 bg-gradient-to-r from-yellow-400 to-green-500 mt-5"></div>
-                <p className="text-[#969798] text-base mt-4">
-                Despite its added nutritional benefits, it remains affordably
-priced. This ensures that consumers can choose a healthier
-alternative without a significant cost increase. 
-                </p>
-              </motion.div>
+            className="flex flex-col lg:flex-row gap-4 lg:gap-8 mt-6 p-4 lg:p-10  bg-[#f7f5f1]"
+            variants={sectionVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.6 }}
+          >
+            <motion.div className="w-full lg:w-1/2 " variants={childVariants}>
+              <h2 className="bg-gradient-to-r from-[#8ebf91] to-[#389bdb] text-white px-4 py-1 rounded-3xl text-lg mb-4 inline-block">
+                Aspect
+              </h2>
+              <p className="text-[#969798] text-base">
+                As a frontrunner in the green tea category, we have introduced
+                fortified tea varieties with Tetley Green Tea Immune being the
+                only product enriched with Vitamin C.
+              </p>
+              <div class="h-1 w-1/2 bg-gradient-to-r from-yellow-400 to-green-500 mt-5"></div>
+              <p className="text-[#969798] text-base mt-4">
+                Our commitment to affordability extends to essential staples
+                like salt, which we fortify with zinc and iodine to support
+                immunity and overall well-being. Additionally, we offer
+                double-fortified salt (Tata Salt Iron Health), which is
+                fortified with both iron and iodine to combat anaemia. This
+                fortification ensures that our products meet the nutritional
+                needs of our consumers while maintaining high standards of
+                quality
+              </p>
             </motion.div>
+
+            <motion.div
+              className="w-full lg:w-1/2"
+              variants={sectionchildVariants}
+            >
+              <h2 className="bg-gradient-to-r from-[#8ebf91] to-[#389bdb] text-white px-4 py-1 rounded-3xl text-lg mb-4 inline-block">
+                Impact
+              </h2>
+              <p className="text-[#969798] text-base">
+                This innovation ensures that enhanced nutrition is accessible to
+                more consumers. Additionally, we have maintained low or
+                unchanged prices to make this enhanced nutrition affordable for
+                everyone.
+              </p>
+              <div class="h-1 w-1/2 bg-gradient-to-r from-yellow-400 to-green-500 mt-5"></div>
+              <p className="text-[#969798] text-base mt-4">
+                Despite its added nutritional benefits, it remains affordably
+                priced. This ensures that consumers can choose a healthier
+                alternative without a significant cost increase.
+              </p>
+            </motion.div>
+          </motion.div>
           {/* Page 8 */}
           <div className="mt-4">
-          
             <div className="w-full ">
               <h1 className="text-xl sm:text-2xl font-semibold text-[#1368b4] mb-3">
                 RESPONSIBILITY TOWARDS CONSUMERS
@@ -734,11 +758,11 @@ alternative without a significant cost increase.
                   'For Better Claims Guidelines'
                 </h2>
                 <p className="text-[#969798] text-base">
-                   has been designed with the consumer's needs
-                  in mind, these guidelines cover a broad spectrum of claims,
-                  from those based on sensory appeal and wholesomeness, to
-                  ingredient-specific and nutrient content/ function assertions,
-                  to packaging or processing claims.
+                  has been designed with the consumer's needs in mind, these
+                  guidelines cover a broad spectrum of claims, from those based
+                  on sensory appeal and wholesomeness, to ingredient-specific
+                  and nutrient content/ function assertions, to packaging or
+                  processing claims.
                 </p>
               </div>
             </div>
@@ -775,34 +799,34 @@ alternative without a significant cost increase.
                 portfolio to meet evolving consumer needs and industry
                 standards.
               </p>
-            <div className="flex flex-row justify-center gap-5 mt-5 mb-4">
-              <div>
-                <img src={FBN19} alt="" />
+              <div className="flex flex-row justify-center gap-5 mt-5 mb-4">
+                <div>
+                  <img src={FBN19} alt="" />
+                </div>
+                <div>
+                  <img src={FBN23} alt="" />
+                </div>
+                <div>
+                  <img src={FBN20} alt="" />
+                </div>
+                <div>
+                  <img src={FBN21} alt="" />
+                </div>
+                <div>
+                  <img src={FBN22} alt="" />
+                </div>
               </div>
-              <div>
-              <img src={FBN23} alt="" />
-              </div>
-              <div>
-                <img src={FBN20} alt="" />
-              </div>
-              <div>
-                <img src={FBN21} alt="" />
-              </div>
-              <div>
-                <img src={FBN22} alt="" />
-              </div>
-            </div>
             </div>
             <div className="p-4 bg-gray-100">
-            <motion.img
-              src={FBN18}
-              alt=""
-              className="w-[80%]  mx-auto"
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.5 }}
-              variants={imageCommonVariants}
-            />
+              <motion.img
+                src={FBN18}
+                alt=""
+                className="w-[80%]  mx-auto"
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={imageCommonVariants}
+              />
             </div>
           </div>
 
@@ -810,63 +834,66 @@ alternative without a significant cost increase.
           <div className="bg-[#f1eee9] flex flex-col gap-10 mt-10 p-4 lg:p-10">
             <div className="flex flex-col lg:flex-row gap-4 lg:gap-8">
               <p className="text-[#969798] text-base lg:text-lg">
-               <p> While we strive to increase consumer awareness about the
-                nutritional content of our products to help them make informed
-                choices, we have also identified five <span className="text-black font-bold"> key health and wellness
-                areas of focus </span> : gut health, blood sugar management, protein
-                delivery, sugar reduction/alternatives and iron supplementation.
+                <p>
+                  {" "}
+                  While we strive to increase consumer awareness about the
+                  nutritional content of our products to help them make informed
+                  choices, we have also identified five{" "}
+                  <span className="text-black font-bold">
+                    {" "}
+                    key health and wellness areas of focus{" "}
+                  </span>{" "}
+                  : gut health, blood sugar management, protein delivery, sugar
+                  reduction/alternatives and iron supplementation.
                 </p>
                 <p>
-                As part of our commitment to promoting healthier dietary
-                choices, we have established strict guidelines for our
-                Nutritionally Enhanced product range. For new products under the
-                Nutritionally Enhanced category, we avoid the use of ingredients
-                such as artificial colours, flavours, preservatives, Partially
-                Hydrogenated Vegetable Oil (PHVO), refined ingredients such as
-                added sugar and refined flour. We actively choose the inclusion
-                of whole grains, legumes, millets, nuts, pre and probiotics,
-                herbs and botanicals. Our 'Claims' guidelines for each consumer
-                need state ensures right communication and avoidance of any
-                possible misleading information on packages. Only claims
-                relevant to the category and format and as per guidelines by
-                FSSAI are included, post rigorous evaluation. Furthermore, for
-                new products, we endeavour to design products within the
-                nutrient guardrails defined.
-                </p> We have initiated discussions with
-                <span className="font-bold text-black"> non-profit </span> organisations involved in community health and
-                welfare, particularly for products like <span className="font-bold text-black"> Double Fortified Salt
-                (DFS) </span>, which offer significant nutritional benefits.
+                  As part of our commitment to promoting healthier dietary
+                  choices, we have established strict guidelines for our
+                  Nutritionally Enhanced product range. For new products under
+                  the Nutritionally Enhanced category, we avoid the use of
+                  ingredients such as artificial colours, flavours,
+                  preservatives, Partially Hydrogenated Vegetable Oil (PHVO),
+                  refined ingredients such as added sugar and refined flour. We
+                  actively choose the inclusion of whole grains, legumes,
+                  millets, nuts, pre and probiotics, herbs and botanicals. Our
+                  'Claims' guidelines for each consumer need state ensures right
+                  communication and avoidance of any possible misleading
+                  information on packages. Only claims relevant to the category
+                  and format and as per guidelines by FSSAI are included, post
+                  rigorous evaluation. Furthermore, for new products, we
+                  endeavour to design products within the nutrient guardrails
+                  defined.
+                </p>{" "}
+                We have initiated discussions with
+                <span className="font-bold text-black"> non-profit </span>{" "}
+                organisations involved in community health and welfare,
+                particularly for products like{" "}
+                <span className="font-bold text-black">
+                  {" "}
+                  Double Fortified Salt (DFS){" "}
+                </span>
+                , which offer significant nutritional benefits.
               </p>
               <div>
                 <div className="p-2 bg-white">
-              <div className="bg-gradient-to-r from-[#0db14e] to-[#10b0ef] bg-clip-text text-transparent font-[400] mt-2 text-xl sm:text-2xl p-3 ">
-              Measurable
-healthy nutrition
-criteria defined for
-product innovations
-              </div>
-              </div>
-              <div className="p-2 bg-white mt-2">
-              <div className="bg-gradient-to-r from-[#0db14e] to-[#10b0ef] bg-clip-text text-transparent font-[400] mt-2 text-xl sm:text-2xl p-3 ">
-              We have innovatively developed
-double-fortified salt, enriched
-with iodine and iron, two essential
-micronutrients crucial for overall
-well-being. This advanced
-fortification process ensures
-that the salt retains its original
-taste and physical properties
-while delivering enhanced health
-benefits. By integrating these vital
-nutrients, we actively contribute
-to combating micronutrient
-malnutrition, delivering benefits
-like immunity and fighting
-anaemia, making everyday
-nutrition more effective and
-accessible.
-              </div>
-              </div>
+                  <div className="bg-gradient-to-r from-[#0db14e] to-[#10b0ef] bg-clip-text text-transparent font-[400] mt-2 text-xl sm:text-2xl p-3 ">
+                    Measurable healthy nutrition criteria defined for product
+                    innovations
+                  </div>
+                </div>
+                <div className="p-2 bg-white mt-2">
+                  <div className="bg-gradient-to-r from-[#0db14e] to-[#10b0ef] bg-clip-text text-transparent font-[400] mt-2 text-xl sm:text-2xl p-3 ">
+                    We have innovatively developed double-fortified salt,
+                    enriched with iodine and iron, two essential micronutrients
+                    crucial for overall well-being. This advanced fortification
+                    process ensures that the salt retains its original taste and
+                    physical properties while delivering enhanced health
+                    benefits. By integrating these vital nutrients, we actively
+                    contribute to combating micronutrient malnutrition,
+                    delivering benefits like immunity and fighting anaemia,
+                    making everyday nutrition more effective and accessible.
+                  </div>
+                </div>
               </div>
             </div>
             <motion.div
@@ -912,88 +939,102 @@ accessible.
 
           {/* Page 11 */}
           {/* TODO */}
-<div className="mt-5">
-<h1 className="text-2xl sm:text-[2.5vh] font-semibold text-[#1368b4] mb-4">
-OUR OFFERINGS
-              </h1>
-              <div className="text-[#969798] text-base lg:text-lg mb-3" >
-              Establishing clear nutritional guidelines
-requires a deep understanding of
-each product’s role in daily diets. Our
-extensive portfolio spans primary meals
-to energy drinks, catering to diverse
-consumer preferences while ensuring
-convenience, taste and nutritional
-balance. We currently offer 10 distinct
-product categories, including Ready
-Meals and Side Dishes, Ready-to-Eat
-(RTE) Bites, Cereals for Kids and Adults,
-Spreads and Dressings, Ready-toDrink (RTD) Beverages, Hydration,
-Leaf Tea, Coffee and Herb, Beverage
-Concentrates and Powders, Staples
-as well as Spices and Condiments. As
-our product range continues to evolve
-and expand, these categories may be
-further refined.
+          <div className="flex md:flex-row flex-col justify-center gap-5 mt-8">
+            <div className=" md:w-[50%] p-4 bg-gray-100 ">
+              We have dedicated our R&D resources to enhance the sustainability
+              of our products and packaging. A crucial element of this strategy
+              involves the development of sustainable products, which are
+              locally sourced to reduce environmental impact while delivering
+              economic, social and health benefits. Our holistic approach to
+              sustainability integrates responsible raw material sourcing,
+              eco-friendly manufacturing, sustainable packaging, resource
+              efficiency and adherence to ESG principles by suppliers.
+              Additionally, we prioritise social aspects such as health,
+              well-being and community impact, ensuring that our products
+              contribute positively to both consumers and the environment.
+              <p className="mt-6 muli-bold">
+                #For more information on sourcing, please refer to the Better
+                Sourcing section.
+              </p>
+            </div>
+            <div className="md:w-[50%]">
+              <img src="/sourcing_page156.png" alt="" />
+            </div>
+          </div>
+          <div className="mt-5">
+            <h1 className="text-2xl sm:text-[2.5vh] font-semibold text-[#1368b4] mb-4">
+              OUR OFFERINGS
+            </h1>
+            <div className="text-[#969798] text-base lg:text-lg mb-3">
+              Establishing clear nutritional guidelines requires a deep
+              understanding of each product’s role in daily diets. Our extensive
+              portfolio spans primary meals to energy drinks, catering to
+              diverse consumer preferences while ensuring convenience, taste and
+              nutritional balance. We currently offer 10 distinct product
+              categories, including Ready Meals and Side Dishes, Ready-to-Eat
+              (RTE) Bites, Cereals for Kids and Adults, Spreads and Dressings,
+              Ready-toDrink (RTD) Beverages, Hydration, Leaf Tea, Coffee and
+              Herb, Beverage Concentrates and Powders, Staples as well as Spices
+              and Condiments. As our product range continues to evolve and
+              expand, these categories may be further refined.
+            </div>
+            <div className="text-xl text-[#06aeef] mb-2 ">
+              Our products are strategically categorised under three significant
+              consumer needs:
+            </div>
+            <div className="flex md:flex-row flex-col gap-3 mb-3 text-[#969798] text-base lg:text-lg">
+              <div className="flex flex-row md:justify-center md:items-center gap-2 ">
+                <div className="w-16">
+                  <img src="/sourcing_page157/0.webp" alt="" />
+                </div>
+                <div>Convenience</div>
               </div>
-              <div className="text-xl text-[#06aeef] mb-2 ">
-              Our products are strategically categorised under three significant consumer needs:
+              <div className="flex flex-row md:justify-center md:items-center gap-2 ">
+                <div className="w-16">
+                  <img src="/sourcing_page157/1.webp" alt="" />
+                </div>
+                <div>Health and Wellness</div>
               </div>
-              <div className="flex md:flex-row flex-col gap-3 mb-3 text-[#969798] text-base lg:text-lg">
-                <div className="flex flex-row md:justify-center md:items-center gap-2 ">
-             <div className="w-16">
-              <img src="/sourcing_page157/0.webp" alt="" />
-             </div>
-             <div>Convenience</div>
-             </div>
-             <div className="flex flex-row md:justify-center md:items-center gap-2 ">
-             <div className="w-16">
-              <img src="/sourcing_page157/1.webp" alt="" />
-             </div>
-             <div>Health and Wellness</div>
-             </div>
-             <div className="flex flex-row md:justify-center md:items-center gap-2 ">
-             <div className="w-16">
-              <img src="/sourcing_page157/2.webp" alt="" />
-             </div>
-             <div>Premiumisation</div>
-             </div>
-             </div>
-             <div className="mb-2 text-[#969798] text-base lg:text-lg">
-             Each product is strategically positioned under three key consumer needs: Convenience, Health and Wellness,
-             and Premiumisation, ensuring that our offerings align with modern lifestyles and nutritional expectations.
-             Organic India products
-prominently display
-<span className="bg-gradient-to-r from-[#0db14e] to-[#10b0ef] bg-clip-text text-transparent font-[400] text-2xl"> traditional herbal
-benefits </span>
-
-on the front of the pack,
-ensuring convenience and
-informed choice for consumers.
-             </div>
-            <div>
-              <div className="p-4 bg-[#eff9fc]">
-              <div className="bg-gradient-to-r from-[#0db14e] to-[#10b0ef] bg-clip-text text-transparent font-[400] mt-2 text-xl sm:text-3xl p-3 bg-[#f2fafe] ">
-              We have designed Tata
-Sampann Unpolished Dal
-to be a wholesome choice,
-preserving essential nutrients
-and natural goodness. It
-is perfect for anyone who
-wants to make every meal
-both delicious and nourishing
-for their family. Thus,
-ensuring meals are not only
-tasty but also packed with
-vital nutrients that support
-overall well-being.
-              </div>
-              </div>
-              <div>
-                <img src="/sourcing_page157.webp" alt="" />
+              <div className="flex flex-row md:justify-center md:items-center gap-2 ">
+                <div className="w-16">
+                  <img src="/sourcing_page157/2.webp" alt="" />
+                </div>
+                <div>Premiumisation</div>
               </div>
             </div>
-</div>
+            <div className="mb-2 text-[#969798] text-base lg:text-lg">
+              Each product is strategically positioned under three key consumer
+              needs: Convenience, Health and Wellness, and Premiumisation,
+              ensuring that our offerings align with modern lifestyles and
+              nutritional expectations. Organic India products prominently
+              display
+              <span className="bg-gradient-to-r from-[#0db14e] to-[#10b0ef] bg-clip-text text-transparent font-[400] text-2xl">
+                {" "}
+                traditional herbal benefits{" "}
+              </span>
+              on the front of the pack, ensuring convenience and informed choice
+              for consumers.
+            </div>
+            <div>
+              <div className="p-4 bg-[#eff9fc]">
+                <div className="bg-gradient-to-r from-[#0db14e] to-[#10b0ef] bg-clip-text text-transparent font-[400] mt-2 text-xl sm:text-3xl p-3 bg-[#f2fafe] ">
+                  We have designed Tata Sampann Unpolished Dal to be a wholesome
+                  choice, preserving essential nutrients and natural goodness.
+                  It is perfect for anyone who wants to make every meal both
+                  delicious and nourishing for their family. Thus, ensuring
+                  meals are not only tasty but also packed with vital nutrients
+                  that support overall well-being.
+                </div>
+              </div>
+              <div className=" p-4  bg-gray-100">
+                <img
+                  className="w-[50%] mx-auto"
+                  src="/sourcing_page157.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
           {/* Page 12 */}
           <div className="mt-5 flex flex-col lg:flex-row bg-[#30b5ad] p-4 lg:p-8">
             <div className="w-full lg:w-1/2 flex flex-col gap-4 lg:gap-5">
@@ -1033,12 +1074,12 @@ overall well-being.
               />
             </div>
           </div>
-<div className="mb-4 mt-4">
-  <img src="/sourcing_page159.webp" alt="" />
-</div>
-<div className="mb-3">
-<img src="/sourcing_page160.webp" alt="" />
-</div>
+          <div className="mb-4 mt-4">
+            <img src="/sourcing_page159.webp" alt="" />
+          </div>
+          <div className="mb-3">
+            <img src="/sourcing_page160.webp" alt="" />
+          </div>
           {/* Page 13 */}
         </div>
       </div>

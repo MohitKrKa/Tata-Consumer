@@ -69,7 +69,7 @@ Higher ratings indicate greater business dependency on that ecosystem service.
 <div className='font-semibold text-[#1368b4] text-xl mb-2'>
 Dependencies on ecosystem services
 </div>
-<div className='flex flex-col justify-center  mb-2 w-[90%]'>
+<div className='flex flex-col justify-center  mb-2 md:w-[90%]'>
     <div>
         <img src="/planet_ecosystem/5.webp" alt="" />
     </div>
@@ -106,7 +106,7 @@ more significant effects on natural systems.
 </div>
 <div className='mb-5'>
 <div className='font-semibold mb-2 text-[#1368b4] text-xl'>Impacts on nature </div>
-<div className='flex flex-col justify-center  mb-2 w-[90%]'>
+<div className='flex flex-col justify-center  mb-2 md:w-[90%]'>
     <div>
         <img src="/nature/0.webp" alt="" />
     </div>
@@ -137,7 +137,7 @@ and chronic changes to environmental conditions.</div>
 <div className='font-semibold mb-2 text-[#1368b4] text-xl'>
 Physical risks
 </div>
-<div className='flex flex-col justify-center  mb-4 w-[90%]'>
+<div className='flex flex-col justify-center  mb-4 md:w-[90%]'>
     <div>
         <img src="/physical/4.webp" alt="" />
     </div>
@@ -161,7 +161,7 @@ technology and stakeholder perceptions.
 </div>
 <div>
    <div className='font-semibold mb-2 text-[#1368b4] text-xl'>Transition risks</div> 
-   <div className='flex flex-col justify-center  mb-2 w-[90%]'>
+   <div className='flex flex-col justify-center  mb-2 md:w-[90%]'>
     <div>
         <img src="/transition/0.webp" alt="" />
     </div>

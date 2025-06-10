@@ -40,7 +40,7 @@ const Strategy30th_page = () => {
           </div>
         </div>
       </div>
-      <div className='marginal text-lg flex flex-row justify-center gap-5 mt-5 mb-5'>
+      <div className='marginal text-lg flex md:flex-row flex-col justify-center gap-5 mt-5 mb-5'>
         <div className='md:w-[50%]'>
           <div className='text-2xl font-semibold text-[#1368b4] mb-3'>CAPITAL FOODS - KEY INITIATIVES</div>
           <div className='mb-2'>

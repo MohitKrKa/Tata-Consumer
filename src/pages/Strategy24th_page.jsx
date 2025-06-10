@@ -4,7 +4,7 @@ const Strategy24th_page = () => {
   return (
     <>
       <div className='bg-gray-100 text-lg'>
-        <div className='marginal flex flex-row justify-start gap-5'>
+        <div className='marginal flex md:flex-row flex-col justify-start gap-5'>
           <div className='md:w-1/2'>
             <div className='md:w-full'>
               <img src="/193.webp" className='' alt="" />
@@ -39,8 +39,8 @@ const Strategy24th_page = () => {
           </div>
         </div>
       </div>
-      <div className='marginal text-lg flex flex-row justify-center gap-5 '>
-        <div className="w-[50%]">
+      <div className='marginal text-lg flex md:flex-row flex-col justify-center gap-5 '>
+        <div className="md:w-[50%]">
           <div className='text-xl font-semibold text-[#06aeef] mb-2 '>STRENGTHENING MARKET
             LEADERSHIP IN THE UK</div>
           <div className='mb-6'>
@@ -68,7 +68,7 @@ const Strategy24th_page = () => {
             </div>
           </div>
         </div>
-        <div className='w-[50%]'>
+        <div className='md:w-[50%]'>
           <img src="/194.webp" alt="" />
         </div>
 

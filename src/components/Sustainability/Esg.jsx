@@ -120,7 +120,7 @@ const Esg = () => {
     animate="visible"
     exit="exit"
     variants={fadeVariants}
-    className="flex flex-row justify-center items-center gap-6 overflow-x-auto p-4 border rounded-2xl border-gray-200"
+    className="flex md:flex-row flex-col justify-center items-center gap-6 overflow-x-auto p-4 border rounded-2xl border-gray-200"
   >
     <motion.img
       src={highlight1}

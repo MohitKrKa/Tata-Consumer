@@ -20,8 +20,8 @@ const Strategy31st_page = () => {
         <div className='mb-3'>
           <img src="/225.webp" alt="" />
         </div>
-        <div className='flex flex-row justify-center gap-5'>
-          <div className='w-[30%]'>
+        <div className='flex md:flex-row flex-col justify-center gap-5'>
+          <div className='md:w-[30%]'>
             <div className='mb-3'>
               Exclusive activations in modern trade
               stores, optimised trials and bolstered
@@ -31,7 +31,7 @@ const Strategy31st_page = () => {
               <img src="/217.webp" alt="" />
             </div>
           </div>
-          <div className='w-[70%]'>
+          <div className='md:w-[70%]'>
             <div className='text-xl font-semibold text-[#06aeef] mb-3'>KURKURE X CHING’S SECRET – A POWER
               PACKED BRAND COLLABORATION</div>
             <div className='mb-3'>

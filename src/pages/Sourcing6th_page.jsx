@@ -4,8 +4,8 @@ const Sourcing6th_page = () => {
   return (
     <>
       <div className='marginal text-lg'>
-        <div className='flex flex-row justify-center gap-5'>
-          <div className='mb-2 w-[40%]'>
+        <div className='flex md:flex-row flex-col justify-center gap-5'>
+          <div className='mb-2 md:w-[40%]'>
             Supplier desk assessments are
             conducted with a systematic approach
             to verifying evidence, ensuring
@@ -29,8 +29,8 @@ const Sourcing6th_page = () => {
             consistency and  uphold high-quality
             benchmarks.
           </div>
-          <div className='w-[60%] bg-gray-100 p-5 '>
-            <img className='w-[80%]' src="/54.webp" alt="" />
+          <div className='md:w-[60%] bg-gray-100 p-5 '>
+            <img className='md:w-[80%]' src="/54.webp" alt="" />
           </div>
         </div>
       </div>

@@ -5,9 +5,9 @@ const Strategy25th_page = () => {
     <>
       <div className='marginal text-lg'>
         <div className='text-xl font-semibold text-[#06aeef] mb-3'>DRIVING GROWTH IN THE USA</div>
-        <div className='md:flex items-start flex-row justify-center gap-5'>
+        <div className='md:flex items-start md:flex-row flex-col justify-center gap-5'>
 
-          <div className='w-[30%]'>
+          <div className='md:w-[30%]'>
             <div className='mb-2 w-full h-[40vh] bg-gray-100 p-4'>
               <img src="/199.webp" className='w-full h-full object-contain' alt="" />
             </div>
@@ -17,7 +17,7 @@ const Strategy25th_page = () => {
               stable market share.
             </div>
           </div>
-          <div className='w-[40%]'>
+          <div className='md:w-[40%]'>
           <div className='mb-2 w-full h-[40vh] bg-gray-100 p-4'>
               <img src="/198.webp" className='w-full h-full object-contain' alt="" />
             </div>
@@ -30,7 +30,7 @@ const Strategy25th_page = () => {
             </div>
             
           </div>
-          <div className='w-[30%]'>
+          <div className='md:w-[30%]'>
               <div className='mb-2 w-full h-[40vh] bg-gray-100 p-4'>
                 <img src="/200.webp" className='w-full h-full object-contain' alt="" />
               </div>

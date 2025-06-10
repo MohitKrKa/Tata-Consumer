@@ -104,17 +104,18 @@ const CEO = () => {
         future- ready capabilities in areas spanning sales and distribution,
         innovation, digitalisation and supply chain.
       </div>
-      <div className="flex md:flex-row flex-col  gap-5 items-center">
+      <div className="text-2xl text-[#1368b4] font-semibold mb-2">
+            CONSISTENT PERFORMANCE WITH STEADY GROWTH
+          </div>
+      <div className="flex md:flex-row flex-col  gap-5 items-center md:justify-between">
         <div className="md:w-[50%] h-auto ">
           <img src="/CEO1.webp" alt="" />
         </div>
-        <div className="md:w-[50%] h-auto">
-          <div className="text-2xl text-[#1368b4] font-semibold mb-2">
-            CONSISTENT PERFORMANCE WITH STEADY GROWTH
-          </div>
+        <div className="md:w-[46%] h-auto">
+          
           <div className="">
-            <div className="flex justify-evenly items-center">
-              <div className="flex flex-col mt-2 w-[200px] mb-5">
+            <div className="flex md:flex-row flex-col md:justify-between md:items-center gap-5">
+              <div className="flex flex-col mt-2 md:w-[200px] mb-5">
                 <h1 className="text-3xl text-[#4084c1] leading-none">
                   INR 17,618 Crores
                 </h1>
@@ -129,7 +130,7 @@ const CEO = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col mt-2 w-[200px] mb-5">
+              <div className="flex flex-col mt-2 md:w-[200px] mb-5">
                 <h1 className="text-3xl text-[#4084c1] leading-none">14.2 %</h1>
 
                 <div class="flex items-center my-1">
@@ -140,8 +141,8 @@ const CEO = () => {
               </div>
             </div>
 
-            <div className="flex justify-evenly items-center">
-              <div className="flex flex-col mt-2 w-[200px] mb-5">
+            <div className="md:flex md:justify-between items-center">
+              <div className="flex flex-col mt-2 md:w-[200px] mb-5">
                 <h1 className="text-3xl text-[#4084c1] leading-none">29%</h1>
 
                 <div className="flex items-center my-1">
@@ -156,10 +157,10 @@ const CEO = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col mt-2 w-[200px] mb-5">
+              <div className="flex flex-col mt-2 md:w-[200px] mb-5">
                 <h1 className="text-3xl text-[#4084c1] leading-none">10 %</h1>
 
-                <div class="flex md:flex-row flex-col items-center my-1">
+                <div class="flex items-center my-1">
                   <div class="w-4 h-2 bg-blue-500 rounded-full"></div>
                   <div class="h-0.5 w-full bg-blue-500"></div>
                 </div>
@@ -181,7 +182,7 @@ const CEO = () => {
         </div>
       </div>
       <div>
-        <div className="mb-3 mt-4 text-2xl font-semibold text-[#1368b4]">
+        <div className="mb-3 text-2xl font-semibold text-[#1368b4]">
           TRANSFORMING THE PORTFOLIO, EXPANDING THE ADDRESSABLE MARKET
         </div>
         <div>
@@ -269,12 +270,12 @@ const CEO = () => {
           </div>
         </div>
       </div>
-      <div className=" mb-3 mt-6">
+      <div className="mb-3">
+        <div className="mb-3 text-2xl font-semibold  text-[#1368b4] ">
+          REINFORCING OUR DISTRIBUTION STRENGTH
+        </div>
         <div className=" flex md:flex-row flex-col justify-center gap-5">
-          <div className="md:w-[50%] py-3">
-            <div className=" text-2xl font-semibold  text-[#1368b4] ">
-              REINFORCING OUR DISTRIBUTION STRENGTH
-            </div>
+          <div className="md:w-[50%]">
             <p className="mb-2">
               In India, we reach over 275 million households and distribute to
               4.4 million retail outlets. To enable our growth ambitions, we
@@ -297,7 +298,7 @@ const CEO = () => {
             <img className="" src="/CEO3.webp" alt="" />
           </div>
         </div>
-        <div className="mt-2">
+        <div>
           Our assortments are tailored to meet the changing consumer needs and
           shopping behaviours in each retail channel, helping us establish
           leadership position in many categories. We have also devised a robust
@@ -311,7 +312,7 @@ const CEO = () => {
           capabilities for our CFAs and an auto-replenishment system for our
           distributors to further streamline operations.
         </div>
-        <div className="mt-1 text-[#1368b4]">
+        <div className="mt-2 text-[#1368b4]">
           We reach over
           <span className="text-2xl"> 275 million </span>
           households and distribute to
@@ -319,12 +320,12 @@ const CEO = () => {
           retail outlets.
         </div>
       </div>
-
-      <div className="flex md:flex-row flex-col justify-center gap-5 mt-[20px] mb-6 ">
-        <div>
-          <div className="text-2xl font-semibold text-[#1368b4] mt-1 ">
+<div className="text-2xl font-semibold text-[#1368b4] mb-1 mt-5">
             ACCELERATING INNOVATION
           </div>
+      <div className="flex md:flex-row flex-col justify-center gap-5 ">
+        <div>
+          
           <div className="mb-2 ">
             As consumer aspirations rise, New Product Development will need to
             deliver products that offer relevant differentiation and add value
@@ -338,7 +339,8 @@ const CEO = () => {
             consumers about nutrition and enabling healthier choices) and
             Sustenance (products for regular consumption known for their
             holistic goodness).
-            <div className="">
+          </div>
+          <div>
         {" "}
         We have further strengthened our R&D capability through science-backed
         disruptive innovation, resulting in differentiated products such as Tata
@@ -347,16 +349,15 @@ const CEO = () => {
         In addition, we have fostered strong partnerships with academic
         institutions to further enhance our research capabilities.
       </div>
-          </div>
         </div>
-        <div className=" md:pt-[20px]">
+        <div className="">
           <img src="/CEO4.webp" alt="" />
         </div>
       </div>
       
-      <div className="flex md:flex-row flex-col justify-center gap-5 ">
+      <div className="flex md:flex-row flex-col justify-center gap-5 mt-5 ">
         <div className="md:w-[60%]">
-          <div className="text-2xl font-semibold text-[#1368b4] mb-1">
+          <div className="text-2xl font-semibold text-[#1368b4] mb-2">
             UNLOCKING VALUE FROM OUR RECENT ACQUISITIONS
           </div>
           <div className="mb-2">
@@ -395,8 +396,8 @@ const CEO = () => {
         growth of Organic India in international markets with stronger
         e-commerce execution in USA.
       </div>
-      <div className="flex flex-row justify-between gap-5 mb-5 pt-3 ">
-        <div className="w-[60%]">
+      <div className="flex md:flex-row flex-col justify-center gap-5 mb-5 ">
+        <div className="md:w-[70%]">
           <div className="text-2xl font-semibold text-[#1368b4] mb-2">
             STRENGTHENING INTERNATIONAL BUSINESS
           </div>
@@ -426,12 +427,12 @@ const CEO = () => {
             </div>
           </div>
         </div>
-        <div className="w-[30%]">
+        <div className="md:w-[30%]">
           <img src="/CEO6.webp" alt="" />
         </div>
       </div>
-      <div className="flex flex-row justify-center gap-5 pt-3 mb-6 ">
-        <div className="w-[50%]">
+      <div className="flex md:flex-row flex-col justify-center gap-5  my-5">
+        <div className="md:w-[50%]">
           <div className="text-2xl font-semibold text-[#1368b4] mb-2">
             EMBEDDING SUSTAINABILITY ACROSS OUR BUSINESS
           </div>
@@ -447,7 +448,7 @@ const CEO = () => {
             Sustainability Yearbook 2025 is a testimony to our commitment to
             embedding sustainability across various facets of the organisation.
           </div>
-          <div className="mt-1">
+          <div className="mb-2">
         This focus on strengthening ESG practices has resulted in over 15%
         improvement in Tata Consumer’s Sustainalytics ESG Risk rating. The
         Company has also been recognised as the ‘Most Sustainable Consumer Goods
@@ -455,15 +456,15 @@ const CEO = () => {
         across sectors (India)’ in Business World’s IMSC rankings, 2024.
       </div>
         </div>
-        <div className="w-[50%]">
+        <div className="md:w-[50%]">
           <img src="/CEO7.webp" alt="" />
         </div>
       </div>
       
-      <div className=" text-2xl font-semibold text-[#1368b4] ">
+      <div className="mb-2 text-2xl font-semibold text-[#1368b4] ">
         NURTURING TALENT
       </div>
-      <div className="mb-6">
+      <div className="mb-2">
         No strategy can succeed without the ownership and commitment of our
         employees at every stage of the value chain. Our teams and the expertise
         they bring to the table remain critical to our growth journey. A strong
@@ -494,8 +495,8 @@ const CEO = () => {
         roadmap.
       </div>
       <div>
-        <p className="text-xl text-[#16b2ef]  font-extrabold">Sunil D’Souza</p>
-        <p className="mb-5  ">MD & CEO</p>
+        <p className="text-xl text-[#16b2ef] mb-1 font-bold">Sunil D’Souza</p>
+        <p className="mb-1">MD & CEO</p>
       </div>
       <div className="mb-2">
         <img src="/CEO8.webp" alt="" />

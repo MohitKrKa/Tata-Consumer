@@ -22,7 +22,7 @@ const Strategy40th_page = () => {
           <div className="mb-2">Tata Starbucks continues to integrate itself into India’s cultural fabric through hyperlocal
             campaigns and milestone celebrations.</div>
           <div className="md:flex flex-row justify-center gap-5">
-            <div className="w-1/3 flex flex-col bg-gray-100 p-4">
+            <div className="md:w-1/3 flex flex-col bg-gray-100 p-4">
               <div className="text-[#02adbd] mb-1">Brewed to a 100</div>
               <div className="mb-2">Celebrating the brand’s 100th store
                 in Mumbai, this initiative paid tribute
@@ -35,7 +35,7 @@ const Strategy40th_page = () => {
                 <img src="/246.webp" alt="" />
               </div>
             </div>
-            <div className="w-1/3 flex flex-col bg-gray-100  p-4">
+            <div className="md:w-1/3 flex flex-col bg-gray-100  p-4">
               <div className="text-[#02adbd] mb-1">Diwali 360</div>
               <div className="mb-2 ">The #MeriSpecialJagah initiative
                 positioned Starbucks as a
@@ -49,7 +49,7 @@ const Strategy40th_page = () => {
                 <img src="/247.webp" alt="" />
               </div>
             </div>
-            <div className="w-1/3 flex flex-col bg-gray-100 p-4">
+            <div className="md:w-1/3 flex flex-col bg-gray-100 p-4">
               <div className="text-[#02adbd] mb-1">Classics Menu</div>
               <div className="mb-2">The campaign brought a playful
                 approach to coffee experiences with

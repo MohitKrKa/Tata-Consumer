@@ -7,8 +7,14 @@ const Sourcing3rd_page = () => {
       <div className='marginal text-lg'>
         <div className='text-2xl font-semibold text-[#1368b4] mb-4'>VALUE CHAIN
           MANAGEMENT </div>
-        <div className='flex flex-row justify-center gap-5 mb-3'>
-          <div className='w-[60%]'>
+        <div className='flex md:flex-row flex-col justify-center gap-5'>
+        <div className='md:w-[40%]'>
+            <div className='text-xl font-semibold text-[#06aeef] mb-3'>SUPPLY CHAIN FRAMEWORK</div>
+            <div className=''>
+              <img src="/51.webp" alt="" />
+            </div>
+          </div>
+          <div className='md:w-[60%]'>
             <div className='mb-2 text-xl font-semibold text-[#06aeef] '>
               RESPONSIBLE SOURCING
             </div>
@@ -38,25 +44,22 @@ const Sourcing3rd_page = () => {
               responsibly produced. This approach
               ensures that the resources we use leave
               a minimal environmental footprint and
-              are ethically sourced, adhering to fair
+              are ethically sourced,adhering 
+            </div>
+          </div>
+         
+        </div>
+<div className='mb-3'>
+to fair
               labour and manufacturing practices.
               This focus ensures the environmental
               footprint is minimised during production
               and the materials used are in line with
               our long-term sustainability goals.
-            </div>
-          </div>
-          <div className='w-[40%]'>
-            <div className='text-xl font-semibold text-[#06aeef] mb-3'>SUPPLY CHAIN FRAMEWORK</div>
-            <div className=''>
-              <img src="/51.webp" alt="" />
-            </div>
-          </div>
-        </div>
-
+</div>
         <div className='mb-4'>
           <div className='flex flex-row  gap-2'>
-            <div className='w-[5%]'>
+            <div className='md:w-[5%] w-[15%]'>
               <img src="/sourcing/Strategy.webp" alt="" />
             </div>
             <div>
@@ -146,8 +149,8 @@ const Sourcing3rd_page = () => {
             their acknowledgment and consent.
           </div>
         </div>
-        <div>
-          <img src="/52.webp" alt="" />
+        <div className='p-4 bg-gray-100'>
+          <img className='md:w-[80%] mx-auto' src="/52.webp" alt="" />
         </div>
       </div>
       )

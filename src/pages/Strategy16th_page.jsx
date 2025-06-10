@@ -1,7 +1,7 @@
 import React from 'react'
 const Strategy16th_page = () => {
   return (
-    <div className='marginal text-lg flex flex-row justify-center gap-5 mb-5'>
+    <div className='marginal text-lg flex md:flex-row flex-col justify-center gap-5 mb-5'>
       <div className='md:w-[33%] bg-gray-50 p-4'>
         
         <div className='mb-3 bg-gray-100 p-4 w-full md:h-[50vh]'>

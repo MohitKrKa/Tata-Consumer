@@ -135,7 +135,9 @@ export default function StrategyLayout() {
 
   const selectedSection = sectionData[selectedIndex];
   const selectedFocusAreas = selectedSection.focusAreas;
-  const widthClass = selectedFocusAreas.length === 2 ? "w-[50%]" : "w-[33%]";
+  const widthClass = selectedFocusAreas.length === 2
+  ? "w-full sm:w-[50%]"
+  : "w-full sm:w-[33%]";
 
   return (
     <div className="p-4 space-y-6">

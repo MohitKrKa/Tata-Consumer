@@ -6,7 +6,7 @@ const Sourcing7th_page = () => {
       <div className="marginal text-lg">
         <div className="">
           <div className="">
-             <div className='flex flex-row gap-2'>
+             <div className='flex flex-row gap-2 mb-3'>
                  <div className='md:w-[5%] w-[15%]'>
                      <img src="/sourcing/Screening.webp" alt="" />
                    </div>
@@ -19,6 +19,7 @@ const Sourcing7th_page = () => {
             </span>
             </div>
             </div>
+            <div className="mb-3">
             The superior quality of our products and the trust instilled in our
             brands have been pivotal in securing and maintaining our leadership
             status across portfolio categories. All our products are produced
@@ -40,7 +41,7 @@ const Sourcing7th_page = () => {
             valuable guidance and standards for best practices in
             sustainability.
           </div>
-          
+          </div>
         </div>
         <div className="flex md:flex-row flex-col justify-center gap-5">
           <div className="md:w-[50%] ">
@@ -153,11 +154,11 @@ management staff with knowledge
 and skills to identify and combat
 slavery and human trafficking. Our
 focused training programme includes:</p>
-<div className="md:mb-2">
+<div className="md:mb-1">
 Educating on the extent of human
 trafficking and slavery issues
 </div>
-<div class="flex items-center">
+<div class="flex items-center mb-2">
   
   <div class="h-1 w-10 rounded-l-full bg-[#1368b4]"></div>
   <div class="h-0.5 w-[400px] bg-gradient-to-r from-yellow-400 via-green-400 to-cyan-500"></div>
@@ -165,22 +166,22 @@ trafficking and slavery issues
 
 
 
-<div className="mb-2">Training to detect signs of slavery
+<div className="mb-1">Training to detect signs of slavery
 within the supply chain</div>
-<div class="flex items-center">
+<div class="flex items-center mb-2">
   
   <div class="h-1 w-10 rounded-l-full bg-[#1368b4]"></div>
   <div class="h-0.5 w-[400px] bg-gradient-to-r from-yellow-400 via-green-400 to-cyan-500"></div>
 </div>
-<div className="mb-2">Offering examples of potential red
+<div className="mb-1">Offering examples of potential red
 flags</div>
-<div class="flex items-center">
+<div class="flex items-center mb-2">
   
   <div class="h-1 w-10 rounded-l-full bg-[#1368b4]"></div>
   <div class="h-0.5 w-[400px] bg-gradient-to-r from-yellow-400 via-green-400 to-cyan-500"></div>
 </div>
-<div className="mb-2">Offering examples of potential red
-flags</div>
+<div className="mb-2">Highlighting our established internal
+reporting processes</div>
 <div className="mb-2">
             Our comprehensive training module, covers all the key
 stakeholders involved in our tea industry’s operationsWe have implemented specialised training
@@ -200,7 +201,7 @@ standards.
             </div>
         </div>
         <div>
-        <div className="font-semibold p-4 bg-[#f8f1e7]">
+        <div className="font-semibold p-4 bg-[#f8f1e7] mb-5">
         Our recent acquisition, Organic India, procures 30
 different kinds of crops cultivated over 9000 acres of
 land, with Tulsi being the biggest produce purchased.

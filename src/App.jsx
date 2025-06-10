@@ -43,7 +43,7 @@ import Gratitude_detail1 from "./components/comp/Gratitude_detail1";
 import Gratitude_detail2 from "./components/comp/Gratitude_detail2";
 import EsgDummy from "./components/Sustainability/Esg.dummy";
 import YearInReview from "./pages/YearInReview";
-
+import Sustaining_main from "./components/SustainingValuesComponents/Sustaining_main";
 function MainContent() {
   const location = useLocation();
   const isLandingPage = location.pathname === '/';
@@ -81,6 +81,7 @@ function MainContent() {
         {/* <Route path="/sustaining-value/Materiali" element={<StakeholderValueCreation/>}/> */}
         <Route path="/sustaining-value/Materiality_assessment_and_stakeholder_discussions" element={<Materiality/>}/>
         {/* <Route path="/sustaining-value/Sustainable_development_goals" element={<Sustainability/>}/> */}
+        <Route path="/sustaining-value/Our_stakeholders_and_topics_of_priority" element={< StakeholderValueCreation/>}/>
         <Route path="/sustaining-value/Risk_management" element={<RiskMgt/>}/>
         <Route path="/sustaining-value/Sustainable_development_goals" element={<SDG/>}/>
         <Route path="/sustaining-value/Managing_risks" element={<ManagingRisks/>}/>
@@ -89,6 +90,7 @@ function MainContent() {
         <Route path="/sustaining-value/Ten_year_financial_highlights" element={<FinancialHighlights/>}/>
         <Route path="/gratitude/founder" element={<Gratitude_detail1/>}/>
         <Route path="/gratitude/Tata" element={<Gratitude_detail2/>}/>
+        <Route path="/sustaining_value" element={< Sustaining_main/>}/>
         </Routes>
       {/* <ChatbotWidget /> */}
       <Footer />

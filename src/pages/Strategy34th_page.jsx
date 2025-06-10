@@ -8,7 +8,7 @@ const Strategy34th_page = () => {
           A REFRESHED GLOBAL
           BRAND ARCHITECTURE
         </div>
-        <div className='flex flex-row justify-center items-center bg-gray-50 p-4 gap-5'>
+        <div className='flex md:flex-row flex-col justify-center items-center bg-gray-50 p-4 gap-5'>
           <div className=''>
             <img src="/228.webp" className='w-full rounded-full' alt="" />
           </div>

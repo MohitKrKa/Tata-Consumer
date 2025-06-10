@@ -9,19 +9,20 @@ import ForBetterCommunities from './ForBetterCommunities'
 import GlobalCover from '../ConsumerCover'
 import ForBetterSourcing from './ForBetterSourcing'
 import ForBetterPlanet from './ForBetterPlanet'
+import ConsumerCover from '../ConsumerCover'
 const Sustaunability = () => {
 const Sustaunability_obj = ({
     title : "Sustainability",
     bgImage : "url('/Sustainability/banner.webp')",
     leftGradient : {
-      from: "#006531",
-      to: "#006531",
-      opacity: 30
+      from: "#016f45",
+      to: "#016f45",
+      opacity: 80
     },
     rightGradient : {
-      from: "#006531",
-      to: "#006531",
-      opacity: 30
+      from: "#016f45",
+      to: "#016f45",
+      opacity: 80
     },
     menuItems : [
       { 
@@ -62,7 +63,8 @@ const Sustaunability_obj = ({
     <img src={banner} alt="" className='h-[100vh] w-screen'/>
     <HollowTextGSAP text="Sustainability" stroke='white' fillColor='#22c55e'/>
     </div> */}
-    <GlobalCover {...Sustaunability_obj}/>
+    <ConsumerCover {...Sustaunability_obj}/>
+    {/* <GlobalCover {...Sustaunability_obj}/> */}
     <Esg/>
     <EsgGovernance/>
     

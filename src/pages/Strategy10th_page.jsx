@@ -3,7 +3,7 @@ import React from "react";
 const Strategy10th_page = () => {
   return (
     <div className="bg-gray-50 py-4">
-    <div className="marginal h-auto mb-5 items-center flex md:flex-row gap-10 text-lg">
+    <div className="marginal h-auto mb-5 items-center flex md:flex-row flex-col gap-10 text-lg">
       <div className="md:w-[30vh]">
         <img className="w-full" src="/153.webp" alt="" />
       </div>

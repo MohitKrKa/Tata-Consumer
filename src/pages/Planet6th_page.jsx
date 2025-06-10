@@ -9,7 +9,7 @@ const Planet6th_page = () => {
             </div>
             <div className='flex  flex-col justify-center items-center gap-5'>
 <div className='md: h-auto '>
-    <div className='w-[60%]'>
+    <div className='md:w-[60%]'>
         <img src="/77.webp" alt="" />
     </div>
     </div>

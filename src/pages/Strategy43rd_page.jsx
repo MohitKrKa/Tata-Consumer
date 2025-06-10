@@ -43,8 +43,8 @@ const Strategy43rd_page = () => {
         <div className='mb-5'>
           <img src="/282.webp" alt="" />
         </div>
-        <div className='flex flex-row justify-center gap-5 mb-3'>
-          <div className='w-[70%]'>
+        <div className='flex md:flex-row flex-col justify-center gap-5 mb-3'>
+          <div className='md:w-[70%]'>
             <div className='text-2xl text-[#1368b4] mb-2 font-semibold '>THE TATA CONSUMER
               PRODUCTS’ NORTH STAR</div>
             <div className='mb-2'>
@@ -63,7 +63,7 @@ const Strategy43rd_page = () => {
               <img src="/284.webp" alt="" />
             </div>
           </div>
-          <div className='w-[30%]'>
+          <div className='md:w-[30%]'>
             <div className='text-3xl text-[#1368b4]'>Who are we?</div>
             <img src="/283.webp" alt="" />
           </div>
@@ -108,7 +108,7 @@ const Strategy43rd_page = () => {
                 perspectives, the forum:</div>
 
 
-              <div className='flex flex-row  justify-between gap-2 mb-3 flex-'>
+              <div className='flex md:flex-row flex-col  md:justify-between gap-2 mb-3 flex-'>
                 <div className="text-center px-4 mb-2">
                   {/* Line + Capsule Layout */}
                   <div className="relative flex items-center justify-center mb-1">
@@ -178,7 +178,7 @@ const Strategy43rd_page = () => {
                     {/* Capsule with inner line */}
                     <div className="relative">
                       {/* Green capsule */}
-                      <div className="w-15 h-1 bg-green-500 rounded-full z-10" />
+                      <div className="w-10 h-1 bg-green-500 rounded-full z-10" />
 
                       {/* Line inside the capsule to connect it seamlessly */}
                       <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-green-500 to-sky-500 -z-10 transform -translate-y-1/2" />
