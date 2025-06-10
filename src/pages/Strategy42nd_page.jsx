@@ -84,7 +84,7 @@ const Strategy42nd_page = () => {
           <div className='md:'>
 
             <div className='text-2xl font-semibold mb-2 mt-6 text-[#1368b4]'>DEEPENING AND WIDENING MARKET REACH</div>
-            <div className='fle flex-row justify-center gap-5'>
+            <div className='md:flex  justify-between gap-6 w-full'>
               <div className='mb-2'>In our endeavour to strengthen
                 distribution reach and enhance market
                 penetration, we have significantly
@@ -102,8 +102,8 @@ const Strategy42nd_page = () => {
                 expansion also ensures consistent
                 product availability and improved
                 order fulfilment.</div>
-              <div className=''>
-                <div className='w-[60%] gap-8 md:flex items-center'>
+              <div className='md:w-[40%]'>
+                <div className=' gap-8 md:flex items-center'>
                   <div className="flex flex-col w-[200px] mb-6">
                     <h1 className="text-3xl text-[#4084c1] leading-none">1,200+</h1>
 
@@ -142,9 +142,9 @@ const Strategy42nd_page = () => {
           </div>
         </div>
       </div>
-      <div className='marginal text-lg'>
-        <div className='md:flex flex-row items-end justify-between gap-5 mb-3 '>
-          <div className='w-[40%] bg-gray-100 p-4'>
+      <div className='marginal text-lg '>
+        <div className='md:flex flex-row items-start justify-between gap-5 mb-3 bg-gray-100 '>
+          <div className=' w-[60%]  p-4'>
             <div className='text-xl font-semibold text-[#06aeef] mb-3'>RURAL NETWORK EXPANSION</div>
             <p className=''>We augmented the rural sales
               organisation to deepen coverage in
@@ -161,13 +161,18 @@ const Strategy42nd_page = () => {
               has proven vital to maintaining
               consistent product availability and
               driving volume.
-            </p></div>
-          <div className='w-[30%] flex flex-col bg-gradient-to-t from-gray-200 to-transparent justify-end'>
-            <img src="/updated/104-IMG-2.webp" className='' alt="" />
-          </div>
-          <div className='w-[30%]'>
-            <img src="/updated/104-IMG.webp" className='' alt="" />
-          </div>
+            </p>
+            <div>
+             
+            </div>
+            
+            </div>
+             <div className='w-[35%]'>
+                            <img src="/updated/104-IMG-2.webp" className=' object-contain max-h-[400px]' alt="" />
+
+              </div>
+          
+         
         </div>
         <div className='mt-16'>
           <div className='text-xl font-semibold text-[#06aeef] mb-3'>SHARPER URBAN FOCUS</div>

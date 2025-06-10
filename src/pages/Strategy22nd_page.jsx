@@ -5,7 +5,7 @@ const Strategy22nd_page = () => {
     <>
       <div className='marginal text-lg'>
         <div className='text-2xl font-semibold text-[#1368b4] mb-2'>BUILDING A RESILIENT
-          AND SCALABLE READYTO-DRINK BUSINESS</div>
+          AND SCALABLE READY-TO-DRINK BUSINESS</div>
 
         <div className='mb-3'>The Ready-To-Drink (RTD) business
           has established a strong foundation
@@ -14,7 +14,7 @@ const Strategy22nd_page = () => {
           fundamentally strong business model,
           differentiated products and a strong
           innovation pipeline.</div>
-        <div className='text-xl font-semibold text-[#06aeef] mb-2'>
+        <div className='text-xl font-semibold text-[#06aeef] mt-3 mb-1'>
           STRENGTHENING
           HYDRATION PLAY
         </div>

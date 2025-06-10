@@ -53,35 +53,16 @@ const Strategy12th_page = () => {
           </p>
         </div>
       </div>
-      <div className='my-10'>
-        <div className='text-xl mb-6 font-semibold text-[#06aeef]'>
+      <div className='mt-10 mb-4'>
+        <div className='text-xl font-semibold text-[#06aeef]'>
           EXPANDING VALUE-ADDED OFFERINGS
         </div>
-        <div className='flex bg-gray-100 p-6 flex-row gap-10'>
-          <div className="flex flex-col mt-2 w-[200px]">
-            <h1 className="text-3xl text-[#4084c1] leading-none">31%</h1>
-
-            <div class="flex items-center my-1">
-              <div class="w-4 h-2 bg-blue-500 rounded-full"></div>
-              <div class="h-0.5 w-full bg-blue-500"></div>
-            </div>
-            <div className=" text-sm leading-tight">Revenue growth in value-added salts</div>
-          </div>
-          <div className="flex flex-col mt-2 w-[200px]">
-            <h1 className="text-3xl text-[#4084c1] leading-none">57%</h1>
-
-            <div class="flex items-center my-1">
-              <div class="w-4 h-2 bg-blue-500 rounded-full"></div>
-              <div class="h-0.5 w-full bg-blue-500"></div>
-            </div>
-            <div className=" text-sm leading-tight">Volume growth in rock salt</div>
-          </div>
-        </div>
+       
       </div>
       <div className='md:flex  items-stretch gap-6 justify-items-center mb-3'>
        
        
-        <div className='md:w-[33%] h-fit flex flex-col justify-start gap-4'>
+        <div className='md:w-[33%] h-fit flex flex-col justify-between gap-4'>
           <div className='w-full md:h-[35vh] p-6 bg-gray-100'>
             <img src="/161.webp" alt="" className="w-full h-full object-contain" />
           </div>
@@ -103,6 +84,26 @@ const Strategy12th_page = () => {
             accessibility and trusted
             quality for everyday use.
           </p>
+        </div>
+        <div className='md:w-[33%] h-fit flex flex-col justify-start gap-4'>
+           <div className="flex flex-col mt-2 w-[200px]">
+            <h1 className="text-3xl text-[#4084c1] leading-none">31%</h1>
+
+            <div class="flex items-center my-1">
+              <div class="w-4 h-2 bg-blue-500 rounded-full"></div>
+              <div class="h-0.5 w-full bg-blue-500"></div>
+            </div>
+            <div className=" text-sm leading-tight">Revenue growth in value-added salts</div>
+          </div>
+          <div className="flex flex-col mt-2 w-[200px]">
+            <h1 className="text-3xl text-[#4084c1] leading-none">57%</h1>
+
+            <div class="flex items-center my-1">
+              <div class="w-4 h-2 bg-blue-500 rounded-full"></div>
+              <div class="h-0.5 w-full bg-blue-500"></div>
+            </div>
+            <div className=" text-sm leading-tight">Volume growth in rock salt</div>
+          </div>
         </div>
       </div>
     </div>

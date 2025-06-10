@@ -10,7 +10,7 @@ const Strategy24th_page = () => {
               <img src="/193.webp" className='' alt="" />
             </div>
           </div>
-          <div className="md:w-[30%]">
+          <div className="md:w-[30%] mt-6">
             <div className='text-2xl font-semibold text-[#1368b4] mb-2'>DRIVING PROFITABLE
               GROWTH IN INTERNATIONAL
               MARKETS</div>

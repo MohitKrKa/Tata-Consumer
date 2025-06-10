@@ -6,7 +6,7 @@ function ScrollToTop() {
 
   useEffect(() => {
     // Only scroll to top if it's not the home page
-    if (pathname !== '/') {
+    // if (pathname !== '/') {
       // Small delay to ensure the route change is complete
       setTimeout(() => {
         window.scrollTo({
@@ -15,7 +15,7 @@ function ScrollToTop() {
           behavior: 'smooth'
         });
       }, 100);
-    }
+  
   }, [pathname]);
 
   return null;
